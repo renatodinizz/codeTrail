@@ -1,0 +1,9 @@
+@media print{
+    body{
+        background-color: rgb(167, 255, 167);
+    }
+    h1 {
+        font-size: 8rem;
+        color: green;
+    }
+}
