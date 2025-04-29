@@ -4,7 +4,7 @@
     body {
         padding-bottom: 1rem;
         overflow-x: hidden;
-        background: #000 url(../../img/index/background.jpg);
+        background: #000 url(../../img/index/background-mobile.webp);
         background-size: cover;
         background-position: center;
         background-attachment: fixed;
