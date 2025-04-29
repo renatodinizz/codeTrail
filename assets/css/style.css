@@ -1,28 +1,3 @@
-@font-face {
-  font-family: membra;
-  src: url(../font/membra/membra.ttf) format(truetype);
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
-  font-family: techno;
-  src: url(../font/techno_board/TechnoBoard.ttf) format(truetype);
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
-  font-family: circ1;
-  src: url(../font/circuit_board/circuit_board.ttf) format(truetype);
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
-  font-family: circ2;
-  src: url(../font/circuitboard/Circuitboard.ttf) format(truetype);
-  font-weight: normal;
-  font-style: normal;
-}
-
 * {
     margin: 0;
     padding: 0;
@@ -36,6 +11,7 @@
   }
   
   header {
+    margin-top: 1rem;
     text-align: center;
     margin-bottom: 30px;
   }
