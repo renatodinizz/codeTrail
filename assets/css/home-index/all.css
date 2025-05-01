@@ -76,7 +76,7 @@ header h1 {
 
 /* Cores diferentes por tecnologia */
 .card.html {
-    background: radial-gradient(circle, #e34f26, #de4d25, #c14320, #ac3c1d, #963419);
+    background: radial-gradient(circle, #e34f26, #de4d25, #c14320, #a6391a, #832c14);
     font-weight: 900;
 }
 .card.css { 
@@ -84,7 +84,7 @@ header h1 {
     font-weight: 900;
 }
 .card.js { 
-    background: radial-gradient(circle, #f7df1e, #f7df1e, #ddc61b, #ae9d16, #897b10); 
+    background: radial-gradient(circle, #f7df1e, #e9d11b, #c1ae19, #988911, #7d700f); 
     color: #333333;
 }
 .card.ts { 
