@@ -1,5 +1,5 @@
 @media (min-width: 1024px) {
     body{
-        background-color: rgb(255, 0, 0);
+        background: #333 url(../../img/index/14.jpg);
     }    
 }

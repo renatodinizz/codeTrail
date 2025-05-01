@@ -29,7 +29,7 @@
     }
 
     .card {
-        height: 9rem;
+        height: 11rem;
         font-size: 3.5rem;    
     }
 
@@ -44,7 +44,4 @@
     .html, .css, .about {
         font-size: 5.5rem;
     }
-
-
 }
-

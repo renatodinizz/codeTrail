@@ -1,5 +1,35 @@
+@charset 'UTF-8';
 @media (min-width: 768px) {
     body{
-        background: #fffc38;
-    }    
+        padding-bottom: 2rem;
+        overflow-x: hidden;
+        background: #000 url(../../img/index/back-small-screen.webp);
+        background-size: cover;
+        background-position: center center;
+        background-attachment: fixed;
+    } 
+    
+    .logo {  
+        width: 4.5rem;
+    }
+
+    header {
+        font-size: 4.5rem;
+    }
+
+    main {
+        padding: 0 4rem;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 3rem;
+    }
+
+    .card {
+        height: 12rem;
+        font-size: 3.5rem;    
+    }
+    
+    .html, .css, .about {
+        font-size: 5.5rem;
+    }
 }
