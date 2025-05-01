@@ -1,5 +1,50 @@
+@charset 'UTF-8';
 @media (min-width: 481px) {
     body{
-        background-color: blue;
-    }    
+        padding-bottom: 2rem;
+        overflow-x: hidden;
+        background: #000 url(../../img/index/back-tablet.webp);
+        background-size: cover;
+        background-position: center center;
+        background-attachment: fixed;
+    }  
+    
+    .logo {        
+        width: 3.7rem;
+    }
+
+    header{
+        margin: 5rem 0;
+        text-align: center;
+        font-size: 3rem;      
+    }
+
+    main {
+        width: 100%;
+        margin: 0 auto;
+        padding: 0 6rem;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 3rem;
+    }
+
+    .card {
+        height: 9rem;
+        font-size: 3.5rem;    
+    }
+
+    .big {
+        font-size: 5.5rem;
+    }
+
+    .type{
+        font-size: 4.5rem;
+    }
+
+    .html, .css, .about {
+        font-size: 5.5rem;
+    }
+
+
 }
+

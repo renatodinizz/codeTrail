@@ -4,9 +4,9 @@
     body {
         padding-bottom: 1rem;
         overflow-x: hidden;
-        background: #000 url(../../img/index/background-mobile.webp);
+        background: #000 url(../../img/index/back-mobile.webp);
         background-size: cover;
-        background-position: center;
+        background-position: center center;
         background-attachment: fixed;
     }
 
@@ -42,7 +42,7 @@
         font-size: 3rem;
     }
 
-    .html, .css {
+    .html, .css, .about {
         font-size: 3.5rem;
     }
 }
