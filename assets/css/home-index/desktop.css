@@ -4,6 +4,7 @@
     }  
     
     canvas.background {
+        display: block;
         position: fixed;
         top: 0;
         left: 0;
@@ -21,9 +22,10 @@
     }
 
     main {
+        width: 100%;
         position: relative;
         z-index: 1;
-        padding: 0 14rem;
+        padding: 3rem 6rem;
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         gap: 3rem;
@@ -31,11 +33,22 @@
 
     .card {
         height: 18rem;
-        font-size: 3.5rem;   
-        position: relative; 
+        font-size: 2rem;  
+    }
+    
+    .big {
+        font-size: 8rem;
     }
 
-    .html, .css, .about {
+    .type{
+        font-size: 5rem;
+    }
+
+    .html, .css {
         font-size: 5.5rem;
+    }
+    
+    .about {
+        font-size: 4rem;
     }
 }

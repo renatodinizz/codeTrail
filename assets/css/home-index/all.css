@@ -35,6 +35,10 @@ body {
     justify-content: center;
 }
 
+canvas.background {
+    display: none;
+}
+
 .logo {
     position: absolute;
     top: 1rem;
@@ -54,7 +58,7 @@ header h1 {
     -webkit-text-fill-color: transparent;
     background-clip: text;
     color: transparent;
-    text-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2);
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
 }
 
 .card {
@@ -67,10 +71,12 @@ header h1 {
     border: 1px solid #3333335f;
     border-radius: 16px;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.8);
+    perspective: 1000px;
+    transform-style: preserve-3d;
     transition: background 0.3s ease, transform 0.3s ease;
 }
 
-.card div {
+.text3d {
     display: inline; /* mantém os spans na linha, normal */
 }
 
@@ -109,4 +115,17 @@ header h1 {
 
 .js {
     text-shadow: 1px 2px 4px #444444c4;
+}
+
+.text3d {
+    transform: translateZ(5rem);
+    transition: transform 0.2s ease;
+}
+
+.zoomOut { animation-name: zoomOut }
+@keyframes zoomOut {
+    to {
+        transform: scale(10);
+        opacity: 0;
+    }
 }

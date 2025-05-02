@@ -1,5 +1,5 @@
 @charset 'UTF-8';
-@media (min-width: 768px) {
+@media (min-width: 768px)and (max-width:1199px) {
     body{
         padding-bottom: 2rem;
         overflow-x: hidden;
@@ -8,6 +8,10 @@
         background-position: center center;
         background-attachment: fixed;
     } 
+
+    canvas.background {
+        display: none;
+    }
     
     .logo {  
         width: 4.5rem;
@@ -18,18 +22,31 @@
     }
 
     main {
-        padding: 0 4rem;
+        width: 100%;
+        padding: 0 3rem;
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         gap: 3rem;
     }
 
     .card {
-        height: 12rem;
-        font-size: 3.5rem;    
+        height: 14rem;
+        font-size: 2.5rem;    
     }
     
-    .html, .css, .about {
+    .big {
+        font-size: 6rem;
+    }
+
+    .type{
+        font-size: 5rem;
+    }
+
+    .html, .css {
         font-size: 5.5rem;
+    }
+    
+    .about {
+        font-size: 4.5rem;
     }
 }
