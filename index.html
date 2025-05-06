@@ -4,59 +4,61 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>CodeTrail</title>
+  <!-- Favicon imagem -->
   <link rel="shortcut icon" href="assets/img/favicon/favicon.ico" type="image/x-icon">
+  <!-- Link da biblioteca Vanilla Tilt - efeito 3D do card -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.1/vanilla-tilt.min.js" integrity="sha512-wC/cunGGDjXSl9OHUH0RuqSyW4YNLlsPwhcLxwWW1CR4OeC2E1xpcdZz2DeQkEmums41laI+eGMw95IJ15SS3g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <!-- Link da animação do efeito de zoom do cssanimation.io -->
   <link href="https://cdn.jsdelivr.net/gh/yesiamrocks/cssanimation.io@1.0.3/cssanimation.min.css" rel="stylesheet">
+  <!-- Link do CSS de ajuste -->
   <link rel="stylesheet" href="assets/css/home-index/homeIndex.css"/>
 </head>
 <body>
   <canvas class="background"></canvas>
 
-  <img class="logo" src="assets/img/index/logo.webp" alt="logo de cérebro">
+  <img class="logo" src="assets/img/home/logo.webp" alt="logo de cérebro">
   <header>
     <h1>CodeTrail</h1>
   </header>
 
   <main class="cards-container">
-
+    <!-- Card HTML -->
     <a href="pages/html/indexHtml.html" class="card html cssanimation" data-tilt data-tilt-perspective="1000" data-tilt-scale="1.1">
       <div class="text3d">HTML</div>
     </a>
-
+    <!-- Card CSS -->
     <a href="pages/css/indexCss.html" class="card css" data-tilt data-tilt-perspective="1000" data-tilt-scale="1.1">
       <div class="text3d">CSS</div>
     </a>
-
+    <!-- Card JavaScript -->
     <a href="pages/javascript/indexJs.html" class="card js" data-tilt data-tilt-perspective="1000" data-tilt-scale="1.1">
       <div class="text3d">
           <span class="bold big">J</span>ava<span class="bold big">S</span>cript
       </div>
     </a>
-
+    <!-- Card TypeScript -->
     <a href="pages/typescript/indexType.html" class="card ts" data-tilt data-tilt-perspective="1000" data-tilt-scale="1.1">
       <div class="text3d">
         <span class="bold type">Type</span>Script
       </div>
     </a>
-
-    <a href="pages/html/indexAbout.html" class="card about" data-tilt data-tilt-perspective="1000" data-tilt-scale="1.1">
-      <div class="text3d">About</div>
+    <!-- Card About -->
+    <a href="pages/about/indexAbout.html" class="card about" data-tilt data-tilt-perspective="1000" data-tilt-scale="1.1">
+      <div class="text3d">ABOUT</div>
     </a>
 
+    <!-- Somente exemplos -->
     <a href="pages/html/indexHtml.html" class="card html">HTML</a>
     <a href="pages/css/indexCss.html" class="card css unico" data-tilt data-tilt-perspective="1000" data-tilt-scale="1.05"><h3 class="text3d">Diniz</h3></a>
-
-
     <a href="pages/javascript/indexJs.html" class="card js" data-tilt data-tilt-perspective="1000" data-tilt-scale="1.1">
       <div class="text3d"><span class="bold big">J</span>ava<span class="bold big">S</span>cript</div>
     </a>
-
-
     <a href="pages/typescript/indexType.html" class="card ts">
       <div><span class="bold type">Type</span>Script</div>
-  </a>
+    </a>
+
   </main>
-  <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/yesiamrocks/cssanimation.io@1.0.3/letteranimation.min.js"></script>
+
   <script>
     const effect = document.querySelector('.html')
     effect.addEventListener('click', function(ev){
@@ -69,6 +71,7 @@
       name.classList.add('zoomOut')*/
     })
   </script>
+
   <script src="assets/js/index/animacaoIndex.js"></script>
 </body>
 </html>

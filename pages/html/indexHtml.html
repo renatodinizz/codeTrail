@@ -5,8 +5,77 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="../../assets/img/favicon/favicon.ico" type="image/x-icon">
     <title>Index HTML</title>
+    <!-- Favicon imagem -->
+    <link rel="shortcut icon" href="assets/img/favicon/favicon.ico" type="image/x-icon">
+    <!-- Link do CSS -->
+    <link rel="stylesheet" href="../../assets/css/html-index/html-Index.css">
 </head>
-<body>
-    <h1>HTML</h1>
+<body class="area">
+    <header>
+        <button id="menu-toggle" class="menu-toggle">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </button>
+
+        <span id="codeTrail">CodeTrail</span>
+
+        <nav id="side-menu">
+            <ul>
+                <li><a href="../../index.html" class="home">Home</a></li>
+                <li><a href="../../pages/html/indexHtml.html" class="html">HTML</a></li>
+                <li><a href="../../pages/css/indexCss.html" class="css">CSS</a></li>
+                <li><a href="../../pages/javascript/indexJs.html" class="js">JavaScript</a></li>
+                <li><a href="../../pages/typescript/indexType.html" class="ts">TypeScript</a></li>
+                <li><a href="../../pages/about/indexAbout.html" class="about">ABOUT</a></li>
+            </ul>
+        </nav>
+        <h1>HTML</h1>
+    </header>
+
+    <main>
+        <div class="context">
+            <a href="" class="card">Edição de Texto</a>
+            <a href="" class="card">Imagem</a>
+            <a href="" class="card">Audio</a>
+            <a href="" class="card">Video</a>
+            <a href="" class="card">Tabela</a>
+            <a href="" class="card">Iframe</a>
+            <a href="" class="card">Formulário</a>
+            <a href="" class="card">Dicas</a>
+        </div>
+        <ul class="circles">
+            <li class="square">1</li>
+            <li class="square">2</li>
+            <li class="square">3</li>
+            <li class="square">4</li>
+            <li class="square">5</li>
+            <li class="square">6</li>
+            <li class="square">7</li>
+            <li class="square">8</li>
+            <li class="square">9</li>
+            <li class="square">10</li>
+            <li class="square">11</li>
+            <li class="square">12</li>
+            <li class="square">13</li>
+            <li class="square">14</li>
+            <li class="square">15</li>
+            <li class="square">16</li>
+            <li class="square">17</li>
+            <li class="square">18</li>
+            <li class="square">19</li>
+            <li class="square">20</li>
+        </ul>
+    </main>
+
+    <script>
+        const toggleBtn = document.getElementById('menu-toggle');
+        const menu = document.getElementById('side-menu');
+
+        toggleBtn.addEventListener('click', () => {
+        menu.classList.toggle('active');
+        toggleBtn.classList.toggle('active');
+        });
+    </script>
 </body>
 </html>

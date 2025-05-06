@@ -4,22 +4,17 @@
         padding-bottom: 2rem;
         /* overflow-x: hidden; ajuda a não ter a barra de rolagem lateral */
         overflow-x: hidden;
-        background: #000 url(../../img/home/back-small-screen.webp);
+        background: #000 url(../../img/html/background/background-small.webp);
         background-size: cover;
+        background-repeat: no-repeat;
         background-position: center center;
         background-attachment: fixed;
     } 
-
-    canvas.background {
-        display: none;
-    }
     
     .logo {  
-        width: 4.5rem;
     }
 
     header {
-        font-size: 4.5rem;
     }
 
     main {
@@ -31,24 +26,7 @@
         gap: 3rem;
     }
 
-    .card {
-        height: 14rem;
-        font-size: 2.5rem;    
-    }
-    
-    .big {
-        font-size: 6rem;
-    }
-
-    .type{
-        font-size: 5rem;
-    }
-
-    .html, .css {
-        font-size: 5.5rem;
-    }
-    
-    .about {
-        font-size: 4.5rem;
+    .circles {
+        display: none;
     }
 }

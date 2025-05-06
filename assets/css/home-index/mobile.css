@@ -1,10 +1,11 @@
 @charset 'UTF-8';
 @media (min-width: 1px) and (max-width:480px) { 
-   
+
     body {
         padding-bottom: 1rem;
+        /* overflow-x: hidden; ajuda a não ter a barra de rolagem lateral */
         overflow-x: hidden;
-        background: #000 url(../../img/index/back-mobile.webp);
+        background: #000 url(../../img/home/back-mobile.webp);
         background-size: cover;
         background-position: center center;
         background-attachment: fixed;
@@ -28,6 +29,7 @@
         margin: 0 auto;
         padding: 0 3rem;
         width: 100%;
+        /* Dispaly Grid para dividir a viewport em uma fração, ou seja, deixar um card por linha */
         display: grid;
         grid-template-columns: repeat(1, 1fr);
         gap: 2rem;

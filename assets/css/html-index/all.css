@@ -1,0 +1,90 @@
+@charset 'UTF-8';
+
+@font-face {
+    font-family: 'Inter';
+    src: url(../../font/Inter-VariableFont_opsz\,wght.ttf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'blow';
+    src: url(../../font/blowbrush.ttf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Audiowide';
+    src: url(../../font/Audiowide-Regular.ttf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    min-height: 100vh;    
+}
+
+header h1 {
+    font-family: 'blow';
+    text-align: center;    
+    color: #f8f9fa;
+    text-shadow: -7px 20px 32px rgba(0, 0, 0, 0.8);
+}
+
+#codeTrail {
+    font-family: 'Audiowide';
+    /* Degradê no fundo que depois é passado para o texto e deixa o fundo transparente */
+    background: linear-gradient(90deg, #007bff, #00ff88, #007bff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; 
+}
+
+.card {
+    /* Dispaly Grid para deixar o conteúdo centralizado no card  */
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    text-align: center;
+    text-decoration: none;
+    color: #f8f9fa;
+    font-weight: 600;
+    text-shadow: 2px 2px 4px #222;
+    border-radius: 8px;
+    border-top: 1px solid rgb(255, 255, 255, 0.5);
+    border-left: 1px solid rgb(255, 255, 255, 0.3);
+    background: linear-gradient(135deg, rgb(0, 0, 0, 0.3), rgb(255, 255, 255, 0.1));
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(10px);
+    box-shadow: 3px 5px 6px rgb(0, 0, 0, 0.37);
+}
+
+.card:hover {
+    transform: scale(1.15);
+    box-shadow: 4px 8px 10px rgb(0, 0, 0, 0.6);
+}
+
+/* Exemplo de animação
+.zoomOut { animation-name: zoomOut }
+@keyframes zoomOut {
+    to {
+        transform: scale(10);
+        opacity: 0;
+    }
+}*/
+
+ 

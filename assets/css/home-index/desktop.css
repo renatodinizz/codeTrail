@@ -1,4 +1,6 @@
+@charset 'UTF-8';
 @media (min-width: 1200px) {
+
     body{
         background: #b6ebff;
     }  
@@ -8,7 +10,7 @@
         position: fixed;
         top: 0;
         left: 0;
-        z-index: -1;
+        z-index: -1; /* Deixa a animação em uma camada abaixo */
         pointer-events: none;
     }
     
@@ -23,9 +25,11 @@
 
     main {
         width: 100%;
+        /* position relative faz com que o conteúdo fique a frente da animação */
         position: relative;
         z-index: 1;
         padding: 3rem 6rem;
+        /* Dispaly Grid para dividir a viewport em três frações, ou seja, deixar três cards por linha */
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         gap: 3rem;
