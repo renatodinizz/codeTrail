@@ -74,7 +74,7 @@ main {
 }
 
 .card:hover {
-    transform: scale(1.15);
+    transform: scale(1.10);
     box-shadow: 4px 8px 10px rgb(0, 0, 0, 0.6);
 }
 
@@ -85,6 +85,4 @@ main {
         transform: scale(10);
         opacity: 0;
     }
-}*/
-
- 
+}*/ 

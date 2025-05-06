@@ -21,13 +21,14 @@
   }
 
   header h1 {
-    font-size: 8rem;
+    font-size: 9rem;
     margin: 2rem 0;
   }
 
   .context {
     width: 100%;
     padding: 0 2rem;
+    /* Dispaly Grid para dividir a viewport em uma fração, ou seja, deixar um card por linha */
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     gap: 2rem;
@@ -35,13 +36,7 @@
 
   .card {
     height: 8rem;
-    font-size: 2.2rem;/*
-    background: rgba(225, 225, 225, 0.1);
-    border: 1px solid rgba(225, 225, 225, 0.3);
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
-    background: #e34f26;*/
-    
+    font-size: 2.2rem;
   }
 
   .circles {

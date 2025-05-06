@@ -1,6 +1,8 @@
 @charset 'UTF-8';
 @media (min-width: 481px) and (max-width:767px) {
+
     body{
+        padding: 1rem;
         padding-bottom: 2rem;
         /* overflow-x: hidden; ajuda a não ter a barra de rolagem lateral */
         overflow-x: hidden;
@@ -10,20 +12,32 @@
         background-attachment: fixed;
     } 
     
-    .logo {        
-    }
+    header {
+        position: relative;
+        z-index: 3;        
+      }
+    
+    #codeTrail {
+        font-size: 2.2rem;
+      }
+    
+    header h1 {
+        font-size: 13rem;
+        margin: 1rem 0 3rem 0;
+      }
 
-    header{    
-    }
-
-    main {
+    .context {
         width: 100%;
-        margin: 0 auto;
-        padding: 0 6rem;
+        padding: 0 4rem;
         /* Dispaly Grid para dividir a viewport em uma fração, ou seja, deixar um card por linha */
         display: grid;
         grid-template-columns: repeat(1, 1fr);
         gap: 3rem;
+    }
+
+    .card {
+        height: 12rem;
+        font-size: 3rem;
     }
 
     .circles {
