@@ -1,14 +1,18 @@
 @charset 'UTF-8';
 @media (min-width: 1199px) {
-
+    
     body {
-        padding: 2rem;
-    }   
+        overflow-x: hidden;
+    }
 
     #codeTrail {
         font-size: 2rem;
     }
 
+    header {
+        padding: 2rem;
+        border-bottom: 3px solid #222;
+    }
     header h1 {
         font-size: 8rem;
         margin-bottom: 2rem;
@@ -17,22 +21,19 @@
     .context {
         /* O ajuste da largura do card é feito pelo padding e não com um tamanho fixo. */
         width: 100%;
-        padding: 0 8rem;
-        /* Dispaly Grid para dividir a viewport em quatro frações, ou seja, deixar quatro cards por linha */
+        max-width: 960px;
+        padding: 2rem;
+        margin: 0 auto;
+        /* Dispaly Grid para dividir a viewport em quatro frações, ou seja, deixar quatro cards por linha 
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         gap: 3rem;
-        text-align: center;
+        text-align: center;*/
     }
 
-    .card {
-        height: 7rem;
-        font-size: 1.8rem;
-    }
-
-    .area{
+    .area {
         background: radial-gradient(circle, #e34f26, #de4d25, #b53f1e, #943115, #722510);
-        width: 100%;
-        height: 100vh;
-    }    
+        width: 100vw;
+        min-height: 100vh;
+    }
 }
