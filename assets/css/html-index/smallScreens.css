@@ -1,7 +1,8 @@
 @charset 'UTF-8';
 @media (min-width: 768px)and (max-width:1199px) {
     body{
-        padding-bottom: 2rem;
+        padding: 2rem;
+        padding-bottom: 4rem;
         /* overflow-x: hidden; ajuda a não ter a barra de rolagem lateral */
         overflow-x: hidden;
         background: #000 url(../../img/html/background/background-small.webp);
@@ -11,19 +12,88 @@
         background-attachment: fixed;
     } 
     
-    .logo {  
-    }
-
     header {
+        position: relative;
+        z-index: 3;        
     }
 
-    main {
+    .horizontal {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    #side-menu{
+        display: flex;
+    }
+
+    #side-menu ul{
+        display: flex;
+        gap: 1rem;
+        list-style: none;
+    }
+    #side-menu a{
+        color: #f8f9fa;
+        text-shadow: 2px 2px 4px #222;
+        text-decoration: none;
+        font-weight: 600;
+        font-size: 1.2rem;
+        padding: 0.3rem;
+        border-radius: 5px;
+        transition: background 1s ease-in-out, color 1s ease;
+        display: inline-block;    
+    }
+    
+    #side-menu a:hover {
+        border-radius: 5px;        
+    }
+
+    #side-menu a.home:hover {
+        background-color: #b6ebff;
+        color: #000;
+        text-shadow: 2px 2px 4px #ffffff;
+    }
+    #side-menu a.html:hover {
+        background-color: rgb(0, 0, 0, 0.15);
+    }
+    #side-menu a.css:hover {
+        background-color: #1572b6;
+    }
+    #side-menu a.js:hover {
+        background-color: #f7df1e;
+        color: #000;
+        text-shadow: 2px 2px 4px #ffffff;
+    }
+    #side-menu a.ts:hover {
+        background-color: #3178c6;
+    }
+    #side-menu a.about:hover {
+        background-color: #bdbdbd;
+        color: #000;
+        text-shadow: 2px 2px 4px #ffffff;
+    }
+
+    #codeTrail {
+        font-size: 2rem;
+    }
+    
+    header h1 {
+        font-size: 10rem;
+        margin: 2rem 0 4rem 0;
+    }
+
+    .context {
         width: 100%;
-        padding: 0 3rem;
-        /* Dispaly Grid para dividir a viewport em duas frações, ou seja, deixar dois cards por linha */
+        padding: 0 2rem;
+        /* Dispaly Grid para dividir a viewport em uma fração, ou seja, deixar um card por linha */
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         gap: 3rem;
+    }
+
+    .card {
+        height: 10rem;
+        font-size: 2.5rem;
     }
 
     .circles {
