@@ -1,54 +1,52 @@
 @charset 'UTF-8';
 @media (min-width: 767px)and (max-width:1199px) {
     body{
-        padding: 2rem;
-        padding-bottom: 4rem;
         /* overflow-x: hidden; ajuda a não ter a barra de rolagem lateral */
         overflow-x: hidden;
-        background: #000 url(../../img/html/background/background-small.webp);
+        background: #000 url(../../../img/html/background/background-small.webp);
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center center;
         background-attachment: fixed;
     }
 
+    header {
+        padding: 1rem;
+        border-bottom: 3px solid #222;
+      }
+
     #codeTrail {
         font-size: 1.6rem;
     }
     
     header h1 {
-        font-size: 7rem;
-        margin-bottom: 2rem;
-    }
+        font-size: 3rem;
+      }
+    
+      main h2 {
+        margin: 1rem 0 3rem 0;
+        font-size: 3rem;
+        color: #704214;
+      }
+    
+      main h3 {
+        font-size: 2.5rem;
+        color: #a0522d;
+      }
+      main h4 {
+        font-size: 2rem;
+        color: #deb887;
+      }
 
     .context {
         /* O ajuste da largura do card é feito pelo padding e não com um tamanho fixo. */
-        width: 100%;
-        padding: 0 6rem;
-        /* Dispaly Grid para dividir a viewport em duas frações, ou seja, deixar dois cards por linha */
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        gap: 3rem;
-    }
-
-    .card {
-        height: 6rem;
-        font-size: 1.6rem;
+        width: 60%;
+    
+        padding: 1rem;
+        margin: 0 auto;
     }
 
     .circles {
         display: none;
-    }
-}
-
-/* Responsividade do tamanho do card */
-@media (min-width: 900px)and (max-width:1199px){
-    .context {
-        width: 100%;
-        padding: 0 7.5rem;
-        /* Dispaly Grid para dividir a viewport em três frações, ou seja, deixar três cards por linha */
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 3rem;
     }
 }

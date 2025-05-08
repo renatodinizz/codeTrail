@@ -2,54 +2,51 @@
 @media (min-width: 481px) and (max-width:767px) {
 
     body{
-        padding: 1rem;
-        padding-bottom: 2rem;
         /* overflow-x: hidden; ajuda a não ter a barra de rolagem lateral */
         overflow-x: hidden;
-        background: #000 url(../../img/html/background/background-tablet.webp) no-repeat;
+        background: #000 url(../../../img/html/background/background-tablet.webp) no-repeat;
         background-size: cover;
         background-position: center center;
         background-attachment: fixed;
-    }    
+    }   
+    
+    header {
+        padding: 1rem;
+        border-bottom: 3px solid #222;
+      }
         
     #codeTrail {
         font-size: 1.6rem;
     }
     
     header h1 {
-        font-size: 7rem;
-        margin: 2rem 0;
-    }
+        font-size: 3rem;
+      }
+    
+      main h2 {
+        margin: 1rem 0 3rem 0;
+        font-size: 2.5rem;
+        color: #704214;
+      }
+    
+      main h3 {
+        font-size: 2.5rem;
+        color: #a0522d;
+      }
+      main h4 {
+        font-size: 2rem;
+        color: #deb887;
+      }
 
     .context {
         /* O ajuste da largura do card é feito pelo padding e não com um tamanho fixo. */
-        width: 100%;
-        padding: 0 8rem;
-        /* Dispaly Grid para dividir a viewport em uma fração, ou seja, deixar um card por linha */
-        display: grid;
-        grid-template-columns: repeat(1, 1fr);
-        gap: 3rem;
-    }
-
-    .card {
-        height: 6rem;
-        font-size: 1.5rem;
+        width: 70%;
+    
+        padding: 1rem;
+        margin: 0 auto;
     }
 
     .circles {
         display: none;
-    }
-}
-
-/* Responsividade do tamanho do card */
-@media (min-width: 605px) and (max-width:767px) {
-
-    .context {
-        width: 100%;
-        padding: 0 5.5rem;
-        /* Dispaly Grid para dividir a viewport em uma fração, ou seja, deixar um card por linha */
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        gap: 3rem;
     }
 }

@@ -13,15 +13,29 @@
         padding: 2rem;
         border-bottom: 3px solid #222;
     }
+    
     header h1 {
-        font-size: 8rem;
-        margin-bottom: 2rem;
-    }    
+        font-size: 4rem;
+      }
+    
+      main h2 {
+        margin: 1rem 0 3rem 0;
+        font-size: 3rem;
+        color: #704214;
+      }
+    
+      main h3 {
+        font-size: 2.5rem;
+        color: #a0522d;
+      }
+      main h4 {
+        font-size: 2rem;
+        color: #deb887;
+      }
 
     .context {
         /* O ajuste da largura do card é feito pelo padding e não com um tamanho fixo. */
-        width: 100%;
-        max-width: 960px;
+        width: 55%;
         padding: 2rem;
         margin: 0 auto;
         /* Dispaly Grid para dividir a viewport em quatro frações, ou seja, deixar quatro cards por linha 

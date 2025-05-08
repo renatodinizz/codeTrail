@@ -23,6 +23,21 @@
     font-size: 3rem;
   }
 
+  main h2 {
+    margin: 1rem 0 3rem 0;
+    font-size: 2.5rem;
+    color: #704214;
+  }
+
+  main h3 {
+    font-size: 2.5rem;
+    color: #a0522d;
+  }
+  main h4 {
+    font-size: 2rem;
+    color: #deb887;
+  }
+
   
   
   .context {
@@ -40,17 +55,4 @@
   .circles {
     display: none;
   }
-}
-
-/* Responsividade do título e do tamanho do card */
-@media (min-width: 380px) and (max-width: 480px)  {
-
-  header h1 {
-    font-size: 3rem;
-    margin: 0;
-  }
-
-  .context {
-    padding: 1rem;
-  }  
 }
