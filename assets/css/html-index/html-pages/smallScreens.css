@@ -1,52 +1,54 @@
 @charset 'UTF-8';
 @media (min-width: 767px)and (max-width:1199px) {
-    body{
-        /* overflow-x: hidden; ajuda a não ter a barra de rolagem lateral */
-        overflow-x: hidden;
-        background: #000 url(../../../img/html/background/background-small.webp);
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center center;
-        background-attachment: fixed;
-    }
+  body{
+    /* overflow-x: hidden; ajuda a não ter a barra de rolagem lateral */
+    overflow-x: hidden;
+    background: #000 url(../../../img/html/background/background-small.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+  }
 
-    header {
-        padding: 1rem;
-        border-bottom: 3px solid #222;
-      }
+  header {
+    padding: 1rem;
+    border-bottom: 3px solid #222;
+  }
 
-    #codeTrail {
-        font-size: 1.6rem;
-    }
+  #codeTrail {
+    font-size: 1.7rem;
+  }
     
-    header h1 {
-        font-size: 3rem;
-      }
+  header h1 {
+    font-size: 3rem;
+  }
     
-      main h2 {
-        margin: 1rem 0 3rem 0;
-        font-size: 3rem;
-        color: #704214;
-      }
-    
-      main h3 {
-        font-size: 2.5rem;
-        color: #a0522d;
-      }
-      main h4 {
-        font-size: 2rem;
-        color: #deb887;
-      }
+  main h1 {
+    font-size: 2.5rem;
+    padding: 2rem 0 4rem 0;
+  }
 
-    .context {
-        /* O ajuste da largura do card é feito pelo padding e não com um tamanho fixo. */
-        width: 60%;
-    
-        padding: 1rem;
-        margin: 0 auto;
-    }
+  main h2 {
+    font-size: 1.9rem;
+  }
 
-    .circles {
-        display: none;
-    }
+  main h3 {
+    font-size: 1.7rem;
+  } 
+
+  main p {
+    font-size: 1.1rem;
+    text-indent: 3rem;
+  }
+
+  .context {
+    /* Centraliza o main e deixa a página responsiva com a largura por porcentagem. */
+    width: 70%; 
+    padding: 2rem;
+    margin: 0 auto;
+  }
+
+  .circles {
+    display: none;
+  }
 }

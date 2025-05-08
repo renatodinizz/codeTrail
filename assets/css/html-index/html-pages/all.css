@@ -35,66 +35,6 @@ header {
     z-index: 3;
 }
 
-/* Posicionamento do menu nas telas grandes */
-.horizontal {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-#side-menu{
-    display: flex;
-}
-
-#side-menu ul{
-    display: flex;
-    gap: 1rem;
-    list-style: none;
-}
-
-/* Estilização do menu */
-#side-menu a{
-    color: #f8f9fa;
-    text-shadow: 2px 2px 4px #222;
-    text-decoration: none;
-    font-weight: 600;
-    font-size: 1.2rem;
-    padding: 0.3rem;
-    border-radius: 5px;
-    transition: background 1s ease-in-out, color 1s ease;
-    display: inline-block;    
-}
-
-#side-menu a:hover {
-    border-radius: 5px;        
-}
-
-/* Estilização específica de cada item do menu  */
-#side-menu a.home:hover {
-    background-color: #b6ebff;
-    color: #000;
-    text-shadow: 2px 2px 4px #ffffff;
-}
-#side-menu a.html:hover {
-    background-color: rgb(0, 0, 0, 0.15);
-}
-#side-menu a.css:hover {
-    background-color: #1572b6;
-}
-#side-menu a.js:hover {
-    background-color: #f7df1e;
-    color: #000;
-    text-shadow: 2px 2px 4px #ffffff;
-}
-#side-menu a.ts:hover {
-    background-color: #3178c6;
-}
-#side-menu a.about:hover {
-    background-color: #bdbdbd;
-    color: #000;
-    text-shadow: 2px 2px 4px #ffffff;
-}
-
 header h1 {
     font-family: 'carter';
     text-align: center;    
@@ -117,17 +57,24 @@ main {
     color: #333;
 }
 
+main h1 {
+    text-align: center; 
+    color: #336699;   
+}
+
 main h2 {
-    text-align: center;    
+    margin: 0;
+    color: #005599;
 }
 
 main h3 {
-    margin: 1rem 0;
+    color: #6699cc;
 }
 
-p {
+main p {
+    line-height: 1.5rem;
     text-indent: 2rem;
-    line-height: 1.6rem;
+    margin: 0.5rem 0;
 }
 
 /* Exemplo de animação
