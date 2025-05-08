@@ -2,10 +2,11 @@
 @media (min-width: 1px) and (max-width:480px) { 
 
     body {
+        height: 100dvh;
         padding-bottom: 1rem;
         /* overflow-x: hidden; ajuda a não ter a barra de rolagem lateral */
         overflow-x: hidden;
-        background: #000 url(../../img/home/back-mobile.webp);
+        background: #000 url(../../img/home/bg.png);
         background-size: cover;
         background-position: center center;
         background-attachment: fixed;

@@ -1,6 +1,7 @@
 @charset 'UTF-8';
 @media (min-width: 768px)and (max-width:1199px) {
     body{
+        height: 100dvh;
         padding-bottom: 2rem;
         /* overflow-x: hidden; ajuda a não ter a barra de rolagem lateral */
         overflow-x: hidden;

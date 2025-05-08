@@ -1,10 +1,11 @@
 @charset 'UTF-8';
 @media (min-width: 481px) and (max-width:767px) {
     body{
+        height: 100dvh;
         padding-bottom: 2rem;
         /* overflow-x: hidden; ajuda a não ter a barra de rolagem lateral */
         overflow-x: hidden;
-        background: #000 url(../../img/home/back-tablet.webp);
+        background: #000 url(../../img/home/bg-2.png);
         background-size: cover;
         background-position: center center;
         background-attachment: fixed;
