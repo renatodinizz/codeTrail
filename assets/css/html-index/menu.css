@@ -51,7 +51,7 @@
         display: flex;
         flex-direction: column;
         transform: translateX(100%);
-        transition: transform 0.4s ease-in-out;
+        transition: transform 0.5s ease-in-out;
         z-index: 1000;
         background: #2c2c2c;
     }
@@ -66,8 +66,7 @@
     }
 
     nav#side-menu ul li {
-        text-decoration: none;
-        
+        text-decoration: none;        
     }
 
     #side-menu a {

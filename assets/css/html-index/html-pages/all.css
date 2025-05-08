@@ -50,6 +50,7 @@ header h1 {
     -webkit-text-fill-color: transparent;
     background-clip: text;
     color: transparent;
+    text-shadow: 0 20px 25px #0000009e;
 }
 
 main {
@@ -75,6 +76,23 @@ main p {
     line-height: 1.5rem;
     text-indent: 2rem;
     margin: 0.5rem 0;
+}
+
+/* Animação de flutuação */
+#codeTrail {    
+    transform: translateY(0);
+    animation: float 5s ease-in-out infinite;
+}
+@keyframes float {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(30px);
+    }
+    100% {
+        transform: translateY(0);
+    }
 }
 
 /* Exemplo de animação
