@@ -15,44 +15,49 @@
     }
     
     .logo {  
-        width: 6rem;
+        width: 5rem;
     }
 
     header {
         margin: 2rem 0;
-        font-size: 5.5rem;
+        font-size: 3.5rem;
     }
 
     main {
+        /* A largura dos cadrs é controla pelo padding e não por um valor fixo */
         width: 100%;
+        padding: 1rem 12rem;
         /* position relative faz com que o conteúdo fique a frente da animação */
         position: relative;
         z-index: 1;
-        padding: 3rem 6rem;
         /* Dispaly Grid para dividir a viewport em três frações, ou seja, deixar três cards por linha */
         display: grid;
         grid-template-columns: repeat(3, 1fr);
-        gap: 3rem;
+        gap: 5rem;
     }
 
     .card {
-        height: 18rem;
-        font-size: 2rem;  
+        height: 12rem;
+        font-size: 2.5rem;       
     }
-    
+
     .big {
-        font-size: 8rem;
+        font-size: 6rem;
     }
 
     .type{
+        font-size: 4rem;
+    }
+
+    .html {
         font-size: 5rem;
     }
 
-    .html, .css {
-        font-size: 5.5rem;
+    .css {
+        font-size: 6rem;
     }
-    
+
     .about {
-        font-size: 4rem;
-    }
+        font-size: 3.5rem;
+    } 
 }

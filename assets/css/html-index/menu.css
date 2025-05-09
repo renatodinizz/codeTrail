@@ -130,7 +130,7 @@
     #side-menu a.home:hover {
         background-color: #b6ebff;
         color: #000;
-        text-shadow: 2px 2px 4px #ffffff;
+        text-shadow: 2px 2px 4px #f8f9fa;
     }
     #side-menu a.html:hover {
         background-color: rgb(0, 0, 0, 0.15);
@@ -141,14 +141,12 @@
     #side-menu a.js:hover {
         background-color: #f7df1e;
         color: #000;
-        text-shadow: 2px 2px 4px #ffffff;
+        text-shadow: 2px 2px 4px #f8f9fa;
     }
     #side-menu a.ts:hover {
         background-color: #3178c6;
     }
     #side-menu a.about:hover {
-        background-color: #bdbdbd;
-        color: #000;
-        text-shadow: 2px 2px 4px #ffffff;
+        background-color: #00bb64;
     }
 }

@@ -1,7 +1,7 @@
 @charset 'UTF-8';
 @media (min-width: 768px)and (max-width:1199px) {
+
     body{
-        height: 100dvh;
         padding-bottom: 2rem;
         /* overflow-x: hidden; ajuda a não ter a barra de rolagem lateral */
         overflow-x: hidden;
@@ -16,40 +16,60 @@
     }
     
     .logo {  
-        width: 4.5rem;
+        width: 3.5rem;
     }
 
     header {
-        font-size: 4.5rem;
+        margin: 3.5rem 0;
+        font-size: 3rem;
     }
 
     main {
+        /* A largura dos cadrs é controla pelo padding e não por um valor fixo */
         width: 100%;
-        padding: 0 3rem;
+        margin: 0 auto;
+        padding: 0 8rem;
         /* Dispaly Grid para dividir a viewport em duas frações, ou seja, deixar dois cards por linha */
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        gap: 3rem;
+        gap: 4rem;
     }
 
     .card {
-        height: 14rem;
-        font-size: 2.5rem;    
+        height: 9rem;
+        font-size: 2rem;       
     }
-    
+
     .big {
-        font-size: 6rem;
+        font-size: 4rem;
     }
 
     .type{
-        font-size: 5rem;
+        font-size: 3rem;
     }
 
-    .html, .css {
-        font-size: 5.5rem;
+    .html {
+        font-size: 3.5rem;
     }
-    
-    .about {
+
+    .css {
         font-size: 4.5rem;
+    }
+
+    .about {
+        font-size: 2.5rem;
+    } 
+}
+
+@media (min-width: 900px)and (max-width:1199px) {
+    main {
+        /* A largura dos cadrs é controla pelo padding e não por um valor fixo */
+        width: 100%;
+        margin: 0 auto;
+        padding: 0 3rem;
+        /* Dispaly Grid para dividir a viewport em duas frações, ou seja, deixar dois cards por linha */
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 4rem;
     }
 }

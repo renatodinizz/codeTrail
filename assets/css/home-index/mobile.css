@@ -2,7 +2,6 @@
 @media (min-width: 1px) and (max-width:480px) { 
 
     body {
-        height: 100dvh;
         padding-bottom: 1rem;
         /* overflow-x: hidden; ajuda a não ter a barra de rolagem lateral */
         overflow-x: hidden;
@@ -21,15 +20,15 @@
     }
 
     header{
-        margin: 5rem auto;
-        text-align: center;
+        margin: 3.5rem 0;
         font-size: 2rem;      
     }
     
     main {
+        /* A largura dos cadrs é controla pelo padding e não por um valor fixo */
+        width: 100%;
         margin: 0 auto;
         padding: 0 3rem;
-        width: 100%;
         /* Dispaly Grid para dividir a viewport em uma fração, ou seja, deixar um card por linha */
         display: grid;
         grid-template-columns: repeat(1, 1fr);
@@ -38,7 +37,7 @@
 
     .card {
         height: 8rem;
-        font-size: 2.5rem;       
+        font-size: 2rem;       
     }
 
     .big {
@@ -49,7 +48,21 @@
         font-size: 3rem;
     }
 
-    .html, .css, .about {
-        font-size: 3.5rem;
+    .html {
+        font-size: 3rem;
     }
+
+    .css {
+        font-size: 4rem;
+    }
+
+    .about {
+        font-size: 2.5rem;
+    }    
 }
+
+@media (min-width: 380px) and (max-width: 480px) {
+    main {
+        padding: 0 5rem;
+    }
+} 
