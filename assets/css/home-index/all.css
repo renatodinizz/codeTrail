@@ -105,18 +105,18 @@ header h1 {
     font-weight: 900;
 }
 .card.css { 
-    background: radial-gradient(circle, #1572b6, #1572b6, #146aa8, #105282, #0c4065);
+    background: radial-gradient(circle, #66bfff, #4299e1, #1572b6, #105a91, #0a3d66);
     font-weight: 900;
 }
 .card.js { 
-    background: radial-gradient(circle, #f7df1e, #f7df1e, #d3bd1a, #c1ad18, #c1ad18); 
+    background: radial-gradient(circle, #fef357, #f7df1e, #edd418, #dbbf0b, #b99d04); 
     color: #333333;
 }
 .card.ts { 
     background: radial-gradient(circle, #3178c6, #2c6db3, #235489, #193d64);
 }
-.card.about { 
-    background: radial-gradient(circle, #00ff88, #01e179, #00bb64, #018648, #006335);
+.card.about {
+    background: radial-gradient(circle, #00ff88, #00eb7d, #00be65, #01a458, #008a4a);
     font-weight:700;
 }
 

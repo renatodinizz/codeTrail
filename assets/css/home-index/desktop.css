@@ -26,7 +26,7 @@
     main {
         /* A largura dos cadrs é controla pelo padding e não por um valor fixo */
         width: 100%;
-        padding: 1rem 12rem;
+        padding: 0 12rem;
         /* position relative faz com que o conteúdo fique a frente da animação */
         position: relative;
         z-index: 1;
