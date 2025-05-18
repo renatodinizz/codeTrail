@@ -53,4 +53,8 @@
     width: 100vw;
     min-height: 100vh;
   }  
+
+  #arv {
+    max-height: 30rem;
+  }
 }

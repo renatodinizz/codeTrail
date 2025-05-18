@@ -5,7 +5,7 @@
         padding-bottom: 1rem;
         /* overflow-x: hidden; ajuda a não ter a barra de rolagem lateral */
         overflow-x: hidden;
-        background: #000 url(../../img/home/bg.png);
+        background: #000 url(../../img/home/bgMobile.webp);
         background-size: cover;
         background-position: center center;
         background-attachment: fixed;

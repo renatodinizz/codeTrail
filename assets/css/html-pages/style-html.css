@@ -5,6 +5,6 @@
 @import url('smallScreens.css');
 @import url('desktop.css');
 @import url('background-animation.css');
-@import url('../../components/goBackTop.css');
-@import url('../../components/lightBox.css');
+@import url('../components/goBackTop.css');
+@import url('../components/lightBox.css');
 @import url('print.css');
