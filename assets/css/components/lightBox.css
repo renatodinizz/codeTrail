@@ -1,4 +1,4 @@
-/* Overlay escuro */
+/* Overlay escuro
 .zoom-overlay {
   position: fixed;
   inset: 0;
@@ -13,7 +13,7 @@
   display: none;
 }
 
-/* Container da imagem ampliada */
+/* Container da imagem ampliada 
 .zoom-content {
   position: relative;
   max-width: 90%;
@@ -21,7 +21,7 @@
   padding: 1rem;
 }
 
-/* Botão de fechar */
+/* Botão de fechar 
 .zoom-close {
   position: fixed;
   top: 1rem;
@@ -39,7 +39,7 @@
   justify-content: center;
 }
 
-/* Imagem ampliada */
+/* Imagem ampliada 
 #zoomed-img {
   width: 100%;
   height: auto;
@@ -49,9 +49,9 @@
   box-shadow: 0 0 20px rgba(255, 255, 255, 0.4);
 }
 
-/* Níveis de zoom personalizados */
+/* Níveis de zoom personalizados 
 .zoom-small #zoomed-img {
-  transform: scale(1.1);
+  transform: scale(1.51);
 }
 
 .zoom-medium #zoomed-img {
@@ -62,8 +62,62 @@
   transform: scale(2.5);
 }
 
-@media (min-width: 768px) {
+@media (max-width: 768px) {
   .zoom-content {
     max-width: 70%;
+  }
+} */
+
+
+/* Overlay escuro */
+#lightbox-overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.8);
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+/* Imagem centralizada */
+#lightbox-image {
+  max-width: 90vw;
+  max-height: 90vh;
+  width: auto;
+  height: auto;
+  transition: transform 0.3s ease;
+}
+
+/* Botão de fechar */
+#lightbox-close {
+  position: fixed;
+  top: 20px;
+  right: 25px;
+  font-size: 2rem;
+  color: white;
+  cursor: pointer;
+  z-index: 10000;
+}
+
+/* Zooms manuais */
+.zoom-1 { --zoom: 1; }
+.zoom-2 { --zoom: 1.5; }
+.zoom-3 { --zoom: 2; }
+
+/* Aplica o zoom no lightbox com base na classe original */
+#lightbox-image[data-zoom] {
+  transform: scale(var(--zoom, 1));
+}
+
+/* Responsivo */
+@media (max-width: 600px) {
+  #lightbox-close {
+    font-size: 1.5rem;
+    top: 10px;
+    right: 15px;
   }
 }
