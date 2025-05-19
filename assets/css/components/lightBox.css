@@ -69,7 +69,10 @@
 } */
 
 
-/* Overlay escuro */
+
+
+/* Esse deu muito certro */
+/* Overlay escuro 
 #lightbox-overlay {
   display: none;
   position: fixed;
@@ -83,13 +86,83 @@
   z-index: 9999;
 }
 
-/* Imagem centralizada */
+/* Imagem centralizada 
 #lightbox-image {
   max-width: 90vw;
   max-height: 90vh;
   width: auto;
   height: auto;
   transition: transform 0.3s ease;
+}
+
+/* Botão de fechar 
+#lightbox-close {
+  position: fixed;
+  top: 20px;
+  right: 25px;
+  font-size: 2rem;
+  color: white;
+  cursor: pointer;
+  z-index: 10000;
+}
+
+/* Zooms manuais 
+.zoom-1 { --zoom: 1; }
+.zoom-2 { --zoom: 1.5; }
+.zoom-3 { --zoom: 2; }
+
+/* Aplica o zoom no lightbox com base na classe original 
+#lightbox-image[data-zoom] {
+  transform: scale(var(--zoom, 1));
+}
+
+/* Responsivo 
+@media (max-width: 600px) {
+  #lightbox-close {
+    font-size: 1.5rem;
+    top: 10px;
+    right: 15px;
+  }
+}
+  */
+
+/* Overlay escuro */
+#lightbox-overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.8);
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+  opacity: 0;
+  transition: opacity 0.9s ease;
+}
+
+/* Quando ativo */
+#lightbox-overlay.active {
+  display: flex;
+  opacity: 1;
+}
+
+/* Imagem no lightbox */
+#lightbox-image {
+  max-width: 90vw;
+  max-height: 90vh;
+  width: auto;
+  height: auto;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  opacity: 0;
+  transform: scale(0.95);
+}
+
+/* Ativação da imagem */
+#lightbox-overlay.active #lightbox-image {
+  opacity: 1;
+  transform: scale(var(--zoom, 1));
 }
 
 /* Botão de fechar */
@@ -103,15 +176,10 @@
   z-index: 10000;
 }
 
-/* Zooms manuais */
+/* Zoom via classe */
 .zoom-1 { --zoom: 1; }
 .zoom-2 { --zoom: 1.5; }
 .zoom-3 { --zoom: 2; }
-
-/* Aplica o zoom no lightbox com base na classe original */
-#lightbox-image[data-zoom] {
-  transform: scale(var(--zoom, 1));
-}
 
 /* Responsivo */
 @media (max-width: 600px) {
@@ -121,3 +189,4 @@
     right: 15px;
   }
 }
+
