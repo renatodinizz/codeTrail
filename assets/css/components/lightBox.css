@@ -126,7 +126,9 @@
 }
   */
 
-/* Overlay escuro */
+
+/* Esse está funcioonado bem */
+/* Overlay escuro 
 #lightbox-overlay {
   display: none;
   position: fixed;
@@ -143,6 +145,73 @@
   transition: opacity 0.6s ease;
 }
 
+/* Quando ativo 
+#lightbox-overlay.active {
+  display: flex;
+  opacity: 1;
+}
+
+/* Imagem no lightbox 
+#lightbox-image {
+  max-width: 90vw;
+  max-height: 90vh;
+  width: auto;
+  height: auto;
+  transition: transform 0.6s ease, opacity 0.6s ease;
+  opacity: 0;
+  transform: scale(0.95);
+}
+
+/* Ativação da imagem 
+#lightbox-overlay.active #lightbox-image {
+  opacity: 1;
+  transform: scale(var(--zoom, 1));
+}
+
+/* Botão de fechar 
+#lightbox-close {
+  position: fixed;
+  top: 20px;
+  right: 25px;
+  font-size: 2rem;
+  color: white;
+  cursor: pointer;
+  z-index: 10000;
+}
+
+/* Zoom via classe 
+.zoom-1 { --zoom: 1; }
+.zoom-2 { --zoom: 1.5; }
+.zoom-3 { --zoom: 2; }
+
+/* Responsivo 
+@media (max-width: 768px) {
+  #lightbox-close {
+    font-size: 1.5rem;
+    top: 10px;
+    right: 15px;
+  }
+}
+  */
+
+
+/* Overlay escuro */
+#lightbox-overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100dvh;
+  background-color: rgba(0, 0, 0, 0.8);
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+  opacity: 0;
+  transition: opacity 0.6s ease;
+  cursor: default; /* Cursor padrão */
+}
+
 /* Quando ativo */
 #lightbox-overlay.active {
   display: flex;
@@ -155,9 +224,10 @@
   max-height: 90vh;
   width: auto;
   height: auto;
-  transition: transform 0.6s ease, opacity 0.6s ease;
+  transition: transform 0.1s ease; /* Movimentação mais fluida */
   opacity: 0;
   transform: scale(0.95);
+  user-select: none; /* Evita seleção acidental ao arrastar */
 }
 
 /* Ativação da imagem */
@@ -177,6 +247,19 @@
   z-index: 10000;
 }
 
+/* Mensagem de dica */
+#zoom-hint {
+  position: absolute;
+  bottom: 20px;
+  color: #fff;
+  font-size: 1rem;
+  background: rgba(0, 0, 0, 0.6);
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
 /* Zoom via classe */
 .zoom-1 { --zoom: 1; }
 .zoom-2 { --zoom: 1.5; }
@@ -187,7 +270,6 @@
   #lightbox-close {
     font-size: 1.5rem;
     top: 10px;
-    right: 15px;
-  }
+  right:15px;
 }
-
+}
