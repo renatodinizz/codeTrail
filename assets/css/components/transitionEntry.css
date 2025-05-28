@@ -1,0 +1,23 @@
+/* Transição de entrada: tela escura com blur ao carregar */
+.page-transition {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+
+  background-color: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+
+  opacity: 1;
+  pointer-events: auto;
+  transition: opacity 1.5s ease;
+  z-index: 9999;
+}
+
+/* Classe que faz a tela sumir suavemente */
+.page-transition.hide {
+  opacity: 0;
+  pointer-events: none;
+}

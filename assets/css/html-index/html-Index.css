@@ -6,4 +6,6 @@
 @import url('desktop.css');
 @import url('background-animation.css');
 @import url('float.css');
+@import url('../components/transitionEntry.css');
+@import url('../components/transitionExit.css');
 @import url('print.css');

@@ -1,0 +1,5 @@
+/* Classe ativada na transição de saída */
+.page-transition.active {
+  opacity: 1;
+  pointer-events: auto;
+}
