@@ -196,7 +196,7 @@
 
 
 /* Overlay escuro */
-#lightbox-overlay {
+/* #lightbox-overlay {
   display: none;
   position: fixed;
   top: 0;
@@ -209,34 +209,34 @@
   z-index: 9999;
   opacity: 0;
   transition: opacity 0.6s ease;
-  cursor: default; /* Cursor padrão */
+  cursor: default; /* Cursor padrão 
 }
 
-/* Quando ativo */
+/* Quando ativo 
 #lightbox-overlay.active {
   display: flex;
   opacity: 1;
 }
 
-/* Imagem no lightbox */
+/* Imagem no lightbox 
 #lightbox-image {
   max-width: 90vw;
   max-height: 90vh;
   width: auto;
   height: auto;
-  transition: transform 0.1s ease; /* Movimentação mais fluida */
+  transition: transform 0.1s ease; /* Movimentação mais fluida 
   opacity: 0;
   transform: scale(0.95);
-  user-select: none; /* Evita seleção acidental ao arrastar */
+  user-select: none; /* Evita seleção acidental ao arrastar 
 }
 
-/* Ativação da imagem */
+/* Ativação da imagem 
 #lightbox-overlay.active #lightbox-image {
   opacity: 1;
   transform: scale(var(--zoom, 1));
 }
 
-/* Botão de fechar */
+/* Botão de fechar 
 #lightbox-close {
   position: fixed;
   top: 20px;
@@ -247,7 +247,7 @@
   z-index: 10000;
 }
 
-/* Mensagem de dica */
+/* Mensagem de dica 
 #zoom-hint {
   position: absolute;
   bottom: 20px;
@@ -260,16 +260,19 @@
   transition: opacity 0.3s;
 }
 
-/* Zoom via classe */
+/* Zoom via classe 
 .zoom-1 { --zoom: 1; }
 .zoom-2 { --zoom: 1.5; }
 .zoom-3 { --zoom: 2; }
 
-/* Responsivo */
+/* Responsivo 
 @media (max-width: 768px) {
   #lightbox-close {
     font-size: 1.5rem;
     top: 10px;
   right:15px;
 }
-}
+} */
+
+
+

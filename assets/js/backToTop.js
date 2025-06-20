@@ -1,16 +1,17 @@
-// Botão voltar ao topo
 const btnTopo = document.getElementById('btnTopo');
 
-// Mostrar botão quando rolar 100px
-window.onscroll = () => {
-    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
-        btnTopo.style.display = "block";
+window.addEventListener('scroll', () => {
+    if (window.scrollY > 100) {
+        btnTopo.style.display = 'block';
+        btnTopo.classList.add('hover-ativo'); // ativa o hover
     } else {
-        btnTopo.style.display = "none";
+        btnTopo.style.display = 'none';
+        btnTopo.classList.remove('hover-ativo'); // desativa o hover
     }
-};
+});
 
-// Ao clicar, volta ao topo
 btnTopo.addEventListener('click', () => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
+    btnTopo.blur(); // remove o foco
+    btnTopo.classList.remove('hover-ativo'); // impede hover "travado"
 });

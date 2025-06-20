@@ -80,6 +80,12 @@
         border-bottom: 2px solid #e34f26;
     }
 
+    #side-menu a:hover {
+        color: #f06c47;
+        text-shadow: 1px 1px 2px #8f2c11;
+        transition:  0.6s ease-in-out, color 0.6s ease;
+    }
+
     .menu-toggle {
         display: flex;
     }
@@ -91,7 +97,7 @@
     }
 }
 
-@media (min-width: 767px){
+@media (min-width: 768px){
     /* Posicionamento do menu nas telas grandes */
     .horizontal {
         display: flex;
@@ -133,7 +139,9 @@
         text-shadow: 2px 2px 4px #f8f9fa;
     }
     #side-menu a.html:hover {
-        background-color: rgb(0, 0, 0, 0.15);
+        background-color: #f8f9fa;
+        color: #e34f26;
+        text-shadow: 1px 1px 2px #862c14;
     }
     #side-menu a.css:hover {
         background-color: #1572b6;

@@ -1,24 +1,22 @@
 #btnTopo {
     position: fixed;
-    right: 13%;
+    left: 50%;
+    transform: translateX(-50%);
     bottom: 1.5rem;
     z-index: 99;
-    background-color: rgb(51, 51, 51, 0.6);
+    background-color: rgba(0, 0, 0, 0.6);
     border: none;
     padding: 2px 4px;
     border-radius: 50%;
     cursor: pointer;
-    display: none; /* Inicialmente escondido */
-    transition: background-color 0.3s ease, transform 0.3s ease;
+    display: none;
+    transition: background-color 0.5s ease, transform 0.5s ease;
     border: 5px solid rgb(51, 51, 51, 0.2);
 }
 
-#btnTopo:hover {
-    background: linear-gradient(120deg, rgb(17, 17, 17, 0.3), rgb(248, 249, 250, 0.2));
-    backdrop-filter: blur(6px);
-    -webkit-backdrop-filter: blur(5px);
-    transform: scale(1.1);
-    border: 5px solid #f8f9fa;
+#btnTopo.hover-ativo:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+    transform: translateX(-50%) scale(1.15);
 }
 
 span#top {
@@ -27,20 +25,8 @@ span#top {
 }
 
 /* Personalização do botão */
-@media (min-width: 1px) and (max-width: 531px) {
+@media (min-width: 1px) and (max-width:768px) {
     #btnTopo {
-        right: 2%;
-        bottom: 1.5rem;
-    }
-    span#top {
-        color: #f8f9fa;
-        font-size: 1.5rem;
-    }
-}
-
-@media (min-width: 531px) and (max-width:767px) {
-    #btnTopo {
-        right: 3%;
         bottom: 1.5rem;
     }
     span#top {
@@ -49,9 +35,8 @@ span#top {
     }
 }
 
-@media (min-width: 767px)and (max-width:1199px) {
+@media (min-width: 768px)and (max-width:1199px) {
     #btnTopo {
-        right: 10%;
         bottom: 1.5rem;
     }
     span#top {
