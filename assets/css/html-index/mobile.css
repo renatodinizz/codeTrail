@@ -6,11 +6,18 @@
     padding-bottom: 2rem;
     /* overflow-x: hidden; ajuda a não ter a barra de rolagem lateral */
     overflow-x: hidden;
-    background: #000 url(../../img/html/background/background-mobile.webp);
+    background: #a8381a url(../../img/html/background/background-mobile.webp);
     background-size: cover;
     background-position: center center;
     background-attachment: fixed;
+    min-height: 100dvh; /* Ou 100svh, dependendo do comportamento desejado */
+    -ms-overflow-style: none;  /* IE e Edge */
+    scrollbar-width: none;  /* Firefox */
   }  
+
+  body::-webkit-scrollbar {
+    display: none;
+  }
 
   #codeTrail {
     font-size: 1.6rem;
