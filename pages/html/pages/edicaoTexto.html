@@ -3,20 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="../../assets/img/favicon/favicon.ico" type="image/x-icon">
     <title>Edição de Texto</title>
     <!-- Favicon imagem -->
     <link rel="shortcut icon" href="../../../assets/img/favicon/favicon.ico" type="image/x-icon">
     <!-- Link do CSS -->
     <link rel="stylesheet" href="../../../assets/css/html-pages/style-html.css">
     <!-- font do ícone backToTop -->
-    <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" /> -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined&display=swap" rel="stylesheet">
 
 </head>
 <body class="area">
+
+    <div class="page-transition"></div>
+
     <ul class="circles">
         <li class="square"></li>
         <li class="square"></li>
@@ -40,7 +41,7 @@
         <li class="square"></li>
     </ul>
     <header>
-        
+
         <button id="menu-toggle" class="menu-toggle">
             <span class="bar"></span>
             <span class="bar"></span>
@@ -48,9 +49,7 @@
         </button>
 
         <section class="horizontal">
-
-            <span id="codeTrail">CodeTrail</span>
-    
+            <span id="codeTrail">CodeTrail</span>    
             <nav id="side-menu">
                 <ul>
                     <li><a href="../../../index.html" class="home">Home</a></li>
@@ -70,23 +69,6 @@
     <main class="context">
 
         <h1>Edição de Texto</h1>
-
-       
-
-        <!-- <div id="lightbox-overlay">
-            <span id="lightbox-close">×</span>
-            <img id="lightbox-image" />
-            <!-- Mensagem informativa 
-            <div id="zoom-hint">Use a roda do mouse ou movimento de pinça para dar zoom</div>
-        </div> -->
-
-
-        <!-- Funcionando perfeitamente -->
-        <!-- <div id="lightbox-overlay">
-            <span id="lightbox-close">×</span>
-            <img id="lightbox-image" />
-        </div> -->
-
 
         <article>
             <h2>Tópico 1</h2>
@@ -124,9 +106,7 @@
             <h2>topico 2</h2>
             <p>
                 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis adipisci consectetur aliquam doloribus iusto rerum, animi delectus quis cumque, deleniti accusamus aspernatur aliquid perferendis possimus vitae quia non nesciunt nam? 
-            </p>
-
-            
+            </p>          
 
         </article> <br> <br> 
         <article>
@@ -156,8 +136,7 @@
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse quidem nulla cupiditate, doloremque unde dignissimos libero adipisci labore molestias! Accusamus, reiciendis commodi. Laborum facilis eaque eos similique veniam, tempora perspiciatis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, asperiores earum dolore praesentium deserunt ab modi ut quis sequi consequatur mollitia, dolorum sint corporis amet voluptatibus incidunt eum nobis. Vel. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cum explicabo corporis eligendi hic incidunt quia consequatur iste velit numquam fugit. Sequi eius commodi id ipsum illum praesentium iusto magnam tempore. Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt ducimus voluptatem porro, architecto iste nam non atque molestiae doloribus accusantium quam? Ea eligendi provident est optio voluptas. Temporibus, aperiam dolorem!
             </p>
 
-        </article>    <br> <br>       
-        
+        </article>    <br> <br>   
         
     </main>
 
@@ -176,10 +155,11 @@
             <div class="lightbox-caption"></div>
         </div>
     </div>
-
     
     <script src="../../../assets/js/hamburguerMenu.js"></script>
     <script src="../../../assets/js/backToTop.js"></script>
     <script src="../../../assets/js/lightBox.js"></script>
+    <script src="../../../assets/js/transitionEntry.js" defer></script>
+    <script src="../../../assets/js/transitionExit.js"></script>
 </body>
 </html>

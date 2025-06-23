@@ -3,4 +3,5 @@
 @import url('tablet.css');
 @import url('smallScreens.css');
 @import url('desktop.css');
+@import url('../components/transitionEntry.css');
 @import url('print.css');

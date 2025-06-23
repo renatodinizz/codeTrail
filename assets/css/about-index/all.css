@@ -1,0 +1,106 @@
+@charset 'UTF-8';
+
+@font-face {
+  font-family: 'Inter';
+  src: url(../../font/Inter-VariableFont_opsz\,wght.ttf) format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Orbitron';
+  src: url(../../font/Orbitron-VariableFont_wght.ttf) format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Audiowide';
+  src: url(../../font/Audiowide-Regular.ttf) format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  min-height: 100vh;    
+}
+
+header {
+  position: relative;
+  z-index: 3;
+}
+
+header h1 {
+  font-family: 'Orbitron', sans-serif;
+  text-align: center;    
+  color: #f8f9fa;
+  text-shadow: 5px 8px 10px rgb(0, 0, 0, 0.6);
+}
+
+#codeTrail {
+  font-family: 'Audiowide';
+  /* Degradê no fundo que depois é passado para o texto e deixa o fundo transparente */
+  background: linear-gradient(90deg, #007bff, #00ff88, #007bff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+  text-shadow: 0 20px 25px #0000009e;
+}
+
+main {
+  background-color: #fffff0;
+  color: #333;
+}
+
+main h1 {
+  text-align: center; 
+  color: #336699; 
+  text-shadow: 1px 3px 6px #888;  
+}
+
+main h2 {
+  margin: 0;
+  color: #005599;
+  text-shadow: 1px 3px 5px #888; 
+}
+
+main h3 {
+  color: #6699cc;
+  text-shadow: 1px 2px 5px #888; 
+}
+
+main p {
+  line-height: 1.5rem;
+  text-indent: 2rem;
+  margin: 0.5rem 0;
+}
+
+/* Animação de flutuação */
+#codeTrail {    
+  transform: translateY(0);
+  animation: float 5s ease-in-out infinite;
+}
+@keyframes float {
+  0% {
+      transform: translateY(0);
+  }
+  50% {
+      transform: translateY(30px);
+  }
+  100% {
+      transform: translateY(0);
+  }
+}
+
+img {
+  max-width: 100%;
+  margin: 1rem 0 2rem 0;
+  border-radius: 12px;
+  box-shadow: 3px 5px 10px rgb(68, 68, 68, 0.7);
+}

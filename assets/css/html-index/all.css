@@ -39,7 +39,7 @@ header h1 {
     font-family: 'carter';
     text-align: center;    
     color: #f8f9fa;
-    text-shadow: 15px 15px 10px rgb(0, 0, 0, 0.6);
+    text-shadow: 8px 10px 10px rgb(0, 0, 0, 0.6);
 }
 
 #codeTrail {
@@ -61,6 +61,7 @@ main {
 }
 
 .card {
+    padding: 0 0.5rem;
     /* Dispaly Grid para deixar o conteúdo centralizado no card  */
     display: grid;
     align-items: center;
@@ -102,12 +103,3 @@ main {
         transform: translateY(0);
     }
 }
-
-/* Exemplo de animação
-.zoomOut { animation-name: zoomOut }
-@keyframes zoomOut {
-    to {
-        transform: scale(10);
-        opacity: 0;
-    }
-}*/ 

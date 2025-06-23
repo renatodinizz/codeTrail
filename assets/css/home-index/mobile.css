@@ -5,10 +5,17 @@
         padding-bottom: 1rem;
         /* overflow-x: hidden; ajuda a não ter a barra de rolagem lateral */
         overflow-x: hidden;
-        background: #000 url(../../img/home/bgMobile.webp);
+        background: #b6ebff url(../../img/home/bgMobile.webp);
         background-size: cover;
         background-position: center center;
         background-attachment: fixed;
+        min-height: 100dvh; /* Ou 100svh, dependendo do comportamento desejado */
+        -ms-overflow-style: none;  /* IE e Edge */
+        scrollbar-width: none;  /* Firefox */
+    }  
+
+    body::-webkit-scrollbar {
+        display: none;
     }
 
     canvas.background {

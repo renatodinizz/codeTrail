@@ -1,0 +1,105 @@
+@charset 'UTF-8';
+
+@font-face {
+    font-family: 'Inter';
+    src: url(../../font/Inter-VariableFont_opsz\,wght.ttf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Bangers';
+    src: url(../../font/Bangers-Regular.ttf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Audiowide';
+    src: url(../../font/Audiowide-Regular.ttf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    min-height: 100vh;    
+}
+
+header {
+    position: relative;
+    z-index: 3;
+}
+
+header h1 {
+    font-family: 'Bangers', sans-serif;
+    text-align: center;    
+    color: #f8f9fa;
+    text-shadow: 8px 10px 10px rgb(0, 0, 0, 0.6);
+}
+
+#codeTrail {
+    font-family: 'Audiowide';
+    /* Degradê no fundo que depois é passado para o texto e deixa o fundo transparente */
+    background: linear-gradient(90deg, #007bff, #00ff88, #007bff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+    text-shadow: 0 20px 25px #0000009e;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; 
+}
+
+.card {
+    padding: 0 0.5rem;
+    /* Dispaly Grid para deixar o conteúdo centralizado no card  */
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    text-align: center;
+    text-decoration: none;
+    color: #f8f9fa;
+    font-weight: 600;
+    text-shadow: 2px 2px 4px #222;
+    border-radius: 8px;
+    /* Técnica de Glassmorphism que se assemelha a um vidro fosco! */
+    border-top: 1px solid rgb(255, 255, 255, 0.5);
+    border-left: 1px solid rgb(255, 255, 255, 0.3);
+    background: linear-gradient(135deg, rgb(0, 0, 0, 0.2), rgb(255, 255, 255, 0.1));
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(10px);
+    box-shadow: 0 8px 10px 2px rgb(0, 0, 0, 0.4);
+    transition: 0.5s ease;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 16px 16px 2px rgb(0, 0, 0, 0.6);
+}
+
+/* Animação de flutuação */
+#codeTrail {    
+    transform: translateY(0);
+    animation: float 5s ease-in-out infinite;
+}
+@keyframes float {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(30px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}

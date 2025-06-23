@@ -102,5 +102,5 @@ img {
   max-width: 100%;
   margin: 1rem 0 2rem 0;
   border-radius: 12px;
-  box-shadow: 6px 10px 15px #444;
+  box-shadow: 3px 5px 10px rgb(68, 68, 68, 0.7);
 }

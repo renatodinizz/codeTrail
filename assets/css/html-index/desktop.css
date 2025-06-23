@@ -1,5 +1,5 @@
 @charset 'UTF-8';
-@media (min-width: 1199px) {
+@media (min-width: 1200px) {
 
     body {
         padding: 2rem;
@@ -11,13 +11,13 @@
 
     header h1 {
         font-size: 8rem;
-        margin-bottom: 2rem;
+        margin: 2rem;
     }    
 
     .context {
         /* O ajuste da largura do card é feito pelo padding e não com um tamanho fixo. */
         width: 100%;
-        padding: 0 8rem;
+        padding: 0 8rem 2rem 8rem;
         /* Dispaly Grid para dividir a viewport em quatro frações, ou seja, deixar quatro cards por linha */
         display: grid;
         grid-template-columns: repeat(4, 1fr);
@@ -27,7 +27,7 @@
 
     .card {
         height: 7rem;
-        font-size: 1.8rem;
+        font-size: 2rem;
     }
 
     .area{

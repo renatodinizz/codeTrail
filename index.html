@@ -15,6 +15,8 @@
 </head>
 
 <body>
+  <div class="page-transition"></div>
+
   <canvas class="background"></canvas>
 
   <img class="logo" src="assets/img/home/logo.webp" alt="logo de cérebro">
@@ -23,28 +25,33 @@
   </header>
 
   <main class="cards-container">
+
     <!-- Card HTML -->
-    <a href="pages/html/indexHtml.html" class="card html cssanimation" data-tilt data-tilt-perspective="1000" data-tilt-scale="1.1">
+    <a href="pages/html/indexHtml.html" class="card html cssanimation" data-tilt data-tilt-perspective="1000" data-tilt-scale="1.1" data-url="pages/html/indexHtml.html">
       <div class="text3d">HTML</div>
     </a>
+
     <!-- Card CSS -->
-    <a href="pages/css/indexCss.html" class="card css" data-tilt data-tilt-perspective="1000" data-tilt-scale="1.1">
+    <a href="pages/css/indexCss.html" class="card css" data-tilt data-tilt-perspective="1000" data-tilt-scale="1.1" data-url="pages/css/indexCss.html">
       <div class="text3d">CSS</div>
     </a>
+
     <!-- Card JavaScript -->
-    <a href="pages/javascript/indexJs.html" class="card js" data-tilt data-tilt-perspective="1000" data-tilt-scale="1.1">
+    <a href="pages/javascript/indexJs.html" class="card js" data-tilt data-tilt-perspective="1000" data-tilt-scale="1.1" data-url="pages/javascript/indexJs.html">
       <div class="text3d">
           <span class="bold big">J</span>ava<span class="bold big">S</span>cript
       </div>
     </a>
+
     <!-- Card TypeScript -->
-    <a href="pages/typescript/indexType.html" class="card ts" data-tilt data-tilt-perspective="1000" data-tilt-scale="1.1">
+    <a href="pages/typescript/indexType.html" class="card ts" data-tilt data-tilt-perspective="1000" data-tilt-scale="1.1" data-url="pages/typescript/indexType.html">
       <div class="text3d">
         <span class="bold type">Type</span>Script
       </div>
     </a>
+
     <!-- Card About -->
-    <a href="pages/about/indexAbout.html" class="card about" data-tilt data-tilt-perspective="1000" data-tilt-scale="1.1">
+    <a href="pages/about/indexAbout.html" class="card about" data-tilt data-tilt-perspective="1000" data-tilt-scale="1.1" data-url="pages/about/indexAbout.html">
       <div class="text3d">ABOUT</div>
     </a>
 
@@ -60,20 +67,8 @@
 
   </main>
 
-  <script>
-    //Animação ao clicar no card do html
-    const effect = document.querySelector('.html')
-    effect.addEventListener('click', function(ev){
-      ev.preventDefault()
-      effect.classList.add('zoomOut')
-      setTimeout (()=>{
-        window.location.href = 'pages/html/indexHtml.html'
-      }, 300)
-      /*const name = document.querySelector('.name')
-      name.classList.add('zoomOut')*/
-    })
-  </script>
-
   <script src="assets/js/animationBackGroundIndex.js"></script>
+  <script src="assets/js/animationCardsExist.js"></script>
+  <script src="assets/js/transitionEntry.js" defer></script>
 </body>
 </html>

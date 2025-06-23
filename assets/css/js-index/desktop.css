@@ -1,0 +1,42 @@
+@charset 'UTF-8';
+@media (min-width: 1200px) {
+
+    body {
+        padding: 2rem;
+    }   
+
+    #codeTrail {
+        font-size: 2rem;
+    }
+
+    header h1 {
+        font-size: 3.5rem;
+        margin: 1rem 0 2rem 0;
+    }   
+    
+    .big {
+        font-size: 9rem;
+    }
+
+    .context {
+        /* O ajuste da largura do card é feito pelo padding e não com um tamanho fixo. */
+        width: 100%;
+        padding: 0 8rem 4rem 8rem;
+        /* Dispaly Grid para dividir a viewport em quatro frações, ou seja, deixar quatro cards por linha */
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 3rem;
+        text-align: center;
+    }
+
+    .card {
+        height: 7rem;
+        font-size: 1.8rem;
+    }
+
+    .area{
+        background: radial-gradient(circle, #fef357, #f7df1e, #edd418, #dbbf0b, #b99d04); 
+        width: 100%;
+        height: 100vh;
+    }    
+}

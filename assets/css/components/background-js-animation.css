@@ -14,7 +14,7 @@
     .square{
         position: absolute;
         display: block;
-        background: #ffffff33;
+        background: rgba(0, 0, 0, 0.4);
         width: 20px;
         height: 20px;
         list-style: none;

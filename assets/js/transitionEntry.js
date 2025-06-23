@@ -5,5 +5,5 @@ window.addEventListener("DOMContentLoaded", () => {
   // Aplica o "fade out" da tela escura após o carregamento
   setTimeout(() => {
     transitionEl.classList.add("hide");
-  }, 100); // Pequeno atraso para garantir a transição
+  }, 200); // Pequeno atraso para garantir a transição
 });

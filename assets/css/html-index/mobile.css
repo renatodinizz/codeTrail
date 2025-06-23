@@ -25,7 +25,7 @@
 
   header h1 {
     font-size: 6rem;
-    margin: 2rem 0;
+    margin: 1rem 0;
   }
 
   .context {
@@ -50,12 +50,6 @@
 
 /* Responsividade do título e do tamanho do card */
 @media (min-width: 380px) and (max-width: 480px)  {
-
-  header h1 {
-    font-size: 7rem;
-    margin: 1.8rem 0;
-  }
-
   .context {
     padding: 0 4.5rem;
   }  

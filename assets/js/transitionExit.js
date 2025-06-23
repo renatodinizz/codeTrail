@@ -23,7 +23,7 @@ document.addEventListener("click", (e) => {
     // Aguarda a animação e redireciona
     setTimeout(() => {
       window.location.href = link.href;
-    }, 1500); // Igual à duração da transição CSS
+    }, 300); // Igual à duração da transição CSS
   }
 });
 
