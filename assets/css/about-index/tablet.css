@@ -1,10 +1,10 @@
 @charset 'UTF-8';
-@media (min-width: 481px) and (max-width:767px) {
+@media (min-width: 481px) and (max-width:768px) {
 
   body{
     /* overflow-x: hidden; ajuda a não ter a barra de rolagem lateral */
     overflow-x: hidden;
-    background: #a8381a url(../../img/html/background/background-tablet.webp) no-repeat;
+    background: #01a458 url(../../img/about/background/background-tablet.webp) no-repeat;
     background-size: cover;
     background-position: center center;
     background-attachment: fixed;
@@ -12,7 +12,6 @@
     
   header {
     padding: 1rem;
-    border-bottom: 3px solid #222;
   }
         
   #codeTrail {
@@ -20,30 +19,49 @@
   }
     
   header h1 {
-    font-size: 3rem;
+    font-size: 4rem;
+    padding: 2rem 0;
   }
     
   main h1 {
-    font-size: 2.4rem;
-    padding: 1rem 0 3rem 0;
+    font-size: 2.2rem;
+    padding-bottom: 2rem;
   }
 
   main h2 {
     font-size: 1.8rem;
   }
 
-  main h3 {
-    font-size: 1.6rem;
-  } 
-
   main p {
     font-size: 1.1rem;
+  }
+
+  article {
+    margin: 2.5rem 0;
+  }
+
+  #pilares li {
+    font-size: 1.1rem;
+  }
+
+  .space {
+    margin: 1.5rem 0;
+  }
+
+  #slogan {
+    font-size: 1.3rem;
+  }
+
+  #autor {
+    font-size: 3rem;
+    padding: 1.5rem 2.5rem 0 0;
   }
 
   .context {
     /* Centraliza o main e deixa a página responsiva com a largura por porcentagem. */
     width: 80%; 
-    padding: 1rem;
+    padding: 1rem; 
+    padding-bottom: 8rem;
     margin: 0 auto;
   }
 

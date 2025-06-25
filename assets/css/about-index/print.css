@@ -10,4 +10,12 @@
         color: #333;
         text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
     }
+
+    #codeTrail {
+    display: none;
+    }
+
+    main h1, main h2 {
+        color: #333;
+    }
 }

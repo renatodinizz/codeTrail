@@ -18,6 +18,12 @@
   font-weight: normal;
   font-style: normal;
 }
+@font-face {
+  font-family: 'LuxuriousScript';
+  src: url(../../font/LuxuriousScript-Regular.ttf) format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
 
 * {
   margin: 0;
@@ -27,12 +33,13 @@
 
 body {
   font-family: 'Inter', sans-serif;
-  min-height: 100vh;    
+  min-height: 100vh;   
 }
 
 header {
   position: relative;
   z-index: 3;
+  border-bottom: 3px solid #222;
 }
 
 header h1 {
@@ -60,25 +67,48 @@ main {
 
 main h1 {
   text-align: center; 
-  color: #336699; 
-  text-shadow: 1px 3px 6px #888;  
+  color: #015fad; 
+  text-shadow: 1px 2px 5px #666;  
 }
 
 main h2 {
   margin: 0;
-  color: #005599;
-  text-shadow: 1px 3px 5px #888; 
-}
-
-main h3 {
-  color: #6699cc;
-  text-shadow: 1px 2px 5px #888; 
+  color: #015ec2;
+  text-shadow: 1px 2px 5px #666; 
 }
 
 main p {
   line-height: 1.5rem;
   text-indent: 2rem;
   margin: 0.5rem 0;
+}
+
+#pilares {
+  list-style: none;
+}
+
+#pilares li::before {
+  content: "";
+  display: inline-block;
+  width: 0.5rem;
+  height: 0.5rem;
+  background-color: #007bff;
+  transform: rotate(45deg);
+  margin-right: 0.5rem;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+#pilares li {
+  margin: 1rem 0;
+}
+
+#slogan {
+  text-align: center;
+}
+
+#autor {
+  font-family: 'LuxuriousScript', cursive;
+  text-align: right;
 }
 
 /* Animação de flutuação */
@@ -96,11 +126,4 @@ main p {
   100% {
       transform: translateY(0);
   }
-}
-
-img {
-  max-width: 100%;
-  margin: 1rem 0 2rem 0;
-  border-radius: 12px;
-  box-shadow: 3px 5px 10px rgb(68, 68, 68, 0.7);
 }
