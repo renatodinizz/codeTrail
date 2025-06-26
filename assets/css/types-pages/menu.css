@@ -10,8 +10,8 @@
     cursor: pointer;
     z-index: 1001;
     position: absolute;
-    top: 0;
-    right: 0;
+    top: 1rem;
+    right: 1rem;
 }
 
 /* Desenho do botão */
@@ -97,7 +97,7 @@
     }
 }
 
-@media (min-width: 767px) {
+@media (min-width: 768px){
     /* Posicionamento do menu nas telas grandes */
     .horizontal {
         display: flex;

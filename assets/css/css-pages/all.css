@@ -7,10 +7,10 @@
   font-style: normal;
 }
 @font-face {
-  font-family: 'carter';
-  src: url(../../font/CarterOne-Regular.ttf) format('truetype');
-  font-weight: normal;
-  font-style: normal;
+    font-family: 'Bangers';
+    src: url(../../font/Bangers-Regular.ttf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
 }
 @font-face {
   font-family: 'Audiowide';
@@ -37,7 +37,7 @@ header {
 }
 
 header h1 {
-  font-family: 'carter';
+  font-family: 'Bangers', sans-serif;
   text-align: center;    
   color: #f8f9fa;
   text-shadow: 4px 6px 10px rgb(0, 0, 0, 0.6);
@@ -61,18 +61,18 @@ main {
 
 main h1 {
   text-align: center; 
-  color: #336699; 
-  text-shadow: 1px 2px 5px #888;  
+  color: #107630; 
+  text-shadow: 2px 2px 5px rgb(136, 136, 136, 0.9);   
 }
 
 main h2 {
-  color: #005599;
-  text-shadow: 1px 2px 5px #888; 
+  color: #0ea93f;
+  text-shadow: 1px 2px 5px rgb(136, 136, 136, 0.8); 
 }
 
 main h3 {
-  color: #6699cc;
-  text-shadow: 1px 2px 5px #888; 
+  color: #45915d;
+  text-shadow: 1px 2px 4px rgb(136, 136, 136, 0.7);  
 }
 
 main p {
@@ -100,7 +100,7 @@ main p {
 
 img {
   max-width: 100%;
-  margin: 1rem 0 2rem 0;
+  margin: 1rem 0;
   border-radius: 12px;
   box-shadow: 3px 5px 10px rgb(68, 68, 68, 0.7);
 }

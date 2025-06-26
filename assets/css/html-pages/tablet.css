@@ -1,5 +1,5 @@
 @charset 'UTF-8';
-@media (min-width: 481px) and (max-width:767px) {
+@media (min-width: 481px) and (max-width:768px) {
 
   body{
     /* overflow-x: hidden; ajuda a não ter a barra de rolagem lateral */
@@ -12,7 +12,6 @@
     
   header {
     padding: 1rem;
-    border-bottom: 3px solid #222;
   }
         
   #codeTrail {
@@ -21,6 +20,7 @@
     
   header h1 {
     font-size: 3rem;
+    padding: 1rem 0;
   }
     
   main h1 {
@@ -44,6 +44,7 @@
     /* Centraliza o main e deixa a página responsiva com a largura por porcentagem. */
     width: 80%; 
     padding: 1rem;
+    padding-bottom: 3rem;
     margin: 0 auto;
   }
 

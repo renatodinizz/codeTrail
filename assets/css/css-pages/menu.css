@@ -10,8 +10,8 @@
     cursor: pointer;
     z-index: 1001;
     position: absolute;
-    top: 0;
-    right: 0;
+    top: 1rem;
+    right: 1rem;
 }
 
 /* Desenho do botão */
@@ -77,12 +77,12 @@
         font-weight: 600;
         text-decoration: none;
         color: #f8f9fa;
-        border-bottom: 2px solid #3178c6;
+        border-bottom: 2px solid #4299e1;
     }
 
     #side-menu a:hover {
-        color: #3178c6;
-        text-shadow: 1px 1px 2px #12467d;
+        color: #4299e1;
+        text-shadow: 1px 1px 2px #105a91;
         transition:  0.6s ease-in-out, color 0.6s ease;
     }
 
@@ -97,7 +97,7 @@
     }
 }
 
-@media (min-width: 767px) {
+@media (min-width: 768px){
     /* Posicionamento do menu nas telas grandes */
     .horizontal {
         display: flex;
@@ -142,7 +142,9 @@
         background-color: #e34f26;
     }
     #side-menu a.css:hover {
-        background-color: #1572b6;
+        background-color: #f8f9fa;
+        color: #1572b6;
+        text-shadow: 1px 2px 3px #1572b6;
     }
     #side-menu a.js:hover {
         background-color: #f7df1e;
@@ -150,9 +152,7 @@
         text-shadow: 2px 2px 4px #f8f9fa;
     }
     #side-menu a.ts:hover {
-        background-color: #f8f9fa;
-        color: #3178c6;
-        text-shadow: 2px 2px 4px #f8f9fa;
+        background-color: #3178c6;
     }
     #side-menu a.about:hover {
         background-color: #00be65;

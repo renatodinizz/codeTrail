@@ -14,17 +14,13 @@
   }
 
   header h1 {
-    font-size: 5rem;
+    font-size: 6rem;
     padding: 2rem 0;
   }
 
   main h1 {
     font-size: 3rem;
     padding-bottom: 5rem;
-  }
-
-  main article {
-    margin: 1rem 0;
   }
 
   main h2 {
@@ -51,8 +47,8 @@
   }
 
   .area {
-    background: radial-gradient(circle, #e34f26, #de4d25, #b53f1e, #943115, #722510);
+    background: radial-gradient(circle, #66bfff, #4299e1, #1572b6, #105a91, #0a3d66);
     width: 100vw;
     min-height: 100vh;
-  }  
+  } 
 }

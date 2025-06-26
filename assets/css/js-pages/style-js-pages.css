@@ -1,0 +1,12 @@
+@import url('all.css');
+@import url('mobile.css');
+@import url('tablet.css');
+@import url('smallScreens.css');
+@import url('desktop.css');
+@import url('menu.css');
+@import url('../components/background-js-animation.css');
+@import url('../components/goBackTop.css');
+@import url('../components/lightBox.css');
+@import url('../components/transitionEntry.css');
+@import url('../components/transitionExit.css');
+@import url('print.css');

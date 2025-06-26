@@ -18,4 +18,16 @@
     main h1, main h2 {
         color: #333;
     }
+
+    #top {
+        display: none;
+    }
+
+    #btnTopo {
+        display: none;
+    }
+
+    .material-symbols-outlined {
+        display: none;
+    }
 }

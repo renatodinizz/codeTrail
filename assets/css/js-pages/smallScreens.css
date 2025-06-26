@@ -3,7 +3,7 @@
   body{
     /* overflow-x: hidden; ajuda a não ter a barra de rolagem lateral */
     overflow-x: hidden;
-    background: #a8381a url(../../img/html/background/background-small.webp);
+    background: #b99d04 url(../../img/javacript/background/background-small.webp);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
@@ -21,6 +21,10 @@
   header h1 {
     font-size: 3rem;
     padding: 1.5rem 0;
+  }
+
+  .big {
+    font-size: 6rem;
   }
     
   main h1 {

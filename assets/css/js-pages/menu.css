@@ -10,15 +10,15 @@
     cursor: pointer;
     z-index: 1001;
     position: absolute;
-    top: 0;
-    right: 0;
+    top: 1rem;
+    right: 1rem;
 }
 
 /* Desenho do botão */
 .menu-toggle .bar {
     height: 4px;
     width: 100%;
-    background-color: #f8f9fa;
+    background-color: #333;
     border-radius: 4px;
     transition: all 0.8s ease;
 }
@@ -32,6 +32,10 @@
 }
 .menu-toggle.active .bar:nth-child(3) {
     transform: rotate(-45deg) translateY(-10px);
+}
+
+.menu-toggle.active .bar{
+    background-color: #f8f9fa;
 }
 
 /* Navegação como menu lateral */
@@ -77,12 +81,12 @@
         font-weight: 600;
         text-decoration: none;
         color: #f8f9fa;
-        border-bottom: 2px solid #3178c6;
+        border-bottom: 2px solid #fef357;
     }
 
     #side-menu a:hover {
-        color: #3178c6;
-        text-shadow: 1px 1px 2px #12467d;
+        color: #fef357;
+        text-shadow: 1px 1px 2px #958d21;
         transition:  0.6s ease-in-out, color 0.6s ease;
     }
 
@@ -97,7 +101,7 @@
     }
 }
 
-@media (min-width: 767px) {
+@media (min-width: 768px){
     /* Posicionamento do menu nas telas grandes */
     .horizontal {
         display: flex;
@@ -117,10 +121,10 @@
 
     /* Estilização do menu */
     #side-menu a{
-        color: #f8f9fa;
-        text-shadow: 2px 2px 4px #222;
+        color: #333;
+        text-shadow: 1px 2px 4px rgb(255, 255, 255, 0.7);
         text-decoration: none;
-        font-weight: 600;
+        font-weight: 900;
         font-size: 1.2rem;
         padding: 0.3rem;
         border-radius: 5px;
@@ -140,21 +144,27 @@
     }
     #side-menu a.html:hover {
         background-color: #e34f26;
+        color: #f8f9fa;
+        text-shadow: 2px 2px 4px #333;
     }
     #side-menu a.css:hover {
         background-color: #1572b6;
+        color: #f8f9fa;
+        text-shadow: 2px 2px 4px #333;
     }
     #side-menu a.js:hover {
-        background-color: #f7df1e;
-        color: #000;
-        text-shadow: 2px 2px 4px #f8f9fa;
+        background-color: #333;
+        color: #f7df1e;
+        text-shadow: none;
     }
     #side-menu a.ts:hover {
-        background-color: #f8f9fa;
-        color: #3178c6;
-        text-shadow: 2px 2px 4px #f8f9fa;
+        background-color: #3178c6;
+        color: #f8f9fa;
+        text-shadow: 2px 2px 4px #333;
     }
     #side-menu a.about:hover {
         background-color: #00be65;
+        color: #f8f9fa;
+        text-shadow: 2px 2px 4px #333;
     }
 }

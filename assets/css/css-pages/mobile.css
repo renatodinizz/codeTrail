@@ -4,7 +4,7 @@
   body {
     /* overflow-x: hidden; ajuda a não ter a barra de rolagem lateral */
     overflow-x: hidden;
-    background: #a8381a url(../../img/html/background/background-mobile.webp);
+    background: #105a91 url(../../img/css/background/background-mobile.webp) no-repeat;
     background-size: cover;
     background-position: center center;
     background-attachment: fixed;
@@ -26,7 +26,7 @@
   }
 
   header h1 {
-    font-size: 3rem;
+    font-size: 4rem;
     padding: 1rem 0;
   }
 
