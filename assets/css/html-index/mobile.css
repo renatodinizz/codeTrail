@@ -10,7 +10,7 @@
     background-size: cover;
     background-position: center center;
     background-attachment: fixed;
-    min-height: 100dvh; /* Ou 100svh, dependendo do comportamento desejado */
+    height: 100dvh; /* Ou 100svh, dependendo do comportamento desejado */
     -ms-overflow-style: none;  /* IE e Edge */
     scrollbar-width: none;  /* Firefox */
   }  
