@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edição de Texto</title>
+    <!-- Favicon imagem -->
+    <link rel="shortcut icon" href="../../../assets/img/favicon/favicon.ico" type="image/x-icon">
+    <!-- Link do CSS -->
+    <link rel="stylesheet" href="../../../assets/css/html-pages/style-html-pages.css">
+    <!-- font do ícone backToTop -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined&display=swap" rel="stylesheet">
+
+</head>
+<body class="area">
+
+    <div class="page-transition"></div>
+
+    <ul class="circles">
+        <li class="square"></li>
+        <li class="square"></li>
+        <li class="square"></li>
+        <li class="square"></li>
+        <li class="square"></li>
+        <li class="square"></li>
+        <li class="square"></li>
+        <li class="square"></li>
+        <li class="square"></li>
+        <li class="square"></li>
+        <li class="square"></li>
+        <li class="square"></li>
+        <li class="square"></li>
+        <li class="square"></li>
+        <li class="square"></li>
+        <li class="square"></li>
+        <li class="square"></li>
+        <li class="square"></li>
+        <li class="square"></li>
+        <li class="square"></li>
+    </ul>
+    <header>
+
+        <button id="menu-toggle" class="menu-toggle">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </button>
+
+        <section class="horizontal">
+            <span id="codeTrail">CodeTrail</span>    
+            <nav id="side-menu">
+                <ul>
+                    <li><a href="../../../index.html" class="home">Home</a></li>
+                    <li><a href="../../../pages/html/indexHtml.html" class="html">HTML</a></li>
+                    <li><a href="../../../pages/css/indexCss.html" class="css">CSS</a></li>
+                    <li><a href="../../../pages/javascript/indexJs.html" class="js">JavaScript</a></li>
+                    <li><a href="../../../pages/typescript/indexType.html" class="ts">TypeScript</a></li>
+                    <li><a href="../../../pages/about/indexAbout.html" class="about">About</a></li>
+                </ul>
+            </nav>
+        </section>
+
+        <h1>HTML</h1>
+
+    </header>
+
+    <main class="context">
+
+        <h1>Edição de Texto</h1>
+        
+        <article>
+            <h2>Negrito</h2>
+            <p>
+                O elemento <code>&lt;strong&gt;</code> é usado para destacar o texto com ênfase forte, geralmente exibido em negrito. 
+                Por exemplo, <strong>este texto está em negrito</strong>.
+            </p>
+            <p>
+                O elemento <code>&lt;b&gt;</code> também é usado para destacar o texto com negrito, porém está em desuso.
+            </p>
+        </article>
+
+        <article>
+            <h2>Itálico</h2>
+            <p>
+                O elemento <code>&lt;em&gt;</code> é usado para enfatizar o texto, geralmente exibido em itálico. 
+                Por exemplo, <em>este texto está em itálico</em>.
+            </p>
+            <p>
+                O elemento <code>&lt;i&gt;</code> também é usado para destacar o texto com itálico, porém está em desuso.
+            </p>
+            
+            
+
+          
+
+        </article>
+
+        <article>
+            <h2>Marcação</h2>
+            <p>
+                O elemento <code>&lt;mark&gt;</code> é usado para destacar o texto que é relevante ou importante, geralmente exibido com fundo amarelo. 
+                Por exemplo, <mark>este texto está destacado</mark>.
+            </p>
+            <p>
+                Com CSS é possível estilizar o mark para ter uma cor de fundo diferente, como por exemplo:
+                <mark style="background-color: lightblue;">este texto está destacado com fundo azul</mark>.
+            </p>
+        </article>
+
+        <article>
+            <h2>Diminuir Texto</h2>
+            <p>
+                O elemento <code>&lt;small&gt;</code> é usado para exibir texto em tamanho menor, geralmente usado para notas de rodapé ou informações secundárias. 
+                Por exemplo, <small>este texto está em tamanho menor</small>.            
+            </p>
+        </article>
+
+        <article>
+            <h2>Riscar o Texto</h2>
+            <p>
+                O elemento <code>&lt;del&gt;</code> é usado para indicar que o texto foi removido ou excluído, geralmente exibido com uma linha sobre o texto. 
+                Por exemplo, <del>este texto foi removido</del>.
+            </p>
+            <p>
+                O elemento <code>&lt;s&gt;</code> também é usado para riscar o texto, porém está em desuso.
+            </p>
+        </article>
+
+        <article>
+            <h2>Sublinhar o Texto</h2>
+            <p>
+                O elemento <code>&lt;ins&gt;</code> é usado para indicar que o texto foi adicionado, geralmente exibido com uma linha sublinhada. 
+                Por exemplo, <ins>este texto foi adicionado</ins>.
+            </p>
+            <p>
+                O elemento <code>&lt;u&gt;</code> também é usado para sublinhar o texto, porém está em desuso.
+            </p>
+        </article>
+
+        <article>
+            <h2>Texto Invertido</h2>
+            <p>
+                O elemento <code>&lt;bdo&gt;</code> é usado para alterar a direção do texto, seja da esquerda para a direita (LTR) ou da direita para a esquerda (RTL). 
+                Por exemplo, <bdo dir="rtl">Este texto está da direita para a esquerda</bdo>.
+            </p>
+            <p>
+                Precisa colocar o atributo <code>dir</code> com o valor <code>rtl</code>, que significa <em>right to left</em>, para inverter a direção do texto.
+            </p>
+            
+        </article>
+
+        <article>
+            <h2>Sobrescrever Texto</h2>
+            <p>
+                o elemento sub <code>&lt;sup&gt;</code> é usado para exibir texto como sobrescrito, geralmente usado em notações matemáticas ou científicas. 
+                Por exemplo, E=mc<sup>2</sup> representa a famosa equação de Einstein.
+            </p>
+            <p>
+                Neste exemplo, o texto dentro do elemento <code>&lt;sup&gt;</code> é exibido acima da linha de base do texto normal, enquanto o texto fora do elemento <code>&lt;sup&gt;</code> é exibido na linha da base.
+            </p>
+        </article>
+
+        <article>
+            <h2>Subscrever Texto</h2>
+            <p>
+                O elemento <code>&lt;sub&gt;</code> é usado para exibir texto como subscrito, geralmente usado em notações matemáticas ou científicas. 
+                Por exemplo, H<sub>2</sub>O representa a água.  
+            </p>
+            <p>
+                Neste exemplo, o texto dentro do elemento <code>&lt;sub&gt;</code> é exibido abaixo da linha de base do texto normal, enquanto o texto fora do elemento <code>&lt;sup&gt;</code> é exibido na linha de base.
+            </p>
+        </article>
+
+        <article>
+            <h2>Entrada do Teclado</h2>
+            <p>
+                O elemento <code>&lt;kbd&gt;</code> é usado para representar a entrada do teclado, geralmente exibido com uma fonte monoespaçada. Por exemplo, <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>Del</kbd> é uma combinação comum usada para acessar o gerenciador de tarefas em sistemas operacionais.
+            </p>
+        </article>
+
+        <article>
+            <h2>Time</h2>
+            <p>
+                O elemento <code>&lt;time&gt;</code> é usado para representar uma data ou hora, geralmente exibido com um atributo <code>datetime</code> que fornece a data/hora em formato ISO.
+            </p>
+            <p>
+                O atributo <code>datetime</code> é importante para fornecer informações semânticas sobre a data/hora, permitindo que os navegadores e mecanismos de busca entendam melhor o conteúdo.
+            </p>
+            <p>
+                No atributo <code>datetime</code>, o formato é <em>YYYY-MM-DDTHH:MM:SS</em>, onde:
+                <ul id="datetime-format">        
+                    <li><strong>YYYY</strong> é o ano (4 dígitos)</li>
+                    <li><strong>MM</strong> é o mês (2 dígitos, de 01 a 12)</li>
+                    <li><strong>DD</strong> é o dia do mês (2 dígitos, de 01 a 31)</li>
+                    <li><strong>T</strong> é um separador que indica o início da parte de tempo</li>
+                    <li><strong>HH</strong> é a hora (2 dígitos, de 00 a 23)</li>
+                    <li><strong>MM</strong> é os minutos (2 dígitos, de 00 a 59)</li>
+                    <li><strong>SS</strong> é os segundos (2 dígitos, de 00 a 59)</li> 
+                </ul>                
+            </p>
+            <p>
+                Por exemplo, <time datetime="2023-10-01T10:00:00">1 de outubro de 2023 às 10:00</time> representa uma data e hora específicas.
+                Que pode ser exibido como <strong>2023-10-01T10:00:00</strong>.
+            </p>
+        </article>
+
+        <article>
+            <h2>Endereço</h2>
+            <p>
+                O elemento <code>&lt;address&gt;</code> é útil para fornecer informações de contato em páginas da web, como rodapés ou seções de contato.
+            </p>
+            <p>
+                O elemento <code>&lt;address&gt;</code> é usado para representar informações de contato, geralmente exibido em itálico. Pode conter informações como nome, endereço, telefone e e-mail. E tem comportamento de uma estrutura em bloco, ou seja, quebra uma linha antes e depois do conteúdo.
+                Por exemplo, <address>Rua Exemplo, 123, Cidade, País</address> representa um endereço físico.
+            </p>
+            <p>
+                Outro exemplo, <address>João da Silva, Rua Exemplo, 123, Cidade, País, (11) 1234-5678,
+            </p>
+        </article>
+        
+    </main>
+
+    <button id="btnTopo" title="Voltar ao topo">
+        <span id="top" class="material-symbols-outlined">
+            arrow_upward
+        </span>
+    </button>
+
+    <!-- Estrutura do Lightbox -->
+    <div id="custom-lightbox" class="lightbox-hidden">
+        <div class="lightbox-overlay"></div>
+        <div class="lightbox-content">
+            <button class="lightbox-close-btn" aria-label="Fechar lightbox">&times;</button>
+            <img src="" alt="" class="lightbox-image">
+            <div class="lightbox-caption"></div>
+        </div>
+    </div>
+    
+    <script src="../../../assets/js/hamburguerMenu.js"></script>
+    <script src="../../../assets/js/backToTop.js"></script>
+    <script src="../../../assets/js/lightBox.js"></script>
+    <script src="../../../assets/js/transitionEntry.js" defer></script>
+    <script src="../../../assets/js/transitionExit.js"></script>
+</body>
+</html>
