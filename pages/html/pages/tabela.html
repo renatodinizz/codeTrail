@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela</title>
+    <!-- Favicon imagem -->
+    <link rel="shortcut icon" href="../../../assets/img/favicon/favicon.ico" type="image/x-icon">
+    <!-- Link do CSS -->
+    <link rel="stylesheet" href="../../../assets/css/html-pages/style-html-pages.css">
+    <!-- font do ícone backToTop -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined&display=swap" rel="stylesheet">
+
+</head>
+<body class="area">
+
+    <div class="page-transition"></div>
+
+    <ul class="circles">
+        <li class="square"></li>
+        <li class="square"></li>
+        <li class="square"></li>
+        <li class="square"></li>
+        <li class="square"></li>
+        <li class="square"></li>
+        <li class="square"></li>
+        <li class="square"></li>
+        <li class="square"></li>
+        <li class="square"></li>
+        <li class="square"></li>
+        <li class="square"></li>
+        <li class="square"></li>
+        <li class="square"></li>
+        <li class="square"></li>
+        <li class="square"></li>
+        <li class="square"></li>
+        <li class="square"></li>
+        <li class="square"></li>
+        <li class="square"></li>
+    </ul>
+    <header>
+
+        <button id="menu-toggle" class="menu-toggle">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </button>
+
+        <section class="horizontal">
+            <span id="codeTrail">CodeTrail</span>    
+            <nav id="side-menu">
+                <ul>
+                    <li><a href="../../../index.html" class="home">Home</a></li>
+                    <li><a href="../../../pages/html/indexHtml.html" class="html">HTML</a></li>
+                    <li><a href="../../../pages/css/indexCss.html" class="css">CSS</a></li>
+                    <li><a href="../../../pages/javascript/indexJs.html" class="js">JavaScript</a></li>
+                    <li><a href="../../../pages/typescript/indexType.html" class="ts">TypeScript</a></li>
+                    <li><a href="../../../pages/about/indexAbout.html" class="about">About</a></li>
+                </ul>
+            </nav>
+        </section>
+
+        <h1>HTML</h1>
+
+    </header>
+
+    <main class="context">
+
+        <h1>Tabela</h1>
+
+        <article>
+            <h2>Tabela Simples</h2>
+            <p>
+                Uma tabela é uma maneira de organizar dados em linhas e colunas. No HTML, usamos a tag <code class="tag">&lt;table&gt;</code> para criar uma tabela. Dentro dela, usamos <code class="tag">&lt;tr&gt;</code> para definir uma linha, <code class="tag">&lt;th&gt;</code> para definir um cabeçalho de coluna e <code class="tag">&lt;td&gt;</code> para definir o conteúdo de uma célula.
+            </p>
+            <p>
+                Aqui está um exemplo de uma tabela simples com duas linhas e três colunas:
+            </p>
+            <figure>
+                <img id="tabela" src="../../../assets/img/html/tabela/tabela.webp" alt="estrutura de tabela" class="lightbox-trigger" data-full-src="../../../assets/img/html/tabela/tabela.webp" data-caption="">
+            </figure>
+            <p>
+                Como resultado:
+            </p>
+            <section>
+                <table class="table1">
+                    <tr>
+                        <td>Coluna 1</td>
+                        <td>Coluna 2</td>
+                        <td>Coluna 3</td>
+                    </tr>
+                    <tr>
+                        <td>A1</td>
+                        <td>B1</td>
+                        <td>C1</td>
+                    </tr>
+                    <tr>
+                        <td>A2</td>
+                        <td>B2</td>
+                        <td>C2</td>
+                    </tr>
+                </table>
+            </section>
+            <p>
+                Você pode adicionar mais linhas e colunas conforme necessário, usando mais <code class="tag">&lt;tr&gt;</code> para novas linhas e mais <code class="tag">&lt;td&gt;</code> dentro de cada linha para novas células de dados.
+            </p>
+            <p>
+                Além disso, você pode estilizar a tabela usando CSS para torná-la mais atraente visualmente. Por exemplo, você pode adicionar bordas, espaçamento e cores de fundo às células.
+            </p>
+            <p>
+                Uma propriedade importante no CSS com relação a tabelas é a propriedade <strong><code>border-collapse: collapse;</code></strong> que faz com que as linhas se unifiquem, retirando a margin das células da tabelas.
+            </p>
+            <p>
+                Outra propriedade importante no CSS com relação a tabelas é a propriedade <strong><code>vertical-align</code></strong> que faz com que o conteúdo se alinhe verticalmente, usando os valores: <em> bottom, middle e top</em>.
+            </p>
+        </article>
+
+        <article>
+            <h2>Anatomia para Tabelas Grandes</h2>
+            <p>
+                Para tabelas maiores, é importante organizar os dados de forma clara e legível. Aqui estão algumas dicas para criar tabelas grandes:
+            </p>
+            <p>
+                <ul class="anatomia">
+                    <li>
+                        <code class="tag">&lt;table&gt;</code> - Para criar a tabela.
+                    </li>
+                    <li>
+                        <code class="tag">&lt;caption&gt;</code> - Para dar um título para a tabela.
+                    </li>
+                    <li>
+                        <code class="tag">&lt;thead&gt;</code> - Para criar um cabeçalho para a tabela, podendo conter tags como <code class="tag">&lt;th&gt;</code>, <code class="tag">&lt;tr&gt;</code> e <code class="tag">&lt;td&gt;</code>.
+                    </li>
+                    <li>
+                        <code class="tag">&lt;tbody&gt;</code> - Para criar o corpo do conteúdo da tabela, podendo conter tags como <code class="tag">&lt;th&gt;</code>, <code class="tag">&lt;tr&gt;</code> e <code class="tag">&lt;td&gt;</code>.
+                    </li>
+                    <li>
+                        <code class="tag">&lt;tfooter&gt;</code> - Para criar o rodapé da tabela, podendo conter tags como <code class="tag">&lt;th&gt;</code>, <code class="tag">&lt;tr&gt;</code> e <code class="tag">&lt;td&gt;</code>.
+                    </li>
+                </ul>
+            </p>
+        </article>
+
+        <article>
+            <h2>Scope</h2>
+            <p>
+                O atributo scope serve para ajudar leitores de tela a entender o que cada célula significa. Indica se o <code class="tag">&lt;th&gt;</code> se refere a uma linha ou coluna.
+            </p>
+            <p>
+                O <code class="tag">&lt;th scope="row"&gt;</code> nas linhas indica que aquela célula representa aquela linha específica. Isso torna a navegação por voz mais precisa para pessoas com deficiência visual.
+            </p>
+            <p>
+                Temos quatro tipos de scopes que são:
+            </p>
+            <p>
+                <ul class="scope">
+                    <li>
+                        <strong><code>scope="row"</code></strong> Para indicar que os dados vão seguir a linha.
+                    </li>
+                    <li>
+                        <strong><code>scope="col"</code></strong> Para indicar que os dados vão seguir a coluna.
+                    </li>
+                    <li>
+                        <strong><code>scope="rowgroup"</code></strong> Para indicar que os dados a seguir terão conteúdo em mais de uma linha.
+                    </li>
+                    <li>
+                        <strong><code>scope="colgroup"</code></strong> Para indicar que os dados a seguir terão conteúdo em mais de uma coluna.
+                    </li>
+                </ul>
+            </p>
+        </article>
+
+        <article>
+            <h2>Efeito Zebrado</h2>
+            <p>
+                O efeito zebrado é uma técnica de design que alterna as cores de fundo das linhas de uma tabela para melhorar a legibilidade. Isso ajuda os usuários a seguir visualmente as linhas da tabela, especialmente quando há muitas colunas ou dados.
+            </p>
+            <p>
+                Para implementar o efeito zebrado, você pode usar CSS para aplicar cores de fundo diferentes às linhas pares e ímpares da tabela. Aqui está um exemplo de como fazer isso:
+            </p>
+            <br>
+            <code class="zebra">
+                tr:nth-child(even) {<br>
+                &nbsp;&nbsp;background-color: #f2f2f2;<br>
+                }<br>
+                tr:nth-child(odd) {<br>
+                &nbsp;&nbsp;background-color: #ffffff;<br>
+                }
+            </code>
+            <p>
+            </p>
+            <p>
+                Neste exemplo, usamos o seletor <strong>nth-child</strong> para aplicar uma cor de fundo cinza claro #f2f2f2 às linhas pares <strong>(even)</strong> e branco #ffffff às linhas ímpares <strong>(odd)</strong>. Isso cria um efeito zebrado que torna a tabela mais fácil de ler.
+            </p>
+        </article>
+
+        <article>
+            <h2>Fixar Título</h2>
+            <p>
+                Fixar o título de uma tabela é uma técnica útil para manter os cabeçalhos visíveis enquanto os usuários rolam para baixo em tabelas longas. Isso é especialmente importante quando a tabela contém muitas linhas, pois permite que os usuários vejam facilmente a que coluna cada dado pertence.
+            </p>
+            <p>
+                Para fixar o título de uma tabela, você pode usar CSS para tornar o cabeçalho da tabela fixo no topo da janela de visualização. Aqui está um exemplo de como fazer isso:
+            </p>
+            <p>
+                Primeiro colocamos o <strong><code>position: relative;</code></strong> na tabela.
+            </p>
+            <br>
+            <code class="zebra">
+                thead >tr >th {<br>
+                &nbsp;&nbsp;position: sticky;<br>
+                &nbsp;&nbsp;top: 0;<br>
+                }<br>
+            </code>
+            <p>
+                Neste exemplo, usamos a propriedade <strong><code>position: sticky</code></strong> no elemento <code class="tag">&lt;thead&gt;</code> para torná-lo fixo no topo da tabela quando o usuário rola para baixo. A propriedade <strong><code>top: 0</code></strong> garante que o cabeçalho fique no topo da janela de visualização.
+            </p>
+        </article>
+
+        <article>
+            <h2>Mesclar Células</h2>
+            <p>
+                Mesclar células em uma tabela é uma técnica útil para combinar duas ou mais células adjacentes em uma única célula. Isso é frequentemente usado para criar cabeçalhos que abrangem várias colunas ou para agrupar dados relacionados.
+            </p>
+            <p>
+                Para mesclar células, você pode usar os atributos <strong><code>colspan</code></strong> e <strong><code>rowspan</code></strong> nas tags <code class="tag">&lt;td&gt;</code> ou <code class="tag">&lt;th&gt;</code>. O atributo <strong><code>colspan</code></strong> é usado para mesclar células horizontalmente, enquanto o <strong><code>rowspan</code></strong> é usado para mesclar células verticalmente.
+            </p>
+            <p>
+                Aqui está um exemplo de como mesclar células em uma tabela:
+            </p>
+            <table class="table2">
+                <tr>
+                    <th colspan="2">Informações Pessoais</th>
+                </tr>
+                <tr>
+                    <td>Nome</td>
+                    <td>Lucas</td>
+                </tr>
+                <tr>
+                    <td rowspan="2">Idade</td>
+                    <td>20</td>
+                </tr>
+                <tr>
+                    <td>21</td>
+                </tr>
+            </table>
+
+            <p>
+                Neste exemplo, o cabeçalho da tabela é mesclado horizontalmente usando <strong><code>colspan="2"</code></strong>, o que significa que ele abrange duas colunas. Além disso, a primeira célula da terceira linha é mesclada verticalmente usando <strong><code>rowspan="2"</code></strong>, o que significa que ela ocupa duas linhas.
+            </p>
+        </article>
+
+        <article>
+            <h2>Destacar Coluna</h2>
+            <p>
+                Para destacar uma coluna ou controlar a aparência de várias colunas de uma vez só é comum usar a tag <code class="tag">&lt;colgroup&gt;</code> e dentro dela usar a tag <code class="tag">&lt;col&gt;</code>. A <code class="tag">&lt;colgroup&gt;</code> fica logo após a abertura da <code class="tag">&lt;table&gt;</code>, e contém uma ou mais tags <code class="tag">&lt;col&gt;</code>. Ideal para estilizar colunas completas, sem mexer no conteúdo individual das células.
+            </p>
+            <figure>
+                <img id="colgroup" src="../../../assets/img/html/tabela/colgroup.webp" alt="colgroup" class="lightbox-trigger" data-full-src="../../../assets/img/html/tabela/colgroup.webp" data-caption="">
+            </figure>
+
+            <p>
+                Neste exemplo por conta do <strong><code>span="2"</code></strong> as duas primeiras colunas ficam cinza claro, enquanto a terceira coluna fica rosa claro.
+            </p>
+            <p>
+                Lembrando que a tag <code class="tag">&lt;col&gt;</code> vai seguir respectivamente a ordem indicada. 
+            </p>
+            <p>
+                Pode aplicar o estilo diretamente como nesse exemplo ou pode atribuir classes e assim estilizar no arquivo CSS.
+            </p>
+        </article>
+
+        <article>
+            <h2>Responsividade de Tabela</h2>
+            <p>
+                Tornar uma tabela responsiva é essencial para garantir que ela seja legível e utilizável em dispositivos de diferentes tamanhos, como smartphones e tablets. Existem várias abordagens para tornar tabelas responsivas, e aqui estão algumas dicas e técnicas comuns:
+            </p>
+            <p>
+                <ul class="scope">
+                    <li>Use CSS para definir larguras percentuais em vez de larguras fixas para colunas, permitindo que a tabela se ajuste ao tamanho da tela.</li>
+                    <li>Considere usar a propriedade <em>overflow-x: auto</em> no contêiner da tabela para permitir rolagem horizontal em telas menores.</li>
+                    <li>Use media queries para ajustar o estilo da tabela com base no tamanho da tela. Por exemplo, você pode ocultar colunas menos importantes em telas menores.</li>
+                    <li>Considere transformar a tabela em um layout de cartão em telas pequenas, onde cada linha da tabela é exibida como um cartão separado.</li>
+                </ul>
+            </p>
+        </article>
+                
+    </main>
+
+    <button id="btnTopo" title="Voltar ao topo">
+        <span id="top" class="material-symbols-outlined">
+            arrow_upward
+        </span>
+    </button>
+
+    <!-- Estrutura do Lightbox -->
+    <div id="custom-lightbox" class="lightbox-hidden">
+        <div class="lightbox-overlay"></div>
+        <div class="lightbox-content">
+            <button class="lightbox-close-btn" aria-label="Fechar lightbox">&times;</button>
+            <img src="" alt="" class="lightbox-image">
+            <div class="lightbox-caption"></div>
+        </div>
+    </div>
+    
+    <script src="../../../assets/js/hamburguerMenu.js"></script>
+    <script src="../../../assets/js/backToTop.js"></script>
+    <script src="../../../assets/js/lightBox.js"></script>
+    <script src="../../../assets/js/transitionEntry.js" defer></script>
+    <script src="../../../assets/js/transitionExit.js"></script>
+</body>
+</html>

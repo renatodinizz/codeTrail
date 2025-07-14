@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listas</title>
+    <!-- Favicon imagem -->
+    <link rel="shortcut icon" href="../../../assets/img/favicon/favicon.ico" type="image/x-icon">
+    <!-- Link do CSS -->
+    <link rel="stylesheet" href="../../../assets/css/html-pages/style-html-pages.css">
+    <!-- font do ícone backToTop -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined&display=swap" rel="stylesheet">
+
+</head>
+<body class="area">
+
+    <div class="page-transition"></div>
+
+    <ul class="circles">
+        <li class="square"></li>
+        <li class="square"></li>
+        <li class="square"></li>
+        <li class="square"></li>
+        <li class="square"></li>
+        <li class="square"></li>
+        <li class="square"></li>
+        <li class="square"></li>
+        <li class="square"></li>
+        <li class="square"></li>
+        <li class="square"></li>
+        <li class="square"></li>
+        <li class="square"></li>
+        <li class="square"></li>
+        <li class="square"></li>
+        <li class="square"></li>
+        <li class="square"></li>
+        <li class="square"></li>
+        <li class="square"></li>
+        <li class="square"></li>
+    </ul>
+    <header>
+
+        <button id="menu-toggle" class="menu-toggle">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </button>
+
+        <section class="horizontal">
+            <span id="codeTrail">CodeTrail</span>    
+            <nav id="side-menu">
+                <ul>
+                    <li><a href="../../../index.html" class="home">Home</a></li>
+                    <li><a href="../../../pages/html/indexHtml.html" class="html">HTML</a></li>
+                    <li><a href="../../../pages/css/indexCss.html" class="css">CSS</a></li>
+                    <li><a href="../../../pages/javascript/indexJs.html" class="js">JavaScript</a></li>
+                    <li><a href="../../../pages/typescript/indexType.html" class="ts">TypeScript</a></li>
+                    <li><a href="../../../pages/about/indexAbout.html" class="about">About</a></li>
+                </ul>
+            </nav>
+        </section>
+
+        <h1>HTML</h1>
+
+    </header>
+
+    <main class="context">
+
+        <h1>Listas</h1>
+
+        <article>
+            <h2>Lista Ordenada</h2>
+            <p>
+                As listas ordenadas permite que você apresente informações de forma clara e organizada. Elas são especialmente úteis para apresentar informações em uma sequência lógica, quando a ordem dos itens é significativa, como em listas de tarefas, etapas de um processo ou classificações. Elas ajudam a melhorar a legibilidade do conteúdo e facilitam a compreensão das informações apresentadas.
+            </p>
+            <p>
+                Para criar uma lista ordenada, utiliza-se a tag <code class="tag">&lt;ol&gt;</code> (ordered list) e cada item da lista é definido com a tag <code class="tag">&lt;li&gt;</code> (list item). Veja o exemplo abaixo:
+            </p>
+            <p>
+                <pre class="pre-example">
+                    <code>
+                        &lt;ol&gt;<br>
+                        &nbsp;&nbsp;&lt;li&gt;Item 1&lt;/li&gt;<br>
+                        &nbsp;&nbsp;&lt;li&gt;Item 2&lt;/li&gt;<br>
+                        &nbsp;&nbsp;&lt;li&gt;Item 3&lt;/li&gt;<br>
+                        &lt;/ol&gt;
+                    </code>
+                </pre>
+            </p>
+            <p>
+                O resultado será uma lista numerada:
+            </p>
+            <p>
+                <ol class="extra-padding">
+                    <li>Item 1</li>
+                    <li>Item 2</li>
+                    <li>Item 3</li>
+                </ol>
+            </p>
+            <p>
+                Você pode personalizar o estilo da lista ordenada usando o atributo <strong>type</strong> na tag <code class="tag">&lt;ol&gt;</code>, que permite definir o tipo de numeração (por exemplo, type="1" para números, type="A" para letras maiúsculas, type="a" para letras minúsculas, type="i" para números romanos minúsculo e type="I" para números romanos minúsculos). Exemplo:
+            </p>
+            <p>
+                <pre class="pre-example">
+                    <code>
+                        &lt;ol type="A"&gt;<br>
+                        &nbsp;&nbsp;&lt;li&gt;Item A&lt;/li&gt;<br>
+                        &nbsp;&nbsp;&lt;li&gt;Item B&lt;/li&gt;<br>
+                        &nbsp;&nbsp;&lt;li&gt;Item C&lt;/li&gt;<br>
+                        &lt;/ol&gt;
+                    </code>
+                </pre>
+            </p>
+            <p>
+                O resultado será uma lista ordenada com letras maiúsculas:
+            </p>
+            <p>
+                <ol type="A" class="extra-padding">
+                    <li>Item A</li>
+                    <li>Item B</li>
+                    <li>Item C</li>
+                </ol>
+            </p>
+            
+            <p>
+                O atributo <strong>start</strong> também pode ser usado na tag <code class="tag">&lt;ol&gt;</code> para definir o número inicial da lista. Por exemplo, se você quiser que a lista comece com o número 5, você pode fazer assim:
+            </p>
+            <p>
+                <pre class="pre-example">
+                    <code>
+                        &lt;ol start="5"&gt;<br>
+                        &nbsp;&nbsp;&lt;li&gt;Item 5&lt;/li&gt;<br>
+                        &nbsp;&nbsp;&lt;li&gt;Item 6&lt;/li&gt;<br>
+                        &nbsp;&nbsp;&lt;li&gt;Item 7&lt;/li&gt;<br>
+                        &lt;/ol&gt;
+                    </code>
+                </pre>
+            </p>
+            <p>
+                O resultado será uma lista ordenada que começa com o número 5:
+            </p>
+            <p>
+                <ol start="5" class="extra-padding">
+                    <li>Item 5</li>
+                    <li>Item 6</li>
+                    <li>Item 7</li>
+                </ol>
+            </p>        
+        </article>
+
+        <article>
+            <h2>Lista não Ordenada</h2>
+            <p>
+                As listas não ordenadas são usadas para apresentar itens que não precisam ser numerados. As listas não ordenadas são uma maneira eficaz de apresentar informações de forma clara e organizada, permitindo que você destaque os itens sem atribuir uma ordem específica a eles. Elas ajudam a melhorar a experiência do usuário, tornando o conteúdo mais fácil de ler e entender. 
+            </p>
+            <p>
+                A lista não ordenada é uma lista com marcadores, onde os itens não têm uma sequência específica. Para criar uma lista não ordenada, utiliza-se a tag <code class="tag">&lt;ul&gt;</code> (unordered list) e cada item da lista é definido com a tag <code class="tag">&lt;li&gt;</code> (list item). Veja o exemplo abaixo:
+            </p>
+            <p>
+                <pre class="pre-example">
+                    <code>
+                        &lt;ul&gt;<br>
+                        &nbsp;&nbsp;&lt;li&gt;Item A&lt;/li&gt;<br>
+                        &nbsp;&nbsp;&lt;li&gt;Item B&lt;/li&gt;<br>
+                        &nbsp;&nbsp;&lt;li&gt;Item C&lt;/li&gt;<br>
+                        &lt;/ul&gt;
+                    </code>
+                </pre>
+            </p>
+            <p>
+                O resultado será uma lista com marcadores:
+            </p>
+            <p>
+                <ul class="extra-padding">
+                    <li>Item A</li>
+                    <li>Item B</li>
+                    <li>Item C</li>
+                </ul>
+            </p>
+            <p>
+                Você pode personalizar o estilo da lista não ordenada usando o atributo <strong>type</strong> na tag <code class="tag">&lt;ul&gt;</code>, que permite definir o tipo de marcador (por exemplo, type="disc" para círculos, type="circle" para círculos vazios e type="square" para quadrados). Exemplo:
+            </p>
+            <p>
+                <pre class="pre-example">
+                    <code>
+                        &lt;ul type="square;"&gt;<br>
+                        &nbsp;&nbsp;&lt;li&gt;Item 1&lt;/li&gt;<br>
+                        &nbsp;&nbsp;&lt;li&gt;Item 2&lt;/li&gt;<br>
+                        &nbsp;&nbsp;&lt;li&gt;Item 3&lt;/li&gt;<br>
+                        &lt;/ul&gt;
+                    </code>
+                </pre>
+            </p>
+            <p>
+                O resultado será uma lista com marcadores quadrados:
+            </p>
+            <p>
+                <ul type="square" class="extra-padding">
+                    <li>Item 1</li>
+                    <li>Item 2</li>
+                    <li>Item 3</li>
+                </ul>
+            </p>
+            
+
+        </article>
+
+        <article>
+            <h2>Lista dentro de lista</h2>
+            <p>
+                As listas dentro de listas são úteis para organizar informações de forma mais detalhada e hierárquica, permitindo que você apresente subcategorias ou itens relacionados de maneira clara e estruturada.
+            </p>
+            <p>
+                Além disso, você pode combinar listas ordenadas e não ordenadas dentro de uma mesma estrutura. Por exemplo, você pode ter uma lista ordenada com itens que contêm sublistas não ordenadas. Um bom exemplo de utilidade neste contexto são os índices. Para fazer uma lista dentro da outra, basta aninhar as tags  <code class="tag">&lt;ol&gt;</code> ou <code class="tag">&lt;ul&gt;</code> dentro de uma tag <code class="tag">&lt;li&gt;</code>, como o exemplo abaixo:
+            </p>
+            <figure>
+                <img id="insideList" src="../../../assets/img/html/listas/insideList.webp" alt="lista dentro de lista" class="lightbox-trigger" data-full-src="../../../assets/img/html/listas/insideList.webp" data-caption="">
+            </figure>
+            <p>
+                O resultado será uma lista ordenada com uma sublista não ordenada:
+            </p>
+            
+            <ol class="extra-padding">
+                <li>SNES
+                    <ul class="secondList" type="disc">
+                        <li>Super Mario World</li>
+                        <li>Donkey Kong</li>
+                        <li>MortalKombat</li>
+                    </ul>
+                </li>
+                <li>PlayStation2
+                    <ul class="secondList" type="circle">
+                        <li>God of War</li>
+                        <li>Need for Speed</li>
+                        <li>Fifa</li>
+                    </ul>
+                </li>
+            </ol>
+        </article>
+
+        <article>
+            <h2>Lista de Definição</h2>
+            <p>
+                As listas de definição são usadas para apresentar termos e suas definições de forma clara e organizada. Elas são especialmente úteis em glossários, dicionários ou quando você precisa explicar termos técnicos, especializados ou quando você precisa fornecer definições detalhadas para termos específicos. As listas de definição ajudam a melhorar a legibilidade do conteúdo e facilitam a compreensão das informações apresentadas.
+            </p>
+            <p>
+                As listas de definição são compostas por três tags principais: <code class="tag">&lt;dl&gt;</code> (definition list), <code class="tag">&lt;dt&gt;</code> (definition term) e <code class="tag">&lt;dd&gt;</code> (definition description). A tag <code class="tag">&lt;dl&gt;</code> é usada para definir a lista de definição, enquanto a tag <code class="tag">&lt;dt&gt;</code> é usada para definir o termo e a tag <code class="tag">&lt;dd&gt;</code> é usada para fornecer a descrição ou definição do termo. Veja o exemplo abaixo:
+            </p>
+            <figure>
+                <img id="definitionList" src="../../../assets/img/html/listas/definitionLists.webp" alt="lista de definição" class="lightbox-trigger" data-full-src="../../../assets/img/html/listas/definitionLists.webp" data-caption="">
+            </figure>
+            <p>
+                O resultado será uma lista de definição:
+            </p>
+            <dl class="definition-list">
+                <dt>HTML</dt>
+                <dd>Linguagem de marcação para estruturar um site.</dd>
+                <dt>CSS</dt>
+                <dd>Linguagem de marcação para o design de um site.</dd>
+                <dt>JavaScript</dt>
+                <dd>Linguagem de programação para a interação de um site.</dd>
+            </dl>
+        </article>
+        
+        <article>
+            <p>
+                Em resumo, as listas são uma ferramenta poderosa para organizar informações em HTML. Elas podem ser usadas para apresentar itens em uma sequência específica (listas ordenadas), com marcadores (listas não ordenadas) ou para definir termos e suas descrições (listas de definição). Com o uso adequado das tags <code class="tag">&lt;ol&gt;</code>, <code class="tag">&lt;ul&gt;</code>, <code class="tag">&lt;li&gt;</code>, <code class="tag">&lt;dl&gt;</code>, <code class="tag">&lt;dt&gt;</code> e <code class="tag">&lt;dd&gt;</code>, você pode criar listas claras e estruturadas que melhoram a legibilidade do conteúdo e facilitam a compreensão das informações apresentadas.
+            </p>
+        </article>
+                
+    </main>
+
+    <button id="btnTopo" title="Voltar ao topo">
+        <span id="top" class="material-symbols-outlined">
+            arrow_upward
+        </span>
+    </button>
+
+    <!-- Estrutura do Lightbox -->
+    <div id="custom-lightbox" class="lightbox-hidden">
+        <div class="lightbox-overlay"></div>
+        <div class="lightbox-content">
+            <button class="lightbox-close-btn" aria-label="Fechar lightbox">&times;</button>
+            <img src="" alt="" class="lightbox-image">
+            <div class="lightbox-caption"></div>
+        </div>
+    </div>
+    
+    <script src="../../../assets/js/hamburguerMenu.js"></script>
+    <script src="../../../assets/js/backToTop.js"></script>
+    <script src="../../../assets/js/lightBox.js"></script>
+    <script src="../../../assets/js/transitionEntry.js" defer></script>
+    <script src="../../../assets/js/transitionExit.js"></script>
+</body>
+</html>

@@ -1,0 +1,197 @@
+/* Estrutura de texto -------------------------------------------------------------------------------------------------------- */
+/* Elemento pre no article Exibindo Código em HTML, na section Pre
+Estilizando o elemento para não transpassar a tela na versão mobile */
+#pre-example {
+  white-space: pre-wrap; /* Mantém a formatação do texto */
+  word-break: break-word; /* Quebra palavras longas */
+  overflow: auto; /* impede rolagem lateral e vertical */
+  width: 13rem;
+  padding: 0 1rem;
+}
+
+/* Imagem do article Citações Grandes 
+Limitando a altura da imagem na versão mobile para deixar proporcional. */
+@media (max-width: 768px) {
+  #blockcode {
+    max-height: 15rem; /* Limita a altura máxima do bloco */
+  }  
+}
+/* _____________________________________________________________________________________________________ */
+
+
+
+/* Edição de Texto */
+/* ----------------------------------------------------------------------------------------------------- */
+/*Lista do article Time
+Estilizando marcadores e padding*/
+#datetime-format {
+  font-size: 1.2rem;
+  padding: 0.5rem;
+  padding-left: 1rem;
+  list-style: none;
+}
+
+#datetime-format li::before {
+  content: "";
+  display: inline-block;
+  width: 0.5rem;
+  height: 0.5rem;
+  background-color: #e34f26;
+  transform: rotate(45deg);
+  margin-right: 0.5rem;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+/* _____________________________________________________________________________________________________ */
+
+
+
+/* Listas */
+/* ----------------------------------------------------------------------------------------------------- */
+/* Adicionando padding em todos as listas da página para o conteúdo não ultrapassar o main*/
+.extra-padding {
+  padding-left: 1.5rem;
+}
+
+/*Estilizando os elementos pre em vários articles*/
+.pre-example {
+  white-space: pre-wrap; /* Mantém a formatação do texto */
+  word-break: break-word; /* Quebra palavras longas */
+  overflow: hidden;
+  width: 15rem;
+  padding: 0 1rem;
+  font-size: 1rem;
+  line-height: 0.8rem;
+}
+
+/* Limitando a altura da imagem no article listas dentro de listas para deixar proporcional */
+#insideList {
+  max-height: 18rem;
+}
+
+/* Dando um espaçamento no exemplo  do article listas dentro de listas */
+.secondList {
+  font-size: 1.1rem;
+  line-height: 1.5rem;
+  padding-left: 1rem;
+}
+
+/* Limitando a altura da imagem no article listas de definição para deixar proporcional */
+#definitionList {
+  max-height: 13rem;
+}
+
+/* Adicionando padding no exemplo do article lista de definição */
+.definition-list {
+  font-size: 1.2rem;
+  line-height: 2rem;
+}
+/* _____________________________________________________________________________________________________ */
+
+
+
+/* Tabela */
+/* ----------------------------------------------------------------------------------------------------- */
+/* Ajustando a altura da imagem do article Tabela Simples */
+#tabela {
+  max-height: 18rem;
+}
+
+/* Estilizando a tabela de exemplo do article Tabela Simples */
+.table1 {
+    width: 250px;
+    height: 150px;
+    margin-left: 1.5rem;
+    border-collapse: collapse;  
+    text-align: center;     
+}
+td, th {
+  border: 1px solid black;
+  padding: 8px;
+  vertical-align: middle;
+}
+
+/* Estilizando a lista no article Anatomia */
+.anatomia {
+  font-size: 1.2rem;
+  line-height: 2.5rem;
+  padding: 0.5rem;
+  padding-left: 1rem;
+  list-style: none;
+}
+.anatomia li::before {
+  content: "";
+  display: inline-block;
+  width: 0.5rem;
+  height: 0.5rem;
+  background-color: #888;
+  transform: rotate(45deg);
+  margin-right: 0.5rem;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* Estilizando as listas nos articles Scope e Responsividade */
+.scope {
+  font-size: 1.2rem;
+  line-height: 2.5rem;
+  padding: 0.5rem;
+  padding-left: 1rem;
+  list-style: none;
+}
+.scope li::before {
+  content: "";
+  display: inline-block;
+  width: 0.5rem;
+  height: 0.5rem;
+  background-color: #e34f26;
+  transform: rotate(45deg);
+  margin-right: 0.5rem;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* Aumentando a font do elemento code nos articles Efeito Zebrado e Fixar Título */
+.zebra {
+  font-size: 1.2rem;
+}
+
+/* Estilizando a tabela de exemplo do article Mesclando Células */
+.table2{
+  width: 250px;
+  height: 150px;
+  margin: 2rem 0;
+  margin-left: 1.5rem;
+  border-collapse: collapse;  
+  text-align: center;
+}
+
+/* Ajustando a altura da imagem do article Destacar Coluna */
+#colgroup {
+  max-height: 10rem;
+}
+/* _____________________________________________________________________________________________________ */
+
+
+
+
+
+
+
+
+
+
+
+/* Tabela */
+/* ----------------------------------------------------------------------------------------------------- */
+
+/* _____________________________________________________________________________________________________ */
+/* Tabela */
+/* ----------------------------------------------------------------------------------------------------- */
+
+/* _____________________________________________________________________________________________________ */
+/* Tabela */
+/* ----------------------------------------------------------------------------------------------------- */
+
+/* _____________________________________________________________________________________________________ */
+/* Tabela */
+/* ----------------------------------------------------------------------------------------------------- */
+
+/* _____________________________________________________________________________________________________ */
