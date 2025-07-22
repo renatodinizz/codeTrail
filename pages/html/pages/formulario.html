@@ -70,7 +70,513 @@
 
         <h1>Formulário</h1>
 
-        
+        <article>
+            <h2>Formulário Simples</h2>
+
+            <p>
+                Formulários são elementos fundamentais para coletar dados de usuários. A estrutura básica de um formulário começa com a tag <code class="tag">&lt;form&gt;</code>, que serve como contêiner para todos os campos de entrada, botões e instruções.
+            </p>
+            <p>
+                Exemplo de formulário:
+            </p>
+            <section>
+                <form action="" class="form1">
+                    <fieldset>
+                        <legend class="legend">Dados simples</legend>
+                        <label for="iname">Nome:</label>
+                        <input type="text" name="name" id="iname">
+                        <br>
+                        <label for="ilastName">Sobrenome:</label>
+                        <input type="text" name="lastName" id="ilastName">
+                        <br>
+                        <input type="submit" value="Enviar" class="btn">
+
+                    </fieldset>
+                </form>
+            </section>
+
+            <section>
+                <ul class="formList">
+                    <li>
+                        <code class="tag">&lt;form&gt;</code> - Define o formulário. Aceita atributos como:
+                        <ul class="insideList">
+                            <li>
+                                <code><strong>action</strong></code> - URL para onde os dados serão enviados ao clicar em “Enviar”, ou seja, o backend.
+                            </li>
+                            <li>
+                                <code><strong>method</strong></code> - Método de envio GET ou POST.
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <code class="tag">&lt;lable&gt;</code> - Rótulo de um campo, deve ser associado ao <code><strong>id</strong></code> do input correspondente via <code><strong>for</strong></code>.
+                    </li>
+                    <li>
+                        <code class="tag">&lt;input&gt;</code> -  Campo de entrada de dados, pode variar conforme o tipo (text, email, number, etc.).
+                    </li>
+                    <li>
+                        <code class="tag">&lt;input type="submit"&gt;</code> - Botão para enviar o formulário, onde o escrito no botão é correspondente do atributo <code><strong>value</strong></code>.
+                    </li>
+                    <li>
+                        <code class="tag">&lt;fieldset&gt;</code> - Agrupam campos relacionados como uma seção, uma borda em volta do formulário.
+                    </li>
+                    <li>
+                        <code class="tag">&lt;legend&gt;</code> - Define a legenda do formulário, nesse caso  as palavras "Dados Simples".
+                    </li>
+                </ul>
+            </section>
+            <p>
+                O código desse formulário, para melhor entendimento.
+            </p>
+            <figure>
+                <img id="form-img" src="../../../assets/img/html/formularios/form.webp" alt="estrutura de formulário" class="lightbox-trigger" data-full-src="../../../assets/img/html/formularios/form.webp" data-caption="">
+            </figure>
+        </article>
+
+        <article>
+            <h2>Associando Lables aos Inputs</h2>
+            <p>
+                A associação entre lables e inputs melhora a usabilidade e a acessibilidade. Quando o usuário clica na lable, o input correspondente é automaticamente selecionado, o que ajuda na experiência do usuário.
+            </p>
+            <p>
+                Para fazer isso é muito simples, o <code><strong>for</strong></code> da <code class="tag">&lt;lable&gt;</code> deve ser igual ao <code><strong>id</strong></code> do <code class="tag">&lt;input&gt;</code>, como na imagem acima. Dessa maneira os dois se associam e essa ligação também facilita a leitura por leitores de tela.
+            </p>
+        </article>
+
+        <article>
+            <h2>Método GET e POST</h2>
+            <p>
+                Ao enviar um formulário, os dados podem ser transmitidos de duas formas: via GET ou POST, definidos no atributo <code><strong>method</strong></code> do formulário.
+            </p>
+            <section>
+                <h3>GET</h3>
+                <p>
+                    É o método padrão, usado se o method não for especificado. É visível na URL. É utilizado para campos simples como cadastros, peso, altura, buscas e informações que não sejam sensíveis, ideal para buscas, filtros ou dados não confidenciais. Get pode ser resumido como método para obter.
+                </p>
+                <p>
+                    O limite para uso do GET são de 3 mil bites, aproximadamente 3 mil caracteres.
+                </p>
+            </section>
+            <section>
+                <h3>POST</h3>
+                <p>
+                    Para usar deve alterar o atributo <code><strong>method</strong></code>. Não exibe os dados na URL. Recomendado para informações sensíveis como senhas, endereços, dados bancários, envio de arquivos, etc. Sem limite prático de tamanho.
+                </p>
+            </section>
+        </article>
+
+        <article>
+            <h2>Tipos de Inputs</h2>
+            <section>
+                <h3>Text</h3>
+                <p>
+                    Texto simples, usados para nomes, sobrenomes e etc.
+                </p>
+                <form action="">
+                    <label for="name">Nome:</label>
+                    <input type="text" name="name" id="name">
+                </form>
+            </section>
+
+            <section>
+                <h3>Password</h3>
+                <p>
+                    Oculta os caracteres digitados. Ideal para senhas.
+                </p>
+                <form action="">
+                    <label for="senhas">Senha:</label>
+                    <input type="password" name="senhas" id="senhas">
+                </form>
+            </section>
+
+            <section>
+                <h3>Number</h3>
+                <p>
+                    Não aceita letras, apenas números.
+                </p>
+                <form action="">
+                    <label for="numeros">Idade:</label>
+                    <input type="number" name="numeros" id="numeros">
+                </form>
+            </section>
+
+            <section>
+                <h3>Email</h3>
+                <p>
+                    Valida se há "@" e formato de e-mail.
+                </p>
+                <form action="">
+                    <label for="iemail">Email:</label>
+                    <input type="email" name="email" id="iemail">
+                    <input type="submit" value="Enviar" class="btn">
+                </form>
+            </section>
+
+            <section>
+                <h3>Tel</h3>
+                <p>
+                    Entrada de telefone. Pode usar pattern para validar.
+                </p>
+                <form action="">
+                    <label for="itel">Telefone:</label>
+                    <input type="tel" name="tel" id="itel" pattern="^\(\d{2}\)\d{4,5}-\d{4}$" required placeholder="(xx)xxxx-xxxx">
+                    <input type="submit" value="Enviar" class="btn">
+                </form>
+                <p>
+                    A validação é feita dessa forma:
+                </p>
+                <figure>
+                    <img id="tel" src="../../../assets/img/html/formularios/tel.webp" alt="pattern" class="lightbox-trigger" data-full-src="../../../assets/img/html/formularios/tel.webp" data-caption="">
+                </figure>
+                <p>
+                    O atributo <code><strong>pattern</strong></code> é usado para validar o formato desejado, usando as expressões regulares. Nesse exemplo o telefone deve conter dois dígitos numéricos entre parenteses, depois quatro ou cinco dígitos, um hífen e mais quatro dígitos.       
+                </p>
+                <p>
+                    O atributo <code><strong>placeholder</strong></code> é usado para mostrar no campo do input o formato desejado.       
+                </p>
+            </section>
+
+            <section>
+                <h3>Month</h3>
+                <p>
+                    Para mês e ano.
+                </p>
+                <form action="">
+                    <label for="meses">Mês e ano:</label>
+                    <input type="month" name="meses" id="meses">
+                </form>
+            </section>
+
+            <section>
+                <h3>Date</h3>
+                <p>
+                    Para datas completas, com dia mês e ano.
+                </p>
+                <form action="">
+                    <label for="dia">Data:</label>
+                    <input type="date" name="dia" id="dia">
+                </form>
+            </section>
+
+            <section>
+                <h3>Time</h3>
+                <p>
+                    Para horas e minutos.
+                </p>
+                <form action="">
+                    <label for="tempo">Hora:</label>
+                    <input type="time" name="tempo" id="tempo">
+                </form>
+            </section>
+
+            <section>
+                <h3>Color</h3>
+                <p>
+                    Utilizado para selecionar uma cor, dentre todas as posibilidades no formato exadecimal. 
+                    <br>
+                </p>
+                <form action="">
+                    <label for="iicor">Cor:</label>
+                    <input type="color" name="cor" id="icor" value="#00ff00">
+                    <input type="submit" value="Enviar" class="btn">
+                </form>
+            </section>
+
+            <section>
+                <h3>Range</h3>
+                <p>
+                    Barra deslizante para valores numéricos, que pode enviar valores.
+                    <br>
+                    <em>Obs: Por padrão os valores iniciais são de 0 à 100, mas podemos acrescentar os atributo <code><strong>min</strong></code> e <code><strong>max</strong></code> para limitar essa variação, já o atributo <code><strong>value</strong></code> é usado para indicar onde a barra vai iniciar, como uma sugestão. Nesse exemplo eu deixei de 0 a 6.</em>
+                </p>
+                <form action="">
+                    <label for="inivel">Nível: </label>
+                    <input type="range" name="nivel" id="inivel" min="0" max="6">
+                    <input type="submit" value="Enviar" class="btn">
+                </form>
+            </section>
+
+            <section>
+                <h3>File</h3>
+                <p>
+                    Para fazer upload de arquivos. Use sempre com <code><strong>method="post"</strong></code>.
+                </p>
+                <form action="">
+                    <label for="ifoto">Arquivo: </label>
+                    <input type="file" name="foto" id="ifoto">
+                    <input type="submit" value="Enviar" class="btn">
+                </form>
+            </section>
+
+            <section>
+                <h3>CheckBox</h3>
+                <p>
+                    Permite selecionar múltiplas opções. Nesse caso o <code class="tag">&lt;input&gt;</code> vem antes da <code class="tag">&lt;lable&gt;</code>.
+                </p>
+                <form action="">
+                    <fieldset>
+                        <legend class="legend">Esportes</legend>
+                        <input type="checkbox" name="basq" id="ibasq">
+                        <label for="ibasq">Basquete</label>
+                        <br>
+                        <input type="checkbox" name="fut" id="ifut">
+                        <label for="ifut">Futebol</label>
+                        <br>
+                        <input type="checkbox" name="nat" id="inat">
+                        <label for="inat">Natação</label>
+                        <br>
+                        <input type="checkbox" name="skt" id="iskt">
+                        <label for="iskt">Skate</label>
+                        <br>
+                        <input type="checkbox" name="jiu" id="ijiu">
+                        <label for="ijiu">Jiu Jitsu</label>
+                        <br>
+                    </fieldset>                
+                </form>
+            </section>
+
+            <section>
+                <h3>Radio</h3>
+                <p>
+                    Seleção única dentro de um grupo.
+                </p>
+                <form action="">
+                    <fieldset>
+                        <legend>Sexo</legend>                 
+                        <input type="radio" name="Sexo" id="sxmas" value="M" checked>
+                        <label for="sxmas">Masculino</label>
+                        <input type="radio" name="Sexo" id="sxfem" value="F">
+                        <label for="sxfem">Feminino</label>
+                    </fieldset>
+                </form>
+                <p>
+                    É necessário que todos os inputs de um radio tenham o mesmo <code><strong>name</strong></code>, pois fazem parte do mesmo grupo, assim o usuário só pode selecionar uma opção do grupo, ao clicar em uma opção as outras automaticamente desmarcam.
+                </p>
+                <p>
+                    O <code><strong>value</strong></code> de cada radio é o dado que será enviado se aquela opção for escolhida.
+                </p>
+            </section>
+
+            <section>
+                <h3>Textarea</h3>
+                <p>
+                    Área de texto para mensagens longas, use com POST para evitar vazamento de dados pela URL.
+                </p>
+                <form action="">
+                    <label for="imsg">Mensagem: </label> <br>
+                    <textarea name="msg" id="imsg" class="textArea"></textarea>
+                </form>
+            </section>
+
+            <section>
+                <h3>Submit</h3>
+                <p>
+                    Envia os dados do formulário, com um botão(input) submit.
+                </p>
+                <form action="">
+                    <input type="submit" value="Enviar" class="btn">
+                </form>
+            </section>
+
+            <section>
+                <h3>Reset</h3>
+                <p>
+                    Limpa os campos preenchidos, com um botão(input).
+                </p>
+                <form action="">
+                    <label for="nomes">Nome:</label>
+                    <input type="text" name="nomes" id="nomes">
+                    <input type="reset" value="Limpar" class="btn">
+                </form>
+            </section>
+        </article>
+
+        <article>
+            <h2>Select</h2>
+            <p>
+                Cria uma lista suspensa com opções pré-definidas.
+            </p>
+            <form action="">
+                <label for="iselec">Estado: </label>
+                <select name="estado" id="iestado">
+                    <option value="">---Escolha um estado---</option>
+                    <optgroup label="Região Sudeste">
+                        <option value="SP">São Paulo</option>
+                        <option value="RJ">Rio de Janeiro</option>
+                        <option value="MG">Minas Gerais</option>
+                    </optgroup>
+
+                    <optgroup label="Região Nordeste">
+                        <option value="CE">Ceará</option>
+                        <option value="PE">Pernambuco</option>
+                        <option value="AL">Alagoas</option>
+                    </optgroup>
+                </select>
+            </form>
+            <p>
+                Difícil de explicar então vou deixar a imagem do código.
+            </p>
+            <figure>
+                <img id="select" src="../../../assets/img/html/formularios/select.webp" alt="select" class="lightbox-trigger" data-full-src="../../../assets/img/html/formularios/select.webp" data-caption="">
+            </figure>
+            <p>
+                Use <code class="tag">&lt;optgroup&gt;</code> para organizar grupos de opções.
+            </p>
+            <p>
+                Pode se usar o atributo <code><strong>disable</strong></code> para deixar uma opção desabilitada.
+            </p>
+        </article>
+
+        <article>
+            <h2>Datalist</h2>
+            <p>
+                Abre uma caixa com opções para selecionar, porém é permitido digitar caso algumas das opções apresentadas não seja suficiente.
+            </p>
+            <p>
+                Vou deixar a imagem do código para melhor aprendizado.
+            </p>
+            <form action="">
+                <label for="iprof">Profissão: </label>
+                <input type="text" name="prof" id="iprof" list="lstprof">
+                <datalist id="lstprof">
+                    <option value="ADM">Administrador</option>
+                    <option value="DEV">Desenvolvedor</option>
+                    <option value="CONT">Contador</option>
+                    <option value="ENG">Engenheiro</option>
+                </datalist>
+            </form>
+            <figure>
+                <img id="dataList" src="../../../assets/img/html/formularios/dataList.webp" alt="dataList" class="lightbox-trigger" data-full-src="../../../assets/img/html/formularios/dataList.webp" data-caption="">
+            </figure>
+        </article>
+
+        <article>
+            <h2>Atributos Importantes para Inputs</h2>
+            <section>
+                <h3>required</h3>
+                <p>
+                    Torna o campo obrigatório.
+                </p>
+                <form action="">
+                    <label for="req">Nome:</label>
+                    <input type="text" name="req" id="req" required>
+                    <input type="submit" value="Enviar" class="btn">
+                </form>
+            </section>
+            <section>
+                <h3>minlength</h3>
+                <p>
+                    Limita o número mínimo de caracteres a ser preenchido, nesse exemplo o <code><strong>minlength</strong></code> é de 15.
+                </p>
+                <form action="">
+                    <label for="minL">Nome:</label>
+                    <input type="text" name="minL" id="minL" minlength="15" required>
+                    <input type="submit" value="Enviar" class="btn">
+                </form>
+            </section>
+            <section>
+                <h3>maxlength</h3>
+                <p>
+                    Limita o número máximo de caracteres a ser preenchido, nesse exemplo o <code><strong>maxlength</strong></code> é de 5.
+                </p>
+                <form action="">
+                    <label for="maxL">Nome:</label>
+                    <input type="text" name="maxL" id="maxL" maxlength="5" required>
+                    <input type="submit" value="Enviar" class="btn">
+                </form>
+            </section>
+            <section>
+                <h3>size</h3>
+                <p>
+                    Aumenta visualmente o comprimento do <code class="tag">&lt;input&gt;</code>.
+                </p>
+                <form action="">
+                    <label for="siz">Nome:</label>
+                    <input type="text" name="siz" id="siz" size="40" required>
+                    <input type="submit" value="Enviar" class="btn">
+                </form>
+            </section>
+            <section>
+                <h3>placeholder</h3>
+                <p>
+                    Texto de dica dentro do <code class="tag">&lt;input&gt;</code>.
+                </p>
+                <form action="">
+                    <label for="plcholder">Nome:</label>
+                    <input type="text" name="plcholder" id="plcholder" placeholder=" Digite o Nome" required>
+                    <input type="submit" value="Enviar" class="btn">
+                </form>
+            </section>
+            <section>
+                <h3>autocomplete</h3>
+                <p>
+                    Sugere dados salvos pelo navegador. Ex: <em>username, email, new-password, current-password e etc.</em>
+                </p>
+            </section>
+            <section>
+                <h3>min</h3>
+                <p>
+                    Define valores mínimo para number, date, etc, nesse exemplo a altura miníma é 100.
+                </p>
+                <form action="">
+                    <label for="minNumber">Altura:</label>
+                    <input type="number" name="minNumber" id="minNumber" min="100" required>
+                    <input type="submit" value="Enviar" class="btn">
+                </form>
+            </section>
+            <section>
+                <h3>max</h3>
+                <p>
+                    Define valores máximo para number, date, etc, nesse exemplo a idade máxima é 18.
+                </p>
+                <form action="">
+                    <label for="maxNumber">Idade:</label>
+                    <input type="number" name="maxNumber" id="maxNumber" max="18" required>
+                    <input type="submit" value="Enviar" class="btn">
+                </form>
+            </section>
+            <section>
+                <h3>step</h3>
+                <p>
+                    Limita o quanto um número pode variar ex: <code><strong>step="0.5"</strong></code> vai aceitar somente números quebrados com 0.5 de diferença.
+                </p>
+                <form action="">
+                    <label for="step">Nota:</label>
+                    <input type="number" name="step" id="step" step="0.5" required>
+                    <input type="submit" value="Enviar" class="btn">
+                </form>
+            </section>
+            <section>
+                <h3>value</h3>
+                <p>
+                    Sugere um valor para o campo a ser preenchido.
+                </p>
+                <form action="">
+                    <label for="vallue">Idade:</label>
+                    <input type="number" name="vallue" id="vallue" value="17" required>
+                    <input type="submit" value="Enviar" class="btn">
+                </form>
+            </section>
+            <section>
+                <h3>checked</h3>
+                <p>
+                    Pré-seleciona um <code class="tag">&lt;input&gt;</code> do tipo <code><strong>radio</strong></code> ou <code><strong>checkbox</strong></code>, nesse exemplo os campos basquete e jiu jitsu estão com o atributo checked.
+                </p>
+                <form action="">
+                    <input type="checkbox" name="basq" id="ibasq" checked>
+                    <label for="ibasq">Basquete</label>
+                    <input type="checkbox" name="fut" id="ifut">
+                    <label for="ifut">Futebol</label>
+                    <input type="checkbox" name="nat" id="inat">
+                    <label for="inat">Natação</label>
+                    <input type="checkbox" name="skt" id="iskt">
+                    <label for="iskt">Skate</label>
+                    <input type="checkbox" name="jiu" id="ijiu" checked>
+                    <label for="ijiu">Jiu Jitsu</label>
+                </form>
+            </section>          
+        </article>
+
                 
     </main>
 
