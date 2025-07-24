@@ -71,9 +71,9 @@
         <h1>Imagem</h1>
         
         <article>
-            <h2>Inserindo imagens Simples</h2>
+            <h2>Img</h2>
             <p>
-                A tag <code class="tag">&lt;img&gt;</code> é usada para mostrar uma imagem no site, nessa tag temos dois atributos.
+                A tag <code class="tag">&lt;img&gt;</code> é usada para mostrar uma imagem no site. Ela não tem fechamento (é uma tag auto-fechada) e seu comportamento padrão é inserir uma imagem inline. Temos dois atributos principais.
             </p>
             <p>
                 O atributo <code><strong>src</strong></code> é usado para especificar o caminho da imagem que você deseja exibir. Podendo ser local, ou seja, quando a imagem está baixada no seu projeto ou remoto, quando a imagem está hospedada em outro site.
@@ -82,276 +82,137 @@
                 O atributo <code><strong>alt</strong></code> que é usado para fornecer uma descrição alternativa da imagem, que é importante para acessibilidade e SEO. Caso a imagem não possa ser carregada, o texto alternativo será exibido no lugar da imagem.
             </p>
             <p>
-                Exemplo de uma imagem local:
-                <br>
-                <code class="tag">&lt;img&nbsp;src="imagens/logo.png" alt="Logo da empresa"&gt;</code>
+                Exemplo de como usar a tag <code class="tag">&lt;img&gt;</code>:
+            </p>
+            <figure>
+                <img id="tagImg" src="../../../assets/img/html/imagem/imgTag.webp" alt="tag img" class="lightbox-trigger" data-full-src="../../../assets/img/html/imagem/imgTag.webp" data-caption="">
+            </figure>
+            <p>
+                No exemplo local, o caminho diz que a imagem está na pasta imagens, o nome da imagem é logo e o formato dela é png, já o texto alternativo é logo da empresa.
             </p>
             <p>
-                Nesse exemplo, o caminho diz que a imagem está na pasta imagens, o nome da imagem é logo e o formato dela é png. Já o texto alternativo é logo da empresa.
+                No exemplo remoto, o caminho diz que a imagem está no endereço http://exemplo.com/foto.jpg e o formato dela é jpg, já o texto alternativo é paisagem bonita.
             </p>
             <p>
-                Exemplo de uma imagem remota:
-                <br>
-                <code class="tag">&lt;img&nbsp;src="https://ex1.com/foto.jpg" alt="Paisagem"&gt;</code>
+                Outros atributos opcionais são o <code><strong>width / height</strong></code> que define o tamanho da imagem (em pixels ou %). <code><strong>loading</strong></code> que pode ser <code><strong>lazy</strong></code> (carrega sob demanda) ou <code><strong>eager</strong></code> (carrega imediatamente).
             </p>
             <p>
-                Nesse exemplo, o caminho diz que a imagem está no endereço <code>https://exemplo.com/foto.jpg</code> e o formato dela é jpg. Já o texto alternativo é paisagem.
+                <em>
+                    Obs: Priori se o uso imagens com licença de uso livre (como Unsplash, Pexels, Pixabay).
+                </em>
+            </p>
+            <p>
+                <em>
+                    Se o dono da imagem tirar o arquivo do ar, ela deixará de aparecer no seu site.
+                </em>
+            </p>
+            <p>
+                <em>
+                    Nomeie os arquivos de forma descritiva: <code>cachorro-feliz.jpg</code>, em vez de <code>img001.jpg</code>. 
+                </em>
             </p>
         </article>
 
-
-        <p>
-            1. Tag <img> – Inserindo imagens simples
-            A tag <img> é usada para mostrar uma imagem no site.
-
-            html
-            Copiar
-            Editar
-            <img src="caminho-da-imagem.jpg" alt="Descrição da imagem">
-            src: caminho da imagem (pode ser local ou da internet).
-
-            alt: descrição da imagem (importante para acessibilidade e SEO).
-
-            Exemplo com imagem local:
-
-            html
-            Copiar
-            Editar
-            <img src="imagens/logo.png" alt="Logo da empresa">
-            Exemplo com imagem da internet:
-
-            html
-            Copiar
-            Editar
-            <img src="https://exemplo.com/foto.jpg" alt="Paisagem bonita">
-            2. Tag <picture> – Imagens responsivas
-            Permite carregar imagens diferentes dependendo do tamanho da tela ou tipo de dispositivo.
-
-            html
-            Copiar
-            Editar
-            <picture>
-            <source media="(max-width: 600px)" srcset="imagem-pequena.jpg">
-            <source media="(min-width: 601px)" srcset="imagem-grande.jpg">
-            <img src="imagem-padrao.jpg" alt="Descrição da imagem">
-            </picture>
-            Carrega imagens diferentes para celular, tablet ou desktop.
-
-            O <img> dentro da tag é a imagem padrão.
-
-            3. Tag <figure> + <figcaption> – Imagens com legenda
-            Ideal para imagens que precisam de uma legenda explicativa.
-
-            html
-            Copiar
-            Editar
+        <article>
+            <h2>Figure</h2>
+            <p>
+                A tag <code class="tag">&lt;figure&gt;</code> + <code class="tag">&lt;figcaption&gt;</code> é utilizado para conteúdo com imagens com legenda semântica. Essa estrutura melhora a semântica e ajuda mecanismos de busca a entenderem melhor o conteúdo. Use quando quiser relacionar uma legenda diretamente a uma imagem. Ideal para conteúdos editoriais, portfólios e artigos.
+            </p>
+            <p>
+                Exemplo de uso das tags <code class="tag">&lt;figure&gt;</code> + <code class="tag">&lt;figcaption&gt;</code>:
+            </p>
             <figure>
-            <img src="produto.jpg" alt="Foto do produto">
-            <figcaption>Produto em promoção por tempo limitado.</figcaption>
+                <img id="figure" src="../../../assets/img/html/imagem/figure.webp" alt="imagem da tag figure" class="lightbox-trigger" data-full-src="../../../assets/img/html/imagem/figure.webp" data-caption="">
             </figure>
-            4. Usando imagens da internet
-            Você pode usar imagens hospedadas em outros sites com a URL completa:
+            <p>
+                A tag <code class="tag">&lt;figure&gt;</code> cria um bloco de conteúdo visual.
+            </p>
+            <p>
+                A tag <code class="tag">&lt;figcaption&gt;</code> é a legenda da imagem. O conteúdo é associado à imagem e pode ser estilizado com CSS facilmente.
+            </p>
+        </article>
 
-            html
-            Copiar
-            Editar
-            <img src="https://site.com/imagem.jpg" alt="Descrição">
-            ⚠️ Atenção:
-
-            Use imagens com licença de uso livre (como Unsplash, Pexels, Pixabay).
-
-            Se o dono da imagem tirar o arquivo do ar, ela deixará de aparecer no seu site.
-
-            5. Adicionando um favicon
-            O favicon é o ícone que aparece na aba do navegador. Coloque o arquivo .ico ou .png na raiz do projeto e adicione essa linha no <head>:
-
-            html
-            Copiar
-            Editar
-            <link rel="icon" href="favicon.ico" type="image/x-icon">
-            Exemplo com imagem PNG:
-
-            html
-            Copiar
-            Editar
-            <link rel="icon" href="imagens/favicon.png" type="image/png">
-            6. Boas práticas ao usar imagens
-            Comprimir as imagens para carregar mais rápido (use ferramentas como TinyPNG).
-
-            Sempre use o atributo alt para acessibilidade.
-
-            Nomeie os arquivos de forma descritiva: cachorro-feliz.jpg, em vez de img001.jpg.
-
-            Prefira formatos como .jpg, .png, .webp (mais leve).
-
-            7. Outros detalhes úteis
-            Centralizar imagem com CSS:
-
-            css
-            Copiar
-            Editar
-            img {
-            display: block;
-            margin: 0 auto;
-            }
-            Tornar imagem responsiva:
-
-            css
-            Copiar
-            Editar
-            img {
-            max-width: 100%;
-            height: auto;
-            }
-        </p>
-
-        <p>
-            1. Tag <img> – Inserção de imagem estática
-            A <img> é a tag mais usada para inserir imagens. Ela não tem fechamento (é uma tag auto-fechada) e seu comportamento padrão é inserir uma imagem inline, ou seja, como se fosse parte de um texto.
-
-            📌 Sintaxe básica:
-            html
-            Copiar
-            Editar
-            <img src="caminho/arquivo.jpg" alt="Texto alternativo">
-            🔑 Principais atributos:
-            Atributo	Descrição
-            src	(obrigatório) Caminho da imagem (local ou URL externa)
-            alt	(obrigatório) Texto alternativo (mostrado se a imagem não carregar; usado por leitores de tela)
-            width / height	Define o tamanho da imagem (em pixels ou %)
-            loading	Pode ser "lazy" (carrega sob demanda) ou "eager" (carrega imediatamente)
-            title	Dica de ferramenta (tooltip) ao passar o mouse
-
-            ✅ Exemplo:
-            html
-            Copiar
-            Editar
-            <img src="logo.png" alt="Logotipo da empresa" width="200" height="100" loading="lazy">
-            💡 Importante: Nunca use imagens sem o atributo alt. Isso ajuda na acessibilidade, SEO e na experiência de usuários com internet lenta.
-
-            🔹 2. Tag <figure> + <figcaption> – Imagens com legenda semântica
-            Use quando quiser relacionar uma legenda diretamente a uma imagem. Ideal para conteúdos editoriais, portfólios e artigos.
-
-            📌 Estrutura:
-            html
-            Copiar
-            Editar
-            <figure>
-            <img src="produto.jpg" alt="Foto do Produto">
-            <figcaption>Produto em promoção por tempo limitado.</figcaption>
-            </figure>
-            <figure> cria um bloco de conteúdo visual.
-
-            <figcaption> é a legenda da imagem.
-
-            Essa estrutura melhora a semântica e ajuda mecanismos de busca a entenderem melhor o conteúdo.
-
-            ✅ Comportamento: o conteúdo do <figcaption> é associado à imagem e pode ser estilizado com CSS facilmente.
-
-            🔹 3. Tag <picture> – Imagens responsivas ou adaptáveis
-            Permite carregar imagens diferentes conforme o dispositivo ou tipo de arquivo suportado (como WebP). Muito útil para otimizar a performance em dispositivos móveis ou para usar formatos modernos.
-
-            📌 Estrutura:
-            html
-            Copiar
-            Editar
+        <article>
+            <h2>Picture</h2>
+            <p>
+                A tag <code class="tag">&lt;picture&gt;</code> é utilizada para deixar as imagens responsivas ou adaptáveis. Permite o navegador carregar imagens diferentes conforme o dispositivo ou tipo de arquivo suportado. Muito útil para otimizar a performance em dispositivos móveis ou para adaptar o conteúdo.            
+            </p>
+            <p>
+                Exemplo de imagem adaptável a diferentes formatos.
+            </p>
             <picture>
-            <source srcset="imagem.webp" type="image/webp">
-            <source media="(max-width: 600px)" srcset="imagem-pequena.jpg">
-            <img src="imagem-padrao.jpg" alt="Descrição da imagem">
+                <source media="(max-width: 480px)" srcset="../../../assets/img/html/imagem/paisagem-p.webp" type="image/webp">
+                <source media="(max-width: 768px)" srcset="../../../assets/img/html/imagem/paisagem-m.webp" type="image/webp">
+                <img id="paisagem" src="../../../assets/img/html/imagem/paisagem-g.webp" alt="imagem da tag picture" class="lightbox-trigger" data-full-src="../../../assets/img/html/imagem/paisagem-g.webp" data-caption="">
             </picture>
-            O navegador escolhe a primeira fonte compatível.
+            <p>
+                Estrutura do HTML dessa imagem:
+            </p>
+            <picture>
+                <source media="(max-width: 768px)" srcset="../../../assets/img/html/imagem/picture-p.webp" type="image/webp">
+                <img id="picture" src="../../../assets/img/html/imagem/picture-g.webp" alt="imagem da tag picture" class="lightbox-trigger" data-full-src="../../../assets/img/html/imagem/picture-g.webp" data-caption="">
+            </picture>
+            <p>
+                Nesse caso, se a tela for menor que 480px, o navegador irá carregar o primeiro  <code class="tag">&lt;source&gt;</code>, se for maior que 480px e menor que 768px irá carregar o segundo  <code class="tag">&lt;source&gt;</code>, e so for maior que 768px irá carregar a tag  <code class="tag">&lt;img&gt;</code>.
+            </p>
+            <p>
+                A tag <code class="tag">&lt;source&gt;</code> define as imagens alternativas. O atributo <code><strong>media</strong></code> especifica a condição para usar aquela imagem (como largura máxima da tela). O atributo <code><strong>srcset</strong></code> define o caminho da imagem e o tipo de arquivo.
+            </p>
+            <p>
+                A tag <code class="tag">&lt;img&gt;</code> funciona como fallback, garantindo que a imagem apareça mesmo se o navegador não suportar os outros formatos.
+            </p>
+            <p>
+                O navegador carrega a melhor imagem disponível de acordo com a largura da tela, formato suportado, ou prioridade definida.
+            </p>            
+        </article>
 
-            O <img> funciona como fallback, garantindo que a imagem apareça mesmo se o navegador não suportar os outros formatos.
+        <article>
+            <h2>Favicon</h2>
+            <p>
+                O favicon é aquele ícone pequeno que aparece na aba do navegador. Para adicioná-lo, coloque um arquivo .ico ou .png no diretório e adicione esta linha no <code class="tag">&lt;head&gt;</code> do seu HTML:
+            </p>
+            <p>
+                <code class="tag">&lt;link rel="icon" href="favicon.ico" type="image/x-icon"&gt;</code>
+            </p>
+            <p>
+                Onde o atributo <code><strong>href</strong></code> aponta para o caminho do arquivo favicon.
+            </p>
+            <p>
+                <em>Dica: Use ícones de 32x32 ou 16x16 pixels para melhor compatibilidade.</em>
+            </p>
+        </article>
 
-            ✅ Comportamento: carrega a melhor imagem disponível de acordo com a largura da tela, formato suportado, ou prioridade definida.
+        <article>
+            <h2>Extra</h2>
+            <section>
+                <h3>Centralizar Imagem com CSS</h3>
+                <p>
+                    Existe diferentes meios de centralizar uma imagem, mas um jeito simples de centralizar uma imagem é:
+                </p>
+                <figure>
+                    <img id="center" src="../../../assets/img/html/imagem/center.webp" alt="centralizar imagem" class="lightbox-trigger" data-full-src="../../../assets/img/html/imagem/center.webp" data-caption="">
+                </figure>
+            </section>
 
-            🔹 4. Usando imagens externas (da internet)
-            Você pode usar imagens de outros sites, mas com cuidado:
-
-            html
-            Copiar
-            Editar
-            <img src="https://exemplo.com/foto.jpg" alt="Foto de paisagem">
-            ⚠️ Cuidados:
-            O site pode remover a imagem ou bloquear seu uso (quebrando seu site).
-
-            Verifique a licença da imagem (use bancos gratuitos como Unsplash, Pexels ou Pixabay).
-
-            🔹 5. Adicionando um favicon
-            O favicon é aquele ícone pequeno que aparece na aba do navegador. Para adicioná-lo, coloque um arquivo .ico ou .png no diretório e adicione esta linha no <head> do seu HTML:
-
-            html
-            Copiar
-            Editar
-            <link rel="icon" href="favicon.ico" type="image/x-icon">
-            Ou:
-
-            html
-            Copiar
-            Editar
-            <link rel="icon" href="imagens/favicon.png" type="image/png">
-            ✅ Dica: Use ícones de 32x32 ou 16x16 pixels para melhor compatibilidade.
-
-            🔹 6. Tornando imagens responsivas
-            Imagens precisam se adaptar bem em telas de diferentes tamanhos. Para isso, use CSS:
-
-            📌 Exemplo CSS:
-            css
-            Copiar
-            Editar
-            img {
-            max-width: 100%;
-            height: auto;
-            display: block;
-            }
-            max-width: 100%: impede que a imagem ultrapasse o limite do seu contêiner.
-
-            height: auto: mantém a proporção.
-
-            display: block: remove o espaço embaixo da imagem.
-
-            🔹 7. Boas práticas
-            ✅ Nomeie arquivos com nomes descritivos: cachorro-feliz.jpg, não img1.jpg.
-
-            ✅ Otimize suas imagens (TinyPNG, Squoosh, etc.).
-
-            ✅ Use formatos modernos (.webp, .avif) quando possível.
-
-            ✅ Sempre use alt, mesmo que seja vazio (alt="") para imagens decorativas.
-
-            ❌ Evite usar imagens como fundo com <img> se elas forem puramente visuais (use CSS).
-
-            💡 Extras úteis
-            🔸 Carregamento inteligente com loading="lazy":
-            html
-            Copiar
-            Editar
-            <img src="grande.jpg" loading="lazy" alt="Imagem grande">
-            Isso só carrega a imagem quando ela estiver perto de aparecer na tela, economizando banda.
-
-            🔸 Inserindo uma imagem como fundo (via CSS):
-            css
-            Copiar
-            Editar
-            body {
-            background-image: url('fundo.jpg');
-            background-size: cover;
-            background-position: center;
-            }
-            ✅ Conclusão
-            Você aprendeu:
-
-            Como e quando usar <img>, <figure>, <figcaption>, e <picture>.
-
-            Como carregar imagens externas com segurança.
-
-            Como adicionar um favicon.
-
-            Como tornar imagens responsivas e acessíveis.
-
-            As boas práticas para SEO, acessibilidade e performance.
-        </p>
+            <section>
+                <h3>Imagem Responsiva</h3>
+                <p>
+                    Existe outros meios de deixar uma imagem responsiva, mas um jeito simples de fazer isso com CSS é:
+                </p>
+                <figure>
+                    <img id="respons" src="../../../assets/img/html/imagem/responsividade.webp" alt="imagem responsiva" class="lightbox-trigger" data-full-src="../../../assets/img/html/imagem/responsividade.webp" data-caption="">
+                </figure>
+                <p>
+                    <code><strong>max-width: 100%</strong></code> - Impede que a imagem ultrapasse o limite do seu contêiner.
+                </p>
+                <p>
+                    <code><strong>height: auto</strong></code> - Mantém a proporção.
+                </p>
+                <p>
+                    <code><strong>display: block</strong></code> - Remove o espaço embaixo da imagem.
+                </p>
+            </section>            
+        </article>       
         
     </main>
 
