@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video</title>
+    <!-- Favicon imagem -->
+    <link rel="shortcut icon" href="../../../assets/img/favicon/favicon.ico" type="image/x-icon">
+    <!-- Link do CSS -->
+    <link rel="stylesheet" href="../../../assets/css/html-pages/style-html-pages.css">
+    <!-- font do ícone backToTop -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined&display=swap" rel="stylesheet">
+
+</head>
+<body class="area">
+
+    <div class="page-transition"></div>
+
+    <ul class="circles">
+        <li class="square"></li>
+        <li class="square"></li>
+        <li class="square"></li>
+        <li class="square"></li>
+        <li class="square"></li>
+        <li class="square"></li>
+        <li class="square"></li>
+        <li class="square"></li>
+        <li class="square"></li>
+        <li class="square"></li>
+        <li class="square"></li>
+        <li class="square"></li>
+        <li class="square"></li>
+        <li class="square"></li>
+        <li class="square"></li>
+        <li class="square"></li>
+        <li class="square"></li>
+        <li class="square"></li>
+        <li class="square"></li>
+        <li class="square"></li>
+    </ul>
+    <header>
+
+        <button id="menu-toggle" class="menu-toggle">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </button>
+
+        <section class="horizontal">
+            <span id="codeTrail">CodeTrail</span>    
+            <nav id="side-menu">
+                <ul>
+                    <li><a href="../../../index.html" class="home">Home</a></li>
+                    <li><a href="../../../pages/html/indexHtml.html" class="html">HTML</a></li>
+                    <li><a href="../../../pages/css/indexCss.html" class="css">CSS</a></li>
+                    <li><a href="../../../pages/javascript/indexJs.html" class="js">JavaScript</a></li>
+                    <li><a href="../../../pages/typescript/indexType.html" class="ts">TypeScript</a></li>
+                    <li><a href="../../../pages/about/indexAbout.html" class="about">About</a></li>
+                </ul>
+            </nav>
+        </section>
+
+        <h1>HTML</h1>
+
+    </header>
+
+    <main class="context">
+
+        <h1>Video</h1>
+
+        <article>
+            <h2>Video Local</h2>
+            <p>
+                A tag <code class="tag">&lt;video&gt;</code> é uma ferramenta poderosa para enriquecer a experiência do usuário em suas páginas web, permitindo que você adicione vídeos relevantes ao conteúdo. Os formatos aceitos pelos navegadores são MP4, WebM e OGG.
+            </p>
+            <p>
+                Exemplo de uso da tag <code class="tag">&lt;video&gt;</code>:
+            </p>
+            
+            <video class="video-responsivo" controls poster="../../../assets/img/html/video/thumbnail.webp">
+                <source src="../../../assets/video/Meu-Video.mp4" type="video/mp4">
+                <source src="../../../assets/video/Meu-Video.webm" type="video/webm">
+                <source src="../../../assets/video/Meu-Video.ogv" type="video/ogv">
+                <p>Seu navegador não é compatível com reprodução de video.</p>
+            </video>
+            <p>
+                Estrutura do HTML:
+            </p>
+            <figure>
+                <img id="videoImg" src="../../../assets/img/html/video/video.webp" alt="imagem da tag video" class="lightbox-trigger" data-full-src="../../../assets/img/html/video/video.webp" data-caption="">
+            </figure>
+            <p>
+                Nesse exemplo, o navegador tentará reproduzir o arquivo <strong>MP4</strong> primeiro. Se não for suportado, tentará o arquivo <strong>WebM</strong>. Se não for suportado, tentará o arquivo <strong>OGG</strong>. Se nenhum dos formatos for suportado, uma mensagem será exibida.
+            </p>
+            <p>
+                O atributo <code><strong>controls</strong></code> adiciona controles de reprodução ao player de vídeo, permitindo que o usuário reproduza, pause e ajuste o volume do vídeo.
+            </p>
+            <p>
+                O atributo <code><strong>autoplay</strong></code> faz com que o vídeo comece a tocar automaticamente quando a página for carregada.
+            </p>
+            <p>
+                O atributo <code><strong>loop</strong></code> faz com que o vídeo seja reproduzido em loop, ou seja, quando chegar ao final, ele reiniciará automaticamente.
+            </p>
+            <p>
+                O atributo <code><strong>muted</strong></code> silencia o vídeo inicialmente, permitindo que o usuário ative o som manualmente.
+            </p>
+            <p>
+                O atributo <code><strong>preload</strong></code> indica ao navegador como deve carregar o vídeo. Os valores possíveis são <code><strong>none</strong></code> (não carregar), <code><strong>metadata</strong></code> (carregar apenas os metadados) e <code><strong>auto</strong></code> (carregar o vídeo completo). O mais recomendado é usar <code><strong>metadata</strong></code> para otimizar o desempenho da página.
+            </p>
+            <p>
+                O atributo <code><strong>poster</strong></code> permite definir uma imagem que será exibida antes do vídeo ser reproduzido. Isso é útil para fornecer uma prévia visual do conteúdo do vídeo.
+            </p>
+            <p>
+                O atributo <code><strong>width</strong></code> e <code><strong>height</strong></code> permitem definir as dimensões do player de vídeo. É importante especificar essas dimensões para garantir que o layout da página seja consistente.
+            </p>
+            <p>
+                O atributo <code><strong>crossorigin</strong></code> é usado para especificar como o navegador deve lidar com o carregamento de vídeos de domínios diferentes. Os valores possíveis são <code><strong>anonymous</strong></code> (sem credenciais) e <code><strong>use-credentials</strong></code> (com credenciais).
+            </p>
+            <p>
+                O atributo <code><strong>playsinline</strong></code> permite que o vídeo seja reproduzido inline em dispositivos móveis, em vez de abrir em tela cheia. Isso é especialmente útil para melhorar a experiência do usuário em dispositivos móveis.
+            </p>
+            <p>
+                O atributo <code><strong>disablepictureinpicture</strong></code> desativa o modo Picture-in-Picture, que permite que o vídeo seja reproduzido em uma janela flutuante enquanto o usuário navega por outras partes da página.
+            </p>
+            <p>
+                O atributo <code><strong>controlslist</strong></code> permite especificar quais controles devem ser exibidos no player de vídeo. Os valores possíveis incluem <code><strong>nodownload</strong></code> (oculta o botão de download), <code><strong>nofullscreen</strong></code> (oculta o botão de tela cheia) e <code><strong>noremoteplayback</strong></code> (oculta o botão de reprodução remota).
+            </p>
+            <p>
+                O atributo <code><strong>default</strong></code> indica que o vídeo deve ser reproduzido automaticamente quando a página for carregada, sem a necessidade de interação do usuário.
+            </p>
+        </article>
+
+        <article>
+            <h2>Video Remoto</h2>
+            <p>
+                Para usar vídeos remotos, como os hospedados no YouTube, por exemplo. Para isso, você pode usar a tag <code class="tag">&lt;video&gt;</code> com o atributo <code><strong>src</strong></code> apontando para a URL do vídeo remoto.
+            </p>
+            <p>
+                Outro método é usar a tag <code class="tag">&lt;iframe&gt;</code> para incorporar vídeos de plataformas como YouTube, Vimeo, etc. Isso permite que você exiba vídeos diretamente em sua página sem precisar hospedar os arquivos localmente. E é a maneira mais recomendada para vídeos do YouTube, pois eles fornecem um player otimizado e recursos adicionais.
+            </p>
+            <p>
+                Para usar um video remoto do Youtube, você pode seguir os passos abaixo:
+            </p>
+            <ol class="videoSteps">
+                <li>Entre em <a href="https://www.youtube.com/" target="_blank">youtube.com</a></li>
+                <li>Escolha o video que deseja</li>
+                <li>Clique em compartilhar</li>
+                <li>Clique em incorporar</li>
+                <li>Copie o código</li>
+                <li>Cole o código onde desejar</li>
+            </ol>
+            <p>
+                Exemplo de video remoto do Youtube:
+            </p>
+            <div class="youtube-container">
+                <iframe 
+                    src="https://www.youtube.com/embed/cctoNkvNMqc?si=X2IOf0E-9f3TtMQy" 
+                    frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                    allowfullscreen>
+                </iframe>
+            </div>
+            <p>
+                Estrutura do HTML:
+            </p>
+            <figure>
+                <img id="youtubeImg" src="../../../assets/img/html/video/videoRemoto.webp" alt="estrutura de video do youtube" class="lightbox-trigger" data-full-src="../../../assets/img/html/video/videoRemoto.webp" data-caption="">
+            </figure>
+            <p>
+                Nesse exemplo, o vídeo do YouTube é incorporado usando a tag <code class="tag">&lt;iframe&gt;</code>. O atributo <code><strong>src</strong></code> contém a URL do vídeo. O atributo <code><strong>frameborder</strong></code> é usado para remover a borda ao redor do iframe. O atributo <code><strong>allow</strong></code> especifica quais recursos são permitidos durante a reprodução do vídeo, e o atributo <code><strong>allowfullscreen</strong></code> permite que o vídeo seja reproduzido em tela cheia.
+            </p>
+        </article>
+    </main>
+
+    <button id="btnTopo" title="Voltar ao topo">
+        <span id="top" class="material-symbols-outlined">
+            arrow_upward
+        </span>
+    </button>
+
+    <!-- Estrutura do Lightbox -->
+    <div id="custom-lightbox" class="lightbox-hidden">
+        <div class="lightbox-overlay"></div>
+        <div class="lightbox-content">
+            <button class="lightbox-close-btn" aria-label="Fechar lightbox">&times;</button>
+            <img src="" alt="" class="lightbox-image">
+            <div class="lightbox-caption"></div>
+        </div>
+    </div>
+    
+    <script src="../../../assets/js/hamburguerMenu.js"></script>
+    <script src="../../../assets/js/backToTop.js"></script>
+    <script src="../../../assets/js/lightBox.js"></script>
+    <script src="../../../assets/js/transitionEntry.js" defer></script>
+    <script src="../../../assets/js/transitionExit.js"></script>
+</body>
+</html>

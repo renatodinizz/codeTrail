@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iframe</title>
+    <!-- Favicon imagem -->
+    <link rel="shortcut icon" href="../../../assets/img/favicon/favicon.ico" type="image/x-icon">
+    <!-- Link do CSS -->
+    <link rel="stylesheet" href="../../../assets/css/html-pages/style-html-pages.css">
+    <!-- font do ícone backToTop -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined&display=swap" rel="stylesheet">
+
+</head>
+<body class="area">
+
+    <div class="page-transition"></div>
+
+    <ul class="circles">
+        <li class="square"></li>
+        <li class="square"></li>
+        <li class="square"></li>
+        <li class="square"></li>
+        <li class="square"></li>
+        <li class="square"></li>
+        <li class="square"></li>
+        <li class="square"></li>
+        <li class="square"></li>
+        <li class="square"></li>
+        <li class="square"></li>
+        <li class="square"></li>
+        <li class="square"></li>
+        <li class="square"></li>
+        <li class="square"></li>
+        <li class="square"></li>
+        <li class="square"></li>
+        <li class="square"></li>
+        <li class="square"></li>
+        <li class="square"></li>
+    </ul>
+    <header>
+
+        <button id="menu-toggle" class="menu-toggle">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </button>
+
+        <section class="horizontal">
+            <span id="codeTrail">CodeTrail</span>    
+            <nav id="side-menu">
+                <ul>
+                    <li><a href="../../../index.html" class="home">Home</a></li>
+                    <li><a href="../../../pages/html/indexHtml.html" class="html">HTML</a></li>
+                    <li><a href="../../../pages/css/indexCss.html" class="css">CSS</a></li>
+                    <li><a href="../../../pages/javascript/indexJs.html" class="js">JavaScript</a></li>
+                    <li><a href="../../../pages/typescript/indexType.html" class="ts">TypeScript</a></li>
+                    <li><a href="../../../pages/about/indexAbout.html" class="about">About</a></li>
+                </ul>
+            </nav>
+        </section>
+
+        <h1>HTML</h1>
+
+    </header>
+
+    <main class="context">
+
+        <h1>Iframe</h1>
+
+        <article>
+            <h2>Audio Simples</h2>
+            <p>
+                A tag <code class="tag">&lt;audio&gt;</code> é uma ferramenta poderosa para enriquecer a experiência do usuário em suas páginas web, permitindo que você adicione música, efeitos sonoros ou qualquer outro tipo de áudio relevante ao conteúdo. Os formatos aceitos pelos navegadores são MP3, WAV e OGG.
+            </p>
+            <audio id="audio1" src="../../../assets/audio/boombapflick.mp3" controls></audio>
+            <p>
+                Exemplo de uso do elemento <code>&lt;audio&gt;</code>:
+            </p>
+            <p>
+                <code class="tag2">&lt;audio src="/exemplo.mp3" controls&gt;</code><code class="tag2">&lt;/audio&gt;</code>
+            </p>
+            <p>
+                O atributo <code><strong>controls</strong></code> adiciona controles de reprodução ao player de áudio, permitindo que o usuário reproduza, pause e ajuste o volume do áudio.
+            </p>
+            <p>
+                O atributo <code><strong>autoplay</strong></code> faz com que o áudio comece a tocar automaticamente quando a página for carregada.
+            </p>
+            <p>
+                O atributo <code><strong>loop</strong></code> faz com que o áudio seja reproduzido em loop, ou seja, quando chegar ao final, ele reiniciará automaticamente.
+            </p>
+            <p>
+                O atributo <code><strong>muted</strong></code> silencia o áudio inicialmente, permitindo que o usuário ative o som manualmente.
+            </p>
+            <p>
+                O atributo <code><strong>preload</strong></code> indica ao navegador como deve carregar o áudio. Os valores possíveis são <code><strong>none</strong></code> (não carregar), <code><strong>metadata</strong></code> (carregar apenas os metadados) e <code><strong>auto</strong></code> (carregar o áudio completo). O mais recomendado é usar <code><strong>metadata</strong></code> para otimizar o desempenho da página.
+            </p>
+        </article>
+
+        <article>
+            <h2>Vários Formatos</h2>
+            <p>
+                A tag <code class="tag">&lt;audio&gt;</code> pode incluir várias fontes de áudio para garantir a compatibilidade com diferentes navegadores. Cada fonte é especificada dentro do elemento <code class="tag">&lt;source&gt;</code>.
+            </p>
+            <p>
+                Exemplo de uso da tag <code class="tag">&lt;audio&gt;</code> com várias fontes:
+            </p>
+            <audio class="audio2" preload="metadata" controls loop>
+                <source src="../../../assets/audio/boombapflick.mp3" type="audio/mpeg">
+                <source src="../../../assets/audio/boombapflick.mp3.ogg" type="audio/ogg">
+                <source src="../../../assets/audio/boombapflick.mp3.wav" type="audio/wav">
+                <p>Seu navegador não suporta o elemento de áudio.</p>
+            </audio>
+            <p>
+                Estrutura do HTML:
+            </p>
+            <figure>
+                <img id="audioImg" src="../../../assets/img/html/audio/audio.webp" alt="imagem da tag audio" class="lightbox-trigger" data-full-src="../../../assets/img/html/audio/audio.webp" data-caption="">
+            </figure>
+            <p>
+                Neste exemplo, o navegador tentará reproduzir o arquivo <strong>MP3</strong> primeiro. Se não for suportado, tentará o arquivo <strong>OGG</strong>. Se não for suportado, tentará o arquivo <strong>WAV</strong>. Se nenhum dos formatos for suportado, uma mensagem será exibida.
+            </p>
+            <p>
+                <em>
+                    Obs: Usa-se o type audio/mpeg para aquivos em MP3
+                </em>
+            </p>
+            <p>
+                É importante fornecer formatos alternativos para garantir que o áudio seja reproduzível em todos os navegadores. O MP3 é amplamente suportado, mas alguns navegadores podem preferir OGG ou outros formatos.
+            </p>
+            <p>
+                Você pode personalizar ainda mais o player de áudio usando CSS para ajustar a aparência e o layout, garantindo que ele se encaixe no design geral do seu site.
+            </p>
+            <p>
+                Além disso, você pode usar JavaScript para adicionar funcionalidades extras, como controle de volume personalizado, playlists dinâmicas ou integração com outras partes do seu site.
+            </p>
+        </article>   
+                
+    </main>
+
+    <button id="btnTopo" title="Voltar ao topo">
+        <span id="top" class="material-symbols-outlined">
+            arrow_upward
+        </span>
+    </button>
+
+    <!-- Estrutura do Lightbox -->
+    <div id="custom-lightbox" class="lightbox-hidden">
+        <div class="lightbox-overlay"></div>
+        <div class="lightbox-content">
+            <button class="lightbox-close-btn" aria-label="Fechar lightbox">&times;</button>
+            <img src="" alt="" class="lightbox-image">
+            <div class="lightbox-caption"></div>
+        </div>
+    </div>
+    
+    <script src="../../../assets/js/hamburguerMenu.js"></script>
+    <script src="../../../assets/js/backToTop.js"></script>
+    <script src="../../../assets/js/lightBox.js"></script>
+    <script src="../../../assets/js/transitionEntry.js" defer></script>
+    <script src="../../../assets/js/transitionExit.js"></script>
+</body>
+</html>
