@@ -70,78 +70,84 @@
 
         <h1>Download</h1>
 
-        <p>
-            📁 2. Como Disponibilizar um Arquivo para Download
-            ✅ O que é isso?
-            Disponibilizar um arquivo para download significa permitir que o usuário baixe um arquivo diretamente ao clicar em um link. Pode ser um PDF, um documento Word, planilha, imagem, áudio, vídeo, ZIP etc.
-
-            🛠️ Como usar
-            ✅ Usando a tag <a> com o atributo download:
-            html
-            Copiar
-            Editar
-            <a href="caminho/arquivo.pdf" download>Baixar PDF</a>
-            ✅ Explicando os principais pontos:
-            Atributo	Descrição
-            href	Caminho ou URL do arquivo que será baixado
-            download	Indica que o navegador deve baixar o arquivo (não apenas abrir)
-
-            📌 Exemplo 1 – Baixar um PDF:
-            html
-            Copiar
-            Editar
-            <a href="arquivos/manual.pdf" download>📥 Baixar o manual em PDF</a>
-            📌 Exemplo 2 – Baixar qualquer tipo de arquivo (ZIP, MP3, etc.):
-            html
-            Copiar
-            Editar
-            <a href="downloads/musica.mp3" download>🎵 Baixar música MP3</a>
-            <a href="downloads/projeto.zip" download>📦 Baixar projeto ZIP</a>
-            ⚠️ Observações importantes:
-            O atributo download não funciona com arquivos hospedados em outros domínios se o servidor não permitir (ex: Google Drive).
-
-            Se quiser dar um nome personalizado ao arquivo que será baixado, você pode fazer assim:
-
-            html
-            Copiar
-            Editar
-            <a href="caminho/arquivo.pdf" download="meu-novo-nome.pdf">Baixar PDF</a>
-            💡 Dica: Personalizar com CSS
-            html
-            Copiar
-            Editar
-            <a href="arquivo.pdf" download class="botao-download">📄 Baixar PDF</a>
-            css
-            Copiar
-            Editar
-            .botao-download {
-            display: inline-block;
-            background-color: #2d89ef;
-            color: white;
-            padding: 10px 20px;
-            text-decoration: none;
-            border-radius: 8px;
-            font-weight: bold;
-            }
-            .botao-download:hover {
-            background-color: #1e5cb3;
-            }
-            💡 Alternativa: Oferecer visualização e download (PDF, por exemplo):
-            html
-            Copiar
-            Editar
+        <article>
             <p>
-            <a href="meuarquivo.pdf" target="_blank">Visualizar PDF</a> |
-            <a href="meuarquivo.pdf" download>Baixar PDF</a>
+                Disponibilizar um arquivo para download significa permitir que o usuário baixe um arquivo diretamente ao clicar em um link. Pode ser um PDF, um documento Word, planilha, imagem, áudio, vídeo, ZIP etc.
             </p>
-            🧠 Conclusão
-            Tema	O que faz	Como usar	Exemplo comum
-            iframe	Incorpora conteúdo de outro site ou arquivo	<iframe src="..." />	YouTube, Google Maps, PDFs
-            Download	Permite baixar arquivos direto da página	<a href="..." download>	PDFs, imagens, arquivos ZIP
+        </article>
 
-            Se quiser, posso montar os exemplos em um arquivo .html completo com os dois temas prontos para copiar e colar. Deseja isso?
-        </p>
-                
+        <article>
+            <h2>Download Direto</h2>
+            <p>
+                Para disponibilizar um arquivo para download, você pode usar a tag <code class="tag">&lt;a&gt;</code> com o atributo <code><strong>download</strong></code> . Isso permite que os usuários baixem o arquivo em vez de abri-lo diretamente no navegador.
+            </p>
+            <p>
+                Exemplo de uso:
+            </p>
+            <p>
+                Para baixar o PDF clique 
+                <a class="download" href="../../../assets/pdf/exemplo.zip" target="_blank" download>aqui</a>
+            </p>
+            <p>
+                Estrutura do HTML:
+            </p>
+            <figure>
+                <img id="downloadDireto" src="../../../assets/img/html/download/direto.webp" alt="estrutura do download" class="lightbox-trigger" data-full-src="../../../assets/img/html/download/direto.webp" data-caption="">
+            </figure>
+            <p>
+                O Atributo <code><strong>href</strong></code> indica o caminho ou URL do arquivo que será baixado. O Atributo <code><strong>download</strong></code> indica ao navegador que deve baixar o arquivo (não apenas abrir). O atributo <code><strong>type</strong></code> indica o tipo do arquivo.
+            </p>
+            <p>
+                <em>
+                    Observações importantes: O atributo download não funciona com arquivos hospedados em outros domínios se o servidor não permitir (ex: Google Drive).
+                </em>
+            </p>
+        </article>
+
+        <article>
+            <h2>Visualização Prévia</h2>
+            <p>
+                Se você quiser que o usuário visualize o arquivo antes de baixá-lo, pode simplesmente usar a tag <code class="tag">&lt;a&gt;</code> com o atributo <code><strong>href</strong></code> apontando para o arquivo e o atributo <code><strong>target</strong></code> com o valor <code><strong>_blank</strong></code>. Isso abrirá o arquivo em uma nova aba do navegador.
+            </p>
+            <p>
+                Exemplo de uso:
+            </p>
+            <p>
+                Para baixar o PDF clique 
+                <a class="download" href="../../../assets/pdf/exemplo.pdf" target="_blank">aqui</a>
+            </p>
+            <p>
+                Estrutura do HTML:
+            </p>
+            <figure>
+                <img id="downloadVisu" src="../../../assets/img/html/download/visualizar.webp" alt="estrutura visualizar o pdf" class="lightbox-trigger" data-full-src="../../../assets/img/html/download/visualizar.webp" data-caption="">
+            </figure>
+            <p>
+                O Atributo <code><strong>href</strong></code> indica o caminho ou URL do arquivo que será baixado. O Atributo <code><strong>download</strong></code> indica ao navegador que deve baixar o arquivo (não apenas abrir). O atributo <code><strong>type</strong></code> indica o tipo do arquivo.
+            </p>
+            <p>
+                <em>Obs: Se você quer que o PDF abra em uma nova aba (pré-visualização) em vez de baixar direto, não use o atributo</em> <code><strong>download</strong></code>. <em>O atributo</em> <code><strong>download</strong></code> <em>força o navegador a baixar o arquivo e ignora</em> <code><strong>target="_blank"</strong></code>.
+            </p>
+        </article>
+
+        <article>
+            <h2>Nomear Arquivo</h2>
+            <p>
+                Se você quiser dar um nome personalizado ao arquivo que será baixado, pode usar o atributo <code><strong>download</strong></code> com um valor. Isso permite que você especifique o nome do arquivo quando ele for baixado.
+            </p>
+            <p>
+                Exemplo:
+            </p>
+            <figure>
+                <img id="downloadName" src="../../../assets/img/html/download/renomear.webp" alt="estrutura para renomear arquivo" class="lightbox-trigger" data-full-src="../../../assets/img/html/download/renomear.webp" data-caption="">
+            </figure>
+        </article>
+
+        <article>
+            <p>
+                Você pode personalizar o link de download usando CSS para torná-lo mais atraente. Por exemplo, você pode adicionar um botão estilizado para o link de download.
+            </p>
+        </article>        
     </main>
 
     <button id="btnTopo" title="Voltar ao topo">

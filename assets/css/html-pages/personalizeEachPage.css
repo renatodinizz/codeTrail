@@ -23,8 +23,7 @@ Limitando a altura da imagem na versão mobile para deixar proporcional. */
 
 /* ------------------------------------- Edição de Texto ------------------------------------------------*/
 /* _____________________________________________________________________________________________________ */
-/*Lista do article Time
-Estilizando marcadores e padding*/
+/* Estilizando lista no article Time */
 #datetime-format {
   font-size: 1.2rem;
   padding: 0.5rem;
@@ -471,18 +470,58 @@ input{
 
 
 
+/* ------------------------------------------- Download -------------------------------------------------*/
+/* _____________________________________________________________________________________________________ */
+/* estilizando o link no article Download Direto */
+.download {
+  color: #333;
+}
+.download:hover {
+  color: #e34f26;  
+}
+.download:visited {
+  color: #333;
+}
 
+/* Ajustando a largura das imagens nos articles Download Direto e Visualização Prévia */
+#downloadDireto, #downloadVisu{
+  max-height: 8rem;
+}
 
-
-
-
-/* ------------------------------------- Estrutura de texto ---------------------------------------------*/
+/* Ajustando a largura da imagem no article Nomear Arquivo */
+#downloadName {
+  max-height: 10rem;
+}
 /* _____________________________________________________________________________________________________ */
 
-/* _____________________________________________________________________________________________________ */
 
-/* ------------------------------------- Estrutura de texto ---------------------------------------------*/
+
+
+
+/* ----------------------------------------=---- Tags ---------------------------------------------------*/
 /* _____________________________________________________________________________________________________ */
+.lists {
+  text-decoration: none;
+  font-size: 1.2rem;
+  padding: 0.5rem;
+  padding-left: 1rem;
+  list-style: none;
+}
+
+.lists li {
+  padding: 0.5rem 0;
+}
+
+.lists li::before {
+  content: "";
+  display: inline-block;
+  width: 0.5rem;
+  height: 0.5rem;
+  background-color: #e34f26;
+  transform: rotate(45deg);
+  margin-right: 0.5rem;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
 
 /* _____________________________________________________________________________________________________ */
 
