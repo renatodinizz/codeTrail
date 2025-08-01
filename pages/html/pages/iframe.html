@@ -71,73 +71,134 @@
         <h1>Iframe</h1>
 
         <article>
-            <h2>Audio Simples</h2>
+            <h2>Conceito</h2>
+            <P>
+                O elemento <code class="tag">&lt;iframe&gt;</code> é usado para incorporar um documento HTML dentro da página atual. Com ela, é possível exibir conteúdos externos como, páginas da web, vídeos do YouTube, mapas do Google Maps, documentos PDF e muito mais.
+            </P>
             <p>
-                A tag <code class="tag">&lt;audio&gt;</code> é uma ferramenta poderosa para enriquecer a experiência do usuário em suas páginas web, permitindo que você adicione música, efeitos sonoros ou qualquer outro tipo de áudio relevante ao conteúdo. Os formatos aceitos pelos navegadores são MP3, WAV e OGG.
-            </p>
-            <audio id="audio1" src="../../../assets/audio/boombapflick.mp3" controls></audio>
-            <p>
-                Exemplo de uso do elemento <code>&lt;audio&gt;</code>:
-            </p>
-            <p>
-                <code class="tag2">&lt;audio src="/exemplo.mp3" controls&gt;</code><code class="tag2">&lt;/audio&gt;</code>
-            </p>
-            <p>
-                O atributo <code><strong>controls</strong></code> adiciona controles de reprodução ao player de áudio, permitindo que o usuário reproduza, pause e ajuste o volume do áudio.
-            </p>
-            <p>
-                O atributo <code><strong>autoplay</strong></code> faz com que o áudio comece a tocar automaticamente quando a página for carregada.
-            </p>
-            <p>
-                O atributo <code><strong>loop</strong></code> faz com que o áudio seja reproduzido em loop, ou seja, quando chegar ao final, ele reiniciará automaticamente.
-            </p>
-            <p>
-                O atributo <code><strong>muted</strong></code> silencia o áudio inicialmente, permitindo que o usuário ative o som manualmente.
-            </p>
-            <p>
-                O atributo <code><strong>preload</strong></code> indica ao navegador como deve carregar o áudio. Os valores possíveis são <code><strong>none</strong></code> (não carregar), <code><strong>metadata</strong></code> (carregar apenas os metadados) e <code><strong>auto</strong></code> (carregar o áudio completo). O mais recomendado é usar <code><strong>metadata</strong></code> para otimizar o desempenho da página.
+                É como uma "janela" dentro da sua página, que mostra outro conteúdo da web.
             </p>
         </article>
 
         <article>
-            <h2>Vários Formatos</h2>
-            <p>
-                A tag <code class="tag">&lt;audio&gt;</code> pode incluir várias fontes de áudio para garantir a compatibilidade com diferentes navegadores. Cada fonte é especificada dentro do elemento <code class="tag">&lt;source&gt;</code>.
-            </p>
-            <p>
-                Exemplo de uso da tag <code class="tag">&lt;audio&gt;</code> com várias fontes:
-            </p>
-            <audio class="audio2" preload="metadata" controls loop>
-                <source src="../../../assets/audio/boombapflick.mp3" type="audio/mpeg">
-                <source src="../../../assets/audio/boombapflick.mp3.ogg" type="audio/ogg">
-                <source src="../../../assets/audio/boombapflick.mp3.wav" type="audio/wav">
-                <p>Seu navegador não suporta o elemento de áudio.</p>
-            </audio>
-            <p>
-                Estrutura do HTML:
-            </p>
-            <figure>
-                <img id="audioImg" src="../../../assets/img/html/audio/audio.webp" alt="imagem da tag audio" class="lightbox-trigger" data-full-src="../../../assets/img/html/audio/audio.webp" data-caption="">
-            </figure>
-            <p>
-                Neste exemplo, o navegador tentará reproduzir o arquivo <strong>MP3</strong> primeiro. Se não for suportado, tentará o arquivo <strong>OGG</strong>. Se não for suportado, tentará o arquivo <strong>WAV</strong>. Se nenhum dos formatos for suportado, uma mensagem será exibida.
-            </p>
-            <p>
-                <em>
-                    Obs: Usa-se o type audio/mpeg para aquivos em MP3
-                </em>
-            </p>
-            <p>
-                É importante fornecer formatos alternativos para garantir que o áudio seja reproduzível em todos os navegadores. O MP3 é amplamente suportado, mas alguns navegadores podem preferir OGG ou outros formatos.
-            </p>
-            <p>
-                Você pode personalizar ainda mais o player de áudio usando CSS para ajustar a aparência e o layout, garantindo que ele se encaixe no design geral do seu site.
-            </p>
-            <p>
-                Além disso, você pode usar JavaScript para adicionar funcionalidades extras, como controle de volume personalizado, playlists dinâmicas ou integração com outras partes do seu site.
-            </p>
+            <h2>Exemplos de Iframes</h2>
+            <section>
+                <h3>Outra Página Web</h3>
+                <p>
+                    Exemplo de um iframe, que exibe uma página de outro site, nesse caso uma página da wikipedia:
+                </p>
+                <iframe class="iframeResponsive"
+                src="https://pt.wikipedia.org/wiki/Nuvem" 
+                title="Artigo da Wikipedia"
+                loading="lazy"></iframe>
+                <p>
+                    Estrutura do HTML:
+                </p>
+                <figure>
+                    <img id="wiki" src="../../../assets/img/html/iframe/wiki.webp" alt="estrutura iframe wikipedia" class="lightbox-trigger" data-full-src="../../../assets/img/html/iframe/wiki.webp" data-caption="">
+                </figure>
+                <p>
+                    Neste exemplo, o iframe exibe a página da Wikipedia sobre "Nuvem". O atributo <code><strong>src</strong></code> especifica a URL do documento que será exibido dentro do iframe. Os atributos <code><strong>width</strong></code> e <code><strong>height</strong></code> definem as dimensões do iframe, enquanto o atributo <code><strong>frameborder</strong></code> controla a exibição da borda ao redor do iframe.
+                </p>                    
+            </section>
+
+            <section>
+                <h3>PDF Local</h3>
+                <p>
+                    Exemplo de um iframe, que exibe um arquivo PDF local:
+                </p>
+                <iframe class="iframePDF"
+                src="../../../assets/pdf/exemplo.pdf" 
+                title="Visualização do PDF"
+                loading="lazy"></iframe>
+                <p>
+                    Estrutura do HTML:
+                </p>
+                <figure>
+                    <img id="pdfImg" src="../../../assets/img/html/iframe/pdf.webp" alt="estrutura iframe pdf" class="lightbox-trigger" data-full-src="../../../assets/img/html/iframe/pdf.webp" data-caption="">
+                </figure>
+                <p>
+                    Neste exemplo, o iframe exibe um arquivo PDF localizado no diretório. O atributo <code><strong>src</strong></code> especifica a URL do documento PDF que será exibido dentro do iframe. Os atributos <code><strong>width</strong></code> e <code><strong>height</strong></code> definem as dimensões do iframe.
+                </p> 
+                <p>
+                    <em>
+                        PDFs locais podem ser bloqueados por políticas de segurança dos navegadores, especialmente se a página estiver sendo servida via HTTP ou HTTPS (o que está acontecendo com esse exemplo em dispositivos mobile). Em alguns casos, o navegador pode solicitar que o usuário faça o download do arquivo em vez de exibi-lo.
+                    </em>
+                </p>                   
+            </section>
+
+            <section>
+                <h2>Google Maps</h2>
+                <p>
+                    Exemplo de um iframe, que exibe uma página de outro site, nesse caso um mapa do Google Maps:
+                </p>
+                <iframe 
+                class="iframeMaps"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3656.6511444127543!2d-46.65598158447851!3d-23.58115986810859!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce59c9f2c4b8cf%3A0x4b8888a1ea2cb27d!2sParque%20Ibirapuera!5e0!3m2!1sen!2sbr!4v1600000000000!5m2!1sen!2sbr" 
+                allowfullscreen="" 
+                aria-hidden="false" 
+                tabindex="0"
+                title="Mapa Ibirapuera"
+                loading="lazy">
+                </iframe>
+                <p>
+                    Estrutura do HTML:
+                </p>
+                <figure>
+                    <img id="mapsImg" src="../../../assets/img/html/iframe/maps.webp" alt="estrutura do iframe google maps" class="lightbox-trigger" data-full-src="../../../assets/img/html/iframe/maps.webp" data-caption="">
+                </figure>
+                <p>
+                    Neste exemplo, o iframe exibe um mapa do Google Maps com a localização do Parque Ibirapuera. O atributo <code><strong>src</strong></code> especifica a URL do mapa que será exibido dentro do iframe. Os atributos <code><strong>width</strong></code> e <code><strong>height</strong></code> definem as dimensões do iframe, enquanto o atributo <code><strong>allowfullscreen</strong></code> permite que o mapa seja exibido em tela cheia.
+                </p>                    
+            </section>
+        </article>
+        
+        <article>
+            <h2>Alguns Atributos</h2>
+            <P>
+                O atributo <code><strong>src</strong></code> especifica a URL do documento que será exibido dentro do iframe. 
+            </P>
+            <P>
+                O atributo <code><strong>width</strong></code> define a largura do iframe, enquanto o atributo <code><strong>height</strong></code> define a altura.
+            </P>
+            <P>
+                O atributo <code><strong>frameborder</strong></code> controla a exibição da borda ao redor do iframe, onde "0" significa sem borda.
+            </P>
+            <P>
+                O atributo <code><strong>allowfullscreen</strong></code> permite que o conteúdo do iframe seja exibido em tela cheia.
+            </P>
+            <P>
+                O atributo <code><strong>loading</strong></code> pode ser usado para otimizar o carregamento do iframe. Os valores possíveis são <code><strong>lazy</strong></code> (carregar apenas quando necessário) e <code><strong>eager</strong></code> (carregar imediatamente). O mais recomendado é usar <code><strong>lazy</strong></code> para melhorar o desempenho da página.
+            </P>
+            <P>
+                O atributo <code><strong>sandbox</strong></code> pode ser usado para aplicar restrições adicionais ao conteúdo do iframe, como desabilitar scripts, formulários e outros recursos potencialmente inseguros. Você pode especificar quais restrições aplicar, como <code><strong>allow-scripts</strong></code> (permitir scripts) ou <code><strong>allow-forms</strong></code> (permitir formulários).
+            </P>
+            <P>
+                O atributo <code><strong>title</strong></code> é importante para acessibilidade, pois fornece uma descrição do conteúdo do iframe para leitores de tela e outros dispositivos assistivos.
+            </P>
+            <P>
+                O atributo <code><strong>allow</strong></code> pode ser usado para especificar quais recursos o iframe pode acessar, como geolocalização, câmera, microfone, entre outros. Por exemplo, <code><strong>allow="geolocation; microphone"</strong></code> permite que o iframe acesse a localização e o microfone do usuário.
+            </P>
+            <P>
+                O atributo <code><strong>name</strong></code> é usado para identificar o iframe, permitindo que você se refira a ele em scripts ou links. Isso é útil quando você deseja abrir links dentro do iframe ou manipular seu conteúdo com JavaScript.
+            </P>
+            <P>
+                O atributo <code><strong>srcdoc</strong></code> permite que você defina o conteúdo HTML do iframe diretamente, sem precisar de um arquivo externo. Isso é útil para exibir conteúdo dinâmico ou personalizado sem depender de uma URL externa.
+            </P>
         </article>   
-                
+        
+        <article>
+            <h2>Iframe Interativo</h2>
+            <p>
+                Você pode criar um iframe interativo que permite ao usuário interagir com o conteúdo dentro do iframe. Por exemplo, você pode incorporar um formulário de contato, uma galeria de imagens ou até mesmo um jogo simples.
+            </p>
+            <p>
+                Por exemplo, o iframe exibe um jogo simples hospedado em outro site. O usuário pode interagir com o jogo diretamente dentro do iframe, sem precisar sair da página atual.
+            </p>
+            <p>
+                Você pode personalizar o estilo do iframe usando CSS para garantir que ele se encaixe no design geral do seu site. Além disso, você pode usar JavaScript para adicionar funcionalidades extras, como controle de volume personalizado, playlists dinâmicas ou integração com outras partes do seu site.
+            </p>
+        </article>
     </main>
 
     <button id="btnTopo" title="Voltar ao topo">

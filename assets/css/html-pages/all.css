@@ -107,6 +107,7 @@ img {
   padding: 0.2rem 0.1rem;
   border-radius: 5px;
   box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  line-height: 2rem;
 }
 
 /* Animação de flutuação */

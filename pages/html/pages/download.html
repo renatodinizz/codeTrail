@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Download</title>
+    <!-- Favicon imagem -->
+    <link rel="shortcut icon" href="../../../assets/img/favicon/favicon.ico" type="image/x-icon">
+    <!-- Link do CSS -->
+    <link rel="stylesheet" href="../../../assets/css/html-pages/style-html-pages.css">
+    <!-- font do ícone backToTop -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined&display=swap" rel="stylesheet">
+
+</head>
+<body class="area">
+
+    <div class="page-transition"></div>
+
+    <ul class="circles">
+        <li class="square"></li>
+        <li class="square"></li>
+        <li class="square"></li>
+        <li class="square"></li>
+        <li class="square"></li>
+        <li class="square"></li>
+        <li class="square"></li>
+        <li class="square"></li>
+        <li class="square"></li>
+        <li class="square"></li>
+        <li class="square"></li>
+        <li class="square"></li>
+        <li class="square"></li>
+        <li class="square"></li>
+        <li class="square"></li>
+        <li class="square"></li>
+        <li class="square"></li>
+        <li class="square"></li>
+        <li class="square"></li>
+        <li class="square"></li>
+    </ul>
+    <header>
+
+        <button id="menu-toggle" class="menu-toggle">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </button>
+
+        <section class="horizontal">
+            <span id="codeTrail">CodeTrail</span>    
+            <nav id="side-menu">
+                <ul>
+                    <li><a href="../../../index.html" class="home">Home</a></li>
+                    <li><a href="../../../pages/html/indexHtml.html" class="html">HTML</a></li>
+                    <li><a href="../../../pages/css/indexCss.html" class="css">CSS</a></li>
+                    <li><a href="../../../pages/javascript/indexJs.html" class="js">JavaScript</a></li>
+                    <li><a href="../../../pages/typescript/indexType.html" class="ts">TypeScript</a></li>
+                    <li><a href="../../../pages/about/indexAbout.html" class="about">About</a></li>
+                </ul>
+            </nav>
+        </section>
+
+        <h1>HTML</h1>
+
+    </header>
+
+    <main class="context">
+
+        <h1>Download</h1>
+
+        <p>
+            📁 2. Como Disponibilizar um Arquivo para Download
+            ✅ O que é isso?
+            Disponibilizar um arquivo para download significa permitir que o usuário baixe um arquivo diretamente ao clicar em um link. Pode ser um PDF, um documento Word, planilha, imagem, áudio, vídeo, ZIP etc.
+
+            🛠️ Como usar
+            ✅ Usando a tag <a> com o atributo download:
+            html
+            Copiar
+            Editar
+            <a href="caminho/arquivo.pdf" download>Baixar PDF</a>
+            ✅ Explicando os principais pontos:
+            Atributo	Descrição
+            href	Caminho ou URL do arquivo que será baixado
+            download	Indica que o navegador deve baixar o arquivo (não apenas abrir)
+
+            📌 Exemplo 1 – Baixar um PDF:
+            html
+            Copiar
+            Editar
+            <a href="arquivos/manual.pdf" download>📥 Baixar o manual em PDF</a>
+            📌 Exemplo 2 – Baixar qualquer tipo de arquivo (ZIP, MP3, etc.):
+            html
+            Copiar
+            Editar
+            <a href="downloads/musica.mp3" download>🎵 Baixar música MP3</a>
+            <a href="downloads/projeto.zip" download>📦 Baixar projeto ZIP</a>
+            ⚠️ Observações importantes:
+            O atributo download não funciona com arquivos hospedados em outros domínios se o servidor não permitir (ex: Google Drive).
+
+            Se quiser dar um nome personalizado ao arquivo que será baixado, você pode fazer assim:
+
+            html
+            Copiar
+            Editar
+            <a href="caminho/arquivo.pdf" download="meu-novo-nome.pdf">Baixar PDF</a>
+            💡 Dica: Personalizar com CSS
+            html
+            Copiar
+            Editar
+            <a href="arquivo.pdf" download class="botao-download">📄 Baixar PDF</a>
+            css
+            Copiar
+            Editar
+            .botao-download {
+            display: inline-block;
+            background-color: #2d89ef;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: bold;
+            }
+            .botao-download:hover {
+            background-color: #1e5cb3;
+            }
+            💡 Alternativa: Oferecer visualização e download (PDF, por exemplo):
+            html
+            Copiar
+            Editar
+            <p>
+            <a href="meuarquivo.pdf" target="_blank">Visualizar PDF</a> |
+            <a href="meuarquivo.pdf" download>Baixar PDF</a>
+            </p>
+            🧠 Conclusão
+            Tema	O que faz	Como usar	Exemplo comum
+            iframe	Incorpora conteúdo de outro site ou arquivo	<iframe src="..." />	YouTube, Google Maps, PDFs
+            Download	Permite baixar arquivos direto da página	<a href="..." download>	PDFs, imagens, arquivos ZIP
+
+            Se quiser, posso montar os exemplos em um arquivo .html completo com os dois temas prontos para copiar e colar. Deseja isso?
+        </p>
+                
+    </main>
+
+    <button id="btnTopo" title="Voltar ao topo">
+        <span id="top" class="material-symbols-outlined">
+            arrow_upward
+        </span>
+    </button>
+
+    <!-- Estrutura do Lightbox -->
+    <div id="custom-lightbox" class="lightbox-hidden">
+        <div class="lightbox-overlay"></div>
+        <div class="lightbox-content">
+            <button class="lightbox-close-btn" aria-label="Fechar lightbox">&times;</button>
+            <img src="" alt="" class="lightbox-image">
+            <div class="lightbox-caption"></div>
+        </div>
+    </div>
+    
+    <script src="../../../assets/js/hamburguerMenu.js"></script>
+    <script src="../../../assets/js/backToTop.js"></script>
+    <script src="../../../assets/js/lightBox.js"></script>
+    <script src="../../../assets/js/transitionEntry.js" defer></script>
+    <script src="../../../assets/js/transitionExit.js"></script>
+</body>
+</html>

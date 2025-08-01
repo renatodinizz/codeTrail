@@ -317,34 +317,20 @@ input{
   max-width: 90%;
 }
 
-/* Ajustando o code no article Audio Simples */
-.tag2 {
-  /* uma fonte mono espaçada*/
-  font-family: monospace;
-  font-weight: 400;
-  color: #222;
-  background-color: #eee;
-  margin: 0 0.2rem;
-  padding: 0.2rem 0.1rem;
-  border-radius: 5px;
-  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
-  line-height: 2rem;
-}
-
 /* Ajustando a largura do controle de audio no article Audio Simples */
 .audio2 {
-    max-width: 100%;
-    height: 54px;
-    outline: none;
-    border: none;
-    background: transparent;
-    border-radius: 30px;
-    box-shadow: 
-        0 10px 30px rgba(35, 35, 35, 0.3),
-        inset 0 2px 10px rgba(255, 255, 255, 0.1);
-    position: relative;
-    overflow: hidden;
-    transition: all 0.3s ease;       /* leve clareamento */
+  max-width: 100%;
+  height: 54px;
+  outline: none;
+  border: none;
+  background: transparent;
+  border-radius: 30px;
+  box-shadow: 
+    0 10px 30px rgba(35, 35, 35, 0.3),
+    inset 0 2px 10px rgba(255, 255, 255, 0.1);
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s ease;       /* leve clareamento */
 }
 /* Estilização do fundo interno (WebKit) */
 .audio2::-webkit-media-controls-panel {
@@ -436,11 +422,59 @@ input{
 
 
 
+/* ------------------------------------------- Iframe ---------------------------------------------------*/
+/* _____________________________________________________________________________________________________ */
+/* Ajustando a responsividade do iframe no article Exemplos de Iframes na section Outra Página Web */
+.iframeResponsive {
+  width: 100%;
+  max-width: 35rem;
+  min-height: 20rem;
+  border: none;
+  overflow-x: hidden;
+}
 
-/* ------------------------------------- Estrutura de texto ---------------------------------------------*/
+/* Ajustando a largura da imagem no article Exemplos de Iframes na section Outra Página Web */
+#wiki {
+  max-height: 15rem;
+}
+
+/* Ajustando a responsividade do iframe no article Exemplos de Iframes na section PDF Local */
+.iframePDF {
+  width: 100%;
+  max-width: 30rem;
+  min-height: 20rem;
+  border: none;
+  overflow-x: hidden;
+}
+
+/* Ajustando a largura da imagem no article Exemplos de Iframes na section PDF Local */
+#pdfImg {
+  max-height: 12rem;
+}
+
+/* Ajustando a responsividade do iframe no article Exemplos de Iframes na section Google Maps */
+.iframeMaps {
+  width: 100%;
+  max-width: 35rem;
+  min-height: 20rem;
+  border: none;
+  overflow-x: hidden;
+}
+
+/* Ajustando a largura da imagem no article Exemplos de Iframes na section Google Maps */
+#mapsImg {
+  max-height: 20rem;
+}
 /* _____________________________________________________________________________________________________ */
 
-/* _____________________________________________________________________________________________________ */
+
+
+
+
+
+
+
+
 
 /* ------------------------------------- Estrutura de texto ---------------------------------------------*/
 /* _____________________________________________________________________________________________________ */
