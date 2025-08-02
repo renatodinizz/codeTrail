@@ -18,6 +18,7 @@
         /* O ajuste da largura do card é feito pelo padding e não com um tamanho fixo. */
         width: 100%;
         padding: 0 8rem;
+        padding-bottom: 3rem;
         /* Dispaly Grid para dividir a viewport em quatro frações, ou seja, deixar quatro cards por linha */
         display: grid;
         grid-template-columns: repeat(4, 1fr);

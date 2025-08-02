@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seletores</title>
+    <!-- Favicon imagem -->
+    <link rel="shortcut icon" href="../../../assets/img/favicon/favicon.ico" type="image/x-icon">
+    <!-- Link do CSS -->
+    <link rel="stylesheet" href="../../../assets/css/css-pages/style-css-pages.css">
+    <!-- font do ícone backToTop -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined&display=swap" rel="stylesheet">
+
+</head>
+<body class="area">
+
+    <div class="page-transition"></div>
+
+    <ul class="circles">
+        <li class="square"></li>
+        <li class="square"></li>
+        <li class="square"></li>
+        <li class="square"></li>
+        <li class="square"></li>
+        <li class="square"></li>
+        <li class="square"></li>
+        <li class="square"></li>
+        <li class="square"></li>
+        <li class="square"></li>
+        <li class="square"></li>
+        <li class="square"></li>
+        <li class="square"></li>
+        <li class="square"></li>
+        <li class="square"></li>
+        <li class="square"></li>
+        <li class="square"></li>
+        <li class="square"></li>
+        <li class="square"></li>
+        <li class="square"></li>
+    </ul>
+    <header>
+
+        <button id="menu-toggle" class="menu-toggle">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </button>
+
+        <section class="horizontal">
+            <span id="codeTrail">CodeTrail</span>    
+            <nav id="side-menu">
+                <ul>
+                    <li><a href="../../../index.html" class="home">Home</a></li>
+                    <li><a href="../../../pages/html/indexHtml.html" class="html">HTML</a></li>
+                    <li><a href="../../../pages/css/indexCss.html" class="css">CSS</a></li>
+                    <li><a href="../../../pages/javascript/indexJs.html" class="js">JavaScript</a></li>
+                    <li><a href="../../../pages/typescript/indexType.html" class="ts">TypeScript</a></li>
+                    <li><a href="../../../pages/about/indexAbout.html" class="about">About</a></li>
+                </ul>
+            </nav>
+        </section>
+
+        <h1>CSS</h1>
+
+    </header>
+
+    <main class="context">
+
+        <h1>Seletores</h1>
+
+        <article>
+            <p>
+                Seletores CSS são padrões usados para selecionar os elementos HTML que você deseja estilizar.
+            </p>
+        </article>
+
+        <article>
+            <h2>Seletores Básicos</h2>
+            <section>
+                <h3>Seletor Global</h3>
+                <p>
+                    Seleciona todos os elementos da página. 
+                </p>
+                <p>
+                    Exemplo: <code><strong>*</strong></code>
+                </p>
+            </section>
+
+            <section>
+                <h3>Seletor por Tag</h3>
+                <p>
+                    Seleciona todos os elementos de um determinado tipo HTML. Por exemplo, se você quiser estilizar todos os títulos de nível 2 <code class="propriedade">&lt;h2&gt;</code>
+                </p>
+                <p>
+                    Exemplo: <code><strong>h2</strong></code>
+                </p>
+            </section>
+
+            <section>
+                <h3>Seletor por ID</h3>
+                <p>
+                    Seleciona um único elemento HTML com um atributo <code><strong>id</strong></code> específico. Um ID deve ser único em toda a página HTML. Ele é prefixado com um  <code><strong>#</strong></code> (hash).
+                </p>
+                <p>
+                    Exemplo: <code><strong>#meuId</strong></code>
+                </p>
+            </section>
+
+            <section>
+                <h3>Seletor por Classe</h3>
+                <p>
+                    Seleciona todos os elementos HTML que possuem um atributo <code><strong>class</strong></code> específico. Ao contrário dos IDs, várias classes podem ser aplicadas a um único elemento, e a mesma classe pode ser usada em múltiplos elementos. Ele é prefixado com um <code><strong>.</strong></code> (ponto).
+                </p>
+                <p>
+                    Exemplo: <code><strong>.minhaClasse</strong></code>
+                </p>
+            </section>
+        </article>
+
+        <article>
+            <h2>Combinadores</h2>
+            <section>
+                <h3>Seletor Descendente</h3>
+                <p>
+                    O seletor descendente (espaço) seleciona todos os elementos que são descendentes de um elemento específico.
+                </p>
+                <p>
+                    Exemplo: <code><strong>div p</strong></code>
+                </p>
+                <p>
+                    Isso selecionará todos os parágrafos <code class="propriedade">&lt;p&gt;</code> que estão dentro de qualquer <code class="propriedade">&lt;div&gt;</code>.
+                </p>
+            </section>
+
+            <section>
+                <h3>Seletor Filho</h3>
+                <p>
+                    O seletor filho <code><strong>></strong></code> seleciona elementos que são filhos diretos de um elemento específico. Ele é mais restritivo que o seletor descendente.
+                </p>
+                <p>
+                    Exemplo: <code><strong>ul > li</strong></code>
+                </p>
+                <p>
+                    Isso selecionará apenas os itens de lista  <code class="propriedade">&lt;li&gt;</code> que são filhos diretos de uma lista não ordenada  <code class="propriedade">&lt;ul&gt;</code>.
+                </p>
+            </section>
+
+            <section>
+                <h3>Seletor Irmão Adjacente</h3>
+                <p>
+                    O seletor irmão adjacente <code><strong>+</strong></code> seleciona um elemento que é imediatamente precedido por outro elemento específico, e ambos devem ter o mesmo pai.
+                </p>
+                <p>
+                    Exemplo: <code><strong>h1 + p</strong></code>
+                </p>
+                <p>
+                    Isso selecionará o primeiro parágrafo <code class="propriedade">&lt;p&gt;</code> que vem imediatamente após um título <code class="propriedade">&lt;h1&gt;</code>.
+                </p>
+            </section>
+
+            <section>
+                <h3>Seletor Irmão Geral</h3>
+                <p>
+                    O seletor irmão geral <code><strong>~</strong></code> seleciona todos os elementos que são irmãos de um elemento específico e que o seguem na árvore do documento. Eles devem ter o mesmo pai.
+                </p>
+                <p>
+                    Exemplo: <code><strong>p ~ span</strong></code>
+                </p>
+                <p>
+                    Isso selecionará todos os elementos <code class="propriedade">&lt;span&gt;</code> que são irmãos de um parágrafo <code class="propriedade">&lt;p&gt;</code> e que aparecem depois dele.
+                </p>
+            </section>
+
+            <section>
+                <h3>Seletor por Propriedade</h3>
+                <p>
+                    Seleciona os elementos com uma propriedade específica como name, type e etc.
+                </p>
+                <p>
+                    Exemplo: <code><strong>input[type="password"]</strong></code>
+                </p>
+                <p>
+                    Isso selecionará todos os elementos <code class="propriedade">&lt;inputs&gt;</code> que são do tipo <code><strong>password</strong></code>.
+                </p>
+            </section>
+        </article>
+
+        <article>
+            <h2>Agrupamento de Seletores</h2>
+            <p>
+                Você pode agrupar seletores para aplicar as mesmas regras de estilo a vários elementos sem repetir o código. Para agrupar seletores, separe-os com uma vírgula <code><strong>(,)</strong></code>.
+            </p>
+            <p>
+                Exemplo: <code> h1, h2, p { font-family: Arial, sans-serif;}</code>
+            </p>
+            <p>
+                Neste exemplo, todos os <code class="propriedade">&lt;h1&gt;</code>, <code class="propriedade">&lt;h2&gt;</code> e <code class="propriedade">&lt;p&gt;</code> terão a mesma família de fonte.
+            </p>
+        </article>
+
+        <article>
+            <h2>Seletores Avançados</h2>
+            <p>
+                Podemos usar alguns seletores de forma mais avançadas, isso serve principalmente para quando não se tem acesso ao HTML da aplicação como no caso de usar uma ferramenta como WordPress ou outra parecida.
+            </p>
+            <p>
+                Para selecionar um elemento usamos um seletor avançado, vamos imaginar que queremos selecionar um elemento li que está em uma lista, para esse exemplo vamos usar o comando:
+            </p>
+            <p>
+                Ex: <code><strong>li:nth-child(3){}</strong></code> - Nesse exemplo o <code class="propriedade">&lt;li&gt;</code> é o item a ser selecionado, o <code><strong>n</strong></code> do <code><strong>nth</strong></code> vem de number e <code><strong>th</strong></code> da ordem cardial em inglês, <code><strong>child</strong></code> por que é um filho do elemento <code class="propriedade">&lt;ul&gt;</code> e o número dentro do parênteses está indicando que dentro da <code class="propriedade">&lt;ul&gt;</code> o terceiro <code class="propriedade">&lt;li&gt;</code> será selecionado.
+            </p>
+            <p>
+                <em>
+                    Obs: Nesse caso consideramos o primeiro item como sendo o número 1 e não o 0 como em programação.
+                </em>
+            </p>
+            <p>
+                Ex: <code><strong>li:nth-child(2n){}</strong></code> - Nesse exemplo o <code><strong>n</strong></code> adicional depois do número significa que ele vai pular de dois em dois itens, ou seja, somente números pares, mas podemos substituir essa expressão pela palavra <code><strong>even</strong></code> dentro dos parênteses.
+            </p>
+            <p>
+                Ex: <code><strong>li:nth-child(2n-1){}</strong></code> - Nesse exemplo o <code><strong>2n-1</strong></code> depois do número significa que ele vai pular de dois em dois itens, mas começando pelo número <code><strong>2-1</strong></code> que é <code><strong>1</strong></code>, ou seja, irá contar somente os números impares, mas podemos substituir essa expressão pela palavra <code><strong>odd</strong></code> dentro dos parênteses.
+            </p>
+            <p>
+                Outros Exemplos:
+            </p>
+            <p>
+                <code><strong>li:first-child</strong></code> - Seleciona o primeiro elemento filho.
+            </p><p>
+                <code><strong>li:last-child</strong></code> - Seleciona o último elemento filho.
+            </p><p>
+                <code><strong>li:not(first-child)</strong></code> - Seleciona todos os elementos menos o primeiro.
+            </p>
+        </article>
+
+        <article>
+            <h2>Especificidade de Seletores</h2>
+            <p>
+                A especificidade é um algoritmo que o navegador usa para determinar qual regra CSS aplicar a um elemento quando várias regras podem se aplicar.
+            </p>
+            <p>
+                A ordem de especificidade (do menos específico para o mais específico) é:
+            </p>
+            <ol class="especificidade">
+                <li><strong>Seletores Globais</strong> - Baixa especificidade</li>
+                <li><strong>Seletores de Tags</strong> - Baixa especificidade</li>
+                <li><strong>Seletores de Classe</strong> - Média especificidade</li>
+                <li><strong>Seletores de ID</strong> - Alta especificidade.</li>
+                <li><strong>Seletores Inline</strong> - Alta especificidade, pois são aplicados diretamente ao elemento.</li>
+                <li><code><strong>!important</strong></code> - Anula a especificidade normal. No entanto, seu uso é altamente desencorajado. Deve ser usada apenas como último recurso.</li>
+            </ol>
+        </article>        
+    </main>
+
+    <button id="btnTopo" title="Voltar ao topo">
+        <span id="top" class="material-symbols-outlined">
+            arrow_upward
+        </span>
+    </button>
+
+    <!-- Estrutura do Lightbox -->
+    <div id="custom-lightbox" class="lightbox-hidden">
+        <div class="lightbox-overlay"></div>
+        <div class="lightbox-content">
+            <button class="lightbox-close-btn" aria-label="Fechar lightbox">&times;</button>
+            <img src="" alt="" class="lightbox-image">
+            <div class="lightbox-caption"></div>
+        </div>
+    </div>
+    
+    <script src="../../../assets/js/hamburguerMenu.js"></script>
+    <script src="../../../assets/js/backToTop.js"></script>
+    <script src="../../../assets/js/lightBox.js"></script>
+    <script src="../../../assets/js/transitionEntry.js" defer></script>
+    <script src="../../../assets/js/transitionExit.js"></script>
+</body>
+</html>

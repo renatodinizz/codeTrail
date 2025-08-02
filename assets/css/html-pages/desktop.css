@@ -22,20 +22,20 @@
     font-size: 3rem;
     padding-bottom: 5rem;
   }
-
-  main article {
-    margin: 1rem 0;
-  }
-
+  
   main h2 {
     font-size: 2.5rem;
     padding: 0.5rem 0;
   }
-
+  
   main h3 {
     font-size: 2rem;
   } 
-
+  
+  main article {
+    margin: 1rem 0;
+  }
+  
   main p {
     font-size: 1.3rem;
     text-indent: 5rem;

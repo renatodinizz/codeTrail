@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introdução</title>
+    <!-- Favicon imagem -->
+    <link rel="shortcut icon" href="../../../assets/img/favicon/favicon.ico" type="image/x-icon">
+    <!-- Link do CSS -->
+    <link rel="stylesheet" href="../../../assets/css/css-pages/style-css-pages.css">
+    <!-- font do ícone backToTop -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined&display=swap" rel="stylesheet">
+
+</head>
+<body class="area">
+
+    <div class="page-transition"></div>
+
+    <ul class="circles">
+        <li class="square"></li>
+        <li class="square"></li>
+        <li class="square"></li>
+        <li class="square"></li>
+        <li class="square"></li>
+        <li class="square"></li>
+        <li class="square"></li>
+        <li class="square"></li>
+        <li class="square"></li>
+        <li class="square"></li>
+        <li class="square"></li>
+        <li class="square"></li>
+        <li class="square"></li>
+        <li class="square"></li>
+        <li class="square"></li>
+        <li class="square"></li>
+        <li class="square"></li>
+        <li class="square"></li>
+        <li class="square"></li>
+        <li class="square"></li>
+    </ul>
+    <header>
+
+        <button id="menu-toggle" class="menu-toggle">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </button>
+
+        <section class="horizontal">
+            <span id="codeTrail">CodeTrail</span>    
+            <nav id="side-menu">
+                <ul>
+                    <li><a href="../../../index.html" class="home">Home</a></li>
+                    <li><a href="../../../pages/html/indexHtml.html" class="html">HTML</a></li>
+                    <li><a href="../../../pages/css/indexCss.html" class="css">CSS</a></li>
+                    <li><a href="../../../pages/javascript/indexJs.html" class="js">JavaScript</a></li>
+                    <li><a href="../../../pages/typescript/indexType.html" class="ts">TypeScript</a></li>
+                    <li><a href="../../../pages/about/indexAbout.html" class="about">About</a></li>
+                </ul>
+            </nav>
+        </section>
+
+        <h1>CSS</h1>
+
+    </header>
+
+    <main class="context">
+
+        <h1>Introdução</h1>
+
+        <article>
+            <h2>O que é CSS?</h2>
+            <p>
+                CSS, que significa Cascading Style Sheets (Folhas de Estilo em Cascata), é uma linguagem de estilo utilizada para estilização de um documento escrito em HTML. Enquanto o HTML é responsável pela estrutura e conteúdo de uma página web, o CSS cuida como  essa estrutura e conteúdo serão exibidos visualmente. Pense no HTML como o esqueleto de uma casa e no CSS como a decoração, pintura e design de interiores. Sem o CSS, as páginas web seriam apenas texto preto e branco com links sublinhados, sem nenhum apelo visual ou organização.
+            </p>
+        </article>
+
+        <article>
+            <h2>Formas de Aplicar</h2>
+            <p>
+                Existem três maneiras de incluir CSS em um documento HTML, cada uma com suas próprias características e casos de uso.
+            </p>
+            <section>
+                <h3>CSS Inline</h3>
+                <p>
+                    O CSS inline é aplicado diretamente a um elemento HTML usando o atributo <code><strong>style</strong></code>. É a forma menos recomendada. Geralmente, é usado para testes rápidos ou para sobrescrever estilos específicos.
+                </p>
+                <p>
+                    Exemplo:
+                </p>
+                <figure>
+                    <img id="inline" src="../../../assets/img/css/introducao/inline.webp" alt="css inline" class="lightbox-trigger" data-full-src="../../../assets/img/css/introducao/inline.webp" data-caption="">
+                </figure>
+                <p>
+                    Vantagens: 
+                    <br>
+                    Útil para estilos rápidos e específicos em um único elemento.
+                    <br>
+                    Sobrescreve facilmente outros estilos.
+                </p>
+                <p>  
+                    Desvantagens:
+                    <br>
+                    Mistura HTML e CSS, dificultando a leitura e manutenção.
+                    <br>
+                    Não é reutilizável, o que torna o código repetitivo para múltiplos elementos.
+                    <br>
+                    Aumenta o tamanho do arquivo HTML.
+                </p>
+            </section>
+
+            <section>
+                <h3>CSS Interno</h3>
+                <p>
+                    O CSS interno é definido dentro da tag <code class="propriedade">&lt;style&gt;</code> no cabeçalho <code class="propriedade">&lt;head&gt;</code> do documento HTML. Os estilos definidos aqui se aplicam a todos os elementos daquela página HTML específica. É uma boa opção para páginas únicas.
+                </p>
+                <p>
+                    Exemplo:
+                </p>
+                <figure>
+                    <img id="interno" src="../../../assets/img/css/introducao/interno.webp" alt="css interno" class="lightbox-trigger" data-full-src="../../../assets/img/css/introducao/interno.webp" data-caption="">
+                </figure>
+                <p>
+                    Vantagens: 
+                    <br>
+                    Estilos aplicados a toda a página, sem a necessidade de repetir o código em cada elemento.
+                    <br>
+                    Útil para páginas únicas com estilos exclusivos.
+                </p>
+                <p>  
+                    Desvantagens:
+                    <br>
+                    Os estilos não podem ser reutilizados em outras páginas do site.
+                    <br>
+                    Se a página for muito grande, o arquivo HTML pode ficar poluído com o código CSS.
+                </p>
+            </section>
+
+            <section>
+                <h3>CSS Externo</h3>
+                <p>
+                    O CSS externo é a forma mais recomendada. Os estilos são definidos em um arquivo separado com a extensão <code><strong>.css</strong></code> (por exemplo, <code><strong>style.css</strong></code>) e são vinculados ao documento HTML usando a tag <code class="propriedade">&lt;link&gt;</code> dentro do <code class="propriedade">&lt;head&gt;</code>.
+                </p>
+                <p>
+                    No arquivo <code><strong>index.html</strong></code>:
+                </p>
+                <figure>
+                    <img id="externo-html" src="../../../assets/img/css/introducao/html.webp" alt="css externo html" class="lightbox-trigger" data-full-src="../../../assets/img/css/introducao/html.webp" data-caption="">
+                </figure>
+                <p>
+                    No arquivo <code><strong>style.css</strong></code>:
+                </p>
+                <figure>
+                    <img id="externo-css" src="../../../assets/img/css/introducao/css.webp" alt="css externo" class="lightbox-trigger" data-full-src="../../../assets/img/css/introducao/css.webp" data-caption="">
+                </figure>
+                <p>
+                    Vantagens: 
+                    <br>
+                    Separa completamente o conteúdo da apresentação.               
+                    <br>
+                    O mesmo arquivo CSS pode ser usado em várias páginas, garantindo consistência.
+                    <br>
+                    Carregamento mais rápido.
+                    <br>
+                    Mantém o código limpo e organizado.
+                </p>
+                <p>  
+                    Desvantagens:
+                    <br>
+                    Requer um arquivo adicional para o CSS.
+                    <br>
+                    Para estilos muito pequenos e específicos de uma única página, pode ser um pouco excessivo.
+                </p>
+            </section>
+        </article>
+
+        <article>
+            <h2>Comentários</h2>
+            <p>
+                Comentários são trechos de código que são ignorados pelo navegador, servem apenas para documentar o código, explicar partes complexas e adicionar notas para outros desenvolvedores.
+            </p>
+            <p>
+                No CSS, os comentários são feitos usando a seguinte sintaxe:
+            </p>
+            <figure>
+                <img id="comentario" src="../../../assets/img/css/introducao/comentario.webp" alt="comentário" class="lightbox-trigger" data-full-src="../../../assets/img/css/introducao/comentario.webp" data-caption="">
+            </figure>
+            <p>
+                Exemplo de comentário:
+            </p>
+            <figure>
+                <img id="comentario2" src="../../../assets/img/css/introducao/comentario2.webp" alt="exemplo de comentário" class="lightbox-trigger" data-full-src="../../../assets/img/css/introducao/comentario2.webp" data-caption="">
+            </figure>
+            <p>
+                Um atalho útil para comentar partes do código. Seleciona o que deseja comentar e pressionar <code>Ctrl + /</code> (Windows) ou <code>Cmd + /</code> (Mac).
+            </p>
+        </article>
+
+        <article>
+            <h2>Sintaxe</h2>
+            <p>
+                A sintaxe básica do CSS consiste em um seletor e um bloco de declaração.
+            </p>
+            <p>
+                Estrutura:
+            </p>
+            <figure>
+                <img id="sintaxe" src="../../../assets/img/css/introducao/sintaxe.webp" alt="sintaxe" class="lightbox-trigger" data-full-src="../../../assets/img/css/introducao/sintaxe.webp" data-caption="">
+            </figure>
+            <ul class="sintaxe">
+                <li>
+                    Seletor: O nome do elemento HTML (por exemplo: <code>p, h1, div</code>), um ID, uma classe ou uma combinação deles.
+                </li>
+                <li>
+                    Chaves <code>{}</code>: Delimitam o bloco de declaração, que contém todas as regras de estilo para o seletor.
+                </li>
+                <li>
+                    Propriedade: O atributo de estilo que você deseja alterar (por exemplo: <code>color, font-size, background-color</code>).
+                </li>
+                <li>
+                    Dois pontos <code>(:)</code> Separa a propriedade do seu valor.
+                </li>
+                <li>
+                    Valor: O valor que você deseja aplicar à propriedade (por exemplo, <code>blue, 16px, #f0f0f0</code>).
+                </li>
+                <li>
+                    Ponto e vírgula <code>(;)</code>: Finaliza cada declaração. É crucial para separar as declarações e evitar erros.
+                </li>
+            </ul>
+            <p>
+                Exemplo:
+            </p>
+            <figure>
+                <img id="sintaxe-exemplo" src="../../../assets/img/css/introducao/sintaxe2.webp" alt="exemplo de sintaxe" class="lightbox-trigger" data-full-src="../../../assets/img/css/introducao/sintaxe2.webp" data-caption="">
+            </figure>
+            <p>
+                Neste exemplo, o seletor <code><strong>p</strong></code> aplica a cor verde, tamanho de fonte de 16 pixels e alinhamento justificado a todos os parágrafos. O seletor <code><strong>h1</strong></code> aplica a cor roxa e a fonte 'Times New Roman' a todos os títulos de nível 1.
+            </p>
+        </article>
+        
+    </main>
+
+    <button id="btnTopo" title="Voltar ao topo">
+        <span id="top" class="material-symbols-outlined">
+            arrow_upward
+        </span>
+    </button>
+
+    <!-- Estrutura do Lightbox -->
+    <div id="custom-lightbox" class="lightbox-hidden">
+        <div class="lightbox-overlay"></div>
+        <div class="lightbox-content">
+            <button class="lightbox-close-btn" aria-label="Fechar lightbox">&times;</button>
+            <img src="" alt="" class="lightbox-image">
+            <div class="lightbox-caption"></div>
+        </div>
+    </div>
+    
+    <script src="../../../assets/js/hamburguerMenu.js"></script>
+    <script src="../../../assets/js/backToTop.js"></script>
+    <script src="../../../assets/js/lightBox.js"></script>
+    <script src="../../../assets/js/transitionEntry.js" defer></script>
+    <script src="../../../assets/js/transitionExit.js"></script>
+</body>
+</html>
