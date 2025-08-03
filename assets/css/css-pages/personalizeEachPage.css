@@ -88,9 +88,48 @@
 /* _____________________________________________________________________________________________________ */
 
 
-/* --------------------------------------- Formulário ---------------------------------------------------*/
+
+
+/* ---------------------------------- Propriedade de Texto ----------------------------------------------*/
 /* _____________________________________________________________________________________________________ */
+/* Ajustando a largura da imagem nos respectivos articles */
+#color, #font-family, #font-weight {
+    max-height: 14rem;
+}
+/* Ajustando a largura da imagem no article font-size */
+#font-size {
+    max-height: 17rem;
+}
+/* Ajustando a largura da imagem no article line-height */
+#line-height {
+    max-height: 12rem;
+}
+/* Ajustando a largura da imagem nos respectivos articles */
+#text-align, #text-transform {
+    max-height: 13rem;
+}
+/* Ajustando a largura da imagem no article text-decoration */
+#text-decoration {
+    max-height: 15rem;
+}
+/* Ajustando a largura da imagem nos respectivos articles */
+#letter-spacing, #word-spacing, #text-indent {
+    max-height: 11rem;
+}
 /* _____________________________________________________________________________________________________ */
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /* --------------------------------------- Formulário ---------------------------------------------------*/
