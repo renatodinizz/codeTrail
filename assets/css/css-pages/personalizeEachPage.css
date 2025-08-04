@@ -122,19 +122,40 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-/* --------------------------------------- Formulário ---------------------------------------------------*/
+/* --------------------------------------- Cores e Unidades ---------------------------------------------*/
 /* _____________________________________________________________________________________________________ */
+/* Ajustando a formatação da estrutura css */
+.estrutura {
+    font-size: 1.2rem;
+    font-weight: 500;
+    line-height: 1.4;
+    color: #333;
+}
+.container {
+    background-color: #ececec;
+    border: 2px solid #ddd;
+    max-width: 50%;
+    border-radius: 8px;
+    padding: 1rem;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+}
+/* Deixando responsivo a formatação da estrutura css */
+@media (max-width: 768px) {
+    .container {
+        max-width: 70%; 
+    }
+}
+@media (max-width: 480px) {
+    .container {
+        max-width: 100%; 
+    }
+}
 /* _____________________________________________________________________________________________________ */
+
+
+
+
+
 
 
 /* --------------------------------------- Formulário ---------------------------------------------------*/

@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cores e Unidades</title>
+    <!-- Favicon imagem -->
+    <link rel="shortcut icon" href="../../../assets/img/favicon/favicon.ico" type="image/x-icon">
+    <!-- Link do CSS -->
+    <link rel="stylesheet" href="../../../assets/css/css-pages/style-css-pages.css">
+    <!-- font do ícone backToTop -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined&display=swap" rel="stylesheet">
+
+</head>
+<body class="area">
+
+    <div class="page-transition"></div>
+
+    <ul class="circles">
+        <li class="square"></li>
+        <li class="square"></li>
+        <li class="square"></li>
+        <li class="square"></li>
+        <li class="square"></li>
+        <li class="square"></li>
+        <li class="square"></li>
+        <li class="square"></li>
+        <li class="square"></li>
+        <li class="square"></li>
+        <li class="square"></li>
+        <li class="square"></li>
+        <li class="square"></li>
+        <li class="square"></li>
+        <li class="square"></li>
+        <li class="square"></li>
+        <li class="square"></li>
+        <li class="square"></li>
+        <li class="square"></li>
+        <li class="square"></li>
+    </ul>
+    <header>
+
+        <button id="menu-toggle" class="menu-toggle">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </button>
+
+        <section class="horizontal">
+            <span id="codeTrail">CodeTrail</span>    
+            <nav id="side-menu">
+                <ul>
+                    <li><a href="../../../index.html" class="home">Home</a></li>
+                    <li><a href="../../../pages/html/indexHtml.html" class="html">HTML</a></li>
+                    <li><a href="../../../pages/css/indexCss.html" class="css">CSS</a></li>
+                    <li><a href="../../../pages/javascript/indexJs.html" class="js">JavaScript</a></li>
+                    <li><a href="../../../pages/typescript/indexType.html" class="ts">TypeScript</a></li>
+                    <li><a href="../../../pages/about/indexAbout.html" class="about">About</a></li>
+                </ul>
+            </nav>
+        </section>
+
+        <h1>CSS</h1>
+
+    </header>
+
+    <main class="context">
+
+        <h1>Cores e Unidades</h1>
+
+        <article>
+            <h2>Cores</h2>
+            <p>
+                Existem várias maneiras de definir cores no CSS, cada uma com suas vantagens e casos de uso.
+            </p>
+            <section>
+                <h3>Cores por Nome</h3>
+                <p>
+                    As cores podem ser especificadas usando nomes de cores predefinidos, como <code><strong>red, blue, green, black, white</strong></code>, etc. É a forma mais simples de usar cores, mas a variedade é limitada.
+                </p>
+                <p>
+                    Exemplo:
+                </p>
+                <div class="container">
+                    <code class="estrutura">
+                        p {
+                        <br>
+                        &nbsp;&nbsp;color: blue;
+                        <br>
+                        }
+                        <br>
+                        h1 {
+                        <br>
+                        &nbsp;&nbsp;background-color: lightgray;
+                        <br>
+                        }
+                    </code>
+                </div>
+            </section>
+            
+            <section>
+                <h3>Cores Hexadecimais</h3>
+                <p>
+                    As cores hexadecimais são representadas por um <code><strong>#</strong></code> seguido de seis dígitos hexadecimais (0-9 e A-F). Os dois primeiros dígitos representam o valor de vermelho, os dois do meio o verde, e os dois últimos o azul. É uma forma compacta e muito comum de especificar cores.
+                </p>
+                <p>
+                    Exemplo:
+                </p>
+                <div class="container">
+                    <code class="estrutura">
+                        body {
+                        <br>
+                        &nbsp;&nbsp;background-color: #F0F8FF
+                        <br>
+                        }
+                        <br>
+                        h2 {
+                        <br>
+                        &nbsp;&nbsp;color: #FF4500; /* OrangeRed */
+                        <br>
+                        }
+                    </code>
+                </div>
+            </section>
+
+            <section>
+                <h3>Cores RGB (Red, Green, Blue)</h3>
+                <p>
+                    As cores RGB são especificadas usando a função <code><strong>rgb()</strong></code>, que recebe três valores inteiros de 0 a 255, representando a intensidade de vermelho, verde e azul, respectivamente.
+                </p>
+                <p>
+                    Exemplo:
+                </p>
+                <div class="container">
+
+                    <code class="estrutura">
+                        .caixa {
+                        <br>
+                        &nbsp;&nbsp;background-color: rgb(255, 99, 71);
+                        <br>
+                        }
+                        <br>
+                        .texto-rgb {
+                        <br>
+                        &nbsp;&nbsp;color: rgb(0, 128, 0); /* Green */
+                        <br>
+                        }
+                    </code>
+                </div>
+            </section>
+
+            <section>
+                <h3>Cores RGBA (Red, Green, Blue, Alpha)</h3>
+                <p>
+                    As cores RGBA são uma extensão do RGB, adicionando um quarto valor, o canal alfa, que representa a opacidade do elemento. O valor alfa varia de 0 (totalmente transparente) a 1 (totalmente opaco).
+                </p>
+                <p>
+                    Exemplo:
+                </p>
+                <div class="container">
+
+                    <code class="estrutura">
+                        .overlay {
+                        <br>
+                        &nbsp;&nbsp;background-color: rgba(0, 0, 0, 0.5);
+                        <br>
+                        &nbsp;&nbsp;/* Preto com 50% de opacidade */
+                        <br>
+                        }
+                        <br>
+                        <br>
+                        .texto-transparente {
+                        <br>
+                        &nbsp;&nbsp;color: rgba(255, 0, 0, 0.7);
+                        <br>
+                        &nbsp;&nbsp;/* Vermelho com 70% de opacidade */
+                        <br>
+                        }
+                    </code>
+                </div>
+            </section>
+
+            <section>
+                <h3>Cores HSL ( )</h3>
+                <p>
+                    As cores HSL são especificadas usando a função <code><strong>hsl()</strong></code>, que recebe três valores: matiz (hue), saturação (saturation) e luminosidade (lightness).
+                    <br>
+                    <br>
+                    <strong>Matiz (Hue):</strong> Um grau no círculo de cores de 0 a 360 (0 = vermelho, 120 = verde, 240 = azul).
+                    <br>
+                    <strong>Saturação (Saturation):</strong> Uma porcentagem de 0% a 100% (0% = tom de cinza, 100% = cor pura).
+                    <br>
+                    <strong>Luminosidade (Lightness):</strong> Uma porcentagem de 0% a 100% (0% = preto, 100% = branco, 50% = cor normal).
+                </p>
+                <p>
+                    Exemplo:
+                </p>
+                <div class="container">
+
+                    <code class="estrutura">
+                        .botao {
+                        <br>
+                        &nbsp;&nbsp;background-color: hsl(120, 100%, 50%);
+                        <br>
+                        }
+                        <br>
+                        .texto-hsl {
+                        <br>
+                        &nbsp;&nbsp;color: hsl(240, 50%, 70%);
+                        <br>
+                        }
+                    </code>
+                </div>
+            </section>
+
+            <section>
+                <h3>Cores HSLA ( )</h3>
+                <p>
+                    Similar ao RGBA, o HSLA adiciona o canal alfa para controlar a opacidade, variando de 0 (totalmente transparente) a 1 (totalmente opaco).
+                </p>
+                <p>
+                    Exemplo:
+                </p>
+                <div class="container">
+
+                    <code class="estrutura">
+                        .sombra {
+                        <br>
+                        &nbsp;&nbsp;background-color: hsla(0, 100%, 50%, 0.3);
+                        <br>
+                        &nbsp;&nbsp;/* Vermelho com 30% de opacidade */
+                        <br>
+                        }
+                    </code>
+                </div>
+            </section>          
+        </article>
+
+        <article>
+            <h2>Unidades</h2>
+            <p>
+                As unidades CSS são usadas para especificar tamanhos, comprimentos, espaçamentos e outras dimensões. Elas podem ser absolutas ou relativas.
+            </p>
+        </article>
+        
+        <article>
+            <h2>Unidades Fixas</h2>
+            <p>
+                Unidades absolutas são fixas e não mudam em relação a outros elementos ou ao tamanho da tela. São menos flexíveis para designs responsivos.
+            </p>
+            <h3>Pixels (px)</h3>
+            <p>
+                A unidade mais comum. Um pixel é um ponto na tela. É uma unidade absoluta, mas seu tamanho físico pode variar entre dispositivos.
+            </p>
+            <p>
+                Exemplo:
+            </p>
+            <div class="container">
+
+                <code class="estrutura">
+                    .largura-fixa {
+                    <br>
+                    &nbsp;&nbsp;width: 200px;
+                    <br>
+                    }
+                    <br>
+                    .fonte-pequena {
+                    <br>
+                    &nbsp;&nbsp;font-size: 12px;
+                    <br>
+                    }
+                </code>
+            </div>
+        </article>
+
+        <article>
+            <h2>Unidades Relativas</h2>
+            <p>
+                Unidades relativas são mais flexíveis e se ajustam em relação a outras medidas (como o tamanho da fonte do elemento pai, o tamanho da viewport, etc.). São ideais para criar designs responsivos.
+            </p>
+            <section>
+                <h3>porcentagem (%)</h3>
+                <p>
+                    Relativa ao tamanho do elemento pai. Se um elemento pai tem <code><strong>200px</strong></code> de largura, um filho com <code><strong>width:50%</strong></code> terá <code><strong>100px</strong></code>.
+                </p>
+                <p>
+                    Exemplo:
+                </p>
+                <div class="container">
+                    <code class="estrutura">
+                        .container {
+                        <br>
+                        &nbsp;&nbsp;width: 80%;
+                        <br>
+                        }
+                        <br>
+                        .imagem {
+                        <br>
+                        &nbsp;&nbsp;width: 100%;
+                        <br>
+                        /* 100% da largura do seu container */
+                        <br>
+                        }
+                    </code>
+                </div>
+            </section>
+
+            <section>
+                <h3>em</h3>
+                <p>
+                    Relativa ao <code class="propriedade">font-size</code> do elemento pai. Se o elemento pai tem <code><strong>font-size: 16px</strong></code>, <code><strong>1em</strong></code> será <code><strong>16px</strong></code>. Se o elemento atual tiver seu próprio <code class="propriedade">font-size</code> definido, <code><strong>em</strong></code> será relativo a ele.
+                </p>
+                <p>
+                    Exemplo:
+                </p>
+                <div class="container">
+                    <code class="estrutura">
+                        .caixa {
+                        <br>
+                        &nbsp;&nbsp;font-size: 16px;
+                        <br>
+                        &nbsp;&nbsp;padding: 1em; /* 16px */
+                        <br>
+                        }
+                        <br>
+                        .texto-interno {
+                        <br>
+                        &nbsp;&nbsp;font-size: 1.2em;
+                        <br>
+                        &nbsp;&nbsp;/* 1.2 * 16px = 19.2px */
+                        <br>
+                        }
+                    </code>
+                </div>
+            </section>
+
+            <section>
+                <h3>rem</h3>
+                <p>
+                    Relativa ao <code class="propriedade">font-size</code> do elemento raiz <code class="propriedade">&lt;html&gt;</code>. Isso torna o dimensionamento mais previsível, pois não é afetado pelo <code class="propriedade">font-size</code> de elementos pais intermediários. Se o <code class="propriedade">font-size</code> do <code class="propriedade">&lt;html&gt;</code> for <code><strong>16px</strong></code>, <code><strong>1rem</strong></code> será sempre  <code><strong>16px</strong></code>.
+                </p>
+                <p>
+                    Exemplo:
+                </p>
+                <div class="container">
+                    <code class="estrutura">
+                        html {
+                        <br>
+                        &nbsp;&nbsp;font-size: 16px;
+                        <br>
+                        }
+                        <br>
+                        h1 {
+                        <br>
+                        &nbsp;&nbsp;font-size: 2.5rem;
+                        <br>
+                        &nbsp;&nbsp;/* 2.5 * 16px = 40px */
+                        <br>
+                        }
+                        <br>
+                        p {
+                        <br>
+                        &nbsp;&nbsp;font-size: 1rem;
+                        <br>
+                        &nbsp;&nbsp;/* 1 * 16px = 16px */
+                        <br>
+                        }
+                    </code>
+                </div>
+            </section>
+
+            <section>
+                <h3>vh (viewport height)</h3>
+                <p>
+                    Relativa à altura da viewport (a janela visível do navegador). <code><strong>1vh</strong></code> é igual a <code><strong>1%</strong></code> da altura da viewport. <code><strong>100vh</strong></code> preenche a altura total da tela.
+                </p>
+                <p>
+                    Exemplo:
+                </p>
+                <div class="container">
+                    <code class="estrutura">
+                        .secao-tela-cheia {
+                        <br>
+                        &nbsp;&nbsp;height: 100vh;
+                        <br>
+                        }
+                    </code>
+                </div>
+            </section>
+
+            <section>
+                <h3>vw (viewport width)</h3>
+                <p>
+                    Relativa à largura da viewport. <code><strong>1vw</strong></code> é igual a <code><strong>1%</strong></code> da largura da viewport. <code><strong>100vw</strong></code> preenche a largura total da tela.
+                </p>
+                <p>
+                    Exemplo:
+                </p>
+                <div class="container">
+                    <code class="estrutura">
+                        .titulo-responsivo {
+                        <br>
+                        &nbsp;&nbsp;font-size: 5vw;
+                        <br>
+                        }
+                    </code>
+                </div>
+                <p>
+                    O tamanho da fonte se ajusta com a largura da tela.
+                </p>
+            </section>
+
+            <section>
+                <h3>vmin (viewport minimum)</h3>
+                <p>
+                    Relativa à menor dimensão da viewport (altura ou largura). <code><strong>1vmin</strong></code> é igual a <code><strong>1%</strong></code> da menor dimensão da viewport.
+                </p>
+                <p>
+                    Exemplo:
+                </p>
+                <div class="container">
+                    <code class="estrutura">
+                        .circulo {
+                        <br>
+                        &nbsp;&nbsp;width: 50vmin;
+                        <br>
+                        &nbsp;&nbsp;height: 50vmin;
+                        <br>
+                        }
+                    </code>
+                </div>
+            </section>
+
+            <section>
+                <h3>vmax (viewport maximum)</h3>
+                <p>
+                    Relativa à maior dimensão da viewport (altura ou largura). <code><strong>1vmax</strong></code> é igual a <code><strong>1%</strong></code> da maior dimensão da viewport.
+                </p>
+                <p>
+                    Exemplo:
+                </p>
+                <div class="container">
+                    <code class="estrutura">
+                        .retangulo {
+                        <br>
+                        &nbsp;&nbsp;width: 80vmax;
+                        <br>
+                        &nbsp;&nbsp;height: 20vmax;
+                        <br>
+                        }
+                    </code>
+                </div>
+            </section>            
+        </article>
+
+        <article>
+            <p>
+                Em geral, é uma boa prática usar unidades relativas para a maioria dos elementos, especialmente para fontes e espaçamentos, isso ajuda a criar designs mais flexíveis e acessíveis que se adaptem bem a uma variedade de dispositivos e preferências do usuário.
+            </p>
+        </article>            
+    </main>
+
+    <button id="btnTopo" title="Voltar ao topo">
+        <span id="top" class="material-symbols-outlined">
+            arrow_upward
+        </span>
+    </button>
+
+    <!-- Estrutura do Lightbox -->
+    <div id="custom-lightbox" class="lightbox-hidden">
+        <div class="lightbox-overlay"></div>
+        <div class="lightbox-content">
+            <button class="lightbox-close-btn" aria-label="Fechar lightbox">&times;</button>
+            <img src="" alt="" class="lightbox-image">
+            <div class="lightbox-caption"></div>
+        </div>
+    </div>
+    
+    <script src="../../../assets/js/hamburguerMenu.js"></script>
+    <script src="../../../assets/js/backToTop.js"></script>
+    <script src="../../../assets/js/lightBox.js"></script>
+    <script src="../../../assets/js/transitionEntry.js" defer></script>
+    <script src="../../../assets/js/transitionExit.js"></script>
+</body>
+</html>
