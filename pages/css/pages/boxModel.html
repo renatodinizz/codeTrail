@@ -71,153 +71,343 @@
         <h1>Modelo de Caixa</h1>
 
         <article>
+            <h2>Box Model</h2>
             <p>
-                As propriedades de texto no CSS permitem controlar a aparência do texto em suas páginas web, desde a cor e o tamanho da fonte até o alinhamento e o espaçamento entre caracteres. Elas são essenciais para garantir a legibilidade e o apelo visual do conteúdo textual.
+                O Modelo de Caixa (Box Model) descreve como os elementos HTML são renderizados como caixas retangulares, e como o espaço é ocupado e distribuído ao redor e dentro desses elementos.
             </p>
+            <p>
+                Cada elemento HTML é tratado como uma caixa:
+            </p>
+            <figure>
+                <img id="boxModel" src="../../../assets/img/css/boxModel/boxModel.webp" alt="Modelo de caixa" class="lightbox-trigger" data-full-src="../../../assets/img/css/boxModel/boxModel.webp" data-caption="">
+            </figure>
+            <p>
+                Essa caixa é composta por quatro partes principais, que se aninham uma dentro da outra:
+            </p>
+            <ol class="especificidade">
+                <li>
+                    <strong>Conteúdo (Content):</strong> A área onde o conteúdo real do elemento é exibido (texto, imagens, vídeos, etc.). Suas dimensões são controladas pelas propriedades <code class="propriedade">width</code> e <code class="propriedade">height</code>.
+                </li>
+                <li>
+                    <strong>Preenchimento (Padding):</strong> O espaço entre o conteúdo do elemento e sua borda. O padding empurra o conteúdo para dentro da borda, criando um espaçamento interno.
+                </li>
+                <li>
+                    <strong>Borda (Border):</strong> A linha que envolve o padding e o conteúdo. Você pode definir a espessura, o estilo e a cor da borda.
+                </li>
+                <li>
+                    <strong>Margem (Margin):</strong> O espaço fora da borda do elemento. A margem empurra outros elementos para longe do elemento atual, criando um espaçamento externo.
+                </li>
+            </ol>
         </article>
 
         <article>
-            <h2><code>color</code></h2>
+            <h2><code>width</code></h2>
             <p>
-                A propriedade <code class="propriedade">color</code> define a cor do texto de um elemento. Você pode especificar cores usando nomes de cores (por exemplo, <code><strong>red, blue</strong></code>), valores hexadecimais (por exemplo, <code><strong>#FF0000</strong></code>), valores RGB (por exemplo, <code><strong>rgb(255, 0, 0)</strong></code>) ou RGBA (por exemplo, <code><strong>rgba(255, 0, 0, 0.5)</strong></code> para transparência).
+                A propriedade <code class="propriedade">width</code> define a largura da área de conteúdo de um elemento. Pode ser especificada em unidades absolutas <code class="propriedade">(px)</code>, relativas <code class="propriedade">(%, em, rem, vw)</code>, ou <code class="propriedade">auto</code>.
             </p>
             <p>
                 Exemplo:
             </p>
-            <figure>
-                <img id="color" src="../../../assets/img/css/propriedadesDeTexto/color.webp" alt="propriedade color" class="lightbox-trigger" data-full-src="../../../assets/img/css/propriedadesDeTexto/color.webp" data-caption="">
-            </figure>
+            <div class="container">
+                <code class="estrutura">
+                    .caixa-fixa {
+                    <br>
+                    &nbsp;&nbsp;width: 300px;
+                    <br>
+                    }
+                    <br>
+                    .caixa-responsiva {
+                    <br>
+                    &nbsp;&nbsp;width: 80%;
+                    <br>
+                    &nbsp;&nbsp;/* 80% da largura do elemento pai */
+                    <br>
+                    }
+                </code>
+            </div>
         </article>
 
         <article>
-            <h2><code>font-size</code></h2>
+            <h2><code>height</code></h2>
             <p>
-                A propriedade <code class="propriedade">font-size</code> define o tamanho da fonte do texto. Você pode usar várias unidades para especificar o tamanho, como <code><strong>pixels(px), em, rem, porcentagens (%)</strong></code>, entre outras. É recomendado usar unidades relativas como <code><strong>em</strong></code> ou <code><strong>rem</strong></code> para melhor responsividade.
+                A propriedade <code class="propriedade">height</code> define a altura da área de conteúdo de um elemento. Assim como <code class="propriedade">width</code>, pode ser especificada em unidades absolutas <code class="propriedade">(px)</code>, relativas <code class="propriedade">(%, em, rem, vw)</code>, ou <code class="propriedade">auto</code>.
             </p>
             <p>
                 Exemplo:
             </p>
-            <figure>
-                <img id="font-size" src="../../../assets/img/css/propriedadesDeTexto/font-size.webp" alt="propriedade font-size" class="lightbox-trigger" data-full-src="../../../assets/img/css/propriedadesDeTexto/font-size.webp" data-caption="">
-            </figure>
+            <div class="container">
+                <code class="estrutura">
+                    .secao-fixa {
+                    <br>
+                    &nbsp;&nbsp;height: 200px;
+                    <br>
+                    }
+                    <br>
+                    .secao-tela-cheia {
+                    <br>
+                    &nbsp;&nbsp;height: 100vh;
+                    <br>
+                    &nbsp;&nbsp;/* 100% da altura da viewport */
+                    <br>
+                    }
+                </code>
+            </div>
         </article>
 
         <article>
-            <h2><code>font-family</code></h2>
+            <h2><code>padding</code></h2>
             <p>
-                A propriedade <code class="propriedade">font-family</code> define a fonte a ser usada para o texto. Você pode especificar uma lista de fontes, separadas por vírgulas, como um "fallback" (alternativa). O navegador tentará carregar a primeira fonte da lista; se não estiver disponível, ele tentará a próxima, e assim por diante. É uma boa prática incluir uma família de fonte genérica (como <code><strong>serif, sans-serif, monospace</strong></code>).
+                A propriedade <code class="propriedade">padding</code>  define o espaço entre o conteúdo de um elemento e sua borda. Você pode definir o padding para todos os lados de uma vez, ou individualmente para cada lado (top, right, bottom, left).
             </p>
             <p>
                 Exemplo:
             </p>
-            <figure>
-                <img id="font-family" src="../../../assets/img/css/propriedadesDeTexto/font-family.webp" alt="propriedade font-family" class="lightbox-trigger" data-full-src="../../../assets/img/css/propriedadesDeTexto/font-family.webp" data-caption="">
-            </figure>
+            <div class="container">
+                <code class="estrutura">
+                    .elemento {
+                    <br>
+                    &nbsp;&nbsp;padding: 20px;
+                    <br>
+                    &nbsp;&nbsp;/* 20px em todos os lados */
+                    <br>
+                    }
+                    <br>
+                    .elemento-especifico {
+                    <br>
+                    &nbsp;&nbsp;padding-top: 10px;
+                    <br>
+                    &nbsp;&nbsp;padding-right: 15px;
+                    <br>
+                    &nbsp;&nbsp;padding-bottom: 20px;
+                    <br>
+                    &nbsp;&nbsp;padding-left: 5px;
+                    <br>
+                    }
+                </code>
+            </div>
+            <p>
+                Exemplo shorthand:
+            </p>
+            <div class="container">
+                <code class="estrutura">
+                    .elemento-shorthand {
+                    <br>
+                    &nbsp;&nbsp;padding: 10px 20px 30px 40px;
+                    <br>
+                    }
+                    <br>
+                    .elemento-shorthand-2 {
+                    <br>
+                    &nbsp;&nbsp;padding: 15px 30px;
+                    <br>
+                    }
+                </code>
+            </div>
+            <p>
+                No primeiro exemplo, o primeiro valor <code><strong>10px</strong></code> é o padding superior, o segundo <code><strong>20px</strong></code> é o direito, o terceiro <code><strong>30px</strong></code> é o inferior e o quarto <code><strong>40px</strong></code> é o esquerdo.
+            </p>
+            <p>
+                No exemplo <code><strong>shorthand-2</strong></code>, o primeiro valor será aplicado ao topo e ao fundo, e o segundo à esquerda e à direita.
+            </p>
         </article>
 
         <article>
-            <h2><code>font-weight</code></h2>
+            <h2><code>margin</code></h2>
             <p>
-                A propriedade <code class="propriedade">font-weight</code> define a espessura (negrito) da fonte. Os valores comuns incluem <code><strong>normal</strong></code> (equivalente a 400), <code><strong>bold</strong></code> (equivalente a 700), ou valores numéricos de <code><strong>100 a 900</strong></code> (em múltiplos de 100).
+                A propriedade <code class="propriedade">margin</code> define o espaço externo de um elemento, empurrando outros elementos para longe. Assim como o <code class="propriedade">padding</code>, você pode definir a margem para todos os lados ou individualmente.
             </p>
             <p>
                 Exemplo:
             </p>
-            <figure>
-                <img id="font-weight" src="../../../assets/img/css/propriedadesDeTexto/font-weight.webp" alt="propriedade font-weight" class="lightbox-trigger" data-full-src="../../../assets/img/css/propriedadesDeTexto/font-weight.webp" data-caption="">
-            </figure>
+            <div class="container">
+                <code class="estrutura">
+                    .elemento {
+                    <br>
+                    &nbsp;&nbsp;margin: 30px;
+                    <br>
+                    &nbsp;&nbsp;/* 30px em todos os lados */
+                    <br>
+                    }
+                    <br>
+                    .elemento-especifico {
+                    <br>
+                    &nbsp;&nbsp;margin-top: 10px;
+                    <br>
+                    &nbsp;&nbsp;margin-right: auto;
+                    <br>
+                    &nbsp;&nbsp;margin-bottom: 20px;
+                    <br>
+                    &nbsp;&nbsp;margin-left: auto;
+                    <br>
+                    &nbsp;&nbsp;/* margin: 0 auto; centraliza horizontalmente */
+                    <br>
+                    }
+                </code>
+            </div>
+            <p>
+                Exemplo shorthand:
+            </p>
+            <div class="container">
+                <code class="estrutura">
+                    .elemento-shorthand {
+                    <br>
+                    &nbsp;&nbsp;margin: 10px 20px 30px 40px;
+                    <br>
+                    }
+                    <br>
+                    .elemento-shorthand-2 {
+                    <br>
+                    &nbsp;&nbsp;margin: 15px 30px;
+                    <br>
+                    }
+                </code>
+            </div>
+            <p>
+                No primeiro exemplo, o primeiro valor <code><strong>10px</strong></code> é a margin superior, o segundo <code><strong>20px</strong></code> é o direito, o terceiro <code><strong>30px</strong></code> é o inferior e o quarto <code><strong>40px</strong></code> é o esquerdo.
+            </p>
+            <p>
+                No exemplo <code><strong>shorthand-2</strong></code>, o primeiro valor será aplicado ao topo e ao fundo, e o segundo à esquerda e à direita.
+            </p>
         </article>
 
         <article>
-            <h2><code>line-height</code></h2>
+            <h2><code>border</code></h2>
             <p>
-                A propriedade <code class="propriedade">line-height</code> define a altura de uma linha de texto, ou seja, o espaçamento vertical entre as linhas. Um valor sem unidade é geralmente o mais recomendado, pois é um fator multiplicador do <code class="propriedade">font-size</code> do elemento, o que ajuda na responsividade.
+                A propriedade <code class="propriedade">border</code> define a borda de um elemento. É uma propriedade shorthand que permite definir a largura, o estilo e a cor da borda de uma vez.
             </p>
             <p>
                 Exemplo:
             </p>
-            <figure>
-                <img id="line-height" src="../../../assets/img/css/propriedadesDeTexto/line-height.webp" alt="propriedade line-height" class="lightbox-trigger" data-full-src="../../../assets/img/css/propriedadesDeTexto/line-height.webp" data-caption="">
-            </figure>
+            <div class="container">
+                <code class="estrutura">
+                    .caixa {
+                    <br>
+                    &nbsp;&nbsp;border: 2px solid black;
+                    <br>
+                    }
+                    <br>
+                    .caixa-personalizada {
+                    <br>
+                    &nbsp;&nbsp;border-width: 3px;
+                    <br>
+                    &nbsp;&nbsp;border-style: dashed;
+                    <br>
+                    &nbsp;&nbsp;border-color: blue;
+                    <br>
+                    }
+                    <br>
+                    .borda-inferior {
+                    <br>
+                    &nbsp;&nbsp;border-bottom: 1px dotted gray;
+                    <br>
+                    }
+                </code>
+            </div>
+            <p>
+                O primeiro valor <code><strong>2px</strong></code> define a largura da borda, o segundo <code><strong>solid</strong></code> define o estilo (pode ser <code><strong>dashed</strong></code>, <code><strong>dotted</strong></code>, etc.), e o terceiro <code><strong>black</strong></code> define a cor da borda.
+            </p>
         </article>
 
         <article>
-            <h2><code>text-align</code></h2>
+            <h2><code>box-sizing</code></h2>
             <p>
-                A propriedade <code class="propriedade">text-align</code> define o alinhamento horizontal do texto dentro de um elemento de bloco. Os valores possíveis são <code><strong>left, right, center e justify</strong></code>.
-            </p>
-            <p>
-                Exemplo:
+                A propriedade <code class="propriedade">box-sizing</code> é crucial para controlar como <code class="propriedade">width</code> e <code class="propriedade">height</code> são calculados em relação ao Box Model. Ela tem dois valores principais:
             </p>
             <figure>
-                <img id="text-align" src="../../../assets/img/css/propriedadesDeTexto/text-align.webp" alt="propriedade text-align" class="lightbox-trigger" data-full-src="../../../assets/img/css/propriedadesDeTexto/text-align.webp" data-caption="">
+                <img id="boxSizing" src="../../../assets/img/css/boxModel/boxSizing.webp" alt="valores de box-sizing" class="lightbox-trigger" data-full-src="../../../assets/img/css/boxModel/boxSizing.webp" data-caption="">
             </figure>
+            <section>
+                <h3>content-box (Padrão)</h3>
+                <p>
+                    No modelo <code class="propriedade">content-box</code>, <code class="propriedade">width</code> e <code class="propriedade">height</code> se referem apenas às dimensões da área de conteúdo. O <code class="propriedade">padding</code> e a <code class="propriedade">borda</code> são adicionados <strong>além</strong> dessas dimensões. Isso significa que a largura e altura totais do elemento serão <code><strong>width + padding-left + padding-right + border-left + border-right</strong></code> e <code><strong>height + padding-top + padding-bottom + border-top + border-bottom</strong></code>.
+                </p>
+                <p>
+                    Exemplo:
+                </p>
+                <div class="container">
+                    <code class="estrutura">
+                        .caixa-content-box {
+                        <br>
+                        &nbsp;&nbsp;width: 100px;
+                        <br>
+                        &nbsp;&nbsp;height: 100px;
+                        <br>
+                        &nbsp;&nbsp;padding: 10px;
+                        <br>
+                        &nbsp;&nbsp;border: 5px solid black;
+                        <br>
+                        &nbsp;&nbsp;box-sizing: content-box;
+                        <br>
+                        &nbsp;&nbsp;/* Comportamento padrão */
+                        <br>
+                        }
+                    </code>
+                </div>
+                <p>
+                    Neste caso, a largura total da caixa será <code><strong>100px (conteúdo) + 10px (padding esquerdo) + 10px (padding direito) + 5px (borda esquerda) + 5px (borda direita) = 130px</strong></code>.
+                </p>
+            </section>
+
+            <section>
+                <h3>border-box</h3>
+                <p>
+                    No modelo <code class="propriedade">border-box</code>, <code class="propriedade">width</code> e <code class="propriedade">height</code> incluem o padding e a borda. O conteúdo é que se ajusta para caber dentro dessas dimensões. Este modelo é geralmente preferido, pois torna o layout mais intuitivo e previsível, especialmente ao trabalhar com porcentagens e sistemas de grid.
+                </p>
+                <p>
+                    Exemplo:
+                </p>
+                <div class="container">
+                    <code class="estrutura">
+                        .caixa-border-box {
+                        <br>
+                        &nbsp;&nbsp;width: 100px;
+                        <br>
+                        &nbsp;&nbsp;height: 100px;
+                        <br>
+                        &nbsp;&nbsp;padding: 10px;
+                        <br>
+                        &nbsp;&nbsp;border: 5px solid black;
+                        <br>
+                        &nbsp;&nbsp;box-sizing: border-box;
+                        <br>
+                        }
+                    </code>
+                </div>
+                <p>
+                    Neste caso, a largura total da caixa será <code><strong>100px</strong></code>. O <code><strong>padding de 10px e a borda de 5px</strong></code> serão incluídos dentro desses <code><strong>100px</strong></code>, e a área de conteúdo será reduzida para acomodá-los.
+                </p>
+                <p>
+                    É uma prática comum aplicar <code class="propriedade">box-sizing: border-box;</code> globalmente em seus projetos CSS para simplificar o cálculo de layouts.
+                </p>
+                <figure>
+                    <img id="global" src="../../../assets/img/css/boxModel/global.webp" alt="box-sizing global" class="lightbox-trigger" data-full-src="../../../assets/img/css/boxModel/global.webp" data-caption="">
+                </figure>
+            </section>
         </article>
 
         <article>
-            <h2><code>text-decoration</code></h2>
+            <h2>Colapso de Margens</h2>
             <p>
-                A propriedade <code class="propriedade">text-decoration</code> é usada para adicionar ou remover decorações de texto, como sublinhado, linha sobreposta ou tachado. Os valores comuns incluem <code><strong>none, underline, overline e line-through</strong></code>.
+                Isso ocorre quando as margens verticais de dois ou mais elementos adjacentes (ou de um elemento pai e seu primeiro/último filho) se sobrepõem, e a margem resultante é a maior das margens colapsadas, e não a soma delas.
             </p>
             <p>
-                Exemplo:
+                Exemplo: Se você tem dois parágrafos, um com <code><strong>margin-bottom: 20px;</strong></code> e o outro com <code><strong>margin-top: 30px;</strong></code>, o espaço vertical entre eles será de 30px (a maior margem), e não 50px.
             </p>
-            <figure>
-                <img id="text-decoration" src="../../../assets/img/css/propriedadesDeTexto/text-decoration.webp" alt="propriedade text-decoration" class="lightbox-trigger" data-full-src="../../../assets/img/css/propriedadesDeTexto/text-decoration.webp" data-caption="">
-            </figure>
-        </article>
-
-        <article>
-            <h2><code>text-transform</code></h2>
-            <p>
-                A propriedade <code class="propriedade">text-transform</code> controla a capitalização do texto. Os valores possíveis são <code><strong>none</strong></code>, <code><strong>uppercase</strong></code> (todas as letras maiúsculas), <code><strong>lowercase</strong></code> (todas as letras minúsculas) e <code><strong>capitalize</strong></code> (primeira letra de cada palavra maiúscula).
-            </p>
-            <p>
-                Exemplo:
-            </p>
-            <figure>
-                <img id="text-transform" src="../../../assets/img/css/propriedadesDeTexto/text-transform.webp" alt="propriedade text-transform" class="lightbox-trigger" data-full-src="../../../assets/img/css/propriedadesDeTexto/text-transform.webp" data-caption="">
-            </figure>
-        </article>
-
-        <article>
-            <h2><code>letter-spacing</code></h2>
-            <p>
-                A propriedade <code class="propriedade">letter-spacing</code> define o espaçamento horizontal entre os caracteres de texto. O valor pode ser em <code><strong> pixels (px), em, rem</strong></code>, etc. Valores positivos aumentam o espaçamento, e valores negativos o diminuem.
-            </p>
-            <p>
-                Exemplo:
-            </p>
-            <figure>
-                <img id="letter-spacing" src="../../../assets/img/css/propriedadesDeTexto/letter-spacing.webp" alt="propriedade letter-spacing" class="lightbox-trigger" data-full-src="../../../assets/img/css/propriedadesDeTexto/letter-spacing.webp" data-caption="">
-            </figure>
-        </article>
-
-        <article>
-            <h2><code>word-spacing</code></h2>
-            <p>
-                A propriedade <code class="propriedade">word-spacing</code> define o espaçamento horizontal entre as palavras de texto. O valor pode ser em <code><strong>pixels (px), em, rem, etc</strong></code>.
-            </p>
-            <p>
-                Exemplo:
-            </p>
-            <figure>
-                <img id="word-spacing" src="../../../assets/img/css/propriedadesDeTexto/word-spacing.webp" alt="propriedade word-spacing" class="lightbox-trigger" data-full-src="../../../assets/img/css/propriedadesDeTexto/word-spacing.webp" data-caption="">
-            </figure>
-        </article>
-
-        <article>
-            <h2><code>text-indent</code></h2>
-            <p>
-                A propriedade <code class="propriedade">text-indent</code> define a indentação da primeira linha de um bloco de texto. O valor pode ser em <code><strong>pixels (px), porcentagens (%), em, rem, etc</strong></code>. Valores negativos podem ser usados para criar um efeito de "hanging indent".
-            </p>
-            <p>
-                Exemplo:
-            </p>
-            <figure>
-                <img id="text-indent" src="../../../assets/img/css/propriedadesDeTexto/text-indent.webp" alt="propriedade text-indent" class="lightbox-trigger" data-full-src="../../../assets/img/css/propriedadesDeTexto/text-indent.webp" data-caption="">
-            </figure>
-        </article>       
+            <ul class="sintaxe">
+                <li>
+                    Usar <code class="propriedade">padding</code> ou <code class="propriedade">border</code> entre os elementos.
+                </li>
+                <li>
+                    Usar <code class="propriedade">overflow: hidden;</code> no elemento pai.
+                </li>
+                <li>
+                    Usar <code class="propriedade">display: flex;</code> ou <code class="propriedade">display: grid;</code> no elemento pai (Flexbox e Grid lidam com espaçamento de forma diferente).
+                </li>
+                <li>
+                    Usar <code class="propriedade">float</code> ou <code class="propriedade">position: absolute;</code>.
+                </li>
+            </ul>
+        </article>      
     </main>
 
     <button id="btnTopo" title="Voltar ao topo">
