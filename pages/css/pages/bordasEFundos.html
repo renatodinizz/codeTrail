@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bordas e Fundos</title>
+    <!-- Favicon imagem -->
+    <link rel="shortcut icon" href="../../../assets/img/favicon/favicon.ico" type="image/x-icon">
+    <!-- Link do CSS -->
+    <link rel="stylesheet" href="../../../assets/css/css-pages/style-css-pages.css">
+    <!-- font do ícone backToTop -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined&display=swap" rel="stylesheet">
+
+</head>
+<body class="area">
+
+    <div class="page-transition"></div>
+
+    <ul class="circles">
+        <li class="square"></li>
+        <li class="square"></li>
+        <li class="square"></li>
+        <li class="square"></li>
+        <li class="square"></li>
+        <li class="square"></li>
+        <li class="square"></li>
+        <li class="square"></li>
+        <li class="square"></li>
+        <li class="square"></li>
+        <li class="square"></li>
+        <li class="square"></li>
+        <li class="square"></li>
+        <li class="square"></li>
+        <li class="square"></li>
+        <li class="square"></li>
+        <li class="square"></li>
+        <li class="square"></li>
+        <li class="square"></li>
+        <li class="square"></li>
+    </ul>
+    <header>
+
+        <button id="menu-toggle" class="menu-toggle">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </button>
+
+        <section class="horizontal">
+            <span id="codeTrail">CodeTrail</span>    
+            <nav id="side-menu">
+                <ul>
+                    <li><a href="../../../index.html" class="home">Home</a></li>
+                    <li><a href="../../../pages/html/indexHtml.html" class="html">HTML</a></li>
+                    <li><a href="../../../pages/css/indexCss.html" class="css">CSS</a></li>
+                    <li><a href="../../../pages/javascript/indexJs.html" class="js">JavaScript</a></li>
+                    <li><a href="../../../pages/typescript/indexType.html" class="ts">TypeScript</a></li>
+                    <li><a href="../../../pages/about/indexAbout.html" class="about">About</a></li>
+                </ul>
+            </nav>
+        </section>
+
+        <h1>CSS</h1>
+
+    </header>
+
+    <main class="context">
+
+        <h1>Bordas e Fundos</h1>
+
+        <article>
+            <h2>Border</h2>
+            <p>
+                A propriedade <code class="propriedade">border</code> é uma shorthand para definir a largura, o estilo e a cor da borda de um elemento. Você pode controlar cada um desses aspectos individualmente.
+            </p>
+            <section>
+                <h3><code>border-width</code></h3>
+                <p>
+                    Define a espessura da borda. Pode ser especificada em unidades como <code><strong>px, em</strong></code>, ou palavras-chave como <code><strong>thin, medium ou thick</strong></code>.
+                </p>
+                <p>
+                    Exemplo:
+                </p>
+                <div class="container">
+                    <code class="estrutura">
+                        <span class="seletores">div</span> {
+                        <br>
+                        &nbsp;&nbsp;<span class="pro">border-width</span>: <span class="valor">3px</span>;
+                        <br>
+                        }
+                        <br>
+                        <span class="valor">.caixa-grossa</span> {
+                        <br>
+                        &nbsp;&nbsp;<span class="pro">border-width</span>: <span class="valor">thick</span>;
+                        <br>
+                        }
+                    </code>
+                </div>
+            </section>
+
+            <section>
+                <h3><code>border-style</code></h3>
+                <p>
+                    Define o estilo da borda. É uma propriedade obrigatória para que a borda seja visível. Valores comuns incluem <code><strong>solid</strong></code> (linha contínua), <code><strong>dotted</strong></code> (pontilhada), <code><strong>dashed</strong></code> (tracejada), <code><strong>double</strong></code> (linha dupla), <code><strong>groove, ridge, inset, outset e none</strong></code>.
+                </p>
+                <p>
+                    Exemplo:
+                </p>
+                <div class="container">
+                    <code class="estrutura">
+                        <span class="seletores">p</span> {
+                        <br>
+                        &nbsp;&nbsp;<span class="pro">border-style</span>: <span class="valor">solid</span>;
+                        <br>
+                        }
+                        <br>
+                        <span class="valor">.linha-tracejada</span> {
+                        <br>
+                        &nbsp;&nbsp;<span class="pro">border-style</span>: <span class="valor">dashed</span>;
+                        <br>
+                        }
+                    </code>
+                </div>
+                <br>
+                <p>
+                    Exemplo dos valores de bordas:
+                </p>
+                <picture>
+                    <source media="(max-width: 768px)" srcset="../../../assets/img/css/bordaEFundo/border2.webp" type="image/webp">
+                    <img id="bordas" src="../../../assets/img/css/bordaEFundo/border.webp" alt="tipos de bordas" class="lightbox-trigger" data-full-src="../../../assets/img/css/bordaEFundo/border.webp" data-caption="">
+                </picture>
+            </section>
+
+            <section>
+                <h3><code>border-color</code></h3>
+                <p>
+                    Define a cor da borda. Pode ser especificada usando <code><strong>nomes de cores, valores hexadecimais, RGB, RGBA, HSL ou HSLA</strong></code>.
+                </p>
+                <p>
+                    Exemplo:
+                </p>
+                <div class="container">
+                    <code class="estrutura">
+                        <span class="seletores">h1</span> {
+                        <br>
+                        &nbsp;&nbsp;<span class="pro">border-color</span>: <span class="valor">blue</span>;
+                        <br>
+                        }
+                        <br>
+                        <span class="valor">.borda-vermelha</span> {
+                        <br>
+                        &nbsp;&nbsp;<span class="pro">border-color</span>: <span class="valor">#FF0000</span>;
+                        <br>
+                        }
+                    </code>
+                </div>
+            </section>
+
+            <section>
+                <h3>Shorthand</h3>
+                <div class="container">
+                    <code class="estrutura">
+                        <span class="valor">.elemento</span> {
+                        <br>
+                        &nbsp;&nbsp;<span class="pro">border</span>: <span class="valor">1px solid black</span>;
+                        <br>
+                        &nbsp;&nbsp;<span class="coments">/* largura estilo cor */</span>
+                        <br>
+                        }
+                    </code>
+                </div>
+                <p>
+                    Você também pode definir bordas para lados específicos:
+                </p>
+                <p>
+                    <code><strong>border-top, border-right, border-bottom, border-left, border-top-width, border-top-style, border-top-color, etc.</strong></code>
+                </p>
+            </section>
+        </article>
+
+        <article>
+            <h2>Border Radius</h2>
+            <p>
+                A propriedade <code class="propriedade">border-radius</code> permite arredondar os cantos de um elemento, criando formas mais suaves ou até mesmo círculos e elipses. Você pode aplicar o arredondamento a todos os cantos igualmente ou a cada canto individualmente.
+            </p>
+            <div class="container">
+                <code class="estrutura">
+                    <span class="seletores">div</span> {
+                    <br>
+                    &nbsp;&nbsp;<span class="pro">border-radius</span>: <span class="valor">12px</span>;
+                    <br>
+                    &nbsp;&nbsp;<span class="pro">border-radius</span>: <span class="valor">20px 0px</span>;
+                    <br>
+                    &nbsp;&nbsp;<span class="pro">border-radius</span>: <span class="valor">10px 5px 20px</span>;
+                    <br>
+                    &nbsp;&nbsp;<span class="pro">border-radius</span>: <span class="valor">5px 10px 15px 20px</span>;
+                    <br>
+                    &nbsp;&nbsp;<span class="pro">border-radius</span>: <span class="valor">10% / 50%</span>;
+                    <br>
+                    }
+                </code>
+            </div>
+            <ul class="sintaxe">
+                <li>
+                    <strong>1 Valor:</strong> todos os cantos do elemento terão o mesmo raio de pixels.
+                </li>
+                <li>
+                    <strong>2 Valores:</strong> O primeiro é para top-left e bottom-right, segundo é para top-right e bottom-left.
+                </li>
+                <li>
+                    <strong>3 Valores:</strong> O primeiro é top-left, segundo é top-right e bottom-left, terceiro é bottom-right. 
+                </li>
+                <li>
+                    <strong>4 Valores:</strong> São aplicados na ordem dos cantos, no sentido horário: top-left, top-right, bottom-right, bottom-left.
+                </li>
+                <li>
+                    <strong> / :</strong> Quando usamos uma barra /, estamos definindo raios horizontais e verticais separadamente, criando cantos elípticos em vez de circulares.
+                </li>
+            </ul>
+            <p>
+                Se quiser arredondar apenas um canto, use propriedades específicas:
+            </p>
+            <div class="container">
+                <code class="estrutura">
+                    <span class="seletores">div</span> {
+                    <br>
+                    &nbsp;&nbsp;<span class="pro">border-top-left-radius</span>: <span class="valor">8px</span>;
+                    <br>
+                    &nbsp;&nbsp;<span class="pro">border-top-right-radius</span>: <span class="valor">0</span>;
+                    <br>
+                    &nbsp;&nbsp;<span class="pro">border-bottom-right-radius</span>: <span class="valor">10px</span>;
+                    <br>
+                    &nbsp;&nbsp;<span class="pro">border-bottom-left-radius</span>: <span class="valor">5px</span>;
+                    <br>
+                    }
+                </code>
+            </div>
+            <p>
+                Exemplos:
+            </p>
+            <picture>
+                <source media="(max-width: 768px)" srcset="../../../assets/img/css/bordaEFundo/radius2.webp" type="image/webp">
+                <img src="../../../assets/img/css/bordaEFundo/radius.webp" alt="exemplos de border-radius" class="lightbox-trigger" data-full-src="../../../assets/img/css/bordaEFundo/radius.webp" data-caption="">
+            </picture>
+            <ul class="sintaxe">
+                <li>
+                    <strong>Exemplo 1:</strong> <code>border-radius: none;</code> 
+                </li>
+                <li>
+                    <strong>Exemplo 2:</strong> <code>border-radius: 24px;</code> 
+                </li>
+                <li>
+                    <strong>Exemplo 3:</strong> <code>border-radius: 120px 30px;</code> 
+                </li>
+                <li>
+                    <strong>Exemplo 4:</strong> <code>border-radius: 50px 0 120px;</code> 
+                </li>
+                <li>
+                    <strong>Exemplo 5:</strong> <code>border-radius: 50%;</code> 
+                </li>
+                <li>
+                    <strong>Exemplo 6:</strong> <code>border-radius: 20% / 50%;</code> 
+                </li>
+                <li>
+                    <strong>Exemplo 7:</strong> <code>border-radius: 10% 100% / 120%;</code> 
+                </li>
+                <li>
+                    <strong>Exemplo 8:</strong> <code>border-radius: 50% 20% / 10% 40%;</code> 
+                </li>
+                <li>
+                    <strong>Exemplo 9:</strong> <code>border-radius: 70% 30% 30% 70% / 60% 40% 60% 40%;</code> 
+                </li>
+                <li>
+                    <strong>Exemplo 10:</strong> <code>border-radius:  50% 50% 0 50%;</code> 
+                </li>
+            </ul>
+            <p>
+                Para entender melhor como funciona cada valor, analise a imagem abaixo:
+            </p>
+            <figure>
+                <img id="radius" src="../../../assets/img/css/bordaEFundo/radius3.webp" alt="valores border-radius" class="lightbox-trigger" data-full-src="../../../assets/img/css/bordaEFundo/radius3.webp" data-caption="">
+            </figure> 
+        </article>
+
+        <article>
+            <h2>Background</h2>
+            <p>
+                As propriedades de fundo controlam o preenchimento de um elemento com cores ou imagens.
+            </p>
+            <section>
+                <h3><code>background-color</code></h3>
+                <p>
+                    Define a cor de fundo de um elemento. Pode ser qualquer valor de cor CSS (nome, hexadecimal, RGB, RGBA, HSL, HSLA).
+                </p>
+                <p>
+                    Exemplo:
+                </p>
+                <div class="container">
+                    <code class="estrutura">
+                        <span class="seletores">body</span> {
+                        <br>
+                        &nbsp;&nbsp;<span class="pro">background-color</span>: <span class="valor"> #f0f8ff</span>;
+                        <br>
+                        }
+                        <br>
+                        <span class="valor">.cabecalho</span> {
+                        <br>
+                        &nbsp;&nbsp;<span class="pro">background-color</span>: <span class="valor">navy</span>;
+                        <br>
+                        }
+                    </code>
+                </div>
+            </section>
+
+            <section>
+                <h3><code>background-image</code></h3>
+                <p>
+                    Define uma ou mais imagens de fundo para um elemento. Você pode especificar o caminho para a imagem usando a função <code><strong>url()</strong></code>.
+                </p>
+                <p>
+                    Exemplo:
+                </p>
+                <div class="container">
+                    <code class="estrutura">
+                        <span class="valor">.hero-section</span> {
+                        <br>
+                        &nbsp;&nbsp;<span class="pro">background-image</span>: <span class="valor2">url</span> <span class="valor">("../img/images.jpg")</span>;
+                        <br>
+                        }
+                    </code>
+                </div>
+            </section>
+
+            <section>
+                <h3><code>background-size</code></h3>
+                <p>
+                    Controla o tamanho da imagem de fundo. Valores comuns incluem <code><strong>auto</strong></code> (tamanho original), <code><strong>cover</strong></code> (redimensiona a imagem para cobrir todo o elemento, cortando se necessário) e <code><strong>contain</strong></code> (redimensiona a imagem para caber dentro do elemento, sem cortar, mas pode deixar espaço vazio).
+                </p>
+                <p>
+                    Exemplo:
+                </p>
+                <div class="container">
+                    <code class="estrutura">
+                        <span class="valor">.hero-section</span> {
+                        <br>
+                        &nbsp;&nbsp;<span class="pro">background-image</span>: <span class="valor2">url</span> <span class="valor">("../img/images.jpg")</span>;
+                        <br>
+                        &nbsp;&nbsp;<span class="pro">background-size</span>: <span class="valor">cover</span>;
+                        <br>
+                        }
+                    </code>
+                </div>
+            </section>
+
+            <section>
+                <h3><code>background-position</code></h3>
+                <p>
+                    Define a posição inicial da imagem de fundo. Pode ser especificada usando palavras-chave (por exemplo, <code><strong>center, top left</strong></code>), porcentagens ou unidades de comprimento <code><strong>(px, em)</strong></code>.
+                </p>
+                <p>
+                    Exemplo:
+                </p>
+                <div class="container">
+                    <code class="estrutura">
+                        <span class="valor">.hero-section</span> {
+                        <br>
+                        &nbsp;&nbsp;<span class="pro">background-image</span>: <span class="valor2">url</span> <span class="valor">("../img/images.jpg")</span>;
+                        <br>
+                        &nbsp;&nbsp;<span class="pro">background-position</span>: <span class="valor">center center</span>;
+                        <br>
+                        }
+                        <br>
+                        <span class="valor">.logo</span> {
+                        <br>
+                        &nbsp;&nbsp;<span class="pro">background-image</span>: <span class="valor2">url</span> <span class="valor">("../img/logo.jpg")</span>;
+                        <br>
+                        &nbsp;&nbsp;<span class="pro">background-position</span>: <span class="valor">10px 20px</span>;
+                        <br>
+                        }
+                    </code>
+                </div>
+            </section>
+
+            <section>
+                <h3><code>background-repeat</code></h3>
+                <p>
+                    Define se e como a imagem de fundo deve ser repetida. Valores comuns incluem <code><strong>repeat</strong></code> (padrão, repete horizontal e verticalmente), <code><strong>repeat-x</strong></code> (repete apenas horizontalmente), <code><strong>repeat-y</strong></code> (repete apenas verticalmente) e <code><strong>no-repeat</strong></code> (não repete).
+                </p>
+                <p>
+                    Exemplo:
+                </p>
+                <div class="container">
+                    <code class="estrutura">
+                        <span class="valor">.padrao</span> {
+                        <br>
+                        &nbsp;&nbsp;<span class="pro">background-image</span>: <span class="valor2">url</span> <span class="valor">("../img/images.jpg")</span>;
+                        <br>
+                        &nbsp;&nbsp;<span class="pro">background-repeat</span>: <span class="valor">repeat-x</span>;
+                        <br>
+                        }
+                        <br>
+                        <span class="valor">.unica-imagem</span> {
+                        <br>
+                        &nbsp;&nbsp;<span class="pro">background-image</span>: <span class="valor2">url</span> <span class="valor">("../img/logo.jpg")</span>;
+                        <br>
+                        &nbsp;&nbsp;<span class="pro">background-repeat</span>: <span class="valor">no-repeat</span>;
+                        <br>
+                        }
+                    </code>
+                </div>
+            </section>
+
+            <section>
+                <h3><code>background-attachment</code></h3>
+                <p>
+                    Define se a imagem de fundo rola com o conteúdo do elemento <code><strong>(scroll, padrão)</strong></code> ou se permanece fixa na viewport <code><strong>(fixed)</strong></code>.
+                </p>
+                <p>
+                    Exemplo:
+                </p>
+                <div class="container">
+                    <code class="estrutura">
+                        <span class="seletores">body</span> {
+                        <br>
+                        &nbsp;&nbsp;<span class="pro">background-image</span>: <span class="valor2">url</span> <span class="valor">("../img/logo.jpg")</span>;
+                        <br>
+                        &nbsp;&nbsp;<span class="pro">background-attachment</span>: <span class="valor">fixed</span>;
+                        <br>
+                        &nbsp;&nbsp;<span class="pro">background-size</span>: <span class="valor">cover</span>;
+                        <br>
+                        }
+                    </code>
+                </div>
+            </section>  
+            <section>
+                <h3>Shorthand</h3>
+                <p>
+                    Para usar o shorthand basta usar somente a propriedade <code class="propriedade">background</code>, na ordem recomendada, ele combina:
+                </p>
+                <ol class="especificidade">
+                    <li><strong>background-color</strong> - cor de fundo</li>
+                    <li><strong>background-image</strong> - imagem de fundo</li>
+                    <li><strong>background-position</strong> - posição da imagem</li>
+                    <li><strong>background-size</strong> - (depois de uma /) → tamanho da imagem</li>
+                    <li><strong>background-repeat</strong> - repetição da imagem</li>
+                    <li><strong>background-origin</strong> - ponto de origem (bordas, padding, etc.)</li>
+                    <li><strong>background-clip</strong> - até onde a cor/imagem se aplica</li>
+                    <li><strong>background-attachment</strong> - rolagem fixa ou norma</li>
+                </ol>
+                <p>
+                    Exemplo de shorthand:
+                </p>
+                <figure>
+                    <img id="background" src="../../../assets/img/css/bordaEFundo/background.webp" alt="shorthand background" class="lightbox-trigger" data-full-src="../../../assets/img/css/bordaEFundo/background.webp" data-caption="">
+                </figure>                
+            </section>          
+        </article>        
+    </main>
+
+    <button id="btnTopo" title="Voltar ao topo">
+        <span id="top" class="material-symbols-outlined">
+            arrow_upward
+        </span>
+    </button>
+
+    <!-- Estrutura do Lightbox -->
+    <div id="custom-lightbox" class="lightbox-hidden">
+        <div class="lightbox-overlay"></div>
+        <div class="lightbox-content">
+            <button class="lightbox-close-btn" aria-label="Fechar lightbox">&times;</button>
+            <img src="" alt="" class="lightbox-image">
+            <div class="lightbox-caption"></div>
+        </div>
+    </div>
+    
+    <script src="../../../assets/js/hamburguerMenu.js"></script>
+    <script src="../../../assets/js/backToTop.js"></script>
+    <script src="../../../assets/js/lightBox.js"></script>
+    <script src="../../../assets/js/transitionEntry.js" defer></script>
+    <script src="../../../assets/js/transitionExit.js"></script>
+</body>
+</html>

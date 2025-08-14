@@ -86,7 +86,7 @@
             </p>
             <ol class="especificidade">
                 <li>
-                    <strong>Conteúdo (Content):</strong> A área onde o conteúdo real do elemento é exibido (texto, imagens, vídeos, etc.). Suas dimensões são controladas pelas propriedades <code class="propriedade">width</code> e <code class="propriedade">height</code>.
+                    <strong>Conteúdo (Content):</strong> A área onde o conteúdo real do elemento é exibido (texto, imagens, vídeos, etc.). Suas dimensões são controladas pelas propriedades <code><strong>width</strong></code> e <code><strong>height</strong></code>.
                 </li>
                 <li>
                     <strong>Preenchimento (Padding):</strong> O espaço entre o conteúdo do elemento e sua borda. O padding empurra o conteúdo para dentro da borda, criando um espaçamento interno.
@@ -103,24 +103,24 @@
         <article>
             <h2><code>width</code></h2>
             <p>
-                A propriedade <code class="propriedade">width</code> define a largura da área de conteúdo de um elemento. Pode ser especificada em unidades absolutas <code class="propriedade">(px)</code>, relativas <code class="propriedade">(%, em, rem, vw)</code>, ou <code class="propriedade">auto</code>.
+                A propriedade <code class="propriedade">width</code> define a largura da área de conteúdo de um elemento. Pode ser especificada em unidades absolutas (<code><strong>px</strong></code>), relativas (<code ><strong> %, em, rem, vw </strong></code>) ou <code><strong>auto</strong></code>.
             </p>
             <p>
                 Exemplo:
             </p>
             <div class="container">
                 <code class="estrutura">
-                    .caixa-fixa {
+                    <span class="valor">.caixa-fixa</span> {
                     <br>
-                    &nbsp;&nbsp;width: 300px;
+                    &nbsp;&nbsp;<span class="pro">width</span>: <span class="valor">300px</span>;
                     <br>
                     }
                     <br>
-                    .caixa-responsiva {
+                    <span class="valor">.caixa-responsiva</span> {
                     <br>
-                    &nbsp;&nbsp;width: 80%;
+                    &nbsp;&nbsp;<span class="pro">width</span>: <span class="valor">80%</span>;
                     <br>
-                    &nbsp;&nbsp;/* 80% da largura do elemento pai */
+                    &nbsp;&nbsp;<span class="coments">/* 80% da largura do elemento pai */</span>
                     <br>
                     }
                 </code>
@@ -130,24 +130,24 @@
         <article>
             <h2><code>height</code></h2>
             <p>
-                A propriedade <code class="propriedade">height</code> define a altura da área de conteúdo de um elemento. Assim como <code class="propriedade">width</code>, pode ser especificada em unidades absolutas <code class="propriedade">(px)</code>, relativas <code class="propriedade">(%, em, rem, vw)</code>, ou <code class="propriedade">auto</code>.
+                A propriedade <code class="propriedade">height</code> define a altura da área de conteúdo de um elemento. Assim como <code class="propriedade">width</code>, pode ser especificada em unidades absolutas (<code><strong>px</strong></code>), relativas (<code ><strong> %, em, rem, vw </strong></code>) ou <code><strong>auto</strong></code>.
             </p>
             <p>
                 Exemplo:
             </p>
             <div class="container">
                 <code class="estrutura">
-                    .secao-fixa {
+                    <span class="valor">.secao-fixa</span> {
                     <br>
-                    &nbsp;&nbsp;height: 200px;
+                    &nbsp;&nbsp;<span class="pro">height</span>: <span class="valor">200px</span>;
                     <br>
                     }
                     <br>
-                    .secao-tela-cheia {
+                    <span class="valor">.secao-tela-cheia</span> {
                     <br>
-                    &nbsp;&nbsp;height: 100vh;
+                    &nbsp;&nbsp;<span class="pro">height</span>: <span class="valor">100vh</span>;
                     <br>
-                    &nbsp;&nbsp;/* 100% da altura da viewport */
+                    &nbsp;&nbsp;<span class="coments">/* 100% da altura da viewport */</span>
                     <br>
                     }
                 </code>
@@ -157,30 +157,30 @@
         <article>
             <h2><code>padding</code></h2>
             <p>
-                A propriedade <code class="propriedade">padding</code>  define o espaço entre o conteúdo de um elemento e sua borda. Você pode definir o padding para todos os lados de uma vez, ou individualmente para cada lado (top, right, bottom, left).
+                A propriedade <code class="propriedade">padding</code>  define o espaço entre o conteúdo de um elemento e sua borda. Você pode definir o padding para todos os lados de uma vez, ou individualmente para cada lado (<code><strong>top, right, bottom, left</strong></code>).
             </p>
             <p>
                 Exemplo:
             </p>
             <div class="container">
                 <code class="estrutura">
-                    .elemento {
+                    <span class="valor">.elemento</span> {
                     <br>
-                    &nbsp;&nbsp;padding: 20px;
+                    &nbsp;&nbsp;<span class="pro">padding</span>: <span class="valor">20px</span>;
                     <br>
-                    &nbsp;&nbsp;/* 20px em todos os lados */
+                    &nbsp;&nbsp;<span class="coments">/* 20px em todos os lados */</span>
                     <br>
                     }
                     <br>
-                    .elemento-especifico {
+                    <span class="valor">.elemento-especifico</span> {
                     <br>
-                    &nbsp;&nbsp;padding-top: 10px;
+                    &nbsp;&nbsp;<span class="pro">padding-top</span>: <span class="valor">10px</span>;
                     <br>
-                    &nbsp;&nbsp;padding-right: 15px;
+                    &nbsp;&nbsp;<span class="pro">padding-right</span>: <span class="valor">15px</span>;
                     <br>
-                    &nbsp;&nbsp;padding-bottom: 20px;
+                    &nbsp;&nbsp;<span class="pro">padding-bottom</span>: <span class="valor">20px</span>;
                     <br>
-                    &nbsp;&nbsp;padding-left: 5px;
+                    &nbsp;&nbsp;<span class="pro">padding-left</span>: <span class="valor">5px</span>;
                     <br>
                     }
                 </code>
@@ -190,15 +190,15 @@
             </p>
             <div class="container">
                 <code class="estrutura">
-                    .elemento-shorthand {
+                    <span class="valor">.elemento-shorthand</span> {
                     <br>
-                    &nbsp;&nbsp;padding: 10px 20px 30px 40px;
+                    &nbsp;&nbsp;<span class="pro">padding</span>: <span class="valor">10px 20px 30px 40px</span>;
                     <br>
                     }
                     <br>
-                    .elemento-shorthand-2 {
+                    <span class="valor">.elemento-shorthand-2</span> {
                     <br>
-                    &nbsp;&nbsp;padding: 15px 30px;
+                    &nbsp;&nbsp;<span class="pro">padding</span>: <span class="valor">15px 30px</span>;
                     <br>
                     }
                 </code>
@@ -221,25 +221,25 @@
             </p>
             <div class="container">
                 <code class="estrutura">
-                    .elemento {
+                    <span class="valor">.elemento</span> {
                     <br>
-                    &nbsp;&nbsp;margin: 30px;
+                    &nbsp;&nbsp;<span class="pro">margin</span>: <span class="valor">30px</span>;
                     <br>
-                    &nbsp;&nbsp;/* 30px em todos os lados */
+                    &nbsp;&nbsp;<span class="coments">/* 30px em todos os lados */</span>
                     <br>
                     }
                     <br>
-                    .elemento-especifico {
+                    <span class="valor">.elemento-especifico</span> {
                     <br>
-                    &nbsp;&nbsp;margin-top: 10px;
+                    &nbsp;&nbsp;<span class="pro">margin-top</span>: <span class="valor">10px</span>;
                     <br>
-                    &nbsp;&nbsp;margin-right: auto;
+                    &nbsp;&nbsp;<span class="pro">margin-right</span>: <span class="valor">auto</span>;
                     <br>
-                    &nbsp;&nbsp;margin-bottom: 20px;
+                    &nbsp;&nbsp;<span class="pro">margin-bottom</span>: <span class="valor">20px</span>;
                     <br>
-                    &nbsp;&nbsp;margin-left: auto;
+                    &nbsp;&nbsp;<span class="pro">margin-left</span>: <span class="valor">auto</span>;
                     <br>
-                    &nbsp;&nbsp;/* margin: 0 auto; centraliza horizontalmente */
+                    &nbsp;&nbsp;<span class="coments">/* margin: 0 auto; centraliza horizontalmente */</span>
                     <br>
                     }
                 </code>
@@ -249,15 +249,15 @@
             </p>
             <div class="container">
                 <code class="estrutura">
-                    .elemento-shorthand {
+                    <span class="valor">.elemento-shorthand</span> {
                     <br>
-                    &nbsp;&nbsp;margin: 10px 20px 30px 40px;
+                    &nbsp;&nbsp;<span class="pro">margin</span>: <span class="valor">10px 20px 30px 40px</span>;
                     <br>
                     }
                     <br>
-                    .elemento-shorthand-2 {
+                    <span class="valor">.elemento-shorthand-2</span> {
                     <br>
-                    &nbsp;&nbsp;margin: 15px 30px;
+                    &nbsp;&nbsp;<span class="pro">margin</span>: <span class="valor">15px 30px</span>;
                     <br>
                     }
                 </code>
@@ -280,25 +280,25 @@
             </p>
             <div class="container">
                 <code class="estrutura">
-                    .caixa {
+                    <span class="valor">.caixa</span> {
                     <br>
-                    &nbsp;&nbsp;border: 2px solid black;
-                    <br>
-                    }
-                    <br>
-                    .caixa-personalizada {
-                    <br>
-                    &nbsp;&nbsp;border-width: 3px;
-                    <br>
-                    &nbsp;&nbsp;border-style: dashed;
-                    <br>
-                    &nbsp;&nbsp;border-color: blue;
+                    &nbsp;&nbsp;<span class="pro">border</span>: <span class="valor">2px solid black</span>;
                     <br>
                     }
                     <br>
-                    .borda-inferior {
+                    <span class="valor">.caixa-personalizada</span> {
                     <br>
-                    &nbsp;&nbsp;border-bottom: 1px dotted gray;
+                    &nbsp;&nbsp;<span class="pro">border-width</span>: <span class="valor">3px</span>;
+                    <br>
+                    &nbsp;&nbsp;<span class="pro">border-style</span>: <span class="valor">dashed</span>;
+                    <br>
+                    &nbsp;&nbsp;<span class="pro">border-color</span>: <span class="valor">blue</span>;
+                    <br>
+                    }
+                    <br>
+                    <span class="valor">.borda-inferior</span> {
+                    <br>
+                    &nbsp;&nbsp;<span class="pro">border-bottom</span>: <span class="valor">1px dotted gray</span>;
                     <br>
                     }
                 </code>
@@ -319,26 +319,26 @@
             <section>
                 <h3>content-box (Padrão)</h3>
                 <p>
-                    No modelo <code class="propriedade">content-box</code>, <code class="propriedade">width</code> e <code class="propriedade">height</code> se referem apenas às dimensões da área de conteúdo. O <code class="propriedade">padding</code> e a <code class="propriedade">borda</code> são adicionados <strong>além</strong> dessas dimensões. Isso significa que a largura e altura totais do elemento serão <code><strong>width + padding-left + padding-right + border-left + border-right</strong></code> e <code><strong>height + padding-top + padding-bottom + border-top + border-bottom</strong></code>.
+                    No modelo <code class="propriedade">content-box</code>, <code class="propriedade">width</code> e <code class="propriedade">height</code> se referem apenas às dimensões da área de conteúdo. O <code class="propriedade">padding</code> e o <code class="propriedade">border</code> são adicionados <strong>além</strong> dessas dimensões. Isso significa que a largura e altura totais do elemento serão <code><strong>width + padding-left + padding-right + border-left + border-right</strong></code> e <code><strong>height + padding-top + padding-bottom + border-top + border-bottom</strong></code>.
                 </p>
                 <p>
                     Exemplo:
                 </p>
                 <div class="container">
                     <code class="estrutura">
-                        .caixa-content-box {
+                        <span class="valor">.caixa-content-box</span> {
                         <br>
-                        &nbsp;&nbsp;width: 100px;
+                        &nbsp;&nbsp;<span class="pro">width</span>: <span class="valor">100px</span>;
                         <br>
-                        &nbsp;&nbsp;height: 100px;
+                        &nbsp;&nbsp;<span class="pro">height</span>: <span class="valor">100px</span>;
                         <br>
-                        &nbsp;&nbsp;padding: 10px;
+                        &nbsp;&nbsp;<span class="pro">padding</span>: <span class="valor">10px</span>;
                         <br>
-                        &nbsp;&nbsp;border: 5px solid black;
+                        &nbsp;&nbsp;<span class="pro">border</span>: <span class="valor">5px solid black</span>;
                         <br>
-                        &nbsp;&nbsp;box-sizing: content-box;
+                        &nbsp;&nbsp;<span class="pro">box-sizing</span>: <span class="valor">content-box</span>;
                         <br>
-                        &nbsp;&nbsp;/* Comportamento padrão */
+                        &nbsp;&nbsp;<span class="coments">/* Comportamento padrão */</span>
                         <br>
                         }
                     </code>
@@ -358,17 +358,17 @@
                 </p>
                 <div class="container">
                     <code class="estrutura">
-                        .caixa-border-box {
+                        <span class="valor">.caixa-border-box</span> {
                         <br>
-                        &nbsp;&nbsp;width: 100px;
+                        &nbsp;&nbsp;<span class="pro">width</span>: <span class="valor">100px</span>;
                         <br>
-                        &nbsp;&nbsp;height: 100px;
+                        &nbsp;&nbsp;<span class="pro">height</span>: <span class="valor">100px</span>;
                         <br>
-                        &nbsp;&nbsp;padding: 10px;
+                        &nbsp;&nbsp;<span class="pro">padding</span>: <span class="valor">10px</span>;
                         <br>
-                        &nbsp;&nbsp;border: 5px solid black;
+                        &nbsp;&nbsp;<span class="pro">border</span>: <span class="valor">5px solid black</span>;
                         <br>
-                        &nbsp;&nbsp;box-sizing: border-box;
+                        &nbsp;&nbsp;<span class="pro">box-sizing</span>: <span class="valor">border-box</span>;
                         <br>
                         }
                     </code>
@@ -379,9 +379,25 @@
                 <p>
                     É uma prática comum aplicar <code class="propriedade">box-sizing: border-box;</code> globalmente em seus projetos CSS para simplificar o cálculo de layouts.
                 </p>
-                <figure>
-                    <img id="global" src="../../../assets/img/css/boxModel/global.webp" alt="box-sizing global" class="lightbox-trigger" data-full-src="../../../assets/img/css/boxModel/global.webp" data-caption="">
-                </figure>
+                <div class="container">
+                    <code class="estrutura">
+                        <span class="seletores">html</span> {
+                        <br>
+                        &nbsp;&nbsp;<span class="pro">box-sizing</span>: <span class="valor">border-box</span>;
+                        <br>
+                        }
+                        <br>
+                        *,
+                        <br>
+                        *::<span class="valor2">before</span>,
+                        <br> 
+                        *::<span class="valor2">after</span> {
+                        <br>
+                        &nbsp;&nbsp;<span class="pro">box-sizing</span>: <span class="valor">inherit</span>;
+                        <br>
+                        }
+                    </code>
+                </div>
             </section>
         </article>
 
@@ -391,7 +407,7 @@
                 Isso ocorre quando as margens verticais de dois ou mais elementos adjacentes (ou de um elemento pai e seu primeiro/último filho) se sobrepõem, e a margem resultante é a maior das margens colapsadas, e não a soma delas.
             </p>
             <p>
-                Exemplo: Se você tem dois parágrafos, um com <code><strong>margin-bottom: 20px;</strong></code> e o outro com <code><strong>margin-top: 30px;</strong></code>, o espaço vertical entre eles será de 30px (a maior margem), e não 50px.
+                Exemplo: Se você tem dois parágrafos, um com <code><strong>margin-bottom: 20px;</strong></code> e o outro com <code><strong>margin-top: 30px;</strong></code>, o espaço vertical entre eles será de <code><strong>30px;</strong></code> (a maior margem), e não <code><strong>50px;</strong></code>.
             </p>
             <ul class="sintaxe">
                 <li>
