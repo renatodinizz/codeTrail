@@ -1,3 +1,126 @@
+/* -------------------------------------- Componentes Gerais --------------------------------------------*/
+/* _____________________________________________________________________________________________________ */
+/* Lista não ordenada */
+.unordered {
+    font-size: 1.2rem;
+    padding: 0.5rem;
+    padding-left: 1rem;
+    list-style: none;
+    line-height: 2.5rem;
+}
+.unordered li::before {
+    content: "";
+    display: inline-block;
+    width: 0.5rem;
+    height: 0.5rem;
+    background-color: #4299e1;
+    transform: rotate(45deg);
+    margin-right: 0.5rem;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* Lista ordenada */
+.order {
+    counter-reset: item;
+    list-style: none;
+    padding: 0;
+    margin: 1rem;
+}
+.order li {
+    font-size: 1.2rem;
+    counter-increment: item;
+    margin-bottom: 1rem;
+    padding: 0.7rem 1rem;
+    background: #f0f0f0;
+    border-left: 5px solid #0ea93f;
+    position: relative;
+}
+.order li::before {
+    content: counter(item) ".";
+    position: absolute;
+    left: -2rem;
+    top: 50%;
+    transform: translateY(-50%);
+    font-weight: bold;
+    color: #0ea93f;
+    font-size: 1.3rem;
+}
+
+/* Exemplos aplicados */
+/* Div - Fundo das caixas de exemplo */
+.container {
+    background-color: #111;
+    border-radius: 12px;
+    padding: 1rem;
+    margin: 1rem 0;
+    box-shadow: 3px 5px 10px rgb(68, 68, 68, 0.7);
+}
+/* Tamanho diversos */
+.tamanho-p {
+    max-width: 40%;
+}
+.tamanho-m {
+    max-width: 50%;
+}
+.tamanho-g {
+    max-width: 60%;
+}
+/* Ajuste de fonte */
+.estrutura {
+    font-size: 1.2rem;
+    font-weight: 500;
+    line-height: 1.4;
+    color: #ddd;
+}
+/* Cor dos seletores */
+.seletores {
+    color: #dc6a73;
+}
+/* Cor das propriedades */
+.pro {
+    color: #0098e3;
+}
+/* Cor dos valores */
+.valor {
+    color: #c59160;
+}
+/* Cor dos segundos valores */
+.valor2 {
+    color: #ed9098;
+}
+/* Cor dos comentários */
+.coments {
+    color: #565c68;
+}
+/* Responsividade dos exemplos aplicados */
+@media (max-width: 768px) {
+    .tamanho-p {
+        max-width: 70%;
+    }
+    .tamanho-m {
+        max-width: 70%;
+    }
+    .tamanho-g {
+        max-width: 70%;
+    }
+}
+@media (max-width: 480px) {
+    .tamanho-p {
+        max-width: 70%;
+    }
+    .tamanho-m {
+        max-width: 70%;
+    }
+    .tamanho-g {
+        max-width: 70%;
+    }
+}
+/* _____________________________________________________________________________________________________ */
+
+
+
+
+
 /* ----------------------------------------- Introdução -------------------------------------------------*/
 /* _____________________________________________________________________________________________________ */
 
@@ -33,25 +156,6 @@
 #sintaxe-exemplo {
     max-height: 17rem;
 }
-
-/* Lista interna da lista do article Formulário Simples */
-.sintaxe {
-    font-size: 1.2rem;
-    padding: 0.5rem;
-    padding-left: 1rem;
-    list-style: none;
-    line-height: 2.5rem;
-}
-.sintaxe li::before {
-    content: "";
-    display: inline-block;
-    width: 0.5rem;
-    height: 0.5rem;
-    background-color: #4299e1;
-    transform: rotate(45deg);
-    margin-right: 0.5rem;
-    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-}
 /* _____________________________________________________________________________________________________ */
 
 
@@ -59,32 +163,7 @@
 
 /* ---------------------------------------- Seletores ---------------------------------------------------*/
 /* _____________________________________________________________________________________________________ */
-/* Estilizando a lista ordenada no article Especificidade de Seletores */
-.especificidade {
-    counter-reset: item;
-    list-style: none;
-    padding: 0;
-    margin: 1rem;
-}
-.especificidade li {
-    font-size: 1.2rem;
-    counter-increment: item;
-    margin-bottom: 1rem;
-    padding: 0.7rem 1rem;
-    background: #f0f0f0;
-    border-left: 5px solid #0ea93f;
-    position: relative;
-}
-.especificidade li::before {
-    content: counter(item) ".";
-    position: absolute;
-    left: -2rem;
-    top: 50%;
-    transform: translateY(-50%);
-    font-weight: bold;
-    color: #0ea93f;
-    font-size: 1.3rem;
-}
+
 /* _____________________________________________________________________________________________________ */
 
 
@@ -124,52 +203,7 @@
 
 /* --------------------------------------- Cores e Unidades ---------------------------------------------*/
 /* _____________________________________________________________________________________________________ */
-/* Ajustando a formatação da estrutura css */
-.estrutura {
-    font-size: 1.2rem;
-    font-weight: 500;
-    line-height: 1.4;
-    color: #ddd;
-}
-.container {
-    background-color: #000;
-    max-width: 50%;
-    border-radius: 12px;
-    padding: 1rem;
-    margin: 1rem 0;
-    box-shadow: 3px 5px 10px rgb(68, 68, 68, 0.7);
-}
-/* Cor dos seletores */
-.seletores {
-    color: #dc6a73;
-}
-/* Cor das propriedades */
-.pro {
-    color: #0098e3;
-}
-/* Cor dos valores */
-.valor {
-    color: #c59160;
-}
-/* Cor dos segundos valores */
-.valor2 {
-    color: #ed9098;
-}
-/* Cor dos comentários */
-.coments {
-    color: #565c68;
-}
-/* Deixando responsivo a formatação da estrutura css */
-@media (max-width: 768px) {
-    .container {
-        max-width: 70%; 
-    }
-}
-@media (max-width: 480px) {
-    .container {
-        max-width: 100%; 
-    }
-}
+
 /* _____________________________________________________________________________________________________ */
 
 
@@ -215,21 +249,41 @@
 
 
 
-
-
-
-
-
-
-
-/* --------------------------------------- Formulário ---------------------------------------------------*/
+/* ----------------------------------------- Display ----------------------------------------------------*/
 /* _____________________________________________________________________________________________________ */
+.comparacao {
+    font-size: 1.7rem;
+    font-weight: bold;
+    line-height: 1.4;
+    color: #0098e3;
+    text-shadow: 1px 2px 5px rgb(68, 68, 68, 0.5);
+}
 /* _____________________________________________________________________________________________________ */
 
 
-/* --------------------------------------- Formulário ---------------------------------------------------*/
+
+
+/* --------------------------------------- Position  e Z-index ------------------------------------------*/
 /* _____________________________________________________________________________________________________ */
+/* Ajustando a largura da imagem no article Position */
+#static,  #relative, #fixed, #absolute, #absolute2, #sticky, #sticky2{
+    max-height: 22rem;
+}
+/* Ajustando a largura da imagem no article Z-index */
+#z-index{
+    max-height: 20rem;
+}
+/* Ajustando a largura da imagem no article Z-index */
+#z-index2{
+    max-height: 25rem;
+}
 /* _____________________________________________________________________________________________________ */
+
+
+
+
+
+
 
 
 /* --------------------------------------- Formulário ---------------------------------------------------*/

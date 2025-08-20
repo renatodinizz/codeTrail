@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position e Z-Index</title>
+    <!-- Favicon imagem -->
+    <link rel="shortcut icon" href="../../../assets/img/favicon/favicon.ico" type="image/x-icon">
+    <!-- Link do CSS -->
+    <link rel="stylesheet" href="../../../assets/css/css-pages/style-css-pages.css">
+    <!-- font do ícone backToTop -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined&display=swap" rel="stylesheet">
+
+</head>
+<body class="area">
+
+    <div class="page-transition"></div>
+
+    <ul class="circles">
+        <li class="square"></li>
+        <li class="square"></li>
+        <li class="square"></li>
+        <li class="square"></li>
+        <li class="square"></li>
+        <li class="square"></li>
+        <li class="square"></li>
+        <li class="square"></li>
+        <li class="square"></li>
+        <li class="square"></li>
+        <li class="square"></li>
+        <li class="square"></li>
+        <li class="square"></li>
+        <li class="square"></li>
+        <li class="square"></li>
+        <li class="square"></li>
+        <li class="square"></li>
+        <li class="square"></li>
+        <li class="square"></li>
+        <li class="square"></li>
+    </ul>
+    <header>
+
+        <button id="menu-toggle" class="menu-toggle">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </button>
+
+        <section class="horizontal">
+            <span id="codeTrail">CodeTrail</span>    
+            <nav id="side-menu">
+                <ul>
+                    <li><a href="../../../index.html" class="home">Home</a></li>
+                    <li><a href="../../../pages/html/indexHtml.html" class="html">HTML</a></li>
+                    <li><a href="../../../pages/css/indexCss.html" class="css">CSS</a></li>
+                    <li><a href="../../../pages/javascript/indexJs.html" class="js">JavaScript</a></li>
+                    <li><a href="../../../pages/typescript/indexType.html" class="ts">TypeScript</a></li>
+                    <li><a href="../../../pages/about/indexAbout.html" class="about">About</a></li>
+                </ul>
+            </nav>
+        </section>
+
+        <h1>CSS</h1>
+
+    </header>
+
+    <main class="context">
+
+        <h1>Position e Z-Index</h1>
+
+        <article>
+            <p>
+                As propriedades de posicionamento no CSS permitem controlar a localização exata de um elemento na página, tirando-o do fluxo normal do documento ou ajustando sua posição em relação a outros elementos. O <code class="propriedade">z-index</code> complementa o posicionamento, controlando a ordem de empilhamento dos elementos.
+            </p>
+        </article>
+
+        <article>
+            <h2>Position</h2>
+            <p>
+                A propriedade <code class="propriedade">position</code> é fundamental para o layout de elementos e determina como um elemento é posicionado no documento. Os valores mais comuns são:
+            </p>
+            <section>
+                <h3>Static (Padrão)</h3>
+                <p>
+                    Este é o valor padrão para todos os elementos HTML. Elementos com <code class="propriedade">position: static</code> são posicionados de cima para baixo, tudo alinhado a esquerda. As propriedades <code class="propriedade">top</code>, <code class="propriedade">right</code>, <code class="propriedade">bottom</code>, <code class="propriedade">left</code> e <code class="propriedade">z-index</code> não têm efeito sobre elementos estáticos.
+                </p>
+                <figure>
+                    <img id="static" src="../../../assets/img/css/positionZIndex/static.webp" alt="position static" class="lightbox-trigger" data-full-src="../../../assets/img/css/positionZIndex/static.webp" data-caption="">
+                </figure>
+                <p>
+                    Nesse exemplo, tenho um um parágrafo, uma imagem e outro parágrafo. Eles são exibidos na ordem em que aparecem no HTML, um abaixo do outro, sem qualquer posicionamento especial.
+                </p>
+                <p>
+                    Como usar:
+                </p>
+                <div class="container">
+                    <code class="estrutura">
+                        <span class="valor">.elemento-estatico</span> {
+                        <br>
+                        &nbsp;&nbsp;<span class="pro">position</span>: <span class="valor">static</span>;
+                        <br>
+                        }
+                    </code>
+                </div>
+            </section>
+
+            <section>
+                <h3>Relative</h3>
+                <p>
+                    Elementos com <code class="propriedade">position: relative</code> tem sua posição relativa ao <code class="propriedade">position: static</code> e sua posição pode ser ajustada usando as propriedades <code class="propriedade">top</code>, <code class="propriedade">right</code>, <code class="propriedade">bottom</code>, <code class="propriedade">left</code>. O espaço original que o elemento ocuparia no <code class="propriedade">position: static</code> é mantido, e outros elementos não se movem para preenchê-lo.
+                </p>
+                <figure>
+                    <img id="relative" src="../../../assets/img/css/positionZIndex/relative.webp" alt="position relative" class="lightbox-trigger" data-full-src="../../../assets/img/css/positionZIndex/relative.webp" data-caption="">
+                </figure>
+                <p>
+                    Nesse exemplo, a imagem é movida 30px para a direita de sua posição original, mas o espaço que ele ocuparia originalmente ainda está reservado.
+                </p>
+                <p>
+                    Como usar:
+                </p>
+                <div class="container">
+                    <code class="estrutura">
+                        <span class="valor">.elemento-relativo</span> {
+                        <br>
+                        &nbsp;&nbsp;<span class="pro">position</span>: <span class="valor">relative</span>;
+                        <br>
+                        &nbsp;&nbsp;<span class="pro">left</span>: <span class="valor">30px</span>;
+                        <br>
+                        }
+                    </code>
+                </div>
+            </section>
+
+            <section>
+                <h3>Absolute</h3>
+                <p>
+                    Elementos com <code class="propriedade">position: absolute</code> leva em consideração quem é o pai do elemento. Lembrando que o navegador vai procurar o ancestral mais próximo que tenha position <code><strong>relative, absolute, fixed ou sticky</strong></code>. Se não houver um ancestral posicionado, o elemento será posicionado em relação ao <code class="propriedade">&lt;body&gt;</code> do documento. Elementos absolutos não ocupam espaço no layout, e outros elementos se comportam como se eles não existissem.
+                </p>
+                <figure>
+                    <img id="absolute" src="../../../assets/img/css/positionZIndex/absolute.webp" alt="position absolute" class="lightbox-trigger" data-full-src="../../../assets/img/css/positionZIndex/absolute.webp" data-caption="">
+                </figure>
+                <p>
+                    Se eu quiser posicionar o elemento vermelho no canto superior direito da <code class="propriedade">&lt;div&gt;</code>, eu defino a <code class="propriedade">&lt;div&gt;</code> (que é o pai) como <code class="propriedade">position: relative;</code> e o filho como <code class="propriedade">position: absolute;</code>, <code class="propriedade">top: 0;</code> e <code class="propriedade">right: 0;</code>. O resultado será:
+                </p>
+                <figure>
+                    <img id="absolute2" src="../../../assets/img/css/positionZIndex/absolute2.webp" alt="position absolute" class="lightbox-trigger" data-full-src="../../../assets/img/css/positionZIndex/absolute2.webp" data-caption="">
+                </figure>
+                <p>
+                    Como usar:
+                </p>
+                <div class="container">
+                    <code class="estrutura">
+                        <span class="valor">.container-pai</span> {
+                        <br>
+                        &nbsp;&nbsp;<span class="pro">position</span>: <span class="valor">relative</span>;
+                        <br>
+                        &nbsp;&nbsp;<span class="coments">/* Essencial para que o filho absoluto se posicione em relação a ele */</span>
+                        <br>
+                        &nbsp;&nbsp;<span class="pro">width</span>: <span class="valor">300px</span>;
+                        <br>
+                        &nbsp;&nbsp;<span class="pro">height</span>: <span class="valor">200px</span>;
+                        <br>
+                        &nbsp;&nbsp;<span class="pro">border</span>: <span class="valor">1px solid black</span>;
+                        <br>
+                        }
+                        <br>
+                        <span class="valor">.elemento-absoluto</span> {
+                        <br>
+                        &nbsp;&nbsp;<span class="pro">position</span>: <span class="valor">absolute</span>;
+                        <br>
+                        &nbsp;&nbsp;<span class="pro">top</span>: <span class="valor">10px</span>;
+                        <br>
+                        &nbsp;&nbsp;<span class="pro">right</span>: <span class="valor">10px</span>;
+                        <br>
+                        &nbsp;&nbsp;<span class="pro">width</span>: <span class="valor">50px</span>;
+                        <br>
+                        &nbsp;&nbsp;<span class="pro">height</span>: <span class="valor">50px</span>;
+                        <br>
+                        }
+                    </code>
+                </div>
+                <p>
+                    Neste caso, <code><strong>.elemento-absoluto</strong></code> será posicionado 10px do topo e 10px da direita de <code><strong>.container-pai</strong></code>.
+                </p>
+            </section>
+
+            <section>
+                <h3>Fixed</h3>
+                <p>
+                    Elementos com <code class="propriedade">position: fixed</code> são posicionados em relação à viewport (a janela visível do navegador). Eles permanecem na mesma posição mesmo quando a página é rolada. São comumente usados para cabeçalhos, rodapés ou botões de "voltar ao topo" que devem estar sempre visíveis.
+                </p>
+                <figure>
+                    <img id="fixed" src="../../../assets/img/css/positionZIndex/fixed.webp" alt="position fixed" class="lightbox-trigger" data-full-src="../../../assets/img/css/positionZIndex/fixed.webp" data-caption="">
+                </figure>
+                <p>
+                    Nesse exemplo, a imagem é posicionada fixamente no topo e a direita, mesmo que a página seja rolada. O elemento não se move com a rolagem da página.
+                </p>
+                <p>
+                    Como usar:
+                </p>
+                <div class="container">
+                    <code class="estrutura">
+                        <span class="valor">.cabecalho-fixo</span> {
+                        <br>
+                        &nbsp;&nbsp;<span class="pro">position</span>: <span class="valor">fixed</span>;
+                        <br>
+                        &nbsp;&nbsp;<span class="pro">top</span>: <span class="valor">0</span>;
+                        <br>
+                        &nbsp;&nbsp;<span class="pro">left</span>: <span class="valor">0</span>;
+                        <br>
+                        &nbsp;&nbsp;<span class="pro">width</span>: <span class="valor">100%</span>;
+                        <br>
+                        &nbsp;&nbsp;<span class="pro">text-align</span>: <span class="valor">center</span>;
+                        <br>
+                        }
+                    </code>
+                </div>
+            </section>
+
+            <section>
+                <h3>Sticky</h3>
+                <p>
+                    Elementos com <code class="propriedade">position: sticky</code> são posicionados de modo padrão até que atinjam um determinado limite de rolagem (definido por <code class="propriedade">top</code>, <code class="propriedade">right</code>, <code class="propriedade">bottom</code>, <code class="propriedade">left</code>), momento em que se tornam "fixos" (como <code class="propriedade">position: fixed</code>) em relação à viewport. É útil para elementos como menus de navegação que devem rolar com a página até um certo ponto e depois permanecer visíveis no topo.
+                </p>
+                <figure>
+                    <img id="sticky" src="../../../assets/img/css/positionZIndex/sticky.webp" alt="position sticky" class="lightbox-trigger" data-full-src="../../../assets/img/css/positionZIndex/sticky.webp" data-caption="">
+                </figure>
+                <p>
+                    Nesse exemplo, o menu está posicionado um pouco abaixo do topo, ao rolar a página, o menu rola normalmente com a página até que atinja o topo da viewport, onde então se fixa no topo, tendo como resultado:
+                </p>
+                <figure>
+                    <img id="sticky2" src="../../../assets/img/css/positionZIndex/sticky2.webp" alt="position sticky" class="lightbox-trigger" data-full-src="../../../assets/img/css/positionZIndex/sticky2.webp" data-caption="">
+                </figure>
+                <p>
+                    Como usar:
+                </p>
+                <div class="container">
+                    <code class="estrutura">
+                        <span class="valor">.menu-sticky</span> {
+                        <br>
+                        &nbsp;&nbsp;<span class="pro">position</span>: <span class="valor">sticky</span>;
+                        <br>
+                        &nbsp;&nbsp;<span class="pro">top</span>: <span class="valor">0</span>;
+                        <br>
+                        &nbsp;&nbsp;<span class="coments">/* Fica fixo no topo quando a rolagem atinge 0px do topo */</span>
+                        <br>
+                        &nbsp;&nbsp;<span class="pro">padding</span>: <span class="valor">10px</span>;
+                        <br>
+                        }
+                    </code>
+                </div>
+            </section>
+        </article>
+
+        <article>
+            <h2>top, right, bottom, left</h2>
+            <p>
+                    Essas propriedades são usadas em conjunto com <code class="propriedade">position</code> (exceto static) para especificar o deslocamento de um elemento a partir das bordas de seu contêiner de posicionamento.
+                </p>
+                <p>
+                    <code class="propriedade">top</code>: Define a distância do elemento em relação à borda superior do contêiner.
+                </p>
+                <p>
+                    <code class="propriedade">right</code>: Define a distância do elemento em relação à borda direita do contêiner.
+                </p>
+                <p>
+                    <code class="propriedade">bottom</code>: Define a distância do elemento em relação à borda inferior do contêiner.
+                </p>
+                <p>
+                    <code class="propriedade">left</code>: Define a distância do elemento em relação à borda esquerda do contêiner.
+                </p>
+                <p>
+                    Exemplo:
+                </p>
+                <div class="container">
+                    <code class="estrutura">
+                        <span class="valor">.caixa-posicionada</span> {
+                        <br>
+                        &nbsp;&nbsp;<span class="pro">position</span>: <span class="valor">absolute</span>;
+                        <br>
+                        &nbsp;&nbsp;<span class="pro">top</span>: <span class="valor">50%</span>;
+                        <br>
+                        &nbsp;&nbsp;<span class="pro">left</span>: <span class="valor">50%</span>;
+                        <br>
+                        &nbsp;&nbsp;<span class="pro">transform</span>: <span class="valor2">translate</span><span class="valor">(-50%, -50%)</span>;
+                        <br>
+                        &nbsp;&nbsp;<span class="coments">/* Centraliza o elemento */</span>
+                        <br>
+                        &nbsp;&nbsp;<span class="pro">width</span>: <span class="valor">100px</span>;
+                        <br>
+                        &nbsp;&nbsp;<span class="pro">height</span>: <span class="valor">100px</span>;
+                        <br>
+                        }
+                    </code>
+                </div>
+        </article>
+
+        <article>
+            <h2>Z-Index</h2>
+            <p>
+                A propriedade <code class="propriedade">z-index</code> controla a ordem de empilhamento de elementos posicionados (aqueles com <code class="propriedade">position</code> diferente de <code><strong>static</strong></code>). Elementos com um <code class="propriedade">z-index</code> maior aparecem na frente de elementos com um <code class="propriedade">z-index</code> menor. Funciona como camadas, onde números maiores significam camadas mais próximas do observador.
+            </p>
+            <figure>
+                <img id="z-index" src="../../../assets/img/css/positionZIndex/z-index.webp" alt="z-index" class="lightbox-trigger" data-full-src="../../../assets/img/css/positionZIndex/z-index.webp" data-caption="">
+            </figure>
+            <p>
+                Como usar:
+            </p>
+            <figure>
+                <img id="z-index2" src="../../../assets/img/css/positionZIndex/z-index2.webp" alt="z-index" class="lightbox-trigger" data-full-src="../../../assets/img/css/positionZIndex/z-index2.webp" data-caption="">
+            </figure>
+            <section>
+                <h3>Contexto de Empilhamento</h3>
+                <p>
+                    O <code class="propriedade">z-index</code> só funciona dentro de um "contexto de empilhamento". Um contexto de empilhamento é formado por elementos que têm uma propriedade <code class="propriedade">position</code> diferente de <code><strong>static</strong></code> e um <code class="propriedade">z-index</code> definido, ou por outros elementos que criam um novo contexto de empilhamento (como elementos flex ou grid, ou elementos com <code class="propriedade">opacity</code> menor que 1, entre outros). Dentro de um contexto de empilhamento, os <code class="propriedade">z-index</code> dos elementos filhos são comparados. Elementos em diferentes contextos de empilhamento são empilhados com base no <code class="propriedade">z-index</code> de seus contextos de empilhamento.
+                </p>
+                <p>
+                    <strong>Pontos Chave:</strong> 
+                </p>
+                <ul class="sintaxe">
+                    <li>
+                        O <code class="propriedade">z-index</code> só afeta elementos que não têm <code class="propriedade">position: static</code>.
+                    </li>
+                    <li>
+                        Um elemento filho não pode estar abaixo de seu elemento pai no empilhamento, mesmo que o filho tenha um <code class="propriedade">z-index</code> negativo, se o pai criar um contexto de empilhamento.
+                    </li>
+                    <li>
+                        Entender o contexto de empilhamento é crucial para depurar problemas de <code class="propriedade">z-index</code> complexos.
+                    </li>
+                </ul>
+            </section>
+        </article>                 
+    </main>
+
+    <button id="btnTopo" title="Voltar ao topo">
+        <span id="top" class="material-symbols-outlined">
+            arrow_upward
+        </span>
+    </button>
+
+    <!-- Estrutura do Lightbox -->
+    <div id="custom-lightbox" class="lightbox-hidden">
+        <div class="lightbox-overlay"></div>
+        <div class="lightbox-content">
+            <button class="lightbox-close-btn" aria-label="Fechar lightbox">&times;</button>
+            <img src="" alt="" class="lightbox-image">
+            <div class="lightbox-caption"></div>
+        </div>
+    </div>
+    
+    <script src="../../../assets/js/hamburguerMenu.js"></script>
+    <script src="../../../assets/js/backToTop.js"></script>
+    <script src="../../../assets/js/lightBox.js"></script>
+    <script src="../../../assets/js/transitionEntry.js" defer></script>
+    <script src="../../../assets/js/transitionExit.js"></script>
+</body>
+</html>

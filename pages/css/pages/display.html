@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display</title>
+    <!-- Favicon imagem -->
+    <link rel="shortcut icon" href="../../../assets/img/favicon/favicon.ico" type="image/x-icon">
+    <!-- Link do CSS -->
+    <link rel="stylesheet" href="../../../assets/css/css-pages/style-css-pages.css">
+    <!-- font do ícone backToTop -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined&display=swap" rel="stylesheet">
+
+</head>
+<body class="area">
+
+    <div class="page-transition"></div>
+
+    <ul class="circles">
+        <li class="square"></li>
+        <li class="square"></li>
+        <li class="square"></li>
+        <li class="square"></li>
+        <li class="square"></li>
+        <li class="square"></li>
+        <li class="square"></li>
+        <li class="square"></li>
+        <li class="square"></li>
+        <li class="square"></li>
+        <li class="square"></li>
+        <li class="square"></li>
+        <li class="square"></li>
+        <li class="square"></li>
+        <li class="square"></li>
+        <li class="square"></li>
+        <li class="square"></li>
+        <li class="square"></li>
+        <li class="square"></li>
+        <li class="square"></li>
+    </ul>
+    <header>
+
+        <button id="menu-toggle" class="menu-toggle">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </button>
+
+        <section class="horizontal">
+            <span id="codeTrail">CodeTrail</span>    
+            <nav id="side-menu">
+                <ul>
+                    <li><a href="../../../index.html" class="home">Home</a></li>
+                    <li><a href="../../../pages/html/indexHtml.html" class="html">HTML</a></li>
+                    <li><a href="../../../pages/css/indexCss.html" class="css">CSS</a></li>
+                    <li><a href="../../../pages/javascript/indexJs.html" class="js">JavaScript</a></li>
+                    <li><a href="../../../pages/typescript/indexType.html" class="ts">TypeScript</a></li>
+                    <li><a href="../../../pages/about/indexAbout.html" class="about">About</a></li>
+                </ul>
+            </nav>
+        </section>
+
+        <h1>CSS</h1>
+
+    </header>
+
+    <main class="context">
+
+        <h1>Display e Visibilidade</h1>
+
+        <article>
+            <p>
+                As propriedades <code class="propriedade">display</code> e <code class="propriedade">visibility</code> são cruciais para controlar como os elementos são renderizados na página e se eles são visíveis para o usuário.
+            </p>
+        </article>
+
+        <article>
+            <h2>Display</h2>
+            <p>
+                A propriedade <code class="propriedade">display</code> define o tipo de caixa de exibição que um elemento gera. É uma das propriedades mais importantes do CSS, pois afeta diretamente o comportamento do layout de um elemento, seus valores podem ser:
+            </p>
+            <section>
+                <h3>Block</h3>
+                <p>
+                    Elementos com <code class="propriedade">display: block</code> ocupam toda a largura disponível e sempre começam em uma nova linha. Eles criam uma "quebra de linha" antes e depois de si mesmos. Exemplos comuns de elementos de bloco incluem <code class="propriedade">&lt;div&gt;</code>, <code class="propriedade">&lt;p&gt;</code>, <code class="propriedade">&lt;h1&gt;</code> a <code class="propriedade">&lt;h6&gt;</code>, <code class="propriedade">&lt;ul&gt;</code>, <code class="propriedade">&lt;li&gt;</code>.
+                </p>
+                <p>
+                    <strong>Características:</strong>
+                </p>
+                <ul class="sintaxe">
+                    <li>
+                        Ocupa 100% da largura do contêiner pai por padrão.
+                    </li>
+                    <li>
+                        Sempre começa em uma nova linha.
+                    </li>
+                    <li>
+                        Aceita <code class="propriedade">width</code>, <code class="propriedade">height</code>, <code class="propriedade">padding</code>, <code class="propriedade">margin</code>. 
+                    </li>
+                </ul>
+                <p>
+                    Exemplo:
+                </p>
+                <div class="container">
+                    <code class="estrutura">
+                        <span class="valor">.minha-div</span> {
+                        <br>
+                        &nbsp;&nbsp;<span class="pro">display</span>: <span class="valor">block</span>;
+                        <br>
+                        &nbsp;&nbsp;<span class="pro">width</span>: <span class="valor">200px</span>;
+                        <br>
+                        &nbsp;&nbsp;<span class="pro">height</span>: <span class="valor">100px</span>;
+                        <br>
+                        &nbsp;&nbsp;<span class="pro">margin</span>: <span class="valor">10px</span>;
+                        <br>
+                        }
+                    </code>
+                </div>
+            </section>
+            
+            <section>
+                <h3>Inline</h3>
+                <p>
+                    Elementos com <code class="propriedade">display: inline</code> não começam em uma nova linha e ocupam apenas a largura necessária para seu conteúdo. Eles são usados para elementos que fluem dentro do texto. Exemplos comuns de elementos de bloco incluem <code class="propriedade">&lt;span&gt;</code>, <code class="propriedade">&lt;a&gt;</code>, <code class="propriedade">&lt;strong&gt;</code>, <code class="propriedade">&lt;em&gt;</code>.
+                </p>
+                <p>
+                    <strong>Características:</strong>
+                </p>
+                <ul class="sintaxe">
+                    <li>
+                        Não começa em uma nova linha.
+                    </li>
+                    <li>
+                        Ocupa apenas a largura do seu conteúdo.
+                    </li>
+                    <li>
+                        Não aceita <code class="propriedade">width</code> ou <code class="propriedade">height</code> (são ignorados).
+                    </li>
+                    <li>
+                        Aceita <code class="propriedade">padding</code> horizontal, mas <code class="propriedade">padding</code> vertical e <code class="propriedade">margin</code> vertical não afetam o layout de outros elementos na linha.
+                    </li>
+                </ul>
+                <p>
+                    Exemplo:
+                </p>
+                <div class="container">
+                    <code class="estrutura">
+                        <span class="valor">.meu-span</span> {
+                        <br>
+                        &nbsp;&nbsp;<span class="pro">display</span>: <span class="valor">inline</span>;
+                        <br>
+                        &nbsp;&nbsp;<span class="pro">padding</span>: <span class="valor">5px</span>;
+                        <br>
+                        &nbsp;&nbsp;<span class="pro">margin</span>: <span class="valor">5px</span>;
+                        <br>
+                        }
+                    </code>
+                </div>
+            </section>
+
+            <section>
+                <h3>Inline-Block</h3>
+                <p>
+                    Elementos com <code class="propriedade">display: inline-block</code> combinam características de <code><strong>inline</strong></code> e <code><strong>block</strong></code>. Eles fluem como elementos <code><strong>inline</strong></code> (não quebram a linha), mas aceitam propriedades de <code><strong>block</strong></code> como <span class="propriedade">width</span>, <span class="propriedade">height</span>, <span class="propriedade">padding</span>, e <span class="propriedade">margin</span> em todas as direções.
+                </p>
+                <p>
+                    <strong>Características:</strong>
+                </p>
+                <ul class="sintaxe">
+                    <li>
+                        Não começa em uma nova linha.
+                    </li>
+                    <li>
+                        Aceita <code class="propriedade">width</code>, <code class="propriedade">height</code>, <code class="propriedade">padding</code>, <code class="propriedade">margin</code>. 
+                    </li>
+                    <li>
+                        Útil para criar elementos que precisam de dimensões e espaçamento, mas que devem permanecer na mesma linha. 
+                    </li>
+                </ul>
+                <p>
+                    Exemplo:
+                </p>
+                <div class="container">
+                    <code class="estrutura">
+                        <span class="valor">.botao</span> {
+                        <br>
+                        &nbsp;&nbsp;<span class="pro">display</span>: <span class="valor">inline-block</span>;
+                        <br>
+                        &nbsp;&nbsp;<span class="pro">width</span>: <span class="valor">120px</span>;
+                        <br>
+                        &nbsp;&nbsp;<span class="pro">height</span>: <span class="valor">40px</span>;
+                        <br>
+                        &nbsp;&nbsp;<span class="pro">padding</span>: <span class="valor">10px</span>;
+                        <br>
+                        &nbsp;&nbsp;<span class="pro">margin</span>: <span class="valor">5px</span>;
+                        <br>
+                        }
+                    </code>
+                </div>
+            </section>
+
+            <section>
+                <h3>None</h3>
+                <p>
+                    Elementos com <code class="propriedade">display: none</code> são completamente removidos do fluxo do documento. Eles não ocupam nenhum espaço e não são renderizados na página. É como se o elemento nunca tivesse existido.
+                </p>
+                <p>
+                    <strong>Características:</strong>
+                </p>
+                <ul class="sintaxe">
+                    <li>
+                        Oculta o elemento e remove-o do fluxo do documento.
+                    </li>
+                    <li>
+                        Não ocupa espaço.
+                    </li>
+                    <li>
+                        Não é acessível por leitores de tela. 
+                    </li>
+                </ul>
+                <p>
+                    Exemplo:
+                </p>
+                <div class="container">
+                    <code class="estrutura">
+                        <span class="valor">.elemento-oculto</span> {
+                        <br>
+                        &nbsp;&nbsp;<span class="pro">display</span>: <span class="valor">none</span>;
+                        <br>
+                        }
+                    </code>
+                </div>
+            </section>
+
+            <section>
+                <h3>Flex</h3>
+                <p>
+                    Elementos com <code class="propriedade">display: flex</code> se tornam um contêiner flexível, e seus filhos diretos se tornam itens flexíveis. Isso ativa o Flexbox, um módulo de layout unidimensional que permite distribuir e alinhar itens em um contêiner de forma eficiente. Será abordado em detalhes em uma seção posterior.
+                </p>
+                <p>
+                    Exemplo:
+                </p>
+                <div class="container">
+                    <code class="estrutura">
+                        <span class="valor">.container-flex</span> {
+                        <br>
+                        &nbsp;&nbsp;<span class="pro">display</span>: <span class="valor">flex</span>;
+                        <br>
+                        &nbsp;&nbsp;<span class="pro">justify-content</span>: <span class="valor">center</span>;
+                        <br>
+                        &nbsp;&nbsp;<span class="pro">align-items</span>: <span class="valor">center</span>;
+                        <br>
+                        }
+                    </code>
+                </div>
+            </section>
+
+            <section>
+                <h3>Grid</h3>
+                <p>
+                    Elementos com <code class="propriedade">display: grid</code> se tornam um contêiner de grid, e seus filhos diretos podem ser posicionados em uma grade bidimensional. Isso ativa o CSS Grid Layout, um módulo de layout poderoso para criar layouts complexos. Será abordado em detalhes em uma seção posterior.
+                </p>
+                <p>
+                    Exemplo:
+                </p>
+                <div class="container">
+                    <code class="estrutura">
+                        <span class="valor">.container-grid</span> {
+                        <br>
+                        &nbsp;&nbsp;<span class="pro">display</span>: <span class="valor">grid</span>;
+                        <br>
+                        &nbsp;&nbsp;<span class="pro">grid-template-columns</span>: <span class="valor">1fr 1fr</span>;
+                        <br>
+                        &nbsp;&nbsp;<span class="pro">gap</span>: <span class="valor">10px</span>;
+                        <br>
+                        }
+                    </code>
+                </div>
+            </section>
+        </article>
+
+        <article>
+            <h2><code>Visibility:hidden</code> vs <code>Display:none</code></h2>
+            <p>
+                Ambas as propriedades podem ser usadas para ocultar elementos, mas o fazem de maneiras muito diferentes, com implicações significativas para o layout e a acessibilidade.
+            </p>
+            <section>
+                <h3><code>Visibility:hidden</code></h3>
+                <p>
+                    Quando um elemento tem <code class="propriedade">visibility: hidden</code>, ele se torna invisível, mas <strong>ainda ocupa espaço</strong> no layout da página. É como se o elemento estivesse lá, mas transparente. Ele ainda afeta o posicionamento de outros elementos.
+                </p>
+                <p>
+                    <strong>Características:</strong>
+                </p>
+                <ul class="sintaxe">
+                    <li>
+                        Oculta o elemento, mas ele continua ocupando seu espaço original no layout.
+                    </li>
+                    <li>
+                        Não é visível, mas ainda pode ser interativo (por exemplo, eventos de clique ainda podem ser disparados se o elemento for clicável).
+                    </li>
+                    <li>
+                        Ainda é acessível por leitores de tela.
+                    </li>
+                </ul>
+                <p>
+                    Exemplo:
+                </p>
+                <div class="container">
+                    <code class="estrutura">
+                        <span class="valor">.elemento-invisivel</span> {
+                        <br>
+                        &nbsp;&nbsp;<span class="pro">visibility</span>: <span class="valor">hidden</span>;
+                        <br>
+                        }
+                    </code>
+                </div>
+            </section>
+
+            <section>
+                <h3>display: none</h3>
+                <p>
+                    Quando um elemento tem <code class="propriedade">display: none</code>, ele é <strong>completamente removido</strong> do fluxo do documento. Ele não ocupa nenhum espaço e não é renderizado na página. É como se o elemento nunca tivesse existido.
+                </p>
+                <p>
+                    <strong>Características:</strong>
+                </p>
+                <ul class="sintaxe">
+                    <li>
+                        Oculta o elemento e o remove do fluxo do documento.
+                    </li>
+                    <li>
+                        Não ocupa espaço.
+                    </li>
+                    <li>
+                        Não é acessível por leitores de tela.
+                    </li>
+                </ul>
+                <p>
+                    Exemplo:
+                </p>
+                <div class="container">
+                    <code class="estrutura">
+                        <span class="valor">.elemento-removido</span> {
+                        <br>
+                        &nbsp;&nbsp;<span class="pro">display</span>: <span class="valor">none</span>;
+                        <br>
+                        }
+                    </code>
+                </div>
+            </section>
+
+            <section>
+                <h3>Comparação</h3>
+                <section>
+                    <p>
+                        Características do <code><span class="comparacao">Visibility:hidden</span></code>
+                    </p>
+                    <ul class="sintaxe">
+                        <li>
+                            <strong>Espaço no Layout - </strong>Sim, o elemento ainda ocupa seu espaço.
+                        </li>
+                        <li>
+                            <strong>Renderização - </strong>Não é renderizado visualmente, mas existe.
+                        </li>
+                        <li>
+                            <strong>Interatividade - </strong>Pode ser interativo (ex: cliques) se não houver overlay.
+                        </li>
+                        <li>
+                            <strong>Acessibilidade - </strong>Acessível por leitores de tela.
+                        </li>
+                        <li>
+                            <strong>Uso Comum - </strong>Ocultar elementos temporariamente sem alterar o layout
+                        </li>
+                    </ul>
+                </section>
+
+                <section>
+                    <p>
+                        Características do <code><span class="comparacao">Display:none</span></code>
+                    </p>
+                    <ul class="sintaxe">
+                        <li>
+                            <strong>Espaço no Layout - </strong>Não, o elemento é removido do fluxo do documento.
+                        </li>
+                        <li>
+                            <strong>Renderização - </strong>Não é renderizado de forma alguma.
+                        </li>
+                        <li>
+                            <strong>Interatividade - </strong>Não é interativo.
+                        </li>
+                        <li>
+                            <strong>Acessibilidade - </strong>Não acessível por leitores de tela.
+                        </li>
+                        <li>
+                            <strong>Uso Comum - </strong>Remover elementos completamente do layout.
+                        </li>
+                    </ul>
+                </section>
+            </section>
+        </article>
+
+        <article>
+            <h2>Opacity</h2>
+            <p>
+                A propriedade <code class="propriedade">opacity</code> define o nível de opacidade (transparência) de um elemento. O valor varia de 0.0 (totalmente transparente) a 1.0 (totalmente opaco). Ao contrário de <code class="propriedade">visibility: hidden</code>, <code class="propriedade">opacity: 0</code> torna o elemento invisível, mas ele ainda ocupa espaço e é interativo.
+            </p>
+            <div class="container">
+                <code class="estrutura">
+                    <span class="valor">.transparente</span> {
+                    <br>
+                    &nbsp;&nbsp;<span class="pro">opacity</span>: <span class="valor">0.5</span>;
+                    <br>
+                    &nbsp;&nbsp;<span class="coments">/* 50% de opacidade */</span>
+                    <br>
+                    }
+                    <br>
+                    <span class="valor">.totalmente-invisivel</span> {
+                    <br>
+                    &nbsp;&nbsp;<span class="pro">opacity</span>: <span class="valor">0</span>;
+                    <br>
+                    &nbsp;&nbsp;<span class="coments">/* Totalmente transparente, mas ainda ocupa espaço e é clicável */</span>
+                    <br>
+                    }
+                </code>
+            </div>
+
+            <p>
+                Diferença entre <code class="propriedade">opacity: 0</code> e <code class="propriedade">visibility: hidden</code>:
+            </p>
+            <p>
+                <code class="propriedade">opacity: 0</code>: O elemento é invisível, mas ainda é clicável e interage com eventos do mouse/toque. Ele ainda ocupa espaço no layout.
+            </p>
+            <p>
+                <code class="propriedade">visibility: hidden</code>: O elemento é invisível e não é clicável, mas ainda ocupa espaço no layout.
+            </p>
+            <p>
+                <code class="propriedade">display: none</code>: O elemento é completamente removido do layout, não é visível, não é clicável e não ocupa espaço.
+            </p>            
+        </article>             
+    </main>
+
+    <button id="btnTopo" title="Voltar ao topo">
+        <span id="top" class="material-symbols-outlined">
+            arrow_upward
+        </span>
+    </button>
+
+    <!-- Estrutura do Lightbox -->
+    <div id="custom-lightbox" class="lightbox-hidden">
+        <div class="lightbox-overlay"></div>
+        <div class="lightbox-content">
+            <button class="lightbox-close-btn" aria-label="Fechar lightbox">&times;</button>
+            <img src="" alt="" class="lightbox-image">
+            <div class="lightbox-caption"></div>
+        </div>
+    </div>
+    
+    <script src="../../../assets/js/hamburguerMenu.js"></script>
+    <script src="../../../assets/js/backToTop.js"></script>
+    <script src="../../../assets/js/lightBox.js"></script>
+    <script src="../../../assets/js/transitionEntry.js" defer></script>
+    <script src="../../../assets/js/transitionExit.js"></script>
+</body>
+</html>
