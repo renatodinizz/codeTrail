@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Box</title>
+    <!-- Favicon imagem -->
+    <link rel="shortcut icon" href="../../../assets/img/favicon/favicon.ico" type="image/x-icon">
+    <!-- Link do CSS -->
+    <link rel="stylesheet" href="../../../assets/css/css-pages/style-css-pages.css">
+    <!-- font do ícone backToTop -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined&display=swap" rel="stylesheet">
+
+</head>
+<body class="area">
+
+    <div class="page-transition"></div>
+
+    <ul class="circles">
+        <li class="square"></li>
+        <li class="square"></li>
+        <li class="square"></li>
+        <li class="square"></li>
+        <li class="square"></li>
+        <li class="square"></li>
+        <li class="square"></li>
+        <li class="square"></li>
+        <li class="square"></li>
+        <li class="square"></li>
+        <li class="square"></li>
+        <li class="square"></li>
+        <li class="square"></li>
+        <li class="square"></li>
+        <li class="square"></li>
+        <li class="square"></li>
+        <li class="square"></li>
+        <li class="square"></li>
+        <li class="square"></li>
+        <li class="square"></li>
+    </ul>
+    <header>
+
+        <button id="menu-toggle" class="menu-toggle">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </button>
+
+        <section class="horizontal">
+            <span id="codeTrail">CodeTrail</span>    
+            <nav id="side-menu">
+                <ul>
+                    <li><a href="../../../index.html" class="home">Home</a></li>
+                    <li><a href="../../../pages/html/indexHtml.html" class="html">HTML</a></li>
+                    <li><a href="../../../pages/css/indexCss.html" class="css">CSS</a></li>
+                    <li><a href="../../../pages/javascript/indexJs.html" class="js">JavaScript</a></li>
+                    <li><a href="../../../pages/typescript/indexType.html" class="ts">TypeScript</a></li>
+                    <li><a href="../../../pages/about/indexAbout.html" class="about">About</a></li>
+                </ul>
+            </nav>
+        </section>
+
+        <h1>CSS</h1>
+
+    </header>
+
+    <main class="context">
+
+        <h1>Flex Box</h1>
+
+        <article>
+            <p>
+                O Flexbox é um modelo de layout projetado para organizar e alinhar elementos dentro de um contêiner (o elemento pai) e seus itens (os elementos filhos diretos).
+            </p>
+            <p>
+                Para ativar o Flexbox, você precisa definir a propriedade <code class="propriedade">display</code> do elemento contêiner como <code><strong>flex</strong></code>.
+            </p>
+            <p>
+                Uma vez que <code class="propriedade">display: flex;</code> é aplicado ao contêiner, seus filhos diretos se tornam itens flexíveis e são organizados ao longo de um eixo principal (main axis) e um eixo transversal (cross axis).
+            </p>
+        </article>
+
+        <article>
+            <h2>Flex-Direction</h2>
+            <p>
+                Define a direção do eixo principal, que determina a direção em que os itens flexíveis são colocados no contêiner. Esse comando é utilizado no contêiner pai e não nos filhos.
+            </p>
+            <ul class="unordered">
+                <li>
+                    <code><strong>row</strong></code> (padrão): Itens são dispostos horizontalmente, da esquerda para a direita.
+                </li>
+                <li>
+                    <code><strong>row-reverse</strong></code>: Itens são dispostos horizontalmente, da direita para a esquerda.
+                </li>
+                <li>
+                    <code><strong>column</strong></code>: Itens são dispostos verticalmente, de cima para baixo.
+                </li>
+                <li>
+                    <code><strong>column-reverse</strong></code>: Itens são dispostos verticalmente, de baixo para cima.
+                </li>
+            </ul>
+            <h3>Eixos</h3>
+            <figure>
+                <img id="eixos" src="../../../assets/img/css/flexBox/eixos.webp" alt="eixos" class="lightbox-trigger" data-full-src="../../../assets/img/css/flexBox/eixos.webp" data-caption="">
+            </figure>
+        </article>
+
+        <article>
+            <h2>Flex-Wrap</h2>
+            <p>
+                Controla se os itens flexíveis devem quebrar para a próxima linha (ou coluna) quando não há espaço suficiente no contêiner.
+            </p>
+            <ul class="unordered">
+                <li>
+                    <code><strong>nowrap</strong></code> (padrão): Todos os itens flexíveis tentarão se encaixar em uma única linha.
+                </li>
+                <li>
+                    <code><strong>wrap</strong></code>: Os itens flexíveis quebrarão para múltiplas linhas, de cima para baixo.
+                </li>
+                <li>
+                    <code><strong>wrap-reverse</strong></code>: Os itens flexíveis quebrarão para múltiplas linhas, de baixo para cima.
+                </li>
+            </ul>
+            <p>
+                <strong>Exemplo:</strong>
+            </p>
+            <figure>
+                <img id="wrap" src="../../../assets/img/css/flexBox/wrap.webp" alt="wrap" class="lightbox-trigger" data-full-src="../../../assets/img/css/flexBox/wrap.webp" data-caption="">
+            </figure>
+        </article>
+
+        <article>
+            <h2>Flex-Flow</h2>
+            <p>
+                É uma junção do <code class="propriedade">flex-direction</code> + <code class="propriedade">flex-wrap</code>.
+            </p>
+            <p>
+                Podemos substituir esses dois comandos:
+            </p>
+            <div class="container tamanho2">
+                <code class="estrutura">
+                    <span class="seletores">div</span> {
+                    <br>
+                    &nbsp;&nbsp;<span class="pro">flex-direction:</span>: <span class="valor">row</span>;
+                    <br>
+                    &nbsp;&nbsp;<span class="pro">flex-wrap</span>: <span class="valor">nowrap</span>;
+                    <br>
+                    }
+                </code>
+            </div>
+            <p>
+                Por esse:
+            </p>
+            <div class="container tamanho2">
+                <code class="estrutura">
+                    <span class="seletores">div</span> {
+                    <br>
+                    &nbsp;&nbsp;<span class="pro">flex-flow</span>: <span class="valor">row nowrap</span>;
+                    <br>
+                    }
+                </code>
+            </div>
+        </article>
+
+        <article>
+            <h2>Justify-Content</h2>
+            <p>
+                Alinha os itens flexíveis ao longo do eixo principal do contêiner. Distribui o espaço extra quando os itens não preenchem todo o contêiner.
+            </p>
+            <section>
+                <h3>Flex-Start</h3>
+                <p>
+                    É o padrão; Itens agrupados no início do <strong>main start</strong>.
+                </p>
+                <figure>
+                    <img id="justStart" src="../../../assets/img/css/flexBox/justContentStart.webp" alt="Justify-Content:flex-start" class="lightbox-trigger" data-full-src="../../../assets/img/css/flexBox/justContentStart.webp" data-caption="">
+                </figure>
+            </section>
+
+            <section>
+                <h3>Flex-End</h3>
+                <p>
+                    Itens agrupados no início do <strong>main end</strong>.
+                </p>
+                <figure>
+                    <img id="justEnd" src="../../../assets/img/css/flexBox/justContentEnd.webp" alt="Justify-Content:flex-end" class="lightbox-trigger" data-full-src="../../../assets/img/css/flexBox/justContentEnd.webp" data-caption="">
+                </figure>
+            </section>
+
+            <section>
+                <h3>Center</h3>
+                <p>
+                    Itens centralizados no <strong>eixo principal</strong>(main axis).
+                </p>
+                <figure>
+                    <img id="justCenter" src="../../../assets/img/css/flexBox/justContentCenter.webp" alt="Justify-Content:center" class="lightbox-trigger" data-full-src="../../../assets/img/css/flexBox/justContentCenter.webp" data-caption="">
+                </figure>
+            </section>
+
+            <section>
+                <h3>Space-Between</h3>
+                <p>
+                    O primeiro item no início do <strong>main start</strong> e o último no <strong>main end</strong>e os outros itens distribuídos uniformemente.
+                </p>
+                <figure>
+                    <img id="justBetween" src="../../../assets/img/css/flexBox/justContentSpaceBtw.webp" alt="Justify-Content:space-between" class="lightbox-trigger" data-full-src="../../../assets/img/css/flexBox/justContentSpaceBtw.webp" data-caption="">
+                </figure>
+            </section>
+
+            <section>
+                <h3>Space-Evenly</h3>
+                <p>
+                    Itens distribuídos uniformemente, com espaço igual entre eles e nas extremidades.
+                </p>
+                <figure>
+                    <img id="justEvenly" src="../../../assets/img/css/flexBox/justContentSpaceEvenly.webp" alt="Justify-Content:space-evenly" class="lightbox-trigger" data-full-src="../../../assets/img/css/flexBox/justContentSpaceEvenly.webp" data-caption="">
+                </figure>
+            </section>
+
+            <section>
+                <h3>Space-Around</h3>
+                <p>
+                    Divide o espaço do container uniformemente, distribui entre o número de itens e centraliza cada item na sua porção de espaço.
+                </p>
+                <figure>
+                    <img id="justAround" src="../../../assets/img/css/flexBox/justContentSpaceAround.webp" alt="Justify-Content:space-around" class="lightbox-trigger" data-full-src="../../../assets/img/css/flexBox/justContentSpaceAround.webp" data-caption="">
+                </figure>
+            </section>
+
+            <section>
+                <h3>Space-Between, Space-Evenly, Space-Around</h3>
+                <p>
+                    Uma imagem comparativa entre os três tipos de espaçamentos.
+                </p>
+                <figure>
+                    <img id="justSpaces" src="../../../assets/img/css/flexBox/justSpaceBtwEveArnd.webp" alt="diferença entre os spaces" class="lightbox-trigger" data-full-src="../../../assets/img/css/flexBox/justSpaceBtwEveArnd.webp" data-caption="">
+                </figure>
+            </section>
+
+            <section>
+                <h3>Columns</h3>
+                <p>
+                    Justify-Content com Columns.
+                </p>
+                <figure>
+                    <img id="justColumn" src="../../../assets/img/css/flexBox/justifyColumn.webp" alt="justify content em colunas" class="lightbox-trigger" data-full-src="../../../assets/img/css/flexBox/justifyColumn.webp" data-caption="">
+                </figure>
+            </section>
+        </article>
+
+        <article>
+            <h2>Align-Items</h2>
+            <p>
+                Alinha os itens flexíveis ao longo do eixo transversal (perpendicular ao eixo principal) do contêiner.
+            </p>
+            <section>
+                <h3>Stretch</h3>
+                <p>
+                    É o padrão, itens esticam para preencher o contêiner no eixo transversal (se <code class="propriedade">height</code> não for definido).
+                </p>
+                <figure>
+                    <img id="itemStretch" src="../../../assets/img/css/flexBox/alignItemStretch.webp" alt="Align-Items: stretch" class="lightbox-trigger" data-full-src="../../../assets/img/css/flexBox/alignItemStretch.webp" data-caption="">
+                </figure>
+            </section>
+
+            <section>
+                <h3>Flex-Start</h3>
+                <p>
+                    Itens agrupados no início do eixo transversal <strong>(cross start)</strong>.
+                </p>
+                <figure>
+                    <img id="itemStart" src="../../../assets/img/css/flexBox/alignItemStart.webp" alt="Align-Items: flex-start" class="lightbox-trigger" data-full-src="../../../assets/img/css/flexBox/alignItemStart.webp" data-caption="">
+                </figure>
+            </section>
+
+            <section>
+                <h3>Flex-End</h3>
+                <p>
+                    Itens agrupados no final do eixo transversal <strong>(cross end)</strong>.
+                </p>
+                <figure>
+                    <img id="itemEnd" src="../../../assets/img/css/flexBox/alignItemEnd.webp" alt="Align-Items: flex-end" class="lightbox-trigger" data-full-src="../../../assets/img/css/flexBox/alignItemEnd.webp" data-caption="">
+                </figure>
+            </section>
+
+            <section>
+                <h3>Center</h3>
+                <p>
+                    Itens centralizados no eixo transversal <strong>(cross-axis)</strong>.
+                </p>
+                <figure>
+                    <img id="itemCenter" src="../../../assets/img/css/flexBox/alignItemCenter.webp" alt="Align-Items: center" class="lightbox-trigger" data-full-src="../../../assets/img/css/flexBox/alignItemCenter.webp" data-caption="">
+                </figure>
+            </section>
+        </article>
+
+        <article>
+            <h2>Align-Content</h2>
+            <p>
+                É usada quando temos múltiplas linhas de itens flexíveis (ou seja, o <code class="propriedade">flex-wrap</code> está ativo e os itens quebraram para mais de uma linha).
+                Ela controla como o espaço extra no eixo cruzado (vertical, por padrão) será distribuído entre as linhas do container.
+            </p>
+            <section>
+                <h3>Stretch</h3>
+                <p>
+                    É o padrão, linhas esticam para preencher o espaço restante.
+                </p>
+                <figure>
+                    <img id="contentStretch" src="../../../assets/img/css/flexBox/contentStretch.webp" alt="Align-Content: stretch" class="lightbox-trigger" data-full-src="../../../assets/img/css/flexBox/contentStretch.webp" data-caption="">
+                </figure>
+            </section>
+
+            <section>
+                <h3>Flex-Start</h3>
+                <p>
+                    Linhas agrupadas no início do eixo transversal <strong>(cross start)</strong>.
+                </p>
+                <figure>
+                    <img id="contentStart" src="../../../assets/img/css/flexBox/contentStart.webp" alt="Align-Content: flex-start" class="lightbox-trigger" data-full-src="../../../assets/img/css/flexBox/contentStart.webp" data-caption="">
+                </figure>
+            </section>
+
+            <section>
+                <h3>Flex-End</h3>
+                <p>
+                    Linhas agrupadas no final do eixo transversal <strong>(cross end)</strong>.
+                </p>
+                <figure>
+                    <img id="contentEnd" src="../../../assets/img/css/flexBox/contentEnd.webp" alt="Align-Content: flex-end" class="lightbox-trigger" data-full-src="../../../assets/img/css/flexBox/contentEnd.webp" data-caption="">
+                </figure>
+            </section>
+
+            <section>
+                <h3>Center</h3>
+                <p>
+                    Linhas centralizadas no eixo transversal <strong>(cross-axis)</strong>.
+                </p>
+                <figure>
+                    <img id="contentCenter" src="../../../assets/img/css/flexBox/contentCenter.webp" alt="Align-Content: center" class="lightbox-trigger" data-full-src="../../../assets/img/css/flexBox/contentCenter.webp" data-caption="">
+                </figure>
+            </section>
+
+            <section>
+                <h3>Space-Between</h3>
+                <p>
+                    Linhas distribuídas uniformemente, com a primeira linha no início <strong>(cross start)</strong> e a última no final <strong>(cross end)</strong>.
+                </p>
+                <figure>
+                    <img id="contentBetween" src="../../../assets/img/css/flexBox/contentSpaceBtw.webp" alt="Align-Content: space-between" class="lightbox-trigger" data-full-src="../../../assets/img/css/flexBox/contentSpaceBtw.webp" data-caption="">
+                </figure>
+            </section>
+
+            <section>
+                <h3>Space-Evenly</h3>
+                <p>
+                    Linhas não agrupadas nas extremidades, mas distribuirá o espaço igualmente em todo o contêiner.
+                </p>
+                <figure>
+                    <img id="contentEvenly" src="../../../assets/img/css/flexBox/contentSpaceEvenly.webp" alt="Align-Content: space-evenly" class="lightbox-trigger" data-full-src="../../../assets/img/css/flexBox/contentSpaceEvenly.webp" data-caption="">
+                </figure>
+            </section>
+
+            <section>
+                <h3>Space-Around</h3>
+                <p>
+                    Linhas distribuídas uniformemente, com espaço igual ao redor de cada linha.
+                </p>
+                <figure>
+                    <img id="contentAround" src="../../../assets/img/css/flexBox/contentSpaceAround.webp" alt="Align-Content: space-around" class="lightbox-trigger" data-full-src="../../../assets/img/css/flexBox/contentSpaceAround.webp" data-caption="">
+                </figure>
+            </section>
+        </article>
+
+        <article>
+            <h2>Propriedades dos Itens Flex</h2>
+            <p>
+                As propriedades a seguir são aplicadas aos <strong>itens flexíveis</strong> (os elementos filhos diretos do contêiner flex).
+            </p>
+            <section>
+                <h3>Order</h3>
+                <p>
+                    Define a ordem em que um item flexível aparece no contêiner. O valor padrão é <code><strong>0</strong></code>. Itens com valores menores aparecem antes de itens com valores maiores.
+                </p>
+                <div class="container tamanho1">
+                    <code class="estrutura">
+                        <span class="valor">.item-1</span> {
+                        <br>
+                        &nbsp;&nbsp;<span class="pro">order</span>: <span class="valor">2</span>;
+                        <br>
+                        }
+                        <br>
+                        <span class="valor">.item-2</span> {
+                        <br>
+                        &nbsp;&nbsp;<span class="pro">order</span>: <span class="valor">1</span>;
+                        <br>
+                        }
+                    </code>
+                </div>
+                <p>
+                    Este item aparecerá antes do item-1.
+                </p>
+            </section>
+
+            <section>
+                <h3>Flex-Grow</h3>
+                <p>
+                    Define a capacidade de um item flexível de crescer se houver espaço extra disponível no contêiner. Aceita um valor numérico (fator de crescimento). O valor padrão é <code><strong>0</strong></code> (não cresce).
+                </p>
+                <div class="container tamanho2">
+                    <code class="estrutura">
+                        <span class="valor">.item-cresce</span> {
+                        <br>
+                        &nbsp;&nbsp;<span class="pro">flex-grow</span>: <span class="valor">1</span>;
+                        <br>
+                        &nbsp;&nbsp;<span class="coments">/* Este item ocupará todo o espaço extra disponível */</span>
+                        <br>
+                        }
+                        <br>
+                        <span class="valor">.item-cresce-mais</span> {
+                        <br>
+                        &nbsp;&nbsp;<span class="pro">flex-grow</span>: <span class="valor">2</span>;
+                        <br>
+                        &nbsp;&nbsp;<span class="coments">/* Este item crescerá o dobro do item com flex-grow: 1 */</span>
+                        <br>
+                        }
+                    </code>
+                </div>
+            </section>
+
+            <section>
+                <h3>Flex-Shrink</h3>
+                <p>
+                    Define a capacidade de um item flexível de encolher se não houver espaço suficiente no contêiner. Aceita um valor numérico (fator de encolhimento). O valor padrão é <code><strong>1</strong></code> (encolhe).
+                </p>
+                <div class="container tamanho1">
+                    <code class="estrutura">
+                        <span class="valor">.item-nao-encolhe</span> {
+                        <br>
+                        &nbsp;&nbsp;<span class="pro">flex-shrink</span>: <span class="valor">0</span>;
+                        <br>
+                        &nbsp;&nbsp;<span class="coments">/* Este item não encolherá */</span>
+                        <br>
+                        }
+                    </code>
+                </div>
+            </section>
+
+            <section>
+                <h3>Flex-Basis</h3>
+                <p>
+                    Define o tamanho inicial de um item flexível antes que o espaço restante seja distribuído. Pode ser um comprimento <code><strong>(px, %, em, etc.)</strong></code> ou a palavra-chave <code><strong>auto</strong></code> (padrão, usa o tamanho do conteúdo).
+                </p>
+                <div class="container tamanho1">
+                    <code class="estrutura">
+                        <span class="valor">.item-base</span> {
+                        <br>
+                        &nbsp;&nbsp;<span class="pro">flex-basis</span>: <span class="valor">100px</span>;
+                        <br>
+                        }
+                        <br>
+                        <span class="valor">.item-base-auto</span> {
+                        <br>
+                        &nbsp;&nbsp;<span class="pro">flex-basis</span>: <span class="valor">auto</span>;
+                        <br>
+                        }
+                    </code>
+                </div>
+            </section>
+
+            <section>
+                <h3>Flex</h3>
+                <p>
+                    A propriedade <code class="propriedade">flex</code> é uma shorthand para <code class="propriedade">flex-grow</code>, <code class="propriedade">flex-shrink</code> e <code class="propriedade">flex-basis</code>.
+                </p>
+                <div class="container tamanho1">
+                    <code class="estrutura">
+                        <span class="valor">.item-1</span> {
+                        <br>
+                        &nbsp;&nbsp;<span class="pro">flex</span>: <span class="valor">1 1 auto</span>;
+                        <br>
+                        }
+                        <br>
+                        <span class="valor">.item-fixo</span> {
+                        <br>
+                        &nbsp;&nbsp;<span class="pro">flex</span>: <span class="valor">0 0 200px</span>;
+                        <br>
+                        &nbsp;&nbsp;<span class="coments">/* Não cresce, não encolhe, tem 200px de base */</span>
+                        <br>
+                        }
+                    </code>
+                </div>
+            </section>            
+        </article>
+
+        <article>
+            <h2>Align-Self</h2>
+            <p>
+                Permite alinhar um item flexível individualmente ao longo do eixo transversal <strong>(cross-axis)</strong>, sobrescrevendo o valor de <code class="propriedade">align-items</code> definido no contêiner.
+            </p>            
+            <figure>
+                <img id="alignSelf" src="../../../assets/img/css/flexBox/self.webp" alt="align-self" class="lightbox-trigger" data-full-src="../../../assets/img/css/flexBox/self.webp" data-caption="">
+            </figure>
+            <ul class="unordered">
+                <li>
+                    <code><strong>auto</strong></code> Vai herdar a característica de alinhamento vertical do seu pai, seja ele o align-content ou align-items.
+                </li>
+                <li>
+                    <code><strong>flex-start</strong></code>: É o alinhamento perto do <strong>cross start</strong>.
+                </li>
+                <li>
+                    <code><strong>flex-end</strong></code>: É o alinhamento perto do <strong>cross end</strong>.
+                </li>
+                <li>
+                    <code><strong>center</strong></code>: Calcula o espaço entre o <strong>cross start</strong> e o <strong>cross end</strong> e centraliza.
+                </li>
+                <li>
+                    <code><strong>stretch</strong></code> Itens esticam para preencher o contêiner.
+                </li>
+            </ul>
+        </article> 
+        
+        <article>
+            <h2>Gap</h2>
+            <p>
+                A propriedade <code class="propriedade">gap</code> (anteriormente <code class="propriedade">grid-gap</code>) permite definir o espaçamento entre as linhas e colunas em layouts Flexbox e Grid. No Flexbox, ela é usada para criar espaçamento entre os itens flexíveis.
+            </p>
+        </article>
+
+        <article>
+            <h2>Exemplo Real</h2>
+            <p>
+                Exemplo do contêiner:
+            </p>
+            <figure>
+                <img id="exemploFlexBox1" src="../../../assets/img/css/flexBox/exemplo1.webp" alt="exemplo de flex box 1" class="lightbox-trigger" data-full-src="../../../assets/img/css/flexBox/exemplo1.webp" data-caption="">
+            </figure>
+            <p>
+                Exemplo do item:
+            </p>
+            <figure>
+                <img id="exemploFlexBox2" src="../../../assets/img/css/flexBox/exemplo2.webp" alt="exemplo de flex box 2" class="lightbox-trigger" data-full-src="../../../assets/img/css/flexBox/exemplo2.webp" data-caption="">
+            </figure>
+        </article>
+    </main>
+
+    <button id="btnTopo" title="Voltar ao topo">
+        <span id="top" class="material-symbols-outlined">
+            arrow_upward
+        </span>
+    </button>
+
+    <!-- Estrutura do Lightbox -->
+    <div id="custom-lightbox" class="lightbox-hidden">
+        <div class="lightbox-overlay"></div>
+        <div class="lightbox-content">
+            <button class="lightbox-close-btn" aria-label="Fechar lightbox">&times;</button>
+            <img src="" alt="" class="lightbox-image">
+            <div class="lightbox-caption"></div>
+        </div>
+    </div>
+    
+    <script src="../../../assets/js/hamburguerMenu.js"></script>
+    <script src="../../../assets/js/backToTop.js"></script>
+    <script src="../../../assets/js/lightBox.js"></script>
+    <script src="../../../assets/js/transitionEntry.js" defer></script>
+    <script src="../../../assets/js/transitionExit.js"></script>
+</body>
+</html>

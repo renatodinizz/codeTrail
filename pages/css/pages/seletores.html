@@ -81,11 +81,20 @@
             <section>
                 <h3>Seletor Global</h3>
                 <p>
-                    Seleciona todos os elementos da página. 
+                    Seleciona todos os elementos da página, usa-se o asterisco <code><strong>*</strong></code> como seletor global.
                 </p>
                 <p>
-                    Exemplo: <code><strong>*</strong></code>
+                    Exemplo: 
                 </p>
+                <div class="container tamanho1">
+                    <code class="estrutura">
+                        <span class="seletores">*</span> {
+                        <br>
+                        &nbsp;&nbsp;<span class="pro">margin</span>: <span class="valor">0</span>;
+                        <br>
+                        }
+                    </code>
+                </div>
             </section>
 
             <section>
@@ -94,8 +103,17 @@
                     Seleciona todos os elementos de um determinado tipo HTML. Por exemplo, se você quiser estilizar todos os títulos de nível 2 <code class="propriedade">&lt;h2&gt;</code>
                 </p>
                 <p>
-                    Exemplo: <code><strong>h2</strong></code>
+                    Exemplo:
                 </p>
+                <div class="container tamanho1">
+                    <code class="estrutura">
+                        <span class="seletores">h2</span> {
+                        <br>
+                        &nbsp;&nbsp;<span class="pro">color</span>: <span class="valor">blue</span>;
+                        <br>
+                        }
+                    </code>
+                </div>
             </section>
 
             <section>
@@ -104,8 +122,17 @@
                     Seleciona um único elemento HTML com um atributo <code><strong>id</strong></code> específico. Um ID deve ser único em toda a página HTML. Ele é prefixado com um  <code><strong>#</strong></code> (hash).
                 </p>
                 <p>
-                    Exemplo: <code><strong>#meuId</strong></code>
+                    Exemplo:
                 </p>
+                <div class="container tamanho1">
+                    <code class="estrutura">
+                        <span class="seletores">#meuId</span> {
+                        <br>
+                        &nbsp;&nbsp;<span class="pro">margin</span>: <span class="valor">0</span>;
+                        <br>
+                        }
+                    </code>
+                </div>
             </section>
 
             <section>
@@ -114,8 +141,17 @@
                     Seleciona todos os elementos HTML que possuem um atributo <code><strong>class</strong></code> específico. Ao contrário dos IDs, várias classes podem ser aplicadas a um único elemento, e a mesma classe pode ser usada em múltiplos elementos. Ele é prefixado com um <code><strong>.</strong></code> (ponto).
                 </p>
                 <p>
-                    Exemplo: <code><strong>.minhaClasse</strong></code>
+                    Exemplo:
                 </p>
+                <div class="container tamanho1">
+                    <code class="estrutura">
+                        <span class="valor">.minhaClasse</span> {
+                        <br>
+                        &nbsp;&nbsp;<span class="pro">font-weight</span>: <span class="valor">bold</span>;
+                        <br>
+                        }
+                    </code>
+                </div>
             </section>
         </article>
 
@@ -127,8 +163,17 @@
                     O seletor descendente (espaço) seleciona todos os elementos que são descendentes de um elemento específico.
                 </p>
                 <p>
-                    Exemplo: <code><strong>div p</strong></code>
+                    Exemplo:
                 </p>
+                <div class="container tamanho1">
+                    <code class="estrutura">
+                        <span class="seletores">div p</span> {
+                        <br>
+                        &nbsp;&nbsp;<span class="pro">font-size</span>: <span class="valor">16px</span>;
+                        <br>
+                        }
+                    </code>
+                </div>
                 <p>
                     Isso selecionará todos os parágrafos <code class="propriedade">&lt;p&gt;</code> que estão dentro de qualquer <code class="propriedade">&lt;div&gt;</code>.
                 </p>
@@ -140,8 +185,17 @@
                     O seletor filho <code><strong>></strong></code> seleciona elementos que são filhos diretos de um elemento específico. Ele é mais restritivo que o seletor descendente.
                 </p>
                 <p>
-                    Exemplo: <code><strong>ul > li</strong></code>
+                    Exemplo:
                 </p>
+                <div class="container tamanho1">
+                    <code class="estrutura">
+                        <span class="seletores">ul</span> > <span class="seletores">li</span> {
+                        <br>
+                        &nbsp;&nbsp;<span class="pro">color</span>: <span class="valor">red</span>;
+                        <br>
+                        }
+                    </code>
+                </div>
                 <p>
                     Isso selecionará apenas os itens de lista  <code class="propriedade">&lt;li&gt;</code> que são filhos diretos de uma lista não ordenada  <code class="propriedade">&lt;ul&gt;</code>.
                 </p>
@@ -153,8 +207,17 @@
                     O seletor irmão adjacente <code><strong>+</strong></code> seleciona um elemento que é imediatamente precedido por outro elemento específico, e ambos devem ter o mesmo pai.
                 </p>
                 <p>
-                    Exemplo: <code><strong>h1 + p</strong></code>
+                    Exemplo:
                 </p>
+                <div class="container tamanho1">
+                    <code class="estrutura">
+                        <span class="seletores">h1</span> + <span class="seletores">p</span> {
+                        <br>
+                        &nbsp;&nbsp;<span class="pro">margin</span>: <span class="valor">0.5rem</span>;
+                        <br>
+                        }
+                    </code>
+                </div>
                 <p>
                     Isso selecionará o primeiro parágrafo <code class="propriedade">&lt;p&gt;</code> que vem imediatamente após um título <code class="propriedade">&lt;h1&gt;</code>.
                 </p>
@@ -166,8 +229,17 @@
                     O seletor irmão geral <code><strong>~</strong></code> seleciona todos os elementos que são irmãos de um elemento específico e que o seguem na árvore do documento. Eles devem ter o mesmo pai.
                 </p>
                 <p>
-                    Exemplo: <code><strong>p ~ span</strong></code>
+                    Exemplo:
                 </p>
+                <div class="container tamanho1">
+                    <code class="estrutura">
+                        <span class="seletores">p</span> ~ <span class="seletores">span</span> {
+                        <br>
+                        &nbsp;&nbsp;<span class="pro">padding</span>: <span class="valor">1rem</span>;
+                        <br>
+                        }
+                    </code>
+                </div>
                 <p>
                     Isso selecionará todos os elementos <code class="propriedade">&lt;span&gt;</code> que são irmãos de um parágrafo <code class="propriedade">&lt;p&gt;</code> e que aparecem depois dele.
                 </p>
@@ -179,8 +251,17 @@
                     Seleciona os elementos com uma propriedade específica como name, type e etc.
                 </p>
                 <p>
-                    Exemplo: <code><strong>input[type="password"]</strong></code>
+                    Exemplo:
                 </p>
+                <div class="container tamanho2">
+                    <code class="estrutura">
+                        <span class="seletores">input</span> [<span class="seletores">type</span>=<span class="valor3">"password"</span>] {
+                        <br>
+                        &nbsp;&nbsp;<span class="pro">border</span>: <span class="valor">5px solid blue</span>;
+                        <br>
+                        }
+                    </code>
+                </div>
                 <p>
                     Isso selecionará todos os elementos <code class="propriedade">&lt;inputs&gt;</code> que são do tipo <code><strong>password</strong></code>.
                 </p>
@@ -193,8 +274,17 @@
                 Você pode agrupar seletores para aplicar as mesmas regras de estilo a vários elementos sem repetir o código. Para agrupar seletores, separe-os com uma vírgula <code><strong>(,)</strong></code>.
             </p>
             <p>
-                Exemplo: <code><strong>h1, h2, p { font-family: Arial, sans-serif;}</strong></code>
+                Exemplo:
             </p>
+            <div class="container tamanho2">
+                <code class="estrutura">
+                    <span class="seletores">h1</span>, <span class="seletores">h2</span>, <span class="seletores">p</span> {
+                    <br>
+                    &nbsp;&nbsp;<span class="pro">font-family</span>: <span class="valor3">"Arial"</span>;
+                    <br>
+                    }
+                </code>
+            </div>
             <p>
                 Neste exemplo, todos os <code class="propriedade">&lt;h1&gt;</code>, <code class="propriedade">&lt;h2&gt;</code> e <code class="propriedade">&lt;p&gt;</code> terão a mesma família de fonte.
             </p>
@@ -206,30 +296,86 @@
                 Podemos usar alguns seletores de forma mais avançadas, isso serve principalmente para quando não se tem acesso ao HTML da aplicação como no caso de usar uma ferramenta como WordPress ou outra parecida.
             </p>
             <p>
-                Para selecionar um elemento usamos um seletor avançado, vamos imaginar que queremos selecionar um elemento li que está em uma lista, para esse exemplo vamos usar o comando:
+                Para selecionar um elemento usamos um seletor avançado, vamos imaginar que queremos selecionar um elemento <code class="propriedade">&lt;li&gt;</code> que está em uma lista, para esse exemplo vamos usar o comando:
             </p>
+            <div class="container tamanho1">
+                <code class="estrutura">
+                    <span class="seletores">li</span>:<span class="valor2">nth-child</span>(<span class="valor">3</span>) {
+                    <br>
+                    &nbsp;&nbsp;<span class="pro">font-weight</span>: <span class="valor">bold</span>;
+                    <br>
+                    }
+                </code>
+            </div>
             <p>
-                Ex: <code><strong>li:nth-child(3){}</strong></code> - Nesse exemplo o <code class="propriedade">&lt;li&gt;</code> é o item a ser selecionado, o <code><strong>n</strong></code> do <code><strong>nth</strong></code> vem de number e <code><strong>th</strong></code> da ordem cardial em inglês, <code><strong>child</strong></code> por que é um filho do elemento <code class="propriedade">&lt;ul&gt;</code> e o número dentro do parênteses está indicando que dentro da <code class="propriedade">&lt;ul&gt;</code> o terceiro <code class="propriedade">&lt;li&gt;</code> será selecionado.
+                Nesse exemplo o <code class="propriedade">&lt;li&gt;</code> é o item a ser selecionado, o <code><strong>n</strong></code> do <code><strong>nth</strong></code> vem de number e <code><strong>th</strong></code> da ordem cardial em inglês, <code><strong>child</strong></code> por que é um filho do elemento <code class="propriedade">&lt;ul&gt;</code> e o número dentro do parênteses está indicando que dentro da <code class="propriedade">&lt;ul&gt;</code> o terceiro <code class="propriedade">&lt;li&gt;</code> será selecionado.
             </p>
             <p>
                 <em>
                     Obs: Nesse caso consideramos o primeiro item como sendo o número 1 e não o 0 como em programação.
                 </em>
             </p>
-            <p>
-                Ex: <code><strong>li:nth-child(2n){}</strong></code> - Nesse exemplo o <code><strong>n</strong></code> adicional depois do número significa que ele vai pular de dois em dois itens, ou seja, somente números pares, mas podemos substituir essa expressão pela palavra <code><strong>even</strong></code> dentro dos parênteses.
+            <div class="container tamanho1">
+                <code class="estrutura">
+                    <span class="seletores">li</span>:<span class="valor2">nth-child</span>(<span class="valor">2n</span>) {
+                    <br>
+                    &nbsp;&nbsp;<span class="pro">font-weight</span>: <span class="valor">bold</span>;
+                    <br>
+                    }
+                </code>
+            </div>
+            <p>                
+                Nesse exemplo o <code><strong>n</strong></code> adicional depois do número significa que ele vai pular de dois em dois itens, ou seja, somente números pares, mas podemos substituir essa expressão pela palavra <code><strong>even</strong></code> dentro dos parênteses.
             </p>
+            <div class="container tamanho1">
+                <code class="estrutura">
+                    <span class="seletores">li</span>:<span class="valor2">nth-child</span>(<span class="valor">2n-1</span>) {
+                    <br>
+                    &nbsp;&nbsp;<span class="pro">font-weight</span>: <span class="valor">bold</span>;
+                    <br>
+                    }
+                </code>
+            </div>
             <p>
-                Ex: <code><strong>li:nth-child(2n-1){}</strong></code> - Nesse exemplo o <code><strong>2n-1</strong></code> depois do número significa que ele vai pular de dois em dois itens, mas começando pelo número <code><strong>2-1</strong></code> que é <code><strong>1</strong></code>, ou seja, irá contar somente os números impares, mas podemos substituir essa expressão pela palavra <code><strong>odd</strong></code> dentro dos parênteses.
+                Nesse exemplo o <code><strong>2n-1</strong></code> depois do número significa que ele vai pular de dois em dois itens, mas começando pelo número <code><strong>2-1</strong></code> que é <code><strong>1</strong></code>, ou seja, irá contar somente os números impares, mas podemos substituir essa expressão pela palavra <code><strong>odd</strong></code> dentro dos parênteses.
             </p>
             <p>
                 Outros Exemplos:
             </p>
+            <div class="container tamanho1">
+                <code class="estrutura">
+                    <span class="seletores">li</span>:<span class="valor2">first-child</span> {
+                    <br>
+                    &nbsp;&nbsp;<span class="pro">font-weight</span>: <span class="valor">bold</span>;
+                    <br>
+                    }
+                </code>
+            </div>
             <p>
                 <code><strong>li:first-child</strong></code> - Seleciona o primeiro elemento filho.
-            </p><p>
+            </p>
+            <div class="container tamanho1">
+                <code class="estrutura">
+                    <span class="seletores">li</span>:<span class="valor2">last-child</span> {
+                    <br>
+                    &nbsp;&nbsp;<span class="pro">font-weight</span>: <span class="valor">bold</span>;
+                    <br>
+                    }
+                </code>
+            </div>
+            <p>
                 <code><strong>li:last-child</strong></code> - Seleciona o último elemento filho.
-            </p><p>
+            </p>
+            <div class="container tamanho1">
+                <code class="estrutura">
+                    <span class="seletores">li</span>:<span class="valor2">not</span>(<span class="seletores">first-child</span>) {
+                    <br>
+                    &nbsp;&nbsp;<span class="pro">font-weight</span>: <span class="valor">bold</span>;
+                    <br>
+                    }
+                </code>
+            </div>
+            <p>
                 <code><strong>li:not(first-child)</strong></code> - Seleciona todos os elementos menos o primeiro.
             </p>
         </article>

@@ -51,19 +51,22 @@
 .container {
     background-color: #111;
     border-radius: 12px;
-    padding: 1rem;
+    padding: 1rem 0.3rem 1rem 1rem;
     margin: 1rem 0;
     box-shadow: 3px 5px 10px rgb(68, 68, 68, 0.7);
 }
 /* Tamanho diversos */
-.tamanho-p {
+.tamanho1 {
+    max-width: 30%;
+}
+.tamanho2 {
     max-width: 40%;
 }
-.tamanho-m {
+.tamanho3 {
     max-width: 50%;
 }
-.tamanho-g {
-    max-width: 60%;
+.tamanho4 {
+    max-width: 55%;
 }
 /* Ajuste de fonte */
 .estrutura {
@@ -88,37 +91,58 @@
 .valor2 {
     color: #ed9098;
 }
+/* Cor dos segundos valores */
+.valor3 {
+    color: #95bf77;
+}
 /* Cor dos comentários */
 .coments {
     color: #565c68;
 }
 /* Responsividade dos exemplos aplicados */
+@media (max-width: 1200px) {
+    .tamanho1 {
+        max-width: 50%;
+    }
+    .tamanho2 {
+        max-width: 60%;
+    }
+    .tamanho3 {
+        max-width: 75%;
+    }
+    .tamanho4 {
+        max-width: 80%;
+    }
+}
 @media (max-width: 768px) {
-    .tamanho-p {
-        max-width: 70%;
+    .tamanho1 {
+        max-width: 50%;
     }
-    .tamanho-m {
-        max-width: 70%;
+    .tamanho2 {
+        max-width: 60%;
     }
-    .tamanho-g {
-        max-width: 70%;
+    .tamanho3 {
+        max-width: 75%;
+    }
+    .tamanho4 {
+        max-width: 90%;
     }
 }
 @media (max-width: 480px) {
-    .tamanho-p {
-        max-width: 70%;
+    .tamanho1 {
+        max-width: 90%;
     }
-    .tamanho-m {
-        max-width: 70%;
+    .tamanho2 {
+        max-width: 100%;
     }
-    .tamanho-g {
-        max-width: 70%;
+    .tamanho3 {
+        max-width: 100%;
+    }
+    .tamanho4 {
+        max-width: 100%;
     }
 }
 /* _____________________________________________________________________________________________________ */
-
-
-
 
 
 /* ----------------------------------------- Introdução -------------------------------------------------*/
@@ -136,37 +160,25 @@
 #externo-html {
     max-height: 18rem;
 }
-/* Ajustando a largura da imagem no article Formas de Aplicar na section CSS Externo */
-#externo-css {
+/* Ajustando a largura da imagem no article Formas de Aplicar e Sintaxe */
+#externo-css, #sintaxe-exemplo {
     max-height: 17rem;
 }
 /* Ajustando a largura da imagem no article Comentários */
 #comentario {
     max-height: 12rem;
 }
-/* Ajustando a largura da imagem no article Comentários */
-#comentario2 {
+/* Ajustando a largura da imagem nos articles Comentários e Sintaxe */
+#comentario2, #sintaxe {
     max-height: 11rem;
 }
-/* Ajustando a largura da imagem no article Sintaxe */
-#sintaxe {
-    max-height: 10rem;
-}
-/* Ajustando a largura da imagem no article Sintaxe */
-#sintaxe-exemplo {
-    max-height: 17rem;
-}
 /* _____________________________________________________________________________________________________ */
-
-
 
 
 /* ---------------------------------------- Seletores ---------------------------------------------------*/
 /* _____________________________________________________________________________________________________ */
 
 /* _____________________________________________________________________________________________________ */
-
-
 
 
 /* ---------------------------------- Propriedade de Texto ----------------------------------------------*/
@@ -198,15 +210,9 @@
 /* _____________________________________________________________________________________________________ */
 
 
-
-
-
 /* --------------------------------------- Cores e Unidades ---------------------------------------------*/
 /* _____________________________________________________________________________________________________ */
-
 /* _____________________________________________________________________________________________________ */
-
-
 
 
 /* ------------------------------------- Caixa de Modelo ------------------------------------------------*/
@@ -226,9 +232,6 @@
 /* _____________________________________________________________________________________________________ */
 
 
-
-
-
 /* ----------------------------------------- Bordas e Fundos --------------------------------------------*/
 /* _____________________________________________________________________________________________________ */
 /* Ajustando a largura da imagem no article Border na section border-style */
@@ -246,9 +249,6 @@
 /* _____________________________________________________________________________________________________ */
 
 
-
-
-
 /* ----------------------------------------- Display ----------------------------------------------------*/
 /* _____________________________________________________________________________________________________ */
 .comparacao {
@@ -259,8 +259,6 @@
     text-shadow: 1px 2px 5px rgb(68, 68, 68, 0.5);
 }
 /* _____________________________________________________________________________________________________ */
-
-
 
 
 /* --------------------------------------- Position  e Z-index ------------------------------------------*/
@@ -275,19 +273,33 @@
 }
 /* Ajustando a largura da imagem no article Z-index */
 #z-index2{
-    max-height: 25rem;
+    max-height: 28rem;
 }
 /* _____________________________________________________________________________________________________ */
 
 
-
-
-
-
-
-
-/* --------------------------------------- Formulário ---------------------------------------------------*/
+/* ----------------------------------------- FlexBox ----------------------------------------------------*/
 /* _____________________________________________________________________________________________________ */
+/* Ajustando a largura da imagem nos articles Flex-Direction e Exemplo Real */
+#eixos, #exemploFlexBox1{
+    max-height: 23rem;
+}
+/* Ajustando a largura da imagem nos articles Flex-Wrap, Justify-Content e Align-Self */
+#wrap, #justSpaces, #justColumn, #alignSelf{
+    max-height: 27rem;
+}
+/* Ajustando a largura da imagem nos articles Justify-Content e Align-Items */
+#justStart, #justEnd, #justCenter, #justBetween, #justEvenly, #justAround, #itemStretch, #itemStart, #itemEnd, #itemCenter{
+    max-height: 20rem;
+}
+/* Ajustando a largura da imagem no article Align-Content */
+#contentStretch, #contentStart, #contentEnd, #contentCenter, #contentBetween, #contentEvenly, #contentAround{
+    max-height: 25rem;
+}
+/* Ajustando a largura da imagem no article Exemplo Real */
+#exemploFlexBox2{
+    max-height: 15rem;
+}
 /* _____________________________________________________________________________________________________ */
 
 
