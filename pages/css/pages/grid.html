@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Flex Box</title>
+    <title>Grid Layout</title>
     <!-- Favicon imagem -->
     <link rel="shortcut icon" href="../../../assets/img/favicon/favicon.ico" type="image/x-icon">
     <!-- Link do CSS -->
@@ -68,18 +68,132 @@
 
     <main class="context">
 
-        <h1>Flex Box</h1>
+        <h1>Grid Layout</h1>
 
         <article>
             <p>
-                O Flexbox é um modelo de layout projetado para organizar e alinhar elementos dentro de um contêiner (o elemento pai) e seus itens (os elementos filhos diretos).
+                O <code class="propriedade">Grid Layout</code> é um sistema de layout bidimensional que permite organizar elementos em linhas e colunas. Ao contrário do <code class="propriedade">Flexbox</code>, que é unidimensional <code><strong>(linhas OU colunas)</strong></code>, o <code class="propriedade">Grid</code> é bidimensional <code><strong>(linhas E colunas simultaneamente)</strong></code>, tornando-o ideal para o layout geral de uma página.
             </p>
             <p>
-                Para ativar o Flexbox, você precisa definir a propriedade <code class="propriedade">display</code> do elemento contêiner como <code><strong>flex</strong></code>.
+                Para ativar o <code class="propriedade">Grid Layout</code>, você precisa definir a propriedade <code class="propriedade">display</code> do elemento contêiner como <code><strong>grid</strong></code>. Uma vez que <code class="propriedade">display: grid</code> é aplicado ao contêiner, seus filhos diretos se tornam itens de grid e podem ser posicionados nas células da grade.
             </p>
+        </article>
+
+        <article>
+            <h2>direção</h2>
             <p>
-                Uma vez que <code class="propriedade">display: flex;</code> é aplicado ao contêiner, seus filhos diretos se tornam itens flexíveis e são organizados ao longo de um eixo principal (main axis) e um eixo transversal (cross axis).
+                Definem a estrutura da grade, especificando o número e o tamanho das colunas e linhas.
             </p>
+            <section>
+                <h3>grid-template-columns</h3>
+                <p>
+                    Define o número e a largura das colunas na grade. Você pode usar unidades como <code><strong>px, %, em, rem, fr (unidade fracionária) ou auto</strong></code>.
+                </p>
+                <div class="container tamanho4">
+                    <code class="estrutura">
+                        <span class="valor">.container</span> {
+                        <br>
+                        &nbsp;&nbsp;<span class="pro">display</span>: <span class="valor">grid</span>;
+                        <br>
+                        &nbsp;&nbsp;<span class="pro">grid-template-columns</span>: <span class="valor">100px 1fr 2fr</span>;
+                        <br>
+                        &nbsp;&nbsp;<span class="coments">/* Uma coluna de 100px, uma com 1 parte do espaço restante, outra com 2 partes */</span>
+                        <br>
+                        }
+                    </code>
+                </div>
+                <div class="container tamanho4">
+                    <code class="estrutura">
+                        <span class="valor">.container</span> {
+                        <br>
+                        &nbsp;&nbsp;<span class="pro">display</span>: <span class="valor">grid</span>;
+                        <br>
+                        &nbsp;&nbsp;<span class="pro">grid-template-columns</span>: <span class="valor">repeat(3, 1fr)</span>;
+                        <br>
+                        &nbsp;&nbsp;<span class="coments">/* Três colunas de largura igual */</span>
+                        <br>
+                        }
+                    </code>
+                </div>
+                <div class="container tamanho4">
+                    <code class="estrutura">
+                        <span class="valor">.container</span> {
+                        <br>
+                        &nbsp;&nbsp;<span class="pro">display</span>: <span class="valor">grid</span>;
+                        <br>
+                        &nbsp;&nbsp;<span class="pro">grid-template-columns</span>: <span class="valor">repeat(auto-fit, minmax(200px, 1fr))</span>;
+                        <br>
+                        &nbsp;&nbsp;<span class="coments">/* Colunas responsivas */</span>
+                        <br>
+                        }
+                    </code>
+                </div>
+            </section>
+            <section>
+                <h3>grid-template-rows</h3>
+                <p>
+                    Define o número e a altura das linhas na grade. Funciona de forma similar a <code class="propriedade">grid-template-columns</code>.
+                </p>
+                <div class="container tamanho4">
+                    <code class="estrutura">
+                        <span class="valor">.container</span> {
+                        <br>
+                        &nbsp;&nbsp;<span class="pro">display</span>: <span class="valor">grid</span>;
+                        <br>
+                        &nbsp;&nbsp;<span class="pro">grid-template-rows</span>: <span class="valor">50px auto 100px</span>;
+                        <br>
+                        &nbsp;&nbsp;<span class="coments">/* Uma linha de 50px, uma de altura automática, uma de 100px */</span>
+                        <br>
+                        }
+                    </code>
+                </div>
+            </section>
+        </article>
+
+        <article>
+            <h2>espaçamento</h2>
+            <section>
+                <h3>gap</h3>
+            </section>
+            <section>
+                <h3 >grid-area</h3>
+            </section>
+            <section>
+                <h3>grid-template-areas</h3>
+            </section>
+        </article>
+
+        <article>
+            <p>
+                Assim como no Flexbox, o Grid possui propriedades para alinhar os itens dentro das células da grade e as próprias trilhas da grade.
+            </p>
+            <section>
+                <h3>justify-items</h3>
+            </section>
+            <section>
+                <h3>align-items</h3>
+            </section>
+            <section>
+                <h3>justify-content</h3>
+            </section>
+            <section>
+                <h3>align-content</h3>
+            </section>
+        </article>
+
+        <article>
+            <p>
+                Estas propriedades controlam como os itens de grid que não são explicitamente posicionados são colocados na grade.
+            </p>
+            <section>
+                <h3>grid-auto-flow</h3>
+            </section>
+            <section>
+                <h3>grid-auto-columns</h3>
+            </section>
+            <section>
+                <h3>grid-auto-rows</h3>
+            </section>
         </article>
 
         <article>
@@ -143,7 +257,7 @@
                 <code class="estrutura">
                     <span class="seletores">div</span> {
                     <br>
-                    &nbsp;&nbsp;<span class="pro">flex-direction</span>: <span class="valor">row</span>;
+                    &nbsp;&nbsp;<span class="pro">flex-direction:</span>: <span class="valor">row</span>;
                     <br>
                     &nbsp;&nbsp;<span class="pro">flex-wrap</span>: <span class="valor">nowrap</span>;
                     <br>
